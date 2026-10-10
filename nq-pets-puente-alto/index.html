@@ -1,0 +1,227 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Clínica Veterinaria N&amp;Q Pets · Puente Alto</title>
+<meta name="description" content="Clínica Veterinaria N&Q Pets en Arturo Prat 87, Puente Alto: consultas, esterilización, cirugía y exámenes a precios accesibles. Atención por orden de llegada.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Atkinson+Hyperlegible:wght@400;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy:#13294B;
+    --mint:#CDEBDF;
+    --mint-2:#8FD1B6;
+    --teal:#0F7C66;
+    --ticket:#FFD84D;
+    --paper:#F7FAF8;
+    --ink:#0E1D33;
+    --muted:#4E5D70;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{font:400 1.06rem/1.6 "Atkinson Hyperlegible",system-ui,sans-serif;color:var(--ink);background:var(--paper)}
+  a{color:inherit}
+  .wrap{max-width:1120px;margin:0 auto;padding:0 20px}
+  h1,h2,h3,.disp{font-family:"Bricolage Grotesque",system-ui,sans-serif;letter-spacing:-.02em}
+
+  header.top{background:var(--navy);color:#fff}
+  header.top .wrap{display:flex;justify-content:space-between;align-items:center;height:64px;gap:16px}
+  .brand{font-family:"Bricolage Grotesque",sans-serif;font-weight:800;font-size:1.25rem;text-decoration:none}
+  .brand span{color:var(--mint-2)}
+  .top a.call{font-weight:700;text-decoration:none;background:var(--ticket);color:var(--navy);padding:9px 14px;border-radius:8px;font-size:.95rem}
+
+  .hero{background:var(--mint);padding:64px 0 80px;position:relative;overflow:hidden}
+  .hero .grid{display:grid;grid-template-columns:1.2fr .8fr;gap:48px;align-items:center}
+  .hero h1{font-weight:800;font-size:clamp(2.4rem,6vw,4.6rem);line-height:1;color:var(--navy)}
+  .hero h1 .u{background:linear-gradient(transparent 62%,var(--ticket) 62%);padding:0 .08em}
+  .hero p.lead{font-size:1.18rem;margin:20px 0 28px;max-width:40ch;color:#1F3550}
+  .btns{display:flex;gap:12px;flex-wrap:wrap}
+  .btn{display:inline-flex;align-items:center;gap:8px;padding:14px 22px;border-radius:10px;font-weight:700;text-decoration:none;transition:transform .15s}
+  .btn:hover{transform:translateY(-2px)}
+  .btn-navy{background:var(--navy);color:#fff}
+  .btn-line{border:2px solid var(--navy);color:var(--navy)}
+
+  /* Signature: the waiting-room ticket that tells you if they're open right now */
+  .ticket{background:#fff;border-radius:16px;box-shadow:0 18px 40px rgba(19,41,75,.18);position:relative;padding:28px 26px 24px;transform:rotate(2deg)}
+  .ticket::before,.ticket::after{content:"";position:absolute;top:58%;width:26px;height:26px;border-radius:50%;background:var(--mint)}
+  .ticket::before{left:-13px}.ticket::after{right:-13px}
+  .ticket .lbl{font-size:.78rem;letter-spacing:.16em;text-transform:uppercase;color:var(--muted)}
+  .ticket .num{font-family:"Bricolage Grotesque",sans-serif;font-weight:800;font-size:4.2rem;line-height:1;color:var(--navy);margin:6px 0 10px}
+  .status{display:inline-flex;align-items:center;gap:8px;font-weight:700;padding:6px 12px;border-radius:999px;background:#E9F7F1;color:var(--teal)}
+  .status.closed{background:#FDECEC;color:#A52A2A}
+  .status i{width:10px;height:10px;border-radius:50%;background:currentColor;display:block}
+  .ticket hr{border:0;border-top:2px dashed #D5DEE7;margin:20px -26px 16px}
+  .ticket p{font-size:.98rem;color:#24384F}
+
+  section{padding:84px 0}
+  .services h2,.how h2,.visit h2{font-weight:800;font-size:clamp(1.9rem,4vw,2.9rem);line-height:1.05;color:var(--navy);max-width:20ch}
+  .cards{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:36px}
+  .card{background:#fff;border:2px solid #E1EAE6;border-radius:14px;padding:22px}
+  .card svg{width:34px;height:34px;color:var(--teal);margin-bottom:12px}
+  .card h3{font-size:1.2rem;font-weight:700;margin-bottom:4px}
+  .card p{font-size:.96rem;color:var(--muted)}
+
+  .how{background:var(--navy);color:#fff}
+  .how h2{color:#fff}
+  .steps{display:grid;grid-template-columns:repeat(3,1fr);gap:28px;margin-top:40px;counter-reset:s}
+  .step{border-top:3px solid var(--mint-2);padding-top:18px}
+  .step b{font-family:"Bricolage Grotesque",sans-serif;font-size:1.25rem;display:block;margin-bottom:6px}
+  .step p{color:#C6D3E3}
+  .facts{display:flex;flex-wrap:wrap;gap:10px;margin-top:38px}
+  .facts span{background:rgba(255,255,255,.1);padding:8px 14px;border-radius:999px;font-size:.94rem}
+
+  .visit .grid{display:grid;grid-template-columns:1fr 1fr;gap:48px}
+  table{width:100%;border-collapse:collapse;margin-top:22px}
+  td{padding:10px 0;border-bottom:1px solid #DCE5E1}
+  td:last-child{text-align:right;font-variant-numeric:tabular-nums}
+  tr.today td{font-weight:700;color:var(--teal)}
+  .addr{background:var(--mint);border-radius:16px;padding:30px}
+  .addr .disp{font-weight:700;font-size:1.6rem;line-height:1.15;color:var(--navy);margin:8px 0 14px}
+
+  footer{background:var(--ink);color:#AFC0D3;padding:30px 0 90px;font-size:.9rem}
+  footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
+
+  .mockup-pill{position:fixed;left:16px;bottom:16px;z-index:50;background:var(--navy);color:#fff;font:700 .76rem/1 "Atkinson Hyperlegible",sans-serif;letter-spacing:.03em;padding:9px 14px;border-radius:999px;opacity:.92}
+  a:focus-visible{outline:3px solid var(--teal);outline-offset:3px}
+
+  @media (max-width:900px){
+    .hero .grid,.visit .grid{grid-template-columns:1fr}
+    .cards{grid-template-columns:1fr 1fr}
+    .steps{grid-template-columns:1fr}
+    .ticket{transform:none;max-width:420px}
+  }
+  @media (max-width:520px){
+    .cards{grid-template-columns:1fr}
+    .top a.call{font-size:.85rem;padding:8px 10px}
+    section{padding:64px 0}
+  }
+  @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.btn{transition:none}}
+</style>
+</head>
+<body>
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#inicio">N<span>&amp;</span>Q Pets</a>
+    <a class="call" href="tel:+56232077428">Llamar (2) 3207 7428</a>
+  </div>
+</header>
+
+<main id="inicio">
+  <section class="hero">
+    <div class="wrap grid">
+      <div>
+        <h1>Tu veterinaria de <span class="u">Arturo Prat</span>, sin hora previa.</h1>
+        <p class="lead">Consultas, esterilización, cirugía y exámenes en Puente Alto, a precios accesibles. Atendemos por orden de llegada: revisa si estamos abiertos y ven.</p>
+        <div class="btns">
+          <a class="btn btn-navy" href="tel:+56232077428">Llamar a la clínica</a>
+          <a class="btn btn-line" href="https://maps.google.com/?cid=11905622080538741399">Cómo llegar</a>
+        </div>
+      </div>
+      <div class="ticket" aria-live="polite">
+        <div class="lbl">Clínica Veterinaria N&amp;Q Pets</div>
+        <div class="num" id="t-time">--:--</div>
+        <span class="status" id="t-status"><i></i><span>Revisando horario…</span></span>
+        <hr>
+        <p id="t-note">Lunes a viernes 10:00 – 19:00 · Sábado 11:00 – 18:00 · Domingo cerrado</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="services" id="servicios">
+    <div class="wrap">
+      <h2>Lo que hacemos por tu mascota.</h2>
+      <div class="cards">
+        <div class="card">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 3v6a6 6 0 0 0 12 0V3"/><circle cx="18" cy="17" r="3"/><path d="M12 15v2a4 4 0 0 0 4 4"/></svg>
+          <h3>Consultas y controles</h3><p>Revisión general y controles de seguimiento para tu mascota.</p>
+        </div>
+        <div class="card">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 21s-7-4.5-7-11a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 6.5-7 11-7 11Z"/></svg>
+          <h3>Esterilización</h3><p>Uno de los servicios por los que más nos recomiendan.</p>
+        </div>
+        <div class="card">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 20 20 4M14 4h6v6"/><path d="M4 14v6h6"/></svg>
+          <h3>Cirugía</h3><p>Operaciones en una clínica completa y limpia.</p>
+        </div>
+        <div class="card">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M9 3h6M10 3v6l-5 9a2 2 0 0 0 1.8 3h10.4a2 2 0 0 0 1.8-3l-5-9V3"/></svg>
+          <h3>Exámenes</h3><p>Exámenes para un diagnóstico más preciso.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="how" id="como">
+    <div class="wrap">
+      <h2>Cómo atendemos.</h2>
+      <div class="steps">
+        <div class="step"><b>Llegas sin reservar</b><p>Atendemos por orden de llegada dentro del horario.</p></div>
+        <div class="step"><b>Te damos tu turno</b><p>En recepción registramos a tu mascota y su ficha.</p></div>
+        <div class="step"><b>Consulta y tratamiento</b><p>El veterinario la examina y te explica los pasos a seguir.</p></div>
+      </div>
+      <div class="facts" aria-label="Datos útiles">
+        <span>4,4 ★ · 518 reseñas en Google</span>
+        <span>Precios accesibles</span>
+        <span>Pago con tarjeta</span>
+        <span>Estacionamiento</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="visit" id="horario">
+    <div class="wrap grid">
+      <div>
+        <h2>Horario</h2>
+        <table id="hours">
+          <tr data-d="1"><td>Lunes</td><td>10:00 – 19:00</td></tr>
+          <tr data-d="2"><td>Martes</td><td>10:00 – 19:00</td></tr>
+          <tr data-d="3"><td>Miércoles</td><td>10:00 – 19:00</td></tr>
+          <tr data-d="4"><td>Jueves</td><td>10:00 – 19:00</td></tr>
+          <tr data-d="5"><td>Viernes</td><td>10:00 – 19:00</td></tr>
+          <tr data-d="6"><td>Sábado</td><td>11:00 – 18:00</td></tr>
+          <tr data-d="0"><td>Domingo</td><td>Cerrado</td></tr>
+        </table>
+      </div>
+      <div class="addr">
+        <div style="font-size:.8rem;letter-spacing:.16em;text-transform:uppercase;color:var(--teal);font-weight:700">Dirección</div>
+        <div class="disp">Arturo Prat 87,<br>Puente Alto</div>
+        <p>Región Metropolitana</p>
+        <div class="btns" style="margin-top:20px">
+          <a class="btn btn-navy" href="https://maps.google.com/?cid=11905622080538741399">Abrir en Google Maps</a>
+          <a class="btn btn-line" href="tel:+56232077428">(2) 3207 7428</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>Clínica Veterinaria N&amp;Q Pets · Arturo Prat 87, Puente Alto</span>
+    <span>Teléfono (2) 3207 7428</span>
+  </div>
+</footer>
+<div class="mockup-pill" aria-hidden="true">Propuesta de sitio web · mockup</div>
+<script>
+  // Opening hours [open, close] in minutes, by weekday (0 = Sunday).
+  const H = {0:null,1:[600,1140],2:[600,1140],3:[600,1140],4:[600,1140],5:[600,1140],6:[660,1080]};
+  const fmt = m => String(Math.floor(m/60)).padStart(2,'0') + ':' + String(m%60).padStart(2,'0');
+  const now = new Date(new Date().toLocaleString('en-US',{timeZone:'America/Santiago'}));
+  const d = now.getDay(), m = now.getHours()*60 + now.getMinutes();
+  document.getElementById('t-time').textContent = fmt(m);
+  const st = document.getElementById('t-status'), txt = st.querySelector('span');
+  const h = H[d];
+  if (h && m >= h[0] && m < h[1]) { txt.textContent = 'Abierto ahora · cierra a las ' + fmt(h[1]); }
+  else {
+    st.classList.add('closed');
+    let n = d, k = 0; do { n = (n+1)%7; k++; } while(!H[n] && k < 7);
+    const opensToday = h && m < h[0];
+    txt.textContent = 'Cerrado · abre ' + (opensToday ? 'hoy a las ' + fmt(h[0]) : (k===1?'mañana':['el domingo','el lunes','el martes','el miércoles','el jueves','el viernes','el sábado'][n]) + ' a las ' + fmt(H[n][0]));
+  }
+  const r = document.querySelector('#hours tr[data-d="'+d+'"]'); if (r) r.classList.add('today');
+</script>
+</body>
+</html>
