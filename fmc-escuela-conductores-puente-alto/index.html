@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Escuela de Conductores FMC · Licencia de conducir en Puente Alto</title>
+<meta name="description" content="Escuela de conductores FMC en Gandarillas 68, Puente Alto: clases teóricas (también online) y prácticas para tu licencia de conducir, con instructores pacientes y horarios flexibles.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;600;800;900&family=Overpass+Mono:wght@400;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --asphalt:#26282C;
+    --asphalt-2:#33363B;
+    --lane:#F5C518;
+    --white:#FFFFFF;
+    --sign:#0F6E3F;
+    --fog:#EEF0F2;
+    --muted:#6A7078;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{font:400 1.06rem/1.6 "Overpass",system-ui,sans-serif;color:var(--asphalt);background:var(--fog)}
+  a{color:inherit}
+  .wrap{max-width:1100px;margin:0 auto;padding:0 20px}
+  .mono{font-family:"Overpass Mono",monospace}
+
+  .road{background:var(--asphalt);color:var(--white);position:relative}
+  /* Signature: the dashed center lane runs down the whole road section */
+  .road::before{content:"";position:absolute;top:0;bottom:0;left:50%;width:10px;margin-left:-5px;background:repeating-linear-gradient(180deg,var(--lane) 0 46px,transparent 46px 86px);opacity:.9;animation:drive 1.6s linear infinite}
+  @keyframes drive{to{background-position:0 86px}}
+  .road .edge{position:absolute;top:0;bottom:0;width:4px;background:var(--white);opacity:.55}
+  .road .edge.l{left:4%}.road .edge.r{right:4%}
+
+  header.top .wrap{display:flex;justify-content:space-between;align-items:center;height:72px;position:relative;z-index:2}
+  .brand{font-weight:900;font-size:1.5rem;letter-spacing:.04em;text-decoration:none}
+  .brand span{color:var(--lane)}
+  .top a.ph{font-family:"Overpass Mono",monospace;text-decoration:none;font-size:.95rem}
+
+  .hero{position:relative;z-index:2;padding:70px 0 120px;text-align:center}
+  .plate{display:inline-block;background:var(--sign);border:4px solid var(--white);border-radius:10px;padding:8px 18px;font-weight:800;letter-spacing:.08em;font-size:.9rem;margin-bottom:28px}
+  .hero h1{font-weight:900;font-size:clamp(2.8rem,8vw,6rem);line-height:.95;letter-spacing:-.02em;background:var(--asphalt);display:inline;box-decoration-break:clone;-webkit-box-decoration-break:clone;padding:0 .15em}
+  .hero p{max-width:40ch;margin:26px auto 32px;font-size:1.18rem;color:#D2D5DA;background:var(--asphalt);padding:4px 10px}
+  .btn{display:inline-flex;align-items:center;gap:10px;padding:16px 26px;border-radius:8px;font-weight:800;text-decoration:none;transition:transform .15s}
+  .btn:hover{transform:translateY(-2px)}
+  .btn-lane{background:var(--lane);color:var(--asphalt)}
+  .btn-w{background:var(--white);color:var(--asphalt)}
+  .btn-out{border:2px solid var(--asphalt);color:var(--asphalt)}
+
+  .route{position:relative;z-index:2;padding:0 0 110px}
+  .km{display:grid;grid-template-columns:1fr 1fr;gap:0 120px;align-items:start}
+  .stop{background:var(--asphalt-2);border:1px solid #474B52;border-radius:12px;padding:26px;margin-bottom:46px}
+  .stop:nth-child(even){margin-top:110px}
+  .stop .mono{color:var(--lane);font-size:.85rem;letter-spacing:.12em}
+  .stop h2{font-weight:800;font-size:1.6rem;line-height:1.15;margin:8px 0 8px}
+  .stop p{color:#C4C8CE}
+
+  section.light{padding:86px 0}
+  section.light h2{font-weight:900;font-size:clamp(2rem,4.6vw,3.2rem);line-height:1;letter-spacing:-.02em;max-width:20ch}
+  .why{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:38px}
+  .why div{background:var(--white);border-radius:12px;padding:24px;border-bottom:6px solid var(--lane)}
+  .why b{display:block;font-size:1.2rem;margin-bottom:6px}
+  .why p{color:var(--muted)}
+  .score{display:flex;gap:16px;align-items:baseline;flex-wrap:wrap;margin-top:40px}
+  .score b{font-weight:900;font-size:4rem;line-height:1}
+
+  .visit .grid{display:grid;grid-template-columns:1fr 1fr;gap:48px}
+  table{width:100%;border-collapse:collapse;margin-top:20px;font-family:"Overpass Mono",monospace;font-size:.98rem}
+  td{padding:11px 0;border-bottom:1px solid #D6DADF}
+  td:last-child{text-align:right}
+  tr.today td{font-weight:600;color:var(--sign)}
+  .addr{background:var(--sign);color:var(--white);border-radius:12px;padding:30px;border:4px solid var(--white);outline:2px solid var(--sign)}
+  .addr p.big{font-weight:800;font-size:1.8rem;line-height:1.1;margin:8px 0 10px}
+
+  footer{background:var(--asphalt);color:#A3A8AF;padding:28px 0 90px;font-size:.9rem}
+  footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+  .mockup-pill{position:fixed;left:16px;bottom:16px;z-index:50;background:var(--lane);color:var(--asphalt);font:800 .76rem/1 "Overpass",sans-serif;letter-spacing:.03em;padding:9px 14px;border-radius:999px;box-shadow:0 4px 14px rgba(0,0,0,.25)}
+  a:focus-visible{outline:3px solid var(--lane);outline-offset:3px}
+
+  @media (max-width:820px){
+    .road::before{left:22px}
+    .road .edge.l{left:8px}.road .edge.r{display:none}
+    .hero{text-align:left;padding-left:30px}
+    .route .wrap{padding-left:50px}
+    .km{grid-template-columns:1fr}
+    .stop:nth-child(even){margin-top:0}
+    .why,.visit .grid{grid-template-columns:1fr}
+    section.light{padding:66px 0}
+  }
+  @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.road::before{animation:none}.btn{transition:none}}
+</style>
+</head>
+<body>
+<div class="road">
+  <span class="edge l" aria-hidden="true"></span><span class="edge r" aria-hidden="true"></span>
+  <header class="top">
+    <div class="wrap">
+      <a class="brand" href="#inicio">F<span>M</span>C</a>
+      <a class="ph" href="tel:+56227255325">(2) 2725 5325</a>
+    </div>
+  </header>
+  <main id="inicio">
+    <section class="hero">
+      <div class="wrap">
+        <span class="plate">ESCUELA DE CONDUCTORES · PUENTE ALTO</span><br>
+        <h1>Sal a la calle con confianza.</h1>
+        <p>Clases teóricas, también online, y prácticas con instructores pacientes que explican muy bien. En Puente Alto, con horarios flexibles.</p>
+        <a class="btn btn-lane" href="tel:+56227255325">Llamar para inscribirme</a>
+      </div>
+    </section>
+
+    <section class="route" aria-label="El camino a tu licencia">
+      <div class="wrap km">
+        <div class="stop"><span class="mono">KM 1 · TEORÍA</span><h2>Clases teóricas completas</h2><p>Explicadas en detalle, y también online para que se acomoden a tus horarios.</p></div>
+        <div class="stop"><span class="mono">KM 2 · PRÁCTICA</span><h2>Clases prácticas al volante</h2><p>Claras y con paciencia, para que ganes confianza manejando de verdad.</p></div>
+        <div class="stop"><span class="mono">KM 3 · EXAMEN</span><h2>Preparación para el examen</h2><p>Llegas al examen práctico sabiendo lo que haces.</p></div>
+        <div class="stop"><span class="mono">META</span><h2>Tu licencia de conducir</h2><p>El mismo camino que siguieron nuestros alumnos que ya aprobaron.</p></div>
+      </div>
+    </section>
+  </main>
+</div>
+
+<section class="light">
+  <div class="wrap">
+    <h2>Por qué nos eligen.</h2>
+    <div class="why">
+      <div><b>Paciencia</b><p>Instructores que explican con calma, sin apuros.</p></div>
+      <div><b>Confianza</b><p>Clases que te dan seguridad al volante desde el primer día.</p></div>
+      <div><b>Horarios flexibles</b><p>Teóricas online y prácticas que se adaptan a tu semana.</p></div>
+    </div>
+    <div class="score"><b>4,8 ★</b><span>en Google, con 276 reseñas de alumnos.</span></div>
+  </div>
+</section>
+
+<section class="light visit" id="horario" style="padding-top:0">
+  <div class="wrap grid">
+    <div>
+      <h2>Horario de atención</h2>
+      <table id="hours">
+        <tr data-d="1"><td>Lunes</td><td>09:00 – 19:00</td></tr>
+        <tr data-d="2"><td>Martes</td><td>09:00 – 19:00</td></tr>
+        <tr data-d="3"><td>Miércoles</td><td>09:00 – 19:00</td></tr>
+        <tr data-d="4"><td>Jueves</td><td>09:00 – 19:00</td></tr>
+        <tr data-d="5"><td>Viernes</td><td>09:00 – 19:00</td></tr>
+        <tr data-d="6"><td>Sábado</td><td>09:00 – 13:00</td></tr>
+        <tr data-d="0"><td>Domingo</td><td>Cerrado</td></tr>
+      </table>
+    </div>
+    <div class="addr">
+      <span class="mono" style="font-size:.82rem;letter-spacing:.12em">OFICINA</span>
+      <p class="big">Gandarillas 68,<br>Puente Alto</p>
+      <p>Región Metropolitana</p>
+      <div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:22px">
+        <a class="btn btn-w" href="tel:+56227255325">(2) 2725 5325</a>
+        <a class="btn btn-lane" href="https://maps.google.com/?cid=9837908139876153323">Cómo llegar</a>
+      </div>
+    </div>
+  </div>
+</section>
+<footer><div class="wrap"><span>Escuela de Conductores FMC · Gandarillas 68, Puente Alto</span><span>(2) 2725 5325</span></div></footer>
+<div class="mockup-pill" aria-hidden="true">Propuesta de sitio web · mockup</div>
+<script>
+  const r = document.querySelector('#hours tr[data-d="' + new Date().getDay() + '"]'); if (r) r.classList.add('today');
+</script>
+</body>
+</html>
