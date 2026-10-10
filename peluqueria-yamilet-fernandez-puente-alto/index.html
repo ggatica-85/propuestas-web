@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Peluquería Yamilet Fernández · Puente Alto</title>
+<meta name="description" content="Peluquería Yamilet Fernández en Calle Creta Norte 3457, Puente Alto. Cortes y tratamientos con productos de calidad. Abierto de lunes a sábado hasta tarde.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Italiana&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --plum:#3B1830;
+    --plum-2:#5A2749;
+    --powder:#F2D9DD;
+    --rose:#D98C9B;
+    --night:#160A12;
+    --mist:#FBF4F5;
+    --muted:#7A5C6C;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{font:300 1.08rem/1.65 "Jost",system-ui,sans-serif;color:var(--night);background:var(--mist)}
+  a{color:inherit}
+  .wrap{max-width:1160px;margin:0 auto;padding:0 20px}
+  .it{font-family:"Italiana",serif;font-weight:400}
+
+  header.top{position:absolute;inset:0 0 auto;z-index:4;color:var(--powder)}
+  header.top .wrap{display:flex;justify-content:space-between;align-items:center;height:78px}
+  .brand{font-family:"Italiana",serif;font-size:1.4rem;letter-spacing:.06em;text-decoration:none}
+  header.top a.ph{font-weight:500;letter-spacing:.08em;text-decoration:none;font-size:.92rem}
+
+  /* Signature: the headline is cut on a diagonal, like a clean scissor stroke */
+  .hero{background:var(--plum);color:var(--powder);min-height:94vh;display:flex;align-items:center;position:relative;overflow:hidden}
+  .cut{position:relative;display:inline-block;font-family:"Italiana",serif;font-size:clamp(5rem,24vw,17rem);line-height:.9;letter-spacing:-.01em;text-transform:uppercase;white-space:nowrap}
+  .cut span{display:block}
+  .cut .a{clip-path:polygon(0 0,100% 0,100% 44%,0 62%)}
+  .after{font-family:"Italiana",serif;font-size:clamp(1.8rem,5vw,3.4rem);color:var(--rose);margin-top:6px}
+  .cut .b{position:absolute;inset:0;clip-path:polygon(0 62%,100% 44%,100% 100%,0 100%);transform:translate(3%,5%);color:var(--rose);transition:transform 1.2s cubic-bezier(.2,.8,.2,1)}
+  .hero.ready .cut .b{transform:translate(1.4%,2.4%)}
+  .blade{position:absolute;left:-5%;right:-5%;top:53%;height:1px;background:linear-gradient(90deg,transparent,var(--powder),transparent);transform:rotate(-4.6deg);opacity:.6}
+  .hero .copy{margin-top:42px;display:grid;grid-template-columns:1fr auto;gap:30px;align-items:end}
+  .hero .copy p{max-width:42ch;font-size:1.15rem;color:#E8C9D0}
+  .btn{display:inline-block;padding:16px 28px;text-decoration:none;font-weight:500;letter-spacing:.12em;text-transform:uppercase;font-size:.86rem;transition:background .2s,color .2s}
+  .btn-powder{background:var(--powder);color:var(--plum)}
+  .btn-powder:hover{background:#fff}
+  .btn-line{border:1px solid var(--plum);color:var(--plum)}
+  .btn-line:hover{background:var(--plum);color:var(--powder)}
+
+  section{padding:100px 0}
+  h2{font-family:"Italiana",serif;font-weight:400;font-size:clamp(2.2rem,5vw,3.8rem);line-height:1.02;color:var(--plum)}
+  .eyebrow{font-weight:500;letter-spacing:.24em;text-transform:uppercase;font-size:.78rem;color:var(--rose)}
+
+  .menu .grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:64px;align-items:start}
+  .menu ul{list-style:none;border-top:1px solid #E3CBD1}
+  .menu li{display:flex;justify-content:space-between;gap:18px;padding:22px 0;border-bottom:1px solid #E3CBD1}
+  .menu li b{font-family:"Italiana",serif;font-weight:400;font-size:1.7rem;color:var(--plum)}
+  .menu li span{color:var(--muted);max-width:30ch;text-align:right}
+
+  .ritual{background:var(--powder)}
+  .ritual .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:40px;margin-top:46px}
+  .ritual h3{font-family:"Italiana",serif;font-weight:400;font-size:1.9rem;color:var(--plum);margin-bottom:8px}
+  .ritual p{color:#5D3F50}
+  .ritual .rating{margin-top:56px;display:flex;align-items:baseline;gap:16px;flex-wrap:wrap}
+  .ritual .rating b{font-family:"Italiana",serif;font-weight:400;font-size:5rem;line-height:1;color:var(--plum)}
+
+  .visit{background:var(--night);color:#E6D3D9}
+  .visit h2{color:var(--powder)}
+  .visit .grid{display:grid;grid-template-columns:1fr 1fr;gap:56px}
+  table{width:100%;border-collapse:collapse;margin-top:26px}
+  td{padding:12px 0;border-bottom:1px solid rgba(242,217,221,.18);vertical-align:top}
+  td:last-child{text-align:right;font-variant-numeric:tabular-nums}
+  tr.today td{color:var(--rose);font-weight:500}
+  .visit .addr{font-family:"Italiana",serif;font-size:2rem;line-height:1.15;color:var(--powder);margin:16px 0 26px}
+  .visit .btn-line{border-color:var(--powder);color:var(--powder)}
+  .visit .btn-line:hover{background:var(--powder);color:var(--plum)}
+
+  footer{background:var(--night);color:#8F7380;border-top:1px solid rgba(242,217,221,.12);padding:28px 0 90px;font-size:.88rem}
+  footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
+  .mockup-pill{position:fixed;left:16px;bottom:16px;z-index:50;background:var(--powder);color:var(--plum);font:500 .76rem/1 "Jost",sans-serif;letter-spacing:.06em;padding:9px 14px;border-radius:999px;box-shadow:0 4px 18px rgba(0,0,0,.25)}
+  a:focus-visible{outline:2px solid var(--rose);outline-offset:4px}
+
+  @media (max-width:880px){
+    .menu .grid,.visit .grid,.ritual .grid{grid-template-columns:1fr;gap:28px}
+    .hero .copy{grid-template-columns:1fr}
+    .menu li{flex-direction:column}.menu li span{text-align:left}
+    section{padding:72px 0}
+  }
+  @media (prefers-reduced-motion:reduce){
+    html{scroll-behavior:auto}
+    .cut .b{transition:none;transform:translate(1.4%,2.4%)}
+  }
+</style>
+</head>
+<body>
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#inicio">Yamilet Fernández</a>
+    <a class="ph" href="tel:+56225361206">(2) 2536 1206</a>
+  </div>
+</header>
+<main id="inicio">
+  <section class="hero" id="hero">
+    <div class="wrap" style="width:100%">
+      <p class="eyebrow" style="color:var(--rose);margin-bottom:26px">Peluquería · Puente Alto</p>
+      <div class="cut" aria-label="Corte perfecto">
+        <span class="a" aria-hidden="true">Corte</span>
+        <span class="b" aria-hidden="true">Corte</span>
+        <div class="blade" aria-hidden="true"></div>
+      </div>
+      <p class="after" aria-hidden="true">perfecto, a tu medida.</p>
+      <div class="copy">
+        <p>Cortes y tratamientos con productos de calidad, que te mostramos antes de aplicar. Y un café mientras esperas.</p>
+        <a class="btn btn-powder" href="tel:+56225361206">Pedir hora</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="menu" id="servicios">
+    <div class="wrap grid">
+      <div>
+        <p class="eyebrow">Servicios</p>
+        <h2>Lo que hacemos en el sillón.</h2>
+      </div>
+      <ul>
+        <li><b>Corte</b><span>Mujer y hombre, rápido y a tu gusto.</span></li>
+        <li><b>Otros servicios</b><span>Pregúntanos por teléfono por el servicio que buscas.</span></li>
+        <li><b>Tratamientos</b><span>Cuidado del pelo con productos que te mostramos antes de aplicarlos.</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="ritual">
+    <div class="wrap">
+      <p class="eyebrow">La experiencia</p>
+      <h2>Lo que nuestras clientas destacan.</h2>
+      <div class="grid">
+        <div><h3>Productos a la vista</h3><p>Te mostramos qué aplicamos en tu pelo, siempre productos de buena calidad.</p></div>
+        <div><h3>Un café mientras esperas</h3><p>Café o agua mientras llega tu turno.</p></div>
+        <div><h3>Trato profesional</h3><p>Atención rápida, profesional y respetuosa.</p></div>
+      </div>
+      <div class="rating"><b>4,6</b><span>en Google, con 414 reseñas.</span></div>
+    </div>
+  </section>
+
+  <section class="visit" id="visitanos">
+    <div class="wrap grid">
+      <div>
+        <p class="eyebrow">Visítanos</p>
+        <h2>Abierto hasta las diez de la noche.</h2>
+        <p class="addr">Calle Creta Norte 3457,<br>Puente Alto</p>
+        <a class="btn btn-powder" href="tel:+56225361206">Llamar (2) 2536 1206</a>
+        <a class="btn btn-line" style="margin-left:8px;margin-top:10px" href="https://maps.google.com/?cid=13263746673468857849">Cómo llegar</a>
+      </div>
+      <table id="hours">
+        <tr data-d="1"><td>Lunes</td><td>10:30 – 14:00 · 15:00 – 22:00</td></tr>
+        <tr data-d="2"><td>Martes</td><td>10:30 – 14:00 · 15:00 – 22:00</td></tr>
+        <tr data-d="3"><td>Miércoles</td><td>10:30 – 14:00 · 15:00 – 22:00</td></tr>
+        <tr data-d="4"><td>Jueves</td><td>10:30 – 14:00 · 15:00 – 22:00</td></tr>
+        <tr data-d="5"><td>Viernes</td><td>10:30 – 14:00 · 15:00 – 22:00</td></tr>
+        <tr data-d="6"><td>Sábado</td><td>10:00 – 14:00 · 15:00 – 20:00</td></tr>
+        <tr data-d="0"><td>Domingo</td><td>Cerrado</td></tr>
+      </table>
+    </div>
+  </section>
+</main>
+<footer><div class="wrap"><span>Peluquería Yamilet Fernández · Calle Creta Norte 3457, Puente Alto</span><span>(2) 2536 1206</span></div></footer>
+<div class="mockup-pill" aria-hidden="true">Propuesta de sitio web · mockup</div>
+<script>
+  requestAnimationFrame(() => document.getElementById('hero').classList.add('ready'));
+  const r = document.querySelector('#hours tr[data-d="' + new Date().getDay() + '"]'); if (r) r.classList.add('today');
+</script>
+</body>
+</html>
