@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>ComputerTech · Servicio técnico de computadores en La Florida</title>
+<meta name="description" content="ComputerTech: reparación de computadores, placas madre, mantención y gestión de cables en Los Evangelizadores 1217, La Florida. 5,0 estrellas con 253 reseñas. Escríbenos por WhatsApp.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --mat:#33506E;
+    --mat-2:#26405A;
+    --copper:#C27C3E;
+    --copper-l:#E3A56A;
+    --board:#E7EBEE;
+    --solder:#B9C3CC;
+    --ink:#15202B;
+    --muted:#566676;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{font:400 1.05rem/1.6 "IBM Plex Sans",system-ui,sans-serif;color:var(--ink);background:var(--board)}
+  a{color:inherit}
+  .wrap{max-width:1140px;margin:0 auto;padding:0 20px}
+  .ch{font-family:"Chakra Petch",sans-serif}
+  .mono{font-family:"IBM Plex Mono",monospace}
+
+  /* Anti-static mat with its grid */
+  .mat{background:var(--mat);color:#fff;background-image:linear-gradient(rgba(255,255,255,.06) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.06) 1px,transparent 1px);background-size:32px 32px}
+  header.top .wrap{display:flex;justify-content:space-between;align-items:center;height:66px}
+  .brand{font-family:"Chakra Petch",sans-serif;font-weight:700;font-size:1.4rem;text-decoration:none;letter-spacing:.02em}
+  .brand span{color:var(--copper-l)}
+  .top a{font-family:"IBM Plex Mono",monospace;font-size:.92rem;text-decoration:none;color:var(--copper-l)}
+
+  .hero{padding:60px 0 90px}
+  .hero .grid{display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:center}
+  .tag{display:inline-block;font-family:"IBM Plex Mono",monospace;font-size:.82rem;border:1px solid rgba(255,255,255,.35);padding:5px 10px;border-radius:4px;margin-bottom:22px}
+  .hero h1{font-family:"Chakra Petch",sans-serif;font-weight:700;font-size:clamp(2.6rem,6.6vw,5rem);line-height:1;letter-spacing:-.01em}
+  .hero h1 span{color:var(--copper-l)}
+  .hero p{font-size:1.16rem;color:#D3DEE8;margin:20px 0 30px;max-width:44ch}
+  .btns{display:flex;gap:12px;flex-wrap:wrap}
+  .btn{display:inline-flex;align-items:center;gap:10px;padding:15px 22px;border-radius:6px;font-weight:600;text-decoration:none;transition:transform .15s}
+  .btn:hover{transform:translateY(-2px)}
+  .btn-cu{background:var(--copper);color:#fff}
+  .btn-o{border:1.5px solid rgba(255,255,255,.5);color:#fff}
+  .btn-ink{background:var(--ink);color:#fff}
+  .btn svg{width:20px;height:20px}
+
+  .ticket{background:#F4F6F8;color:var(--ink);border-radius:8px;padding:24px;font-family:"IBM Plex Mono",monospace;font-size:.92rem;box-shadow:0 20px 40px rgba(0,0,0,.25)}
+  .ticket .row{display:flex;justify-content:space-between;gap:12px;padding:8px 0;border-bottom:1px dashed #C8D1D9}
+  .ticket .row:last-child{border:0}
+  .ticket .ok{color:#1E7D4F;font-weight:500}
+  .ticket h3{font-family:"Chakra Petch",sans-serif;font-size:1.1rem;margin-bottom:8px}
+
+  /* Signature: copper traces connect each service like a circuit board */
+  .board{padding:90px 0;position:relative}
+  .board h2,.visit h2{font-family:"Chakra Petch",sans-serif;font-weight:700;font-size:clamp(2rem,4.4vw,3rem);line-height:1.05;max-width:22ch}
+  .circuit{position:relative;margin-top:50px}
+  .circuit svg.traces{position:absolute;inset:0;width:100%;height:100%;z-index:0}
+  .traces path{fill:none;stroke:var(--copper);stroke-width:3;stroke-dasharray:900;stroke-dashoffset:900}
+  .board.on .traces path{animation:trace 2s ease forwards}
+  .traces circle{fill:var(--copper-l);stroke:var(--copper);stroke-width:2}
+  @keyframes trace{to{stroke-dashoffset:0}}
+  .chips{position:relative;z-index:1;display:grid;grid-template-columns:repeat(3,1fr);gap:60px}
+  .chip{background:var(--ink);color:#fff;border-radius:6px;padding:24px;position:relative}
+  .chip::before,.chip::after{content:"";position:absolute;left:14px;right:14px;height:6px;background:repeating-linear-gradient(90deg,var(--solder) 0 6px,transparent 6px 14px)}
+  .chip::before{top:-6px}.chip::after{bottom:-6px}
+  .chip .mono{color:var(--copper-l);font-size:.8rem}
+  .chip h3{font-family:"Chakra Petch",sans-serif;font-weight:600;font-size:1.3rem;margin:6px 0 8px}
+  .chip p{color:#B9C6D2;font-size:.97rem}
+
+  .proof{background:var(--mat-2);color:#fff;padding:70px 0}
+  .proof .wrap{display:grid;grid-template-columns:auto 1fr;gap:40px;align-items:center}
+  .proof b.ch{font-size:clamp(4.4rem,12vw,7.5rem);line-height:1;color:var(--copper-l)}
+  .proof ul{list-style:none;display:flex;flex-wrap:wrap;gap:10px;margin-top:14px}
+  .proof li{font-family:"IBM Plex Mono",monospace;font-size:.88rem;border:1px solid rgba(255,255,255,.3);padding:6px 12px;border-radius:4px}
+
+  .visit{padding:86px 0}
+  .visit .grid{display:grid;grid-template-columns:1fr 1fr;gap:48px}
+  table{width:100%;border-collapse:collapse;margin-top:20px;font-family:"IBM Plex Mono",monospace;font-size:.96rem}
+  td{padding:11px 0;border-bottom:1px solid #CBD3DA}
+  td:last-child{text-align:right}
+  tr.today td{color:var(--copper);font-weight:500}
+  .addr{background:var(--ink);color:#fff;border-radius:8px;padding:30px}
+  .addr .ch{font-size:1.7rem;font-weight:600;line-height:1.15;margin:8px 0 10px}
+
+  footer{background:var(--ink);color:#90A0B0;padding:28px 0 90px;font-size:.9rem}
+  footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+  .mockup-pill{position:fixed;left:16px;bottom:16px;z-index:50;background:var(--copper);color:#fff;font:600 .76rem/1 "IBM Plex Sans",sans-serif;letter-spacing:.03em;padding:9px 14px;border-radius:999px;box-shadow:0 4px 14px rgba(0,0,0,.25)}
+  a:focus-visible{outline:3px solid var(--copper-l);outline-offset:3px}
+
+  @media (max-width:880px){
+    .hero .grid,.visit .grid,.proof .wrap{grid-template-columns:1fr}
+    .chips{grid-template-columns:1fr;gap:34px}
+    .circuit svg.traces{display:none}
+    .board,.visit{padding:66px 0}
+  }
+  @media (prefers-reduced-motion:reduce){
+    html{scroll-behavior:auto}
+    .traces path{stroke-dashoffset:0}
+    .board.on .traces path{animation:none}
+    .btn{transition:none}
+  }
+</style>
+</head>
+<body>
+<div class="mat">
+  <header class="top">
+    <div class="wrap">
+      <a class="brand" href="#inicio">Computer<span>Tech</span></a>
+      <a href="https://wa.me/56954985698">WhatsApp 9 5498 5698</a>
+    </div>
+  </header>
+  <section class="hero" id="inicio">
+    <div class="wrap grid">
+      <div>
+        <span class="tag">Servicio técnico · La Florida</span>
+        <h1>Tu computador, <span>de vuelta</span> y mejor que antes.</h1>
+        <p>Reparamos placas madre y equipos que no encienden, hacemos mantención y ordenamos cables y ventilación. Te explicamos qué le pasa a tu equipo en palabras simples.</p>
+        <div class="btns">
+          <a class="btn btn-cu" href="https://wa.me/56954985698?text=Hola%2C%20mi%20computador%20tiene%20este%20problema%3A%20">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm5.3 14.2c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.4-.7-2.8-1.1-4.6-4-4.8-4.2-.1-.2-1.1-1.5-1.1-2.9s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.9 2.1c.1.2.1.4 0 .5l-.4.6-.4.4c-.1.1-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.4 2.4 1.5.3.2.5.1.6 0l.9-1c.2-.3.4-.2.6-.1l2 1c.3.1.5.2.5.3.1.2.1.8-.1 1.4Z"/></svg>
+            Contar el problema por WhatsApp
+          </a>
+          <a class="btn btn-o" href="tel:+56954985698">Llamar</a>
+        </div>
+      </div>
+      <div class="ticket" aria-label="Ejemplo de diagnóstico">
+        <h3>Diagnóstico de ejemplo</h3>
+        <div class="row"><span>Síntoma</span><span>PC no enciende</span></div>
+        <div class="row"><span>Causa</span><span>Cortocircuito en placa</span></div>
+        <div class="row"><span>Trabajo</span><span>Reparación + ventilación</span></div>
+        <div class="row"><span>Plazo</span><span class="ok">&lt; 48 horas</span></div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<section class="board" id="servicios">
+  <div class="wrap">
+    <h2>Lo que hacemos en el banco de trabajo.</h2>
+    <div class="circuit">
+      <svg class="traces" viewBox="0 0 1100 240" preserveAspectRatio="none" aria-hidden="true">
+        <path d="M327 100 H387"/>
+        <path d="M713 100 H743 V160 H773"/>
+        <circle cx="327" cy="100" r="6"/><circle cx="387" cy="100" r="6"/><circle cx="713" cy="100" r="6"/><circle cx="773" cy="160" r="6"/>
+      </svg>
+      <div class="chips">
+        <div class="chip"><span class="mono">U1 · REPARACIÓN</span><h3>Placa madre y fallas de encendido</h3><p>Cortocircuitos, equipos que no prenden y fallas de hardware.</p></div>
+        <div class="chip"><span class="mono">U2 · MANTENCIÓN</span><h3>Limpieza y mantención</h3><p>Para el equipo que hace tiempo no recibe mantención y quiere quedar como nuevo.</p></div>
+        <div class="chip"><span class="mono">U3 · ARMADO</span><h3>Cables, disipador y ventilación</h3><p>Instalación de disipador y gestión de cables y ventiladores para una mejor circulación de aire.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="proof">
+  <div class="wrap">
+    <b class="ch">5,0</b>
+    <div>
+      <p style="font-size:1.2rem">253 reseñas en Google, con un promedio perfecto.</p>
+      <ul><li>rápido</li><li>explica todo</li><li>responsable</li><li>profesional</li></ul>
+    </div>
+  </div>
+</section>
+
+<section class="visit" id="horario">
+  <div class="wrap grid">
+    <div>
+      <h2>Horario</h2>
+      <table id="hours">
+        <tr data-d="1"><td>Lunes</td><td>11:00 – 19:00</td></tr>
+        <tr data-d="2"><td>Martes</td><td>11:00 – 19:00</td></tr>
+        <tr data-d="3"><td>Miércoles</td><td>11:00 – 19:00</td></tr>
+        <tr data-d="4"><td>Jueves</td><td>11:00 – 19:00</td></tr>
+        <tr data-d="5"><td>Viernes</td><td>11:00 – 19:00</td></tr>
+        <tr data-d="6"><td>Sábado</td><td>11:30 – 15:00</td></tr>
+        <tr data-d="0"><td>Domingo</td><td>Cerrado</td></tr>
+      </table>
+    </div>
+    <div class="addr">
+      <span class="mono" style="font-size:.8rem;color:var(--copper-l)">TALLER</span>
+      <p class="ch">Los Evangelizadores 1217, La Florida</p>
+      <p style="color:#B9C6D2">Región Metropolitana</p>
+      <div class="btns" style="margin-top:22px">
+        <a class="btn btn-cu" href="https://wa.me/56954985698">WhatsApp</a>
+        <a class="btn btn-o" href="https://maps.google.com/?cid=13027215972564651811">Cómo llegar</a>
+      </div>
+    </div>
+  </div>
+</section>
+<footer><div class="wrap"><span>ComputerTech · Los Evangelizadores 1217, La Florida</span><span>+56 9 5498 5698</span></div></footer>
+<div class="mockup-pill" aria-hidden="true">Propuesta de sitio web · mockup</div>
+<script>
+  const b = document.querySelector('.board');
+  new IntersectionObserver((e, o) => { if (e[0].isIntersecting) { b.classList.add('on'); o.disconnect(); } }, {threshold: .3}).observe(b);
+  const r = document.querySelector('#hours tr[data-d="' + new Date().getDay() + '"]'); if (r) r.classList.add('today');
+</script>
+</body>
+</html>
