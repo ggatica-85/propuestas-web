@@ -1,0 +1,332 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>KINECC · Kinesiología a domicilio</title>
+<meta name="description" content="Kinesiología a domicilio para adultos, adultos mayores y niños: respiratoria, motora, post operatoria, neurorehabilitación y más. Coordina tu atención por WhatsApp.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500..800&family=Atkinson+Hyperlegible:wght@400;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --teal:#17B39C;
+    --teal-d:#0D7F70;
+    --deep:#0B3B3A;
+    --sun:#FFD45C;
+    --bg:#F1F8F6;
+    --ink:#10201F;
+    --muted:#4A5E5B;
+    --card:#FFFFFF;
+    --chat:#DCF8C6;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;background:var(--bg);color:var(--ink);font:400 1.125rem/1.6 "Atkinson Hyperlegible",system-ui,sans-serif}
+  img{max-width:100%;display:block}
+  a{color:inherit}
+  :focus-visible{outline:3px solid var(--deep);outline-offset:3px;border-radius:8px}
+  h1,h2,h3{font-family:"Bricolage Grotesque",system-ui,sans-serif;line-height:1.02;margin:0;letter-spacing:-.02em;color:var(--deep)}
+  .wrap{width:min(1180px,100% - 40px);margin-inline:auto}
+  .chev{color:var(--teal);flex:none}
+  /* Atkinson draws slashed zeros; set times and phone numbers in Bricolage */
+  .top,.hours dd,.contact ul a,footer span{font-family:"Bricolage Grotesque",sans-serif;font-weight:500}
+
+  .top{background:var(--deep);color:#CDEDE7;font-size:.92rem}
+  .top .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;padding:8px 0}
+  .top a{text-decoration:none;color:#fff;font-weight:700}
+  header{background:var(--bg);position:sticky;top:0;z-index:20;border-bottom:1px solid #d7ebe6}
+  .nav{display:flex;align-items:center;justify-content:space-between;height:72px;gap:16px}
+  .nav img{height:34px;width:auto}
+  .nav ul{display:flex;gap:28px;list-style:none;margin:0;padding:0;font-weight:700;font-size:1rem}
+  .nav ul a{text-decoration:none;color:var(--muted)}
+  .nav ul a:hover{color:var(--teal-d)}
+  .btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;border:0;cursor:pointer;font:700 1.05rem/1 "Atkinson Hyperlegible",sans-serif;text-decoration:none;background:var(--deep);color:#fff;padding:16px 24px;border-radius:999px;transition:transform .15s,background .2s}
+  .btn:hover{transform:translateY(-1px);background:#06504d}
+  .btn.wa{background:#1FA855}
+  .btn.wa:hover{background:#178a45}
+  .btn svg{width:20px;height:20px}
+  .btn.sm{padding:11px 18px;font-size:.95rem}
+
+  /* hero */
+  .hero{padding:56px 0 80px}
+  .hero-grid{display:grid;grid-template-columns:1fr 470px;gap:56px;align-items:center}
+  .kicker{display:inline-flex;align-items:center;gap:8px;background:#fff;border-radius:999px;padding:6px 14px;font-weight:700;font-size:.92rem;color:var(--teal-d)}
+  .hero h1{font-size:clamp(2.8rem,6.6vw,5.4rem);font-weight:800;margin:22px 0 22px}
+  .hero h1 span{background:linear-gradient(transparent 62%,var(--sun) 62% 92%,transparent 92%);padding:0 .06em}
+  .hero p{font-size:1.25rem;color:var(--muted);max-width:40ch;margin:0}
+  .hours{display:grid;grid-template-columns:auto 1fr;gap:6px 18px;margin-top:30px;font-size:1rem}
+  .hours dt{font-weight:700;color:var(--deep)}
+  .hours dd{margin:0;color:var(--muted)}
+
+  /* signature: the WhatsApp message builder */
+  .composer{background:var(--card);border-radius:28px;box-shadow:0 30px 60px -30px rgba(11,59,58,.35),0 2px 0 rgba(11,59,58,.05);overflow:hidden}
+  .composer .bar{background:var(--deep);color:#fff;display:flex;align-items:center;gap:12px;padding:14px 20px}
+  .composer .bar img{width:36px;height:36px;border-radius:50%;background:#fff;padding:5px}
+  .composer .bar b{display:block;font-size:1rem}
+  .composer .bar small{color:#9fd8ce;font-size:.85rem}
+  .composer form{padding:20px 20px 22px}
+  .step{margin:0 0 16px;border:0;padding:0}
+  .step legend,.step label.lb{font-weight:700;font-size:.95rem;color:var(--deep);margin-bottom:8px;display:block;padding:0}
+  .chips{display:flex;flex-wrap:wrap;gap:8px}
+  .chips input{position:absolute;opacity:0;pointer-events:none}
+  .chips label{cursor:pointer;border:1.5px solid #cfe5e0;border-radius:999px;padding:8px 14px;font-size:.95rem;color:var(--ink);background:#fff;transition:background .15s,border-color .15s}
+  .chips input:checked + label{background:var(--teal);border-color:var(--teal);color:#05211f;font-weight:700}
+  .chips input:focus-visible + label{outline:3px solid var(--deep);outline-offset:2px}
+  select,input[type=text]{width:100%;font:inherit;font-size:1rem;padding:12px 14px;border-radius:14px;border:1.5px solid #cfe5e0;background:#fff;color:var(--ink)}
+  .bubble{background:var(--chat);border-radius:16px 16px 4px 16px;padding:12px 14px;font-size:.98rem;line-height:1.45;margin:6px 0 14px auto;max-width:92%;color:#1b2b23;position:relative}
+  .bubble small{display:block;text-align:right;color:#5f7b6b;font-size:.75rem;margin-top:4px}
+  .composer .btn{width:100%}
+
+  /* proof line */
+  .proof{background:var(--deep);color:#E3F4F0}
+  .proof .wrap{display:grid;grid-template-columns:1.2fr 1fr;gap:48px;padding:64px 0;align-items:center}
+  .proof h2{color:#fff;font-size:clamp(1.9rem,3.6vw,3rem);font-weight:700}
+  .proof h2 em{font-style:normal;color:var(--sun)}
+  .quotes{display:grid;gap:16px}
+  .quote{background:rgba(255,255,255,.07);border-radius:18px;padding:18px 20px}
+  .quote p{margin:0}
+  .quote small{display:block;color:#9fd8ce;margin-top:8px;font-size:.88rem}
+
+  section{padding:96px 0}
+  .head{display:flex;justify-content:space-between;align-items:end;gap:24px;flex-wrap:wrap;margin-bottom:40px}
+  .head h2{font-size:clamp(2rem,4vw,3.2rem);font-weight:800;max-width:16ch}
+  .head p{color:var(--muted);max-width:40ch;margin:0}
+  .groups{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+  .group{background:var(--card);border-radius:24px;padding:26px}
+  .group h3{font-size:1.45rem;font-weight:700;margin-bottom:6px}
+  .group .who{color:var(--muted);font-size:.95rem;margin-bottom:16px}
+  .group ul{list-style:none;margin:0;padding:0;display:grid;gap:8px}
+  .group button{all:unset;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:8px;width:100%;box-sizing:border-box;padding:10px 12px;border-radius:12px;background:var(--bg);font-size:1rem;transition:background .15s}
+  .group button:hover{background:#d9f1eb}
+  .group button:focus-visible{outline:3px solid var(--deep)}
+  .group button span{color:var(--teal-d);font-weight:700;font-size:.85rem;white-space:nowrap}
+  .group.sun{background:var(--sun)}
+  .group.sun button{background:rgba(255,255,255,.55)}
+
+  .how{background:#fff}
+  .steps{display:grid;grid-template-columns:repeat(3,1fr);gap:28px;counter-reset:s}
+  .steps li{list-style:none;counter-increment:s;padding-top:20px;border-top:3px solid var(--teal)}
+  .steps li::before{content:counter(s);font-family:"Bricolage Grotesque",sans-serif;font-weight:800;font-size:2.4rem;color:var(--teal);display:block;line-height:1;margin-bottom:10px}
+  .steps h3{font-size:1.35rem;font-weight:700;margin-bottom:8px}
+  .steps p{margin:0;color:var(--muted)}
+  .steps ol{padding:0;margin:0}
+  .team{margin-top:56px;color:var(--muted);font-size:1rem}
+  .team b{color:var(--deep)}
+
+  .contact .wrap{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center}
+  .contact h2{font-size:clamp(2rem,4vw,3.2rem);font-weight:800}
+  .contact ul{list-style:none;padding:0;margin:24px 0 0;display:grid;gap:12px;font-size:1.15rem}
+  .contact ul a{font-weight:700;text-decoration:none;color:var(--teal-d)}
+  .contact .card{background:var(--deep);color:#fff;border-radius:28px;padding:36px}
+  .contact .card h3{color:#fff;font-size:1.8rem}
+  .contact .card p{color:#bfe6de;margin:10px 0 24px}
+
+  footer{background:var(--deep);color:#9fd8ce;padding:36px 0 90px;font-size:.95rem}
+  footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;align-items:center}
+  footer img{height:28px;width:auto}
+
+  .mockup-pill{position:fixed;right:16px;bottom:16px;z-index:50;background:var(--ink);color:#fff;font:700 .78rem/1 "Atkinson Hyperlegible",sans-serif;letter-spacing:.03em;padding:9px 14px;border-radius:999px;opacity:.9}
+
+  @media (max-width:1000px){
+    .hero-grid,.proof .wrap,.contact .wrap{grid-template-columns:1fr}
+    .groups{grid-template-columns:1fr 1fr}
+    .nav ul{display:none}
+  }
+  @media (max-width:620px){
+    .groups,.steps{grid-template-columns:1fr}
+    section{padding:72px 0}
+    .top .wrap span:first-child{display:none}
+  }
+  @media (prefers-reduced-motion:reduce){ html{scroll-behavior:auto} .btn{transition:none} }
+</style>
+</head>
+<body>
+
+<div class="top"><div class="wrap"><span>Lunes a viernes 08:00–21:00 · Sábado 09:00–20:00 · Domingo solo urgencias</span><a href="tel:+56997668928">+56 9 9766 8928</a></div></div>
+<header>
+  <div class="wrap nav">
+    <a href="#inicio" aria-label="KINECC, inicio"><img src="assets/logo2.png" alt="KINECC" width="300" height="100"></a>
+    <ul>
+      <li><a href="#tratamientos">Tratamientos</a></li>
+      <li><a href="#como-funciona">Cómo funciona</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+    </ul>
+    <a class="btn sm" href="#agendar">Agendar atención</a>
+  </div>
+</header>
+
+<main id="inicio">
+  <section class="hero" style="padding-top:56px">
+    <div class="wrap hero-grid">
+      <div>
+        <span class="kicker"><svg class="chev" viewBox="0 0 20 14" width="18" height="13" aria-hidden="true"><path d="M8 1 2 7l6 6M17 1l-6 6 6 6" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg>Kinesiología a domicilio</span>
+        <h1>El kinesiólogo <span>va a tu casa</span></h1>
+        <p>Rehabilitación personalizada sin salir de tu hogar: para adultos, adultos mayores y niños. Te asignamos el kinesiólogo más adecuado según lo que necesitas y dónde vives.</p>
+        <dl class="hours">
+          <dt>Lun a vie</dt><dd>08:00 a 21:00</dd>
+          <dt>Sábado</dt><dd>09:00 a 20:00</dd>
+          <dt>Domingo</dt><dd>Solo urgencias</dd>
+        </dl>
+      </div>
+
+      <div class="composer" id="agendar">
+        <div class="bar"><img src="assets/cropped-cropped-identidad-favicon-1-192x192.png" alt="" width="36" height="36"><div><b>KINECC</b><small>Te respondemos por WhatsApp</small></div></div>
+        <form id="f" onsubmit="return false">
+          <fieldset class="step">
+            <legend>¿Para quién es la atención?</legend>
+            <div class="chips" id="who">
+              <input type="radio" name="who" id="w1" value="un adulto" checked><label for="w1">Adulto</label>
+              <input type="radio" name="who" id="w2" value="un adulto mayor"><label for="w2">Adulto mayor</label>
+              <input type="radio" name="who" id="w3" value="un niño o niña"><label for="w3">Niño o niña</label>
+            </div>
+          </fieldset>
+          <div class="step">
+            <label class="lb" for="t">¿Qué tratamiento necesitas?</label>
+            <select id="t">
+              <option>Kinesiología motora</option>
+              <option>Recuperación post operatoria</option>
+              <option>Recuperación de lesiones</option>
+              <option>Reintegración deportiva</option>
+              <option>Kinesiología adulto mayor</option>
+              <option>Kinesiología respiratoria adulto y adulto mayor</option>
+              <option>Kinesiología respiratoria infantil</option>
+              <option>Terapia neurorehabilitadora</option>
+              <option>Aspiración de secreciones</option>
+              <option>Drenaje linfático</option>
+              <option>Masaje descontracturante</option>
+              <option>No estoy seguro, necesito orientación</option>
+            </select>
+          </div>
+          <div class="step">
+            <label class="lb" for="c">¿En qué comuna?</label>
+            <input type="text" id="c" placeholder="Ej: Ñuñoa" autocomplete="address-level2">
+          </div>
+          <div class="bubble" aria-live="polite"><span id="msg"></span><small>Vista previa de tu mensaje</small></div>
+          <a class="btn wa" id="send" href="#" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.4-.7-2.8-1.1-4.6-4-4.8-4.2-.1-.2-1.1-1.5-1.1-2.9s.7-2.1 1-2.4c.3-.3.6-.3.8-.3h.6c.2 0 .4 0 .6.5l.9 2.1c.1.2.1.4 0 .5l-.4.6-.4.5c-.1.1-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.3 2.4 1.5.3.1.5.1.6-.1l.9-1c.2-.3.4-.2.6-.1l2 .9c.3.1.5.2.5.3.1.2.1.7-.1 1.3Z"/></svg>
+            Enviar por WhatsApp
+          </a>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <div class="proof">
+    <div class="wrap">
+      <h2>Cada semana atendemos a <em>más de 120 pacientes</em> en sus casas, y tenemos convenio con 15 empresas de asistencia médica.</h2>
+      <div class="quotes">
+        <div class="quote"><p>“Muy buena atención, necesitaba una hora y en minutos me dieron.”</p><small>Carlos M. · reseña en Google</small></div>
+        <div class="quote"><p>“Los ejercicios que le hizo a mi marido fueron de una notable ayuda.”</p><small>Cecilia M. · reseña en Google</small></div>
+      </div>
+    </div>
+  </div>
+
+  <section id="tratamientos">
+    <div class="wrap">
+      <div class="head">
+        <h2>Tratamientos a domicilio</h2>
+        <p>Elige uno y lo dejamos listo en tu mensaje de WhatsApp.</p>
+      </div>
+      <div class="groups">
+        <div class="group">
+          <h3>Lesiones y cirugías</h3><div class="who">Para volver a moverte bien</div>
+          <ul>
+            <li><button data-t="Recuperación post operatoria" data-w="w1">Post operatoria <span>Elegir ››</span></button></li>
+            <li><button data-t="Recuperación de lesiones" data-w="w1">Lesiones <span>Elegir ››</span></button></li>
+            <li><button data-t="Reintegración deportiva" data-w="w1">Reintegración deportiva <span>Elegir ››</span></button></li>
+            <li><button data-t="Kinesiología motora" data-w="w1">Kinesiología motora <span>Elegir ››</span></button></li>
+          </ul>
+        </div>
+        <div class="group sun">
+          <h3>Adulto mayor</h3><div class="who">Con calma y en su entorno</div>
+          <ul>
+            <li><button data-t="Kinesiología adulto mayor" data-w="w2">Kinesiología adulto mayor <span>Elegir ››</span></button></li>
+            <li><button data-t="Kinesiología respiratoria adulto y adulto mayor" data-w="w2">Respiratoria <span>Elegir ››</span></button></li>
+            <li><button data-t="Terapia neurorehabilitadora" data-w="w2">Neurorehabilitación <span>Elegir ››</span></button></li>
+            <li><button data-t="Aspiración de secreciones" data-w="w2">Aspiración de secreciones <span>Elegir ››</span></button></li>
+          </ul>
+        </div>
+        <div class="group">
+          <h3>Niños</h3><div class="who">Sin trasladar a tu hijo enfermo</div>
+          <ul>
+            <li><button data-t="Kinesiología respiratoria infantil" data-w="w3">Respiratoria infantil <span>Elegir ››</span></button></li>
+          </ul>
+        </div>
+        <div class="group">
+          <h3>Bienestar</h3><div class="who">Alivio y recuperación</div>
+          <ul>
+            <li><button data-t="Drenaje linfático" data-w="w1">Drenaje linfático <span>Elegir ››</span></button></li>
+            <li><button data-t="Masaje descontracturante" data-w="w1">Masaje descontracturante <span>Elegir ››</span></button></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="how" id="como-funciona">
+    <div class="wrap">
+      <div class="head"><h2>Cómo funciona</h2></div>
+      <ol class="steps">
+        <li><h3>Nos escribes</h3><p>Por WhatsApp o llamada, con el tratamiento que necesitas y tu comuna.</p></li>
+        <li><h3>Te asignamos un kinesiólogo</h3><p>El más adecuado según tu necesidad y tu ubicación, en el horario que te acomode.</p></li>
+        <li><h3>Te atiende en casa</h3><p>Tratamiento personalizado, sin traslados ni salas de espera.</p></li>
+      </ol>
+      <p class="team"><b>Nuestro equipo:</b> Benjamín Collao, Polette Zamora, Jimmy Castillo, Andrea Lizana, José Ortiz, Nicolás Mellado, Carlos Mayer e Ignacio Medalla, kinesiólogos con experiencia en distintas áreas.</p>
+    </div>
+  </section>
+
+  <section class="contact" id="contacto">
+    <div class="wrap">
+      <div>
+        <h2>Hablemos</h2>
+        <ul>
+          <li>WhatsApp <a href="https://wa.me/56997668928" target="_blank" rel="noopener">+56 9 9766 8928</a></li>
+          <li>Teléfono <a href="tel:+56940101476">+56 9 4010 1476</a></li>
+          <li>Correo <a href="mailto:contacto@kinecc.cl">contacto@kinecc.cl</a></li>
+          <li>Instagram <a href="https://www.instagram.com/kineccspa" target="_blank" rel="noopener">@kineccspa</a></li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>¿Es una urgencia?</h3>
+        <p>Los domingos atendemos solo urgencias. Llámanos y coordinamos la visita.</p>
+        <a class="btn" style="background:var(--sun);color:var(--deep)" href="tel:+56997668928">Llamar ahora</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <img src="assets/logo.png" alt="KINECC" width="300" height="100">
+    <span>Kinesiología a domicilio · contacto@kinecc.cl · +56 9 9766 8928</span>
+  </div>
+</footer>
+
+<div class="mockup-pill" aria-hidden="true">Propuesta de rediseño · mockup</div>
+
+<script>
+  const f = document.getElementById('f'), t = document.getElementById('t'), c = document.getElementById('c');
+  const msg = document.getElementById('msg'), send = document.getElementById('send');
+  function update() {
+    const who = f.querySelector('input[name=who]:checked').value;
+    const tr = t.value;
+    const comuna = c.value.trim();
+    const what = tr.startsWith('No estoy') ? 'orientación sobre qué tratamiento necesito' : tr.toLowerCase();
+    const text = `Hola KINECC, necesito ${what} a domicilio para ${who}${comuna ? ' en ' + comuna : ''}. ¿Qué disponibilidad tienen?`;
+    msg.textContent = text;
+    send.href = 'https://wa.me/56997668928?text=' + encodeURIComponent(text);
+  }
+  f.addEventListener('input', update);
+  document.querySelectorAll('.group button').forEach(b => b.addEventListener('click', () => {
+    t.value = b.dataset.t;
+    document.getElementById(b.dataset.w).checked = true;
+    update();
+    document.getElementById('agendar').scrollIntoView({ behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth', block: 'center' });
+    c.focus({ preventScroll: true });
+  }));
+  update();
+</script>
+</body>
+</html>
