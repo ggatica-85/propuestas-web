@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Taller Mecánico El Zapato · Sargento Menadier 0342, Puente Alto</title>
+<meta name="description" content="Taller Mecánico El Zapato en Puente Alto: mantención, cambio de aceite y reparaciones con buenos precios y maestros que te aconsejan. Llámanos al (2) 2759 7470.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700;900&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --yellow:#FFC629;
+    --char:#1E1E1C;
+    --char-2:#2D2D2A;
+    --paper:#F3EFE4;
+    --carbon:#6E6A60;
+    --blue:#2F4A8A;
+    --ink:#161614;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{font:400 1.04rem/1.6 "IBM Plex Sans",system-ui,sans-serif;color:var(--ink);background:var(--paper)}
+  a{color:inherit}
+  .wrap{max-width:1140px;margin:0 auto;padding:0 20px}
+  .bs{font-family:"Big Shoulders Display",sans-serif;text-transform:uppercase;line-height:.9}
+  .mono{font-family:"IBM Plex Mono",monospace}
+  .hazard{height:14px;background:repeating-linear-gradient(-45deg,var(--yellow) 0 18px,var(--char) 18px 36px)}
+
+  .hero{background:var(--char);color:#fff;padding:54px 0 80px}
+  .hero .bar{display:flex;justify-content:space-between;align-items:center;margin-bottom:50px;gap:12px}
+  .hero .bar .bs{font-weight:900;font-size:1.6rem;color:var(--yellow)}
+  .hero .bar a{font-family:"IBM Plex Mono",monospace;text-decoration:none;font-size:.95rem}
+  .hero h1{font-family:"Big Shoulders Display",sans-serif;font-weight:900;text-transform:uppercase;font-size:clamp(3.6rem,13vw,10rem);line-height:.92;letter-spacing:-.01em}
+  .hero h1 span{color:var(--yellow)}
+  .hero .row{display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:end;margin-top:34px}
+  .hero p{color:#CFCBC0;font-size:1.15rem;max-width:44ch}
+  .btn{display:inline-flex;align-items:center;gap:10px;padding:16px 24px;font-weight:600;text-decoration:none;border-radius:3px;transition:transform .15s}
+  .btn:hover{transform:translateY(-2px)}
+  .btn-y{background:var(--yellow);color:var(--char)}
+  .btn-o{border:2px solid #57554F;color:#fff}
+  .btn-c{background:var(--char);color:#fff}
+
+  /* Signature: a work order ("orden de trabajo") lists the services */
+  .order-sec{padding:80px 0}
+  .order{background:#FFFDF6;border:1px solid #D8D1BE;box-shadow:0 1px 0 #D8D1BE,0 18px 34px rgba(30,30,28,.12);max-width:880px;margin:0 auto;position:relative}
+  .order header{display:flex;justify-content:space-between;align-items:flex-start;gap:16px;padding:26px 30px;border-bottom:2px solid var(--char)}
+  .order header .bs{font-weight:900;font-size:2.2rem}
+  .order header .mono{font-size:.85rem;color:var(--carbon);text-align:right}
+  .order table{width:100%;border-collapse:collapse}
+  .order th{font:500 .74rem/1 "IBM Plex Mono",monospace;letter-spacing:.14em;text-transform:uppercase;text-align:left;color:var(--carbon);padding:14px 30px;border-bottom:1px solid #E3DCC8}
+  .order td{padding:20px 30px;border-bottom:1px dashed #D8D1BE;vertical-align:top}
+  .order td.chk{width:44px;padding-right:0}
+  .box{width:22px;height:22px;border:2px solid var(--char);display:grid;place-items:center}
+  .box svg{width:18px;height:18px;color:var(--blue)}
+  .order td b{display:block;font-size:1.12rem}
+  .order td span{color:var(--carbon)}
+  .order footer{padding:22px 30px;display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap}
+  .sign{font-family:"IBM Plex Mono",monospace;font-size:.9rem;color:var(--carbon)}
+  .stamp{border:3px solid var(--blue);color:var(--blue);font-family:"Big Shoulders Display",sans-serif;font-weight:900;text-transform:uppercase;font-size:1.35rem;padding:6px 12px;transform:rotate(-6deg);border-radius:4px;opacity:.85}
+
+  .rep{background:var(--yellow);padding:70px 0}
+  .rep .wrap{display:grid;grid-template-columns:auto 1fr;gap:40px;align-items:center}
+  .rep .bs{font-weight:900;font-size:clamp(5rem,16vw,10rem)}
+  .rep h2{font-family:"Big Shoulders Display",sans-serif;font-weight:900;text-transform:uppercase;font-size:clamp(2rem,4.4vw,3.2rem);line-height:.95;margin-bottom:12px}
+  .rep ul{list-style:none;display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+  .rep li{background:var(--char);color:var(--yellow);padding:7px 12px;font-family:"IBM Plex Mono",monospace;font-size:.88rem}
+
+  .visit{padding:84px 0}
+  .visit .grid{display:grid;grid-template-columns:1fr 1fr;gap:48px}
+  .visit h2{font-family:"Big Shoulders Display",sans-serif;font-weight:900;text-transform:uppercase;font-size:clamp(2.2rem,5vw,3.6rem)}
+  table.h{width:100%;border-collapse:collapse;margin-top:20px;font-family:"IBM Plex Mono",monospace}
+  table.h td{padding:11px 0;border-bottom:1px solid #D8D1BE}
+  table.h td:last-child{text-align:right}
+  table.h tr.today td{font-weight:500;background:linear-gradient(transparent 55%,rgba(255,198,41,.55) 55%)}
+  .addr{background:var(--char);color:#fff;padding:30px;border-radius:3px}
+  .addr .bs{font-weight:900;font-size:2.2rem;color:var(--yellow);margin:8px 0 12px}
+
+  footer.site{background:var(--ink);color:#9A968C;padding:26px 0 90px;font-size:.9rem}
+  footer.site .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+  .mockup-pill{position:fixed;left:16px;bottom:16px;z-index:50;background:var(--yellow);color:var(--char);font:600 .76rem/1 "IBM Plex Sans",sans-serif;letter-spacing:.03em;padding:9px 14px;border-radius:999px;box-shadow:0 4px 14px rgba(0,0,0,.25)}
+  a:focus-visible{outline:3px solid var(--blue);outline-offset:3px}
+
+  @media (max-width:820px){
+    .hero .row,.visit .grid,.rep .wrap{grid-template-columns:1fr}
+    .order header,.order th,.order td,.order footer{padding-left:18px;padding-right:18px}
+    .order header{flex-direction:column}.order header .mono{text-align:left}
+  }
+  @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.btn{transition:none}}
+</style>
+</head>
+<body>
+<main id="inicio">
+  <section class="hero">
+    <div class="wrap">
+      <div class="bar"><span class="bs">El Zapato</span><a href="tel:+56227597470">(2) 2759 7470</a></div>
+      <h1>Taller<br>mecánico<br><span>El Zapato</span></h1>
+      <div class="row">
+        <p>Mantención, cambio de aceite y reparaciones en Puente Alto, con buenos precios y maestros que te dicen qué necesita tu auto, sin vueltas.</p>
+        <div style="display:flex;gap:10px;flex-wrap:wrap">
+          <a class="btn btn-y" href="tel:+56227597470">Llamar al taller</a>
+          <a class="btn btn-o" href="https://maps.google.com/?cid=8814119490380525471">Cómo llegar</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="hazard" aria-hidden="true"></div>
+
+  <section class="order-sec" id="servicios">
+    <div class="wrap">
+      <article class="order" aria-labelledby="t-ot">
+        <header>
+          <div><div class="mono" style="color:var(--carbon);font-size:.8rem;letter-spacing:.14em">ORDEN DE TRABAJO</div><h2 class="bs" id="t-ot">Lo que hacemos</h2></div>
+          <div class="mono">Sgto. Menadier 0342<br>Puente Alto</div>
+        </header>
+        <table>
+          <thead><tr><th></th><th>Servicio</th></tr></thead>
+          <tbody>
+            <tr><td class="chk"><div class="box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" aria-hidden="true"><path d="m5 12 5 5L20 7"/></svg></div></td><td><b>Mantención y revisión</b><span>Revisamos tu auto y te damos las recomendaciones que necesita.</span></td></tr>
+            <tr><td class="chk"><div class="box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" aria-hidden="true"><path d="m5 12 5 5L20 7"/></svg></div></td><td><b>Cambio de aceite</b><span>Cambio de aceite para que el motor siga sano.</span></td></tr>
+            <tr><td class="chk"><div class="box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" aria-hidden="true"><path d="m5 12 5 5L20 7"/></svg></div></td><td><b>Reparaciones</b><span>Si encontramos algo malo, lo cambiamos aquí mismo.</span></td></tr>
+          </tbody>
+        </table>
+        <footer>
+          <span class="sign">Atiende: los maestros de El Zapato</span>
+          <span class="stamp">Buen precio</span>
+        </footer>
+      </article>
+    </div>
+  </section>
+
+  <section class="rep">
+    <div class="wrap">
+      <div class="bs">4,7</div>
+      <div>
+        <h2>366 reseñas en Google.</h2>
+        <p>Lo que más repiten nuestros clientes:</p>
+        <ul><li>buenos precios</li><li>buena atención</li><li>te aconsejan</li><li>trabajo bien hecho</li></ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="visit" id="horario">
+    <div class="wrap grid">
+      <div>
+        <h2>Horario</h2>
+        <table class="h" id="hours">
+          <tr data-d="1"><td>Lunes</td><td>09:00 – 18:00</td></tr>
+          <tr data-d="2"><td>Martes</td><td>09:00 – 18:00</td></tr>
+          <tr data-d="3"><td>Miércoles</td><td>09:00 – 18:00</td></tr>
+          <tr data-d="4"><td>Jueves</td><td>09:00 – 18:00</td></tr>
+          <tr data-d="5"><td>Viernes</td><td>09:00 – 18:00</td></tr>
+          <tr data-d="6"><td>Sábado</td><td>09:00 – 14:00</td></tr>
+          <tr data-d="0"><td>Domingo</td><td>Cerrado</td></tr>
+        </table>
+      </div>
+      <div class="addr">
+        <span class="mono" style="font-size:.8rem;letter-spacing:.14em;color:#B8B3A6">DIRECCIÓN</span>
+        <p class="bs">Sargento Menadier 0342</p>
+        <p style="color:#CFCBC0">Puente Alto, Región Metropolitana</p>
+        <div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:22px">
+          <a class="btn btn-y" href="tel:+56227597470">(2) 2759 7470</a>
+          <a class="btn btn-o" href="https://maps.google.com/?cid=8814119490380525471">Google Maps</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+<div class="hazard" aria-hidden="true"></div>
+<footer class="site"><div class="wrap"><span>Taller Mecánico El Zapato · Sargento Menadier 0342, Puente Alto</span><span>(2) 2759 7470</span></div></footer>
+<div class="mockup-pill" aria-hidden="true">Propuesta de sitio web · mockup</div>
+<script>
+  const r = document.querySelector('#hours tr[data-d="' + new Date().getDay() + '"]'); if (r) r.classList.add('today');
+</script>
+</body>
+</html>
