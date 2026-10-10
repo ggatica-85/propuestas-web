@@ -1,0 +1,237 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Club Lonquén · Eventos, matrimonios y tenis en Maipú</title>
+<meta name="description" content="Club Lonquén: recinto para eventos y matrimonios con canchas de tenis en Maipú, junto al Camino a Melipilla. Cotiza tu evento por WhatsApp.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,600;1,6..96,400&family=Figtree:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --green:#1E3A2B;
+    --green-2:#2C5240;
+    --clay:#B9532C;
+    --clay-2:#9C4322;
+    --chalk:#F6F4EC;
+    --line:#FFFFFF;
+    --ink:#14251C;
+    --muted:#5D6B62;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{font:400 1.05rem/1.6 "Figtree",system-ui,sans-serif;color:var(--ink);background:var(--chalk);-webkit-font-smoothing:antialiased}
+  a{color:inherit}
+  .wrap{max-width:1140px;margin:0 auto;padding:0 20px}
+  .serif{font-family:"Bodoni Moda",Georgia,serif}
+
+  header.top{position:absolute;inset:0 0 auto 0;z-index:5;color:var(--line)}
+  header.top .wrap{display:flex;align-items:center;justify-content:space-between;height:76px}
+  .brand{font-family:"Bodoni Moda",serif;font-size:1.35rem;letter-spacing:.02em;text-decoration:none}
+  .brand small{display:block;font:500 .7rem/1 "Figtree",sans-serif;letter-spacing:.24em;text-transform:uppercase;opacity:.8;margin-top:4px}
+  nav.links{display:flex;gap:26px;font-size:.92rem}
+  nav.links a{text-decoration:none;opacity:.9}
+  nav.links a:hover{opacity:1;text-decoration:underline;text-underline-offset:4px}
+
+  /* Hero: a clay court seen from above, lines drawn in chalk */
+  .hero{position:relative;background:var(--clay);color:var(--line);overflow:hidden;min-height:92vh;display:flex;align-items:flex-end}
+  .hero::before{content:"";position:absolute;inset:0;background:
+    radial-gradient(ellipse at 20% 10%,rgba(255,255,255,.10),transparent 55%),
+    repeating-linear-gradient(90deg,rgba(0,0,0,.035) 0 2px,transparent 2px 7px);}
+  .court{position:absolute;inset:6% 4% 6% 4%;width:92%;height:88%}
+  .court rect,.court line{fill:none;stroke:var(--line);stroke-width:3;opacity:.82}
+  .court .net{stroke-dasharray:3 7;stroke-width:5;opacity:.55}
+  .court .draw{stroke-dasharray:2400;stroke-dashoffset:2400;animation:draw 2.4s cubic-bezier(.6,.1,.2,1) .2s forwards}
+  @keyframes draw{to{stroke-dashoffset:0}}
+  .hero .wrap{position:relative;z-index:2;padding-bottom:9vh;padding-top:120px}
+  .eyebrow{font:600 .78rem/1 "Figtree",sans-serif;letter-spacing:.22em;text-transform:uppercase;opacity:.9}
+  .hero h1{font-family:"Bodoni Moda",serif;font-weight:400;font-size:clamp(2.7rem,7.4vw,6.2rem);line-height:.98;letter-spacing:-.01em;margin:18px 0 22px;max-width:12ch}
+  .hero h1 em{font-style:italic}
+  .hero p.lead{max-width:44ch;font-size:1.15rem;opacity:.95}
+  .ctas{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}
+  .btn{display:inline-flex;align-items:center;gap:10px;padding:15px 24px;border-radius:2px;font-weight:600;text-decoration:none;transition:transform .15s ease,background .15s ease}
+  .btn:hover{transform:translateY(-2px)}
+  .btn-light{background:var(--line);color:var(--green)}
+  .btn-ghost{border:1.5px solid rgba(255,255,255,.7);color:var(--line);background:rgba(20,37,28,.28)}
+  .btn-green{background:var(--green);color:var(--line)}
+  .btn svg{width:18px;height:18px}
+  .score{position:absolute;right:20px;top:110px;z-index:2;background:var(--green);color:var(--line);padding:14px 18px;border-radius:2px;text-align:right;font-size:.85rem}
+  .score b{display:block;font-family:"Bodoni Moda",serif;font-size:2rem;font-weight:400;line-height:1}
+
+  section{padding:96px 0}
+  .split{display:grid;grid-template-columns:1fr 1fr;gap:0}
+  .half{padding:72px 56px;min-height:440px;display:flex;flex-direction:column;justify-content:flex-end}
+  .half h2{font-family:"Bodoni Moda",serif;font-weight:400;font-size:clamp(2rem,4vw,3.1rem);line-height:1.05;margin:14px 0 16px}
+  .half p{max-width:40ch}
+  .half ul{list-style:none;margin-top:22px;display:grid;gap:10px}
+  .half li{display:flex;gap:12px;align-items:baseline}
+  .half li::before{content:"";flex:0 0 22px;height:2px;background:currentColor;transform:translateY(-4px);opacity:.6}
+  .h-events{background:var(--green);color:var(--line)}
+  .h-tennis{background:var(--chalk);color:var(--ink);border-left:1px solid #DCD8CB}
+  .h-tennis .eyebrow{color:var(--clay-2)}
+  .h-events .eyebrow{color:#C9D9CE}
+
+  .voices{background:#EEEBE0}
+  .voices h2{font-family:"Bodoni Moda",serif;font-weight:400;font-size:clamp(1.9rem,3.6vw,2.8rem);max-width:20ch;line-height:1.1}
+  .themes{display:grid;grid-template-columns:repeat(3,1fr);gap:28px;margin-top:44px}
+  .theme{border-top:2px solid var(--green);padding-top:18px}
+  .theme h3{font-family:"Bodoni Moda",serif;font-weight:600;font-size:1.25rem;margin-bottom:6px}
+  .theme p{color:var(--muted)}
+  .note{margin-top:34px;font-size:.9rem;color:var(--muted)}
+  .note a{color:var(--green)}
+
+  .visit .grid{display:grid;grid-template-columns:1.1fr .9fr;gap:56px;align-items:start}
+  .visit h2{font-family:"Bodoni Moda",serif;font-weight:400;font-size:clamp(2rem,4vw,3rem);line-height:1.05;margin-bottom:18px}
+  .hours{width:100%;border-collapse:collapse;font-size:.98rem}
+  .hours td{padding:11px 0;border-bottom:1px solid #DCD8CB}
+  .hours td:last-child{text-align:right;font-variant-numeric:tabular-nums}
+  .hours tr.closed td{color:var(--muted)}
+  .hours tr.today td{font-weight:600;color:var(--clay-2)}
+  .card{background:var(--green);color:var(--line);padding:34px;border-radius:2px}
+  .card p{margin-bottom:12px}
+  .card .small{font-size:.9rem;opacity:.8}
+
+  footer{background:var(--ink);color:#B8C4BC;padding:36px 0 90px;font-size:.88rem}
+  footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+
+  .mockup-pill{position:fixed;left:16px;bottom:16px;z-index:50;background:var(--line);color:var(--green);border:1px solid var(--green);font:600 .76rem/1 "Figtree",sans-serif;letter-spacing:.04em;padding:9px 14px;border-radius:999px;box-shadow:0 4px 18px rgba(0,0,0,.15)}
+  a:focus-visible,.btn:focus-visible{outline:3px solid #F2C14E;outline-offset:3px}
+
+  @media (max-width:860px){
+    nav.links{display:none}
+    .court{opacity:.4}
+    .split,.visit .grid{grid-template-columns:1fr}
+    .half{padding:56px 22px;min-height:0}
+    .h-tennis{border-left:0}
+    .themes{grid-template-columns:1fr}
+    .score{top:auto;bottom:20px;right:20px}
+    .hero .wrap{padding-bottom:120px}
+    section{padding:72px 0}
+  }
+  @media (prefers-reduced-motion:reduce){
+    html{scroll-behavior:auto}
+    .court .draw{animation:none;stroke-dashoffset:0}
+    .btn{transition:none}
+  }
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#inicio">Club Lonquén<small>Maipú</small></a>
+    <nav class="links" aria-label="Secciones">
+      <a href="#eventos">Eventos</a>
+      <a href="#tenis">Tenis</a>
+      <a href="#visitanos">Horario y ubicación</a>
+    </nav>
+  </div>
+</header>
+
+<main id="inicio">
+  <section class="hero" aria-label="Presentación" style="padding:0">
+    <svg class="court" viewBox="0 0 1000 600" preserveAspectRatio="none" aria-hidden="true">
+      <rect class="draw" x="40" y="40" width="920" height="520"/>
+      <line class="draw" x1="40" y1="105" x2="960" y2="105"/>
+      <line class="draw" x1="40" y1="495" x2="960" y2="495"/>
+      <line class="draw" x1="260" y1="105" x2="260" y2="495"/>
+      <line class="draw" x1="740" y1="105" x2="740" y2="495"/>
+      <line class="draw" x1="260" y1="300" x2="740" y2="300"/>
+      <line class="net" x1="500" y1="20" x2="500" y2="580"/>
+    </svg>
+    <div class="score" aria-label="Calificación en Google">
+      <b>4,5</b>547 reseñas en Google
+    </div>
+    <div class="wrap">
+      <p class="eyebrow">Eventos · Matrimonios · Tenis</p>
+      <h1>Su celebración, <em>entre jardines</em> y canchas.</h1>
+      <p class="lead">Un recinto amplio y bien cuidado en Maipú, a pasos del Camino a Melipilla, para matrimonios, celebraciones y para jugar tenis con los amigos.</p>
+      <div class="ctas">
+        <a class="btn btn-light" href="https://wa.me/56957301700?text=Hola%2C%20quisiera%20cotizar%20un%20evento%20en%20Club%20Lonqu%C3%A9n">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm5.3 14.2c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.4-.7-2.8-1.1-4.6-4-4.8-4.2-.1-.2-1.1-1.5-1.1-2.9s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.9 2.1c.1.2.1.4 0 .5l-.4.6-.4.4c-.1.1-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.4 2.4 1.5.3.2.5.1.6 0l.9-1c.2-.3.4-.2.6-.1l2 1c.3.1.5.2.5.3.1.2.1.8-.1 1.4Z"/></svg>
+          Cotizar mi evento
+        </a>
+        <a class="btn btn-ghost" href="tel:+56957301700">Llamar · 9 5730 1700</a>
+      </div>
+    </div>
+  </section>
+
+  <div class="split">
+    <section class="half h-events" id="eventos">
+      <p class="eyebrow">Eventos</p>
+      <h2>Para el día que se recuerda.</h2>
+      <p>Matrimonios y celebraciones en un entorno de jardines que quienes nos visitan describen como hermoso y muy bien mantenido, con un equipo y organizadores atentos a cada detalle.</p>
+      <ul>
+        <li>Matrimonios</li>
+        <li>Celebraciones familiares y de empresa</li>
+        <li>Recinto amplio, fácil de llegar desde el Camino a Melipilla</li>
+      </ul>
+    </section>
+    <section class="half h-tennis" id="tenis">
+      <p class="eyebrow">Tenis</p>
+      <h2>Y entre semana, a la cancha.</h2>
+      <p>Varias canchas para jugar tenis recreativo con amigos, de martes a domingo.</p>
+      <div class="ctas">
+        <a class="btn btn-green" href="https://wa.me/56957301700?text=Hola%2C%20quisiera%20reservar%20una%20cancha%20de%20tenis">Consultar por canchas</a>
+      </div>
+    </section>
+  </div>
+
+  <section class="voices" aria-labelledby="t-voces">
+    <div class="wrap">
+      <p class="eyebrow" style="color:var(--clay-2)">Lo que dicen en Google</p>
+      <h2 id="t-voces">547 reseñas, tres cosas que se repiten.</h2>
+      <div class="themes">
+        <div class="theme"><h3>Entorno</h3><p>Instalaciones excelentes y un lugar hermoso, bien mantenido.</p></div>
+        <div class="theme"><h3>Atención</h3><p>Muy buen servicio del personal y de los organizadores.</p></div>
+        <div class="theme"><h3>Tenis</h3><p>Una buena opción para jugar tenis recreativo, con varias canchas.</p></div>
+      </div>
+      <p class="note">Resumen de las reseñas públicas de la <a href="https://maps.google.com/?cid=3846964237219858481">ficha de Google Maps</a>.</p>
+    </div>
+  </section>
+
+  <section class="visit" id="visitanos">
+    <div class="wrap grid">
+      <div>
+        <p class="eyebrow" style="color:var(--clay-2)">Horario</p>
+        <h2>Abierto de martes a domingo.</h2>
+        <table class="hours" id="hours">
+          <tr data-d="1" class="closed"><td>Lunes</td><td>Cerrado</td></tr>
+          <tr data-d="2"><td>Martes</td><td>9:30 – 22:00</td></tr>
+          <tr data-d="3"><td>Miércoles</td><td>9:30 – 22:00</td></tr>
+          <tr data-d="4"><td>Jueves</td><td>9:30 – 22:00</td></tr>
+          <tr data-d="5"><td>Viernes</td><td>9:30 – 22:00</td></tr>
+          <tr data-d="6"><td>Sábado</td><td>9:00 – 21:00</td></tr>
+          <tr data-d="0"><td>Domingo</td><td>9:00 – 21:00</td></tr>
+        </table>
+      </div>
+      <div class="card">
+        <p class="eyebrow" style="color:#C9D9CE;margin-bottom:16px">Cómo llegar</p>
+        <p class="serif" style="font-size:1.5rem;line-height:1.2">Camino Húsares de La Muerte 25, Maipú</p>
+        <p class="small">Región Metropolitana · Plus code C6X8+8M</p>
+        <div class="ctas">
+          <a class="btn btn-light" href="https://maps.google.com/?cid=3846964237219858481">Abrir en Google Maps</a>
+          <a class="btn btn-ghost" href="https://wa.me/56957301700">WhatsApp</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>Club Lonquén · Maipú, Región Metropolitana</span>
+    <span>WhatsApp y teléfono: +56 9 5730 1700</span>
+  </div>
+</footer>
+
+<div class="mockup-pill" aria-hidden="true">Propuesta de sitio web · mockup</div>
+<script>
+  // Highlight today's row in the hours table.
+  const r = document.querySelector('#hours tr[data-d="' + new Date().getDay() + '"]');
+  if (r) r.classList.add('today');
+</script>
+</body>
+</html>
