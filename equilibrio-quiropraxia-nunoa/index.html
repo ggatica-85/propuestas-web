@@ -1,0 +1,277 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Equilibrio · Quiropraxia y Kinesiología en Ñuñoa</title>
+<meta name="description" content="Quiropraxia, kinesiología y ejercicio terapéutico en Ñuñoa, a pasos del metro Ñuñoa. Tratamiento integral sin fármacos ni cirugías. Agenda por WhatsApp.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..800&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --paper:#F5F7F6;
+    --teal:#0F4C47;
+    --teal-2:#1F7A70;
+    --mint:#D3E8E1;
+    --ink:#14201E;
+    --muted:#4E5F5B;
+    --coral:#D9583B;
+    --line:color-mix(in srgb,var(--teal) 16%,transparent);
+    --gutter:clamp(20px,9vw,140px);
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;background:var(--paper);color:var(--ink);font:400 1.1rem/1.65 "Source Serif 4",Georgia,serif;-webkit-font-smoothing:antialiased}
+  img{max-width:100%;display:block}
+  a{color:inherit}
+  :focus-visible{outline:3px solid var(--coral);outline-offset:3px}
+  .sans{font-family:"Archivo",system-ui,sans-serif}
+  h1,h2,h3{font-family:"Archivo",system-ui,sans-serif;font-stretch:118%;font-weight:750;letter-spacing:-.01em;line-height:1.02;margin:0;color:var(--teal)}
+  .wrap{padding-left:var(--gutter);padding-right:clamp(20px,6vw,96px);max-width:1440px}
+  .label{font-family:"Archivo",sans-serif;font-stretch:100%;font-weight:600;font-size:.78rem;letter-spacing:.16em;text-transform:uppercase;color:var(--teal-2)}
+
+  /* signature: the column that aligns as you scroll */
+  .spine{position:fixed;left:calc(var(--gutter) / 2 - 22px);top:0;bottom:0;width:44px;display:flex;flex-direction:column;justify-content:center;gap:5px;z-index:5;pointer-events:none}
+  .vert{height:clamp(14px,2.4vh,26px);width:var(--w,30px);margin-inline:auto;position:relative;border-radius:7px 7px 10px 10px;background:var(--teal);box-shadow:0 0 0 2px var(--paper);transform:translateX(calc(var(--o) * (1 - var(--p,0)) * 1px)) rotate(calc(var(--r) * (1 - var(--p,0)) * 1deg));transition:transform .25s linear}
+  .vert::after{content:"";position:absolute;left:-7px;right:-7px;top:38%;height:4px;border-radius:3px;background:inherit;box-shadow:0 0 0 2px var(--paper)}
+  .vert.s::after{display:none}
+  .vert.l{background:var(--teal-2)}
+  .vert.s{background:var(--coral)}
+  .disc{display:none}
+
+  header{position:sticky;top:0;z-index:10;background:color-mix(in srgb,var(--paper) 92%,transparent);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+  .nav{display:flex;align-items:center;justify-content:space-between;height:70px;gap:20px}
+  .brand{display:flex;align-items:baseline;gap:10px;text-decoration:none}
+  .brand b{font-family:"Archivo",sans-serif;font-stretch:125%;font-weight:800;font-size:1.35rem;color:var(--teal);letter-spacing:-.01em}
+  .brand span{font-family:"Archivo",sans-serif;font-size:.85rem;color:var(--muted)}
+  .nav ul{display:flex;gap:30px;list-style:none;margin:0;padding:0;font-family:"Archivo",sans-serif;font-size:.95rem;font-weight:500}
+  .nav ul a{text-decoration:none;color:var(--muted)}
+  .nav ul a:hover{color:var(--teal)}
+  .btn{display:inline-flex;align-items:center;gap:10px;font-family:"Archivo",sans-serif;font-weight:650;font-size:1rem;text-decoration:none;background:var(--coral);color:#fff;padding:15px 24px;border-radius:6px;transition:background .2s}
+  .btn:hover{background:var(--teal)}
+  .btn.sm{padding:10px 16px;font-size:.92rem}
+  .btn svg{width:18px;height:18px}
+
+  .hero{display:grid;grid-template-columns:1.2fr .8fr;gap:clamp(28px,5vw,80px);align-items:center;padding-top:clamp(40px,6vw,80px)}
+  .hero h1{font-size:clamp(2.6rem,6.4vw,5.6rem)}
+  .hero h1 i{font-family:"Source Serif 4",serif;font-style:italic;font-weight:400;font-stretch:100%;letter-spacing:-.02em;color:var(--coral)}
+  .hero p{font-size:1.25rem;color:var(--muted);max-width:42ch;margin:28px 0 34px}
+  .hero .meta{display:flex;flex-wrap:wrap;gap:8px 22px;margin-top:28px;font-family:"Archivo",sans-serif;font-size:.92rem;color:var(--muted)}
+  .hero .meta span::before{content:"";display:inline-block;width:7px;height:7px;border-radius:2px;background:var(--teal-2);margin-right:8px;vertical-align:1px}
+  .portrait{position:relative;margin:0}
+  .portrait img{width:100%;aspect-ratio:1/1;max-height:72vh;object-fit:cover;object-position:52% 20%;border-radius:4px;background:#e9ecea}
+  .portrait figcaption{position:absolute;left:-24px;bottom:28px;background:var(--teal);color:#fff;padding:16px 20px;max-width:80%;font-family:"Archivo",sans-serif}
+  .portrait figcaption b{display:block;font-stretch:112%;font-size:1.05rem}
+  .portrait figcaption small{opacity:.8;font-size:.86rem}
+
+  section{padding-top:clamp(80px,10vw,140px)}
+  .approach{display:grid;grid-template-columns:.8fr 1.2fr;gap:clamp(28px,5vw,80px);border-top:1px solid var(--line);padding-top:48px}
+  .approach h2{font-size:clamp(2rem,3.8vw,3.2rem)}
+  .approach .big{font-size:clamp(1.35rem,2.2vw,1.75rem);line-height:1.45;margin:0 0 22px;color:var(--ink)}
+  .approach p{color:var(--muted);margin:0 0 16px;max-width:60ch}
+
+  .services h2{font-size:clamp(2rem,3.8vw,3.2rem);max-width:18ch}
+  .svc{display:grid;grid-template-columns:repeat(3,1fr);gap:0;margin-top:48px;border-top:2px solid var(--teal)}
+  .svc .col{padding:28px 28px 8px 0;border-right:1px solid var(--line)}
+  .svc .col + .col{padding-left:28px}
+  .svc .col:last-child{border-right:0}
+  .svc h3{font-size:1.4rem;margin-bottom:14px}
+  .svc ul{list-style:none;margin:0;padding:0}
+  .svc li{padding:10px 0;border-bottom:1px solid var(--line)}
+  .svc li small{display:block;font-family:"Archivo",sans-serif;color:var(--muted);font-size:.85rem}
+
+  .creds{background:var(--teal);color:#E6F1EE;margin-top:clamp(80px,10vw,140px);padding-block:clamp(56px,7vw,96px)}
+  .creds h2{color:#fff;font-size:clamp(1.8rem,3vw,2.6rem);max-width:22ch}
+  .creds ul{list-style:none;padding:0;margin:36px 0 0;display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+  .creds li{border-top:1px solid color-mix(in srgb,#fff 30%,transparent);padding-top:16px;font-family:"Archivo",sans-serif;font-size:1rem;line-height:1.4}
+  .creds li small{display:block;color:var(--mint);font-size:.82rem;margin-bottom:6px;letter-spacing:.08em;text-transform:uppercase}
+  .creds p{margin:36px 0 0;max-width:62ch;color:var(--mint)}
+
+  .visit{display:grid;grid-template-columns:1fr 1fr;gap:clamp(28px,5vw,80px);padding-bottom:clamp(80px,10vw,140px)}
+  .visit h2{font-size:clamp(2rem,3.8vw,3.2rem)}
+  .visit dl{margin:28px 0 0;display:grid;gap:22px}
+  .visit dt{font-family:"Archivo",sans-serif;font-weight:600;font-size:.78rem;letter-spacing:.16em;text-transform:uppercase;color:var(--teal-2)}
+  .visit dd{margin:4px 0 0;font-size:1.2rem}
+  .booking{background:#fff;border:1px solid var(--line);padding:clamp(28px,4vw,44px);border-radius:4px;align-self:start}
+  .booking h3{font-size:1.8rem}
+  .booking ol{margin:20px 0 28px;padding-left:1.2em;color:var(--muted)}
+  .booking ol li{padding:4px 0}
+  .booking .note{font-size:.95rem;color:var(--muted);margin-top:18px}
+
+  footer{border-top:1px solid var(--line);padding-block:32px 90px;font-family:"Archivo",sans-serif;font-size:.9rem;color:var(--muted);display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
+
+  .mockup-pill{position:fixed;right:16px;bottom:16px;z-index:50;background:var(--ink);color:#fff;font:600 .78rem/1 "Archivo",sans-serif;letter-spacing:.04em;padding:9px 14px;border-radius:999px;opacity:.88}
+
+  @media (max-width:900px){
+    :root{--gutter:20px}
+    .spine{display:none}
+    .nav ul{display:none}
+    .brand span{display:none}
+    .hero,.approach,.visit{grid-template-columns:1fr}
+    .portrait{max-width:440px}
+    .portrait figcaption{left:12px}
+    .svc{grid-template-columns:1fr}
+    .svc .col,.svc .col + .col{padding:24px 0 8px;border-right:0}
+    .creds ul{grid-template-columns:1fr 1fr}
+  }
+  @media (max-width:520px){ .creds ul{grid-template-columns:1fr} }
+  @media (prefers-reduced-motion:reduce){
+    html{scroll-behavior:auto}
+    .vert{transform:none;transition:none}
+  }
+</style>
+</head>
+<body>
+
+<div class="spine" id="spine" aria-hidden="true"></div>
+
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="#inicio"><b>Equilibrio</b><span>Quiropraxia y Kinesiología</span></a>
+    <ul>
+      <li><a href="#enfoque">Enfoque</a></li>
+      <li><a href="#tratamientos">Tratamientos</a></li>
+      <li><a href="#equipo">Formación</a></li>
+      <li><a href="#ubicacion">Ubicación</a></li>
+    </ul>
+    <a class="btn sm" href="https://wa.me/56984706322?text=Hola%2C%20quiero%20reservar%20una%20hora.%20Mi%20nombre%20es%20" target="_blank" rel="noopener">Reservar hora</a>
+  </div>
+</header>
+
+<main id="inicio">
+  <div class="wrap hero">
+    <div>
+      <div class="label">Quiropraxia · Kinesiología · Ejercicio terapéutico</div>
+      <h1 style="margin-top:20px">Tratamos la causa, <i>no solo</i> el dolor.</h1>
+      <p>Un tratamiento integral para recuperar el equilibrio de tu cuerpo, sin fármacos ni cirugías. En Ñuñoa, a pasos del metro.</p>
+      <a class="btn" href="https://wa.me/56984706322?text=Hola%2C%20quiero%20reservar%20una%20hora.%20Mi%20nombre%20es%20" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.4-.7-2.8-1.1-4.6-4-4.8-4.2-.1-.2-1.1-1.5-1.1-2.9s.7-2.1 1-2.4c.3-.3.6-.3.8-.3h.6c.2 0 .4 0 .6.5l.9 2.1c.1.2.1.4 0 .5l-.4.6-.4.5c-.1.1-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.3 2.4 1.5.3.1.5.1.6-.1l.9-1c.2-.3.4-.2.6-.1l2 .9c.3.1.5.2.5.3.1.2.1.7-.1 1.3Z"/></svg>
+        Reservar por WhatsApp
+      </a>
+      <div class="meta"><span>Metro Ñuñoa, Líneas 3 y 6</span><span>Convenio Tarjeta Vecino</span><span>Pago con Transbank</span></div>
+    </div>
+    <figure class="portrait">
+      <img src="assets/hernan.jpg" alt="Hernán Andrés de la Barra Ortiz, kinesiólogo y quiropráctico" width="1400" height="936">
+      <figcaption><b>Hernán Andrés de la Barra Ortiz</b><small>Kinesiólogo · Quiropráctico</small></figcaption>
+    </figure>
+  </div>
+
+  <section id="enfoque">
+    <div class="wrap approach">
+      <h2>Volver al equilibrio</h2>
+      <div>
+        <p class="big">Combinamos quiropraxia, kinesiología y ejercicio terapéutico para restablecer tu bienestar físico, no solo para calmar el síntoma de hoy.</p>
+        <p>Cada tratamiento se elige según tu caso, con un enfoque personalizado y alta dedicación. Además te enseñamos qué está pasando en tu cuerpo y qué hábitos te ayudan a mantener los resultados.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="tratamientos" class="services">
+    <div class="wrap">
+      <div class="label">Tratamientos</div>
+      <h2 style="margin-top:14px">Un plan con las técnicas que tu caso necesita</h2>
+      <div class="svc">
+        <div class="col">
+          <h3>Quiropraxia</h3>
+          <ul>
+            <li>Técnica Diversificada<small>Diversified Technique</small></li>
+            <li>Técnica Sacro Occipital<small>SOT</small></li>
+            <li>Kinesiología Aplicada<small>Applied Kinesiology</small></li>
+            <li>Método Activador<small>Activator Method</small></li>
+          </ul>
+        </div>
+        <div class="col">
+          <h3>Terapias</h3>
+          <ul>
+            <li>Microelectrólisis Percutánea<small>MEP</small></li>
+            <li>Punción seca</li>
+            <li>Electroestimulación y electroterapia</li>
+            <li>Liberación instrumental de tejidos blandos</li>
+            <li>Ventosas<small>Cupping, vacuum therapy</small></li>
+          </ul>
+        </div>
+        <div class="col">
+          <h3>Masaje y ejercicio</h3>
+          <ul>
+            <li>Masaje de relajación y descontracturante</li>
+            <li>Entrenamiento funcional</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="creds" id="equipo">
+    <div class="wrap">
+      <h2>Formación y certificaciones</h2>
+      <ul>
+        <li><small>Miembro</small>Colegio de Quiroprácticos Universitarios de Chile</li>
+        <li><small>Certificación</small>Técnica Sacro Occipital (SOT)</li>
+        <li><small>Certificación</small>Microelectrólisis Percutánea Sport</li>
+        <li><small>Certificación</small>Microelectrólisis Percutánea Beauty</li>
+      </ul>
+      <p>Nuestros profesionales también ejercen la docencia universitaria en pregrado y postgrado, y basan su trabajo clínico en la revisión constante de la evidencia.</p>
+    </div>
+  </div>
+
+  <section id="ubicacion">
+    <div class="wrap visit">
+      <div>
+        <div class="label">Ubicación</div>
+        <h2 style="margin-top:14px">Irarrázaval con Pedro de Valdivia</h2>
+        <dl>
+          <div><dt>Dirección</dt><dd>Av. Irarrázaval 2401, oficina 1214, Ñuñoa</dd></div>
+          <div><dt>Metro</dt><dd>Estación Ñuñoa, combinación Líneas 3 y 6</dd></div>
+          <div><dt>Locomoción</dt><dd>Buses norte-sur y oriente-poniente por ambas avenidas. Estacionamientos en el sector.</dd></div>
+          <div><dt>Teléfono y WhatsApp</dt><dd><a href="tel:+56984706322">+56 9 8470 6322</a></dd></div>
+        </dl>
+      </div>
+      <aside class="booking" aria-labelledby="book-h">
+        <h3 id="book-h">Reserva tu hora</h3>
+        <ol>
+          <li>Escríbenos por WhatsApp con tu nombre y tu problema de salud.</li>
+          <li>Te confirmamos la hora por WhatsApp, teléfono o correo.</li>
+          <li>Ven con ropa cómoda (polera, buzo o calzas).</li>
+        </ol>
+        <a class="btn" href="https://wa.me/56984706322?text=Hola%2C%20quiero%20reservar%20una%20hora.%20Mi%20nombre%20es%20" target="_blank" rel="noopener">Escribir por WhatsApp</a>
+        <p class="note">Convenio con Tarjeta Vecino. Aceptamos pago con Transbank.</p>
+      </aside>
+    </div>
+  </section>
+
+  <footer class="wrap">
+    <span><b style="color:var(--teal)">Equilibrio</b> · Quiropraxia y Kinesiología</span>
+    <span>Av. Irarrázaval 2401, of. 1214, Ñuñoa · +56 9 8470 6322</span>
+  </footer>
+</main>
+
+<div class="mockup-pill" aria-hidden="true">Propuesta de rediseño · mockup</div>
+
+<script>
+  // Build a stylised column: 7 cervical, 12 thoracic, 5 lumbar, sacrum. Each starts slightly out of line
+  // and settles into alignment as the visitor scrolls (--p goes 0 → 1).
+  const spine = document.getElementById('spine');
+  const seq = [...Array(7).fill('c'), ...Array(12).fill('t'), ...Array(5).fill('l'), 's'];
+  const widths = { c: 22, t: 28, l: 36, s: 30 };
+  seq.forEach((k, i) => {
+    const v = document.createElement('div');
+    v.className = 'vert ' + k;
+    const off = Math.sin(i * 1.7) * 9 + Math.cos(i * .6) * 5;
+    v.style.setProperty('--o', off.toFixed(1));
+    v.style.setProperty('--r', (Math.sin(i * 2.3) * 7).toFixed(1));
+    v.style.setProperty('--w', (widths[k] + (k === 't' ? i * .4 : 0)) + 'px');
+    if (k === 's') v.style.height = 'clamp(26px,4vh,44px)';
+    spine.appendChild(v);
+  });
+  const set = () => {
+    const max = document.documentElement.scrollHeight - innerHeight;
+    const p = Math.min(1, (scrollY / Math.max(1, max)) * 1.6);
+    spine.style.setProperty('--p', p.toFixed(3));
+  };
+  if (!matchMedia('(prefers-reduced-motion: reduce)').matches) { addEventListener('scroll', set, { passive: true }); set(); }
+  else spine.style.setProperty('--p', 1);
+</script>
+</body>
+</html>
