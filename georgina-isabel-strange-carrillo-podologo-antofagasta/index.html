@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Georgina Strange · Podología clínica en Antofagasta</title>
+<meta name="description" content="Georgina Strange, podóloga clínica en Antofagasta. Prevención y tratamiento de patologías del pie, con especial atención a pacientes con diabetes y enfermedades cardiovasculares. Reserva tu hora.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Young+Serif&family=Albert+Sans:wght@300;400;500;700&display=swap" rel="stylesheet">
+<style>
+  :root{--sea:#0D5A8C;--sea-d:#0A3F63;--foam:#E3F2F8;--sand:#F3E4C6;--sand-d:#DDBF86;--ink:#0C2233;--muted:#4C6577}
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{font:400 1.05rem/1.65 "Albert Sans",system-ui,sans-serif;color:var(--ink);background:#fff}
+  a{color:inherit}
+  .wrap{max-width:1120px;margin:0 auto;padding:0 22px}
+  .ys{font-family:"Young Serif",Georgia,serif;font-weight:400}
+
+  .hero{background:var(--sea);color:#fff;position:relative;padding-bottom:140px}
+  .bar{display:flex;justify-content:space-between;align-items:center;height:76px}
+  .bar .ys{font-size:1.25rem}
+  .bar a{background:var(--sand);color:var(--sea-d);padding:10px 20px;border-radius:999px;text-decoration:none;font-weight:700;font-size:.9rem}
+  .hero .grid{display:grid;grid-template-columns:1.15fr .85fr;gap:48px;align-items:center;padding-top:34px}
+  .eyebrow{font-size:.76rem;letter-spacing:.26em;text-transform:uppercase;color:#BFE1F0;font-weight:500}
+  .hero h1{font-family:"Young Serif",serif;font-weight:400;font-size:clamp(2.6rem,6vw,4.8rem);line-height:1.02;margin:18px 0 20px}
+  .hero h1 em{font-style:normal;color:var(--sand)}
+  .hero p.lead{max-width:44ch;font-size:1.14rem;color:#D9EDF6}
+  .btns{display:flex;gap:12px;flex-wrap:wrap;margin-top:30px}
+  .btn{display:inline-block;padding:15px 26px;border-radius:999px;font-weight:700;text-decoration:none;transition:transform .15s}
+  .btn:hover{transform:translateY(-2px)}
+  .btn-s{background:var(--sand);color:var(--sea-d)}
+  .btn-o{border:1.5px solid rgba(255,255,255,.6);color:#fff}
+  .btn-b{background:var(--sea);color:#fff}
+  /* Signature: shoreline wave between sea and sand */
+  .wave{position:absolute;left:0;right:0;bottom:-1px;line-height:0}
+  .wave svg{width:100%;height:110px;display:block}
+  .wave path{fill:var(--sand)}
+  .wave .w2{fill:#F8EEDA;opacity:.9;animation:drift 9s ease-in-out infinite alternate}
+  @keyframes drift{to{transform:translateX(-40px)}}
+  .card{background:#fff;color:var(--ink);border-radius:26px;padding:28px;box-shadow:0 22px 50px rgba(5,40,66,.35)}
+  .card h3{font-family:"Young Serif",serif;font-weight:400;font-size:1.3rem;color:var(--sea-d);margin-bottom:6px}
+  .card ul{list-style:none;margin-top:12px}
+  .card li{padding:9px 0;border-top:1px solid #E1ECF1;display:flex;gap:10px}
+  .card li::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--sea);margin-top:.55em;flex:none}
+
+  .sand{background:var(--sand);padding:20px 0 90px}
+  h2{font-family:"Young Serif",serif;font-weight:400;font-size:clamp(1.9rem,4vw,3rem);line-height:1.06;color:var(--sea-d);max-width:20ch}
+  .pillars{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:40px}
+  .pillar{border-top:3px solid var(--sea);padding-top:16px}
+  .pillar .ys{font-size:1.9rem;color:var(--sea-d)}
+  .pillar p{margin-top:6px;color:#3D5668}
+
+  section{padding:84px 0}
+  .care .grid{display:grid;grid-template-columns:1fr 1fr;gap:50px}
+  .care p{font-size:1.08rem;color:#26465A}
+  .care p+p{margin-top:14px}
+  .exp{list-style:none;margin-top:22px}
+  .exp li{padding:12px 0;border-bottom:1px solid #D7E5EC}
+
+  .visit{background:var(--foam)}
+  .visit .grid{display:grid;grid-template-columns:1fr 1fr;gap:52px}
+  table{width:100%;border-collapse:collapse;margin-top:22px}
+  td{padding:11px 0;border-bottom:1px solid #C6DDE8}
+  td:last-child{text-align:right;font-variant-numeric:tabular-nums}
+  tr.today td{color:var(--sea);font-weight:700}
+  .addr{background:var(--sea-d);color:#fff;border-radius:26px;padding:32px}
+  .addr .ys{font-size:1.55rem;line-height:1.2;margin:10px 0 6px}
+
+  footer{background:var(--ink);color:#8FA9B8;padding:26px 0 90px;font-size:.9rem}
+  footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+  .mockup-pill{position:fixed;left:16px;bottom:16px;z-index:50;background:var(--sand);color:var(--sea-d);font:700 .74rem/1 "Albert Sans",sans-serif;padding:9px 14px;border-radius:999px;box-shadow:0 4px 14px rgba(0,0,0,.2)}
+  a:focus-visible{outline:3px solid var(--sand-d);outline-offset:3px}
+
+  @media (max-width:900px){
+    .hero .grid,.care .grid,.visit .grid,.pillars{grid-template-columns:1fr}
+    section{padding:62px 0}
+  }
+  @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.wave .w2{animation:none}.btn{transition:none}}
+</style>
+</head>
+<body>
+<header class="hero" id="inicio">
+  <div class="wrap">
+    <div class="bar"><span class="ys">Georgina Strange · Podología clínica</span><a href="https://www.doctoralia.cl/georgina-isabel-strange-carrillo/podologo/antofagasta">Reservar hora</a></div>
+    <div class="grid">
+      <div>
+        <p class="eyebrow">Podóloga clínica · Antofagasta</p>
+        <h1>Pies sanos para <em>caminar tranquilo.</em></h1>
+        <p class="lead">Prevención y tratamiento de patologías del pie que no requieren cirugía, con especial atención a pacientes con diabetes y enfermedades cardiovasculares.</p>
+        <div class="btns">
+          <a class="btn btn-s" href="https://www.doctoralia.cl/georgina-isabel-strange-carrillo/podologo/antofagasta">Reservar hora</a>
+          <a class="btn btn-o" href="https://wa.me/56986928914?text=Hola%2C%20quiero%20agendar%20una%20hora%20de%20podolog%C3%ADa">WhatsApp</a>
+        </div>
+      </div>
+      <aside class="card" aria-label="Atiende a">
+        <h3>Atención podológica clínica</h3>
+        <p style="color:var(--muted);font-size:.95rem">Con insumos podológicos para tratamientos personalizados.</p>
+        <ul><li>Adultos y niños</li><li>Pie diabético y enfermedades cardiovasculares</li><li>Educación en cuidado preventivo de los pies</li></ul>
+      </aside>
+    </div>
+  </div>
+  <div class="wave" aria-hidden="true"><svg viewBox="0 0 1440 110" preserveAspectRatio="none"><path class="w2" d="M0 60c120-40 240-40 360 0s240 40 360 0 240-40 360 0 240 40 360 0v50H0Z"/><path d="M0 80c140-34 280-34 420 0s280 34 420 0 280-34 420 0 120 14 180 8v22H0Z"/></svg></div>
+</header>
+
+<main>
+  <div class="sand">
+    <div class="wrap">
+      <h2 style="margin-top:56px">Tres ideas guían cada consulta.</h2>
+      <div class="pillars">
+        <div class="pillar"><span class="ys">Prevención</span><p>Educación al paciente sobre el cuidado preventivo de los pies.</p></div>
+        <div class="pillar"><span class="ys">Tratamiento</span><p>Tratamientos efectivos, personalizados e innovadores para patologías del pie sin intervención quirúrgica.</p></div>
+        <div class="pillar"><span class="ys">Compromiso</span><p>Altos estándares éticos y un servicio de calidad, comprometido con el bienestar de cada paciente.</p></div>
+      </div>
+    </div>
+  </div>
+
+  <section class="care" id="sobre-mi">
+    <div class="wrap grid">
+      <div>
+        <h2>Formación clínica, atención cercana.</h2>
+        <p style="margin-top:18px">Soy profesional del área de la salud con formación en Podología Clínica de Nivel Superior (Universidad Pedro de Valdivia), con un enfoque en la promoción, prevención y tratamiento de patologías del pie.</p>
+      </div>
+      <div>
+        <p class="eyebrow" style="color:var(--sea)">Experiencia clínica</p>
+        <ul class="exp">
+          <li>Hospital Regional de Antofagasta · curaciones avanzadas</li>
+          <li>Hospital Regional de Antofagasta · área de amputados</li>
+          <li>Centro médico kinésico integral Kinmaster, Antofagasta</li>
+          <li>Centro de Rehabilitación Galeno, Antofagasta</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="visit" id="visitanos">
+    <div class="wrap grid">
+      <div>
+        <h2>Horario de atención</h2>
+        <table id="hours">
+          <tr data-d="1"><td>Lunes</td><td>9:00 – 19:00</td></tr>
+          <tr data-d="2"><td>Martes</td><td>9:00 – 19:00</td></tr>
+          <tr data-d="3"><td>Miércoles</td><td>9:00 – 19:00</td></tr>
+          <tr data-d="4"><td>Jueves</td><td>9:00 – 19:00</td></tr>
+          <tr data-d="5"><td>Viernes</td><td>9:00 – 19:00</td></tr>
+          <tr data-d="6"><td>Sábado</td><td>9:00 – 14:00</td></tr>
+          <tr data-d="0"><td>Domingo</td><td>Cerrado</td></tr>
+        </table>
+      </div>
+      <div class="addr">
+        <span style="font-size:.76rem;letter-spacing:.22em;text-transform:uppercase;color:#BFE1F0">Consulta</span>
+        <p class="ys">Manuel Antonio Matta 2095, piso 6, oficina 602</p>
+        <p style="color:#BFE1F0">Antofagasta · 133 opiniones en Doctoralia</p>
+        <div class="btns">
+          <a class="btn btn-s" href="https://www.doctoralia.cl/georgina-isabel-strange-carrillo/podologo/antofagasta">Reservar hora</a>
+          <a class="btn btn-o" href="tel:+56986928914">9 8692 8914</a>
+        </div>
+        <p style="margin-top:16px;font-size:.92rem;color:#D9EDF6"><a href="mailto:strange.podologiaclinica@gmail.com">strange.podologiaclinica@gmail.com</a></p>
+      </div>
+    </div>
+  </section>
+</main>
+<footer><div class="wrap"><span>Georgina Strange · Podología clínica · Antofagasta</span><span>+56 9 8692 8914</span></div></footer>
+<div class="mockup-pill" aria-hidden="true">Propuesta de sitio web · mockup</div>
+<script>
+  const r=document.querySelector('#hours tr[data-d="'+new Date().getDay()+'"]');if(r)r.classList.add('today');
+</script>
+</body>
+</html>
