@@ -1,0 +1,213 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Karem's Style · Uñas, cejas, pestañas y cabello en Antofagasta</title>
+<meta name="description" content="Karem's Style en Esmeralda 2265, Antofagasta: uñas, cejas, pestañas, cabello, depilación y limpiezas faciales. Todo lo que buscas en un solo lugar. Reserva en línea.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gilda+Display&family=Hanken+Grotesk:wght@300;400;500;700&display=swap" rel="stylesheet">
+<style>
+  :root{--espresso:#241712;--rose:#C98F7A;--rose-d:#A6705D;--ivory:#FBF3EC;--blush:#F2D9CE;--muted:#7C6558}
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{font:400 1.04rem/1.65 "Hanken Grotesk",system-ui,sans-serif;color:var(--espresso);background:var(--ivory)}
+  a{color:inherit}
+  .wrap{max-width:1140px;margin:0 auto;padding:0 22px}
+  .gd{font-family:"Gilda Display",serif;font-weight:400}
+
+  header.top .wrap{display:flex;justify-content:space-between;align-items:center;height:74px}
+  .brand{font-family:"Gilda Display",serif;font-size:1.5rem;text-decoration:none}
+  .brand i{color:var(--rose-d)}
+  header a.res{text-decoration:none;font-weight:700;font-size:.82rem;letter-spacing:.14em;text-transform:uppercase;border-bottom:2px solid var(--rose)}
+
+  .hero{padding:24px 0 90px}
+  .hero .grid{display:grid;grid-template-columns:1.1fr .9fr;gap:52px;align-items:center}
+  .eyebrow{font-size:.76rem;letter-spacing:.3em;text-transform:uppercase;color:var(--rose-d);font-weight:500}
+  .hero h1{font-family:"Gilda Display",serif;font-weight:400;font-size:clamp(2.8rem,6.4vw,5.3rem);line-height:1;margin:18px 0 22px}
+  .hero h1 em{color:var(--rose-d)}
+  .hero p.lead{max-width:40ch;font-size:1.12rem;color:#4F3B31}
+  .btns{display:flex;gap:12px;flex-wrap:wrap;margin-top:30px}
+  .btn{display:inline-block;padding:15px 26px;text-decoration:none;font-weight:700;letter-spacing:.1em;text-transform:uppercase;font-size:.78rem;transition:transform .15s}
+  .btn:hover{transform:translateY(-2px)}
+  .btn-d{background:var(--espresso);color:var(--ivory)}
+  .btn-o{border:1.5px solid var(--espresso)}
+  /* Signature: arch-shaped photo windows */
+  .arches{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+  .arches img{width:100%;aspect-ratio:3/4.3;object-fit:cover;display:block;border-radius:999px 999px 6px 6px}
+  .arches img:nth-child(2){margin-top:44px}
+  .arches img:nth-child(3){margin-top:-20px}
+
+  .band{background:var(--espresso);color:var(--ivory);padding:22px 0;overflow:hidden}
+  .band .wrap{display:flex;gap:34px;justify-content:center;flex-wrap:wrap;font-family:"Gilda Display",serif;font-size:1.25rem}
+  .band span::before{content:"✦ ";color:var(--rose)}
+
+  section{padding:90px 0}
+  h2{font-family:"Gilda Display",serif;font-weight:400;font-size:clamp(2rem,4.2vw,3.2rem);line-height:1.08;max-width:18ch}
+  .tabs{display:flex;flex-wrap:wrap;gap:8px;margin:32px 0 10px}
+  .tabs button{font:500 .9rem "Hanken Grotesk",sans-serif;padding:10px 20px;border:1.5px solid var(--espresso);background:transparent;border-radius:999px;cursor:pointer;color:var(--espresso)}
+  .tabs button[aria-selected="true"]{background:var(--espresso);color:var(--ivory)}
+  .panel{display:none;max-width:760px}
+  .panel.on{display:block}
+  .row{display:flex;align-items:baseline;gap:12px;padding:12px 0}
+  .row b{font-weight:500}
+  .row small{color:var(--muted);white-space:nowrap}
+  .row i{flex:1;border-bottom:1px dotted #B79A8B;min-width:14px;transform:translateY(-4px)}
+  .row span{font-family:"Gilda Display",serif;font-size:1.15rem;color:var(--rose-d)}
+  .hint{margin-top:18px;color:var(--muted);font-size:.9rem}
+
+  .why{background:var(--blush)}
+  .why .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:28px;margin-top:40px}
+  .why h3{font-family:"Gilda Display",serif;font-weight:400;font-size:1.5rem;margin-bottom:6px}
+  .why p{color:#5A4439}
+
+  .visit .grid{display:grid;grid-template-columns:1fr 1fr;gap:56px}
+  table{width:100%;border-collapse:collapse;margin-top:22px}
+  td{padding:11px 0;border-bottom:1px solid #E5D0C4}
+  td:last-child{text-align:right;font-variant-numeric:tabular-nums}
+  tr.today td{color:var(--rose-d);font-weight:700}
+  .addr{background:var(--espresso);color:var(--ivory);padding:34px}
+  .addr .gd{font-size:1.7rem;line-height:1.15;margin:12px 0 8px}
+
+  footer{border-top:1px solid #E5D0C4;color:var(--muted);padding:28px 0 90px;font-size:.9rem}
+  footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
+  .mockup-pill{position:fixed;left:16px;bottom:16px;z-index:50;background:var(--rose);color:var(--espresso);font:700 .74rem/1 "Hanken Grotesk",sans-serif;padding:9px 14px;border-radius:999px}
+  a:focus-visible,button:focus-visible{outline:3px solid var(--rose-d);outline-offset:3px}
+
+  @media (max-width:880px){
+    .hero .grid,.visit .grid,.why .grid{grid-template-columns:1fr;gap:34px}
+    .arches{max-width:420px}
+    section{padding:64px 0}
+  }
+  @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.btn{transition:none}}
+</style>
+</head>
+<body>
+<header class="top"><div class="wrap"><a class="brand" href="#inicio">Karem's <i>Style</i></a><a class="res" href="https://karemsstyle.setmore.com/">Reservar</a></div></header>
+<main id="inicio">
+  <section class="hero">
+    <div class="wrap grid">
+      <div>
+        <p class="eyebrow">Belleza · Antofagasta</p>
+        <h1>Todo lo que buscas, <em>en un solo lugar.</em></h1>
+        <p class="lead">Uñas, cejas, pestañas, cabello, depilación y limpiezas faciales en Calle Esmeralda. Mira los valores y reserva tu hora en línea.</p>
+        <div class="btns">
+          <a class="btn btn-d" href="https://karemsstyle.setmore.com/">Reservar hora</a>
+          <a class="btn btn-o" href="https://wa.me/56945782133?text=Hola%2C%20quiero%20reservar%20una%20hora%20en%20Karem's%20Style">WhatsApp</a>
+        </div>
+      </div>
+      <div class="arches" aria-label="Trabajos de Karem's Style">
+        <img src="assets/foto1.webp" alt="Uñas esculpidas color nude">
+        <img src="assets/foto3.webp" alt="Cejas laminadas y pestañas">
+        <img src="assets/foto2.webp" alt="Uñas con detalles dorados">
+        <img src="assets/foto4.webp" alt="Extensiones de pestañas">
+      </div>
+    </div>
+  </section>
+  <div class="band"><div class="wrap"><span>Uñas</span><span>Cejas y pestañas</span><span>Cabello</span><span>Depilación</span><span>Rostro</span></div></div>
+
+  <section id="valores">
+    <div class="wrap">
+      <h2>Servicios y valores</h2>
+      <div class="tabs" role="tablist" aria-label="Categorías">
+        <button role="tab" aria-selected="true" data-t="u">Uñas</button>
+        <button role="tab" aria-selected="false" data-t="c">Cejas y pestañas</button>
+        <button role="tab" aria-selected="false" data-t="h">Cabello</button>
+        <button role="tab" aria-selected="false" data-t="d">Depilación</button>
+        <button role="tab" aria-selected="false" data-t="r">Rostro</button>
+      </div>
+      <div class="panel on" id="p-u">
+        <div class="row"><b>Builder gel</b><small>2 h</small><i></i><span>$25.000</span></div>
+        <div class="row"><b>Rubber base</b><small>1 h 30</small><i></i><span>$20.000</span></div>
+        <div class="row"><b>Esmaltado permanente</b><small>1 h 30</small><i></i><span>$15.000</span></div>
+        <div class="row"><b>Soft gel</b><small>2 h</small><i></i><span>$30.000</span></div>
+        <div class="row"><b>Polygel</b><small>2 h</small><i></i><span>$30.000</span></div>
+        <div class="row"><b>Acrílicas</b><small>2 h 30</small><i></i><span>$35.000</span></div>
+        <div class="row"><b>Esculpidas</b><small>2 h 30</small><i></i><span>$35.000</span></div>
+        <div class="row"><b>Pedicure</b><small>1 h</small><i></i><span>$20.000</span></div>
+        <p class="hint">Varios valores dependen del largo y del diseño de las uñas; en su agenda aparecen como rango.</p>
+      </div>
+      <div class="panel" id="p-c">
+        <div class="row"><b>Laminado de cejas</b><small>1 h</small><i></i><span>$20.000</span></div>
+        <div class="row"><b>Pigmentación de cejas con henna</b><small>30 min</small><i></i><span>$12.000</span></div>
+        <div class="row"><b>Lifting de pestañas</b><small>1 h</small><i></i><span>$20.000</span></div>
+        <div class="row"><b>Pestañas de racimo</b><small>1 h</small><i></i><span>$20.000</span></div>
+        <div class="row"><b>Extensiones de pestañas</b><small>2 h</small><i></i><span>$30.000</span></div>
+      </div>
+      <div class="panel" id="p-h">
+        <div class="row"><b>Corte de cabello</b><small>30 min</small><i></i><span>$10.000</span></div>
+        <div class="row"><b>Secado y planchado</b><small>1 h</small><i></i><span>$15.000</span></div>
+        <div class="row"><b>Peinados</b><small>1 h 30</small><i></i><span>$20.000</span></div>
+        <div class="row"><b>Masaje capilar</b><small>1 h 30</small><i></i><span>$25.000</span></div>
+        <div class="row"><b>Alisado de keratina</b><small>2 h</small><i></i><span>$40.000</span></div>
+        <div class="row"><b>Tintura de cabello</b><small>2 h</small><i></i><span>$40.000</span></div>
+        <div class="row"><b>Extensiones de cabello</b><small>2 h</small><i></i><span>$40.000</span></div>
+        <div class="row"><b>Visos, mechas o balayage</b><small>4 h</small><i></i><span>$80.000</span></div>
+      </div>
+      <div class="panel" id="p-d">
+        <div class="row"><b>Cejas</b><small>10 min</small><i></i><span>$5.000</span></div>
+        <div class="row"><b>Bozo</b><small>5 min</small><i></i><span>$2.000</span></div>
+        <div class="row"><b>Rostro</b><small>10 min</small><i></i><span>$7.000</span></div>
+        <div class="row"><b>Axilas</b><small>10 min</small><i></i><span>$6.000</span></div>
+        <div class="row"><b>Media pierna</b><small>15 min</small><i></i><span>$8.000</span></div>
+        <div class="row"><b>Piernas completas</b><small>20 min</small><i></i><span>$13.000</span></div>
+        <div class="row"><b>Rebaje</b><small>30 min</small><i></i><span>$8.000</span></div>
+        <div class="row"><b>Rebaje completo</b><small>30 min</small><i></i><span>$15.000</span></div>
+      </div>
+      <div class="panel" id="p-r">
+        <div class="row"><b>Limpieza facial</b><small>1 h 30</small><i></i><span>$25.000</span></div>
+        <p class="hint">Incluye vapor de ozono, extracción de impurezas, microdermoabrasión, fototerapia, mascarilla hidratante, vitamina C, nutrición con ácido hialurónico y protector solar.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="why">
+    <div class="wrap">
+      <h2>Reserva en minutos</h2>
+      <div class="grid">
+        <div><h3>1. Elige tu servicio</h3><p>Mira duración y valor de cada servicio antes de reservar.</p></div>
+        <div><h3>2. Elige tu horario</h3><p>Abierto de lunes a sábado hasta las 22:00, y el domingo de 10:00 a 18:00.</p></div>
+        <div><h3>3. Llega y relájate</h3><p>Calle Esmeralda 2265, Antofagasta. Si necesitas ayuda, escríbenos por WhatsApp.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="visit" id="visitanos">
+    <div class="wrap grid">
+      <div>
+        <h2>Horario</h2>
+        <table id="hours">
+          <tr data-d="1"><td>Lunes</td><td>9:00 – 22:00</td></tr>
+          <tr data-d="2"><td>Martes</td><td>9:00 – 22:00</td></tr>
+          <tr data-d="3"><td>Miércoles</td><td>9:00 – 22:00</td></tr>
+          <tr data-d="4"><td>Jueves</td><td>9:00 – 22:00</td></tr>
+          <tr data-d="5"><td>Viernes</td><td>9:00 – 22:00</td></tr>
+          <tr data-d="6"><td>Sábado</td><td>9:00 – 22:00</td></tr>
+          <tr data-d="0"><td>Domingo</td><td>10:00 – 18:00</td></tr>
+        </table>
+      </div>
+      <div class="addr">
+        <span style="font-size:.76rem;letter-spacing:.24em;text-transform:uppercase;color:var(--rose)">Visítanos</span>
+        <p class="gd">Calle Esmeralda 2265,<br>Antofagasta</p>
+        <div class="btns">
+          <a class="btn" style="background:var(--rose);color:var(--espresso)" href="https://karemsstyle.setmore.com/">Reservar</a>
+          <a class="btn" style="border:1.5px solid var(--ivory)" href="tel:+56945782133">9 4578 2133</a>
+        </div>
+        <p style="margin-top:18px;font-size:.92rem;color:#E5D0C4">Instagram <a href="https://www.instagram.com/karemsstyle">@karemsstyle</a> · <a href="mailto:karemsstyle@gmail.com">karemsstyle@gmail.com</a></p>
+      </div>
+    </div>
+  </section>
+</main>
+<footer><div class="wrap"><span>Karem's Style · Calle Esmeralda 2265, Antofagasta</span><span>+56 9 4578 2133</span></div></footer>
+<div class="mockup-pill" aria-hidden="true">Propuesta de sitio web · mockup</div>
+<script>
+  document.querySelectorAll('.tabs button').forEach(b=>b.addEventListener('click',()=>{
+    document.querySelectorAll('.tabs button').forEach(x=>x.setAttribute('aria-selected',x===b));
+    document.querySelectorAll('.panel').forEach(p=>p.classList.toggle('on',p.id==='p-'+b.dataset.t));
+  }));
+  const r=document.querySelector('#hours tr[data-d="'+new Date().getDay()+'"]');if(r)r.classList.add('today');
+</script>
+</body>
+</html>
