@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Espacio KINTU · Terapia ocupacional para infancias y adolescencias en Maipú</title>
+<meta name="description" content="Espacio KINTU: terapia ocupacional infanto juvenil con enfoque neuroafirmativo en Maipú. Evaluaciones, integración sensorial y acompañamiento a familias. Agenda en línea.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;700&family=Source+Serif+4:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+<style>
+  :root{--teal:#237A78;--teal-d:#1A5755;--sun:#F6D45C;--coral:#F28B6B;--lilac:#BDA9EA;--cream:#FFFAEE;--ink:#1B3B3A;--muted:#587776}
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{font:400 1.05rem/1.7 "Lexend",system-ui,sans-serif;color:var(--ink);background:var(--cream)}
+  a{color:inherit}
+  .wrap{max-width:1120px;margin:0 auto;padding:0 22px}
+  .ss{font-family:"Source Serif 4",Georgia,serif}
+
+  header.top .wrap{display:flex;justify-content:space-between;align-items:center;height:76px}
+  .brand{font-weight:700;font-size:1.25rem;text-decoration:none;color:var(--teal-d);letter-spacing:.02em}
+  .brand span{display:inline-block;width:14px;height:14px;border-radius:50%;background:var(--coral);margin-right:8px}
+  .top a.res{background:var(--teal);color:#fff;padding:10px 20px;border-radius:999px;text-decoration:none;font-weight:500;font-size:.88rem}
+
+  .hero{position:relative;overflow:hidden;padding:40px 0 100px}
+  /* Signature: slow, soft shapes (calm sensory motion; stops with reduced motion) */
+  .blob{position:absolute;border-radius:62% 38% 55% 45%/48% 58% 42% 52%;filter:blur(2px);opacity:.9;animation:morph 16s ease-in-out infinite alternate}
+  .b1{width:360px;height:340px;background:var(--sun);right:4%;top:6%}
+  .b2{width:240px;height:240px;background:var(--lilac);right:20%;top:42%;animation-delay:-5s}
+  .b3{width:200px;height:210px;background:var(--coral);right:2%;top:52%;animation-delay:-9s}
+  @keyframes morph{50%{border-radius:40% 60% 45% 55%/55% 40% 60% 45%;transform:translate(-14px,10px) rotate(8deg)}100%{border-radius:55% 45% 60% 40%/42% 55% 45% 58%;transform:translate(10px,-12px) rotate(-6deg)}}
+  .hero .in{position:relative;z-index:2;max-width:640px}
+  .eyebrow{font-size:.76rem;letter-spacing:.22em;text-transform:uppercase;color:var(--teal);font-weight:500}
+  .hero h1{font-weight:700;font-size:clamp(2.4rem,5.6vw,4.3rem);line-height:1.08;margin:18px 0 20px;color:var(--teal-d)}
+  .hero h1 em{font-family:"Source Serif 4",serif;font-style:italic;font-weight:400;color:var(--coral)}
+  .hero p.lead{font-size:1.1rem;max-width:44ch;color:#2E5251}
+  .btns{display:flex;gap:12px;flex-wrap:wrap;margin-top:30px}
+  .btn{display:inline-block;padding:15px 26px;border-radius:999px;font-weight:500;text-decoration:none;transition:transform .15s}
+  .btn:hover{transform:translateY(-2px)}
+  .btn-t{background:var(--teal);color:#fff}
+  .btn-o{border:2px solid var(--teal);color:var(--teal-d)}
+  .btn-s{background:var(--sun);color:var(--ink)}
+
+  section{padding:84px 0}
+  h2{font-weight:700;font-size:clamp(1.8rem,3.8vw,2.7rem);line-height:1.12;color:var(--teal-d);max-width:20ch}
+  .esp{background:#fff}
+  .tags{display:flex;flex-wrap:wrap;gap:10px;margin-top:30px}
+  .tags span{background:var(--cream);border:2px solid #E9E0C8;padding:10px 18px;border-radius:999px;font-size:.95rem}
+  .tags span:nth-child(3n+1){border-color:var(--sun)}.tags span:nth-child(3n+2){border-color:var(--lilac)}.tags span:nth-child(3n){border-color:var(--coral)}
+  .team{display:grid;grid-template-columns:1.3fr .7fr;gap:22px;margin-top:38px}
+  .person{background:#fff;border-radius:26px;padding:30px;border:2px solid #EFE6CD}
+  .person h3{font-size:1.35rem;color:var(--teal-d)}
+  .person .role{color:var(--coral);font-weight:500;font-size:.9rem;margin:2px 0 12px}
+  .person p{font-family:"Source Serif 4",serif;font-size:1.04rem;color:#35504F}
+
+  .prices .list{margin-top:34px;display:grid;gap:12px}
+  .pr{display:grid;grid-template-columns:1fr auto;gap:4px 24px;background:#fff;border-radius:20px;padding:18px 24px;border:2px solid #EFE6CD}
+  .pr b{font-weight:500}
+  .pr small{grid-column:1;color:var(--muted)}
+  .pr .m{grid-row:1/3;grid-column:2;font-weight:700;font-size:1.25rem;color:var(--teal-d);align-self:center}
+  .note{margin-top:18px;color:var(--muted);font-size:.9rem}
+
+  .visit{background:var(--teal);color:#fff}
+  .visit h2{color:#fff}
+  .visit .grid{display:grid;grid-template-columns:1fr 1fr;gap:52px}
+  .loc{background:rgba(255,255,255,.12);border-radius:22px;padding:22px 26px;margin-bottom:14px}
+  .loc b{display:block;font-size:1.15rem}
+  .loc span{color:#D6EFEC;font-size:.95rem}
+  .rate{display:flex;align-items:baseline;gap:12px;margin-top:20px}.rate b{font-size:3rem;line-height:1;color:var(--sun)}
+
+  footer{background:#10302F;color:#9DBDBA;padding:26px 0 90px;font-size:.9rem}
+  footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+  .mockup-pill{position:fixed;left:16px;bottom:16px;z-index:50;background:var(--sun);color:var(--ink);font:500 .74rem/1 "Lexend",sans-serif;padding:9px 14px;border-radius:999px}
+  a:focus-visible{outline:3px solid var(--coral);outline-offset:3px}
+
+  @media (max-width:900px){
+    .team,.visit .grid{grid-template-columns:1fr}
+    .b1{width:220px;height:210px;right:-40px;top:2%}.b2{width:150px;height:150px;right:10%;top:62%}.b3{display:none}
+    .hero{padding-bottom:70px}
+    section{padding:62px 0}
+  }
+  @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.blob{animation:none}.btn{transition:none}}
+</style>
+</head>
+<body>
+<header class="top"><div class="wrap"><a class="brand" href="#inicio"><span></span>Espacio KINTU</a><a class="res" href="https://encuadrado.com/centro/espaciokintu">Agendar</a></div></header>
+<main id="inicio">
+  <section class="hero">
+    <div class="blob b1" aria-hidden="true"></div><div class="blob b2" aria-hidden="true"></div><div class="blob b3" aria-hidden="true"></div>
+    <div class="wrap"><div class="in">
+      <p class="eyebrow">Terapia ocupacional · Maipú</p>
+      <h1>Acompañamos a infancias y adolescencias, <em>a su ritmo.</em></h1>
+      <p class="lead">Un espacio terapéutico con enfoque neuroafirmativo, para niñeces y adolescentes que enfrentan desafíos en su vida cotidiana, y para sus familias. Evaluación y atención individual y grupal, presencial u online.</p>
+      <div class="btns">
+        <a class="btn btn-t" href="https://encuadrado.com/centro/espaciokintu">Agendar una hora</a>
+        <a class="btn btn-o" href="https://wa.me/56957519706?text=Hola%2C%20quiero%20consultar%20por%20terapia%20ocupacional%20en%20Espacio%20KINTU">WhatsApp</a>
+      </div>
+    </div></div>
+  </section>
+
+  <section class="esp" id="especialidades">
+    <div class="wrap">
+      <h2>En qué podemos ayudar.</h2>
+      <div class="tags">
+        <span>Terapia ocupacional infanto juvenil</span><span>Neurodivergencias</span><span>Autismo</span><span>Integración sensorial</span><span>Desarrollo psicomotriz y juego</span><span>Comunicación aumentativa y alternativa</span><span>Tecnologías de asistencia</span><span>Enfoque neuroafirmativo</span>
+      </div>
+    </div>
+  </section>
+
+  <section id="equipo">
+    <div class="wrap">
+      <h2>El equipo.</h2>
+      <div class="team">
+        <div class="person">
+          <h3>Danitza Pulgar Mateluna</h3><p class="role">Terapeuta ocupacional</p>
+          <p>Egresada de la Universidad de Chile (2015), magíster en Estrategias Didácticas en el Espectro Autista, con formación avanzada en integración sensorial, desarrollo infantil, juego, diseño universal de aprendizaje y comunicación aumentativa y alternativa. Docente de la Escuela de Terapia Ocupacional de la Universidad de Santiago de Chile y con amplia experiencia en contextos terapéuticos, educación especial, jardines infantiles y colegios.</p>
+        </div>
+        <div class="person">
+          <h3>Sebastián Echagüe Galaz</h3><p class="role">Terapeuta ocupacional</p>
+          <p>Parte del equipo de Espacio KINTU. Conoce su perfil y horarios al agendar en línea.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="prices" id="valores" style="background:#fff">
+    <div class="wrap">
+      <h2>Primeras sesiones y evaluaciones.</h2>
+      <div class="list">
+        <div class="pr"><b>Ingreso y evaluación de terapia ocupacional</b><small>Presencial · 45 min · entrevista al cuidador o cuidadora y sesión de juego</small><span class="m">$32.000</span></div>
+        <div class="pr"><b>Entrevista de orientación (online)</b><small>Terapia ocupacional · 45 min</small><span class="m">$25.000</span></div>
+        <div class="pr"><b>Entrevista de orientación (online)</b><small>Autismo y neurodivergencias · 50 min</small><span class="m">$30.000</span></div>
+        <div class="pr"><b>Evaluación de autismo, incluye ADOS-2 (online)</b><small>60 min</small><span class="m">$100.000</span></div>
+        <div class="pr"><b>Evaluación de neurodivergencia + perfil sensorial</b><small>Presencial · paquete de 4 sesiones de 45 min</small><span class="m">$160.000</span></div>
+        <div class="pr"><b>Reunión con equipo escolar (online)</b><small>45 min</small><span class="m">$32.000</span></div>
+      </div>
+      <p class="note">Valores publicados en su agenda en línea.</p>
+    </div>
+  </section>
+
+  <section class="visit" id="visitanos">
+    <div class="wrap grid">
+      <div>
+        <h2>Cómo llegar.</h2>
+        <div style="margin-top:22px">
+          <div class="loc"><b>Av. Los Pajaritos 999</b><span>Si vienes en transporte público.</span></div>
+          <div class="loc"><b>Alberto Llona 988</b><span>Si vienes en vehículo particular: estacionamiento gratuito.</span></div>
+        </div>
+        <p style="color:#D6EFEC">En colaboración con el Centro Médico y de Diagnóstico Pajaritos, Maipú.</p>
+      </div>
+      <div>
+        <p class="eyebrow" style="color:var(--sun)">Horario y contacto</p>
+        <p style="font-size:1.4rem;font-weight:500;margin:10px 0">Lunes a sábado, 9:00 a 18:30</p>
+        <p><a href="tel:+56957519706">+56 9 5751 9706</a> · <a href="mailto:espaciokintu@gmail.com">espaciokintu@gmail.com</a></p>
+        <div class="rate"><b>5,0</b><span>18 evaluaciones de pacientes</span></div>
+        <div class="btns"><a class="btn btn-s" href="https://encuadrado.com/centro/espaciokintu">Agendar una hora</a></div>
+      </div>
+    </div>
+  </section>
+</main>
+<footer><div class="wrap"><span>Espacio KINTU · Terapias y acompañamiento · Maipú</span><span>+56 9 5751 9706</span></div></footer>
+<div class="mockup-pill" aria-hidden="true">Propuesta de sitio web · mockup</div>
+</body>
+</html>
