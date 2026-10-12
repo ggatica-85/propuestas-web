@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Jardín de la Vida · Consulta psicológica de Darío Infanta, Antofagasta</title>
+<meta name="description" content="Consulta Psicológica Privada Jardín de la Vida: Darío Infanta, psicólogo clínico en Antofagasta. Terapia individual, de pareja y familiar, orientación vocacional. Presencial u online.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gloock&family=Karla:wght@300;400;500;700&display=swap" rel="stylesheet">
+<style>
+  :root{--sun:#E4A11B;--sun-l:#F6D37A;--leaf:#2F4A3A;--leaf-d:#1F3327;--cream:#FBF4E2;--earth:#5A3A1E;--muted:#5F6E62}
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{font:400 1.06rem/1.7 "Karla",system-ui,sans-serif;color:#22301F;background:var(--cream)}
+  a{color:inherit}
+  .wrap{max-width:1100px;margin:0 auto;padding:0 22px}
+  .gl{font-family:"Gloock",Georgia,serif;font-weight:400}
+
+  header.top .wrap{display:flex;justify-content:space-between;align-items:center;height:74px}
+  .brand{font-family:"Gloock",serif;font-size:1.3rem;text-decoration:none;color:var(--leaf)}
+  .top a.res{background:var(--leaf);color:var(--cream);padding:10px 20px;border-radius:999px;text-decoration:none;font-weight:700;font-size:.9rem}
+
+  .hero{padding:30px 0 90px}
+  .hero .grid{display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:center}
+  .eyebrow{font-size:.78rem;letter-spacing:.26em;text-transform:uppercase;color:var(--earth);font-weight:700}
+  .hero h1{font-family:"Gloock",serif;font-weight:400;font-size:clamp(2.7rem,6.2vw,5rem);line-height:1.02;color:var(--leaf-d);margin:18px 0 22px}
+  .hero h1 em{font-style:normal;color:var(--sun)}
+  .hero p.lead{max-width:44ch;font-size:1.14rem;color:#3A4D3B}
+  .btns{display:flex;gap:12px;flex-wrap:wrap;margin-top:30px}
+  .btn{display:inline-block;padding:15px 26px;border-radius:999px;font-weight:700;text-decoration:none;transition:transform .15s}
+  .btn:hover{transform:translateY(-2px)}
+  .btn-s{background:var(--sun);color:var(--leaf-d)}
+  .btn-o{border:2px solid var(--leaf);color:var(--leaf)}
+  /* Signature: a slow-turning sunflower, drawn in SVG */
+  .flower{width:min(420px,84vw);margin:0 auto;aspect-ratio:1;position:relative}
+  .flower svg{width:100%;height:100%;animation:turn 80s linear infinite}
+  @keyframes turn{to{transform:rotate(360deg)}}
+  .stem{position:absolute;left:50%;top:92%;width:10px;height:90px;margin-left:-5px;background:var(--leaf);border-radius:0 0 6px 6px}
+
+  section{padding:86px 0}
+  h2{font-family:"Gloock",serif;font-weight:400;font-size:clamp(1.9rem,4vw,3rem);line-height:1.08;color:var(--leaf-d);max-width:20ch}
+  .quote{background:var(--leaf);color:var(--cream);text-align:center;padding:70px 0}
+  .quote p.q{font-family:"Gloock",serif;font-size:clamp(1.7rem,4vw,2.9rem);line-height:1.15;max-width:22ch;margin:0 auto}
+  .quote small{display:block;margin-top:16px;letter-spacing:.2em;text-transform:uppercase;color:var(--sun-l);font-size:.78rem}
+  .what .grid{display:grid;grid-template-columns:1fr 1fr;gap:54px}
+  .cards{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+  .cardx{background:#fff;border:2px solid #EBDDB6;border-radius:22px;padding:22px}
+  .cardx h3{font-family:"Gloock",serif;font-weight:400;font-size:1.25rem;color:var(--leaf);margin-bottom:4px}
+  .cardx p{font-size:.95rem;color:var(--muted)}
+  .cloud{display:flex;flex-wrap:wrap;gap:9px;margin-top:20px}
+  .cloud span{background:#F3E7C5;padding:7px 16px;border-radius:999px;font-size:.94rem}
+
+  .visit{background:#F3E7C5}
+  .visit .grid{display:grid;grid-template-columns:1fr 1fr;gap:52px;align-items:start}
+  .addr{background:var(--leaf-d);color:var(--cream);border-radius:26px;padding:32px}
+  .addr .gl{font-size:1.5rem;line-height:1.2;margin:10px 0 6px}
+  .facts{list-style:none}
+  .facts li{padding:13px 0;border-bottom:2px solid #E4D3A4;display:flex;gap:14px}
+  .facts b{min-width:7rem;color:var(--earth)}
+
+  footer{background:var(--leaf-d);color:#A9BDAB;padding:26px 0 90px;font-size:.9rem}
+  footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+  .mockup-pill{position:fixed;left:16px;bottom:16px;z-index:50;background:var(--sun);color:var(--leaf-d);font:700 .74rem/1 "Karla",sans-serif;padding:9px 14px;border-radius:999px}
+  a:focus-visible{outline:3px solid var(--sun);outline-offset:3px}
+
+  @media (max-width:900px){
+    .hero .grid,.what .grid,.visit .grid{grid-template-columns:1fr}
+    .stem{display:none}
+    section{padding:62px 0}
+  }
+  @media (max-width:520px){.cards{grid-template-columns:1fr}}
+  @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.flower svg{animation:none}.btn{transition:none}}
+</style>
+</head>
+<body>
+<header class="top"><div class="wrap"><a class="brand" href="#inicio">Jardín de la Vida</a><a class="res" href="https://www.doctoralia.cl/dario-alfonso-infanta-rumie/psicologo/antofagasta">Reservar hora</a></div></header>
+<main id="inicio">
+  <section class="hero">
+    <div class="wrap grid">
+      <div>
+        <p class="eyebrow">Consulta psicológica privada · Antofagasta</p>
+        <h1>Un lugar para <em>volver a florecer.</em></h1>
+        <p class="lead">Terapia individual, de pareja y familiar, y orientación vocacional, con la disposición de escuchar tus necesidades y resolver tus dudas. Presencial en Antofagasta u online.</p>
+        <div class="btns">
+          <a class="btn btn-s" href="https://www.doctoralia.cl/dario-alfonso-infanta-rumie/psicologo/antofagasta">Reservar hora</a>
+          <a class="btn btn-o" href="mailto:psicojardindelavida@darioinfanta.cl">Escribir un correo</a>
+        </div>
+      </div>
+      <div class="flower" aria-hidden="true"><svg id="sun" viewBox="-100 -100 200 200"></svg><span class="stem"></span></div>
+    </div>
+  </section>
+
+  <section class="quote">
+    <div class="wrap">
+      <p class="q">«Puedes ser, cada vez, mejor persona.»</p>
+      <small>Darío Infanta Rumié · Psicólogo, mención clínica</small>
+    </div>
+  </section>
+
+  <section class="what" id="atencion">
+    <div class="wrap grid">
+      <div>
+        <h2>Qué ofrece la consulta.</h2>
+        <div class="cloud"><span>Psicología clínica</span><span>Terapia de pareja</span><span>Terapia familiar</span><span>Orientación vocacional</span></div>
+        <p style="margin-top:24px;color:#3A4D3B">Atiende a adultos y niños, de forma presencial y por videoconsulta.</p>
+      </div>
+      <div>
+        <p class="eyebrow" style="margin-bottom:14px">Temas que se tratan</p>
+        <div class="cards">
+          <div class="cardx"><h3>Emociones</h3><p>Ansiedad, angustia, estrés, depresión, duelos y trastornos del ánimo.</p></div>
+          <div class="cardx"><h3>Miedos y fobias</h3><p>Agorafobia, fobia social y otras fobias.</p></div>
+          <div class="cardx"><h3>Conducta y aprendizaje</h3><p>Trastornos de la conducta y del aprendizaje; problemas con los hijos.</p></div>
+          <div class="cardx"><h3>Autoestima y alimentación</h3><p>Autoestima, anorexia, bulimia y otros trastornos de la conducta alimentaria.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="visit" id="visitanos">
+    <div class="wrap grid">
+      <div>
+        <h2>Quién atiende.</h2>
+        <ul class="facts" style="margin-top:22px">
+          <li><b>Profesional</b><span>Darío Alfonso Infanta Rumié, psicólogo</span></li>
+          <li><b>Formación</b><span>Psicólogo, mención clínica · Universidad Central de Chile</span></li>
+          <li><b>Consulta</b><span>Consulta Psicológica Privada Jardín de la Vida</span></li>
+          <li><b>Opiniones</b><span>16 opiniones de pacientes en Doctoralia</span></li>
+        </ul>
+      </div>
+      <div class="addr">
+        <span style="font-size:.76rem;letter-spacing:.22em;text-transform:uppercase;color:var(--sun-l)">Consulta</span>
+        <p class="gl">14 de Febrero 2065, depto. 807</p>
+        <p style="color:#C9D8CB">Antofagasta · también atención online</p>
+        <div class="btns">
+          <a class="btn btn-s" href="https://www.doctoralia.cl/dario-alfonso-infanta-rumie/psicologo/antofagasta">Reservar hora</a>
+        </div>
+        <p style="margin-top:16px;font-size:.92rem"><a href="mailto:psicojardindelavida@darioinfanta.cl" style="color:var(--sun-l)">psicojardindelavida@darioinfanta.cl</a></p>
+      </div>
+    </div>
+  </section>
+</main>
+<footer><div class="wrap"><span>Jardín de la Vida · Consulta psicológica · Antofagasta</span><span>psicojardindelavida@darioinfanta.cl</span></div></footer>
+<div class="mockup-pill" aria-hidden="true">Propuesta de sitio web · mockup</div>
+<script>
+  // Sunflower: two rings of petals around a seeded disc.
+  const s=document.getElementById('sun');let h='';
+  for(let i=0;i<24;i++){h+=`<ellipse cx="0" cy="-62" rx="14" ry="38" fill="#E4A11B" transform="rotate(${i*15})"/>`}
+  for(let i=0;i<24;i++){h+=`<ellipse cx="0" cy="-56" rx="11" ry="32" fill="#F6C443" transform="rotate(${i*15+7.5})"/>`}
+  h+='<circle r="36" fill="#5A3A1E"/><circle r="30" fill="#7A4F27"/>';
+  for(let i=0;i<60;i++){const a=i*2.399,r=3.6*Math.sqrt(i);h+=`<circle cx="${(Math.cos(a)*r).toFixed(1)}" cy="${(Math.sin(a)*r).toFixed(1)}" r="1.6" fill="#3A2412"/>`}
+  s.innerHTML=h;
+</script>
+</body>
+</html>
