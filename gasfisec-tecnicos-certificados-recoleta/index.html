@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>GasfiSEC · Gasfitería y gas con técnicos certificados SEC en Santiago</title>
+<meta name="description" content="GasfiSEC: empresa familiar con más de 10 años en instalaciones sanitarias y de gas. Calefones, cocinas, red de agua y gas, limpieza de cañerías y soldaduras. Técnicos certificados SEC.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@500;700;800&family=Public+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{--blue:#0B3C7A;--blue-d:#072A57;--flame:#F26B1D;--flame-l:#FFA866;--steel:#E8EDF3;--ink:#10202F;--muted:#5A6B7C}
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{font:400 1.05rem/1.6 "Public Sans",system-ui,sans-serif;color:var(--ink);background:#fff}
+  a{color:inherit}
+  .wrap{max-width:1120px;margin:0 auto;padding:0 22px}
+  .sc{font-family:"Saira Condensed",sans-serif;text-transform:uppercase}
+
+  .hero{background:var(--blue);color:#fff;padding-bottom:90px;position:relative;overflow:hidden}
+  .hero::before{content:"";position:absolute;inset:0;background:repeating-linear-gradient(90deg,rgba(255,255,255,.04) 0 2px,transparent 2px 60px)}
+  .bar{display:flex;justify-content:space-between;align-items:center;height:76px;position:relative}
+  .brand{font-family:"Saira Condensed",sans-serif;font-weight:800;font-size:1.8rem;text-transform:uppercase;letter-spacing:.04em}
+  .brand span{color:var(--flame)}
+  .bar a.tel{font-weight:600;text-decoration:none;background:var(--flame);color:#fff;padding:10px 18px;border-radius:6px;font-size:.92rem}
+  .hero .grid{display:grid;grid-template-columns:1.2fr .8fr;gap:44px;align-items:center;padding-top:30px;position:relative}
+  .hero h1{font-family:"Saira Condensed",sans-serif;font-weight:800;text-transform:uppercase;font-size:clamp(3rem,8vw,6.4rem);line-height:.9}
+  .hero h1 em{font-style:normal;color:var(--flame)}
+  .hero p.lead{max-width:42ch;font-size:1.14rem;color:#CFDDF0;margin:22px 0 28px}
+  .btns{display:flex;gap:12px;flex-wrap:wrap}
+  .btn{display:inline-flex;align-items:center;padding:15px 24px;border-radius:6px;font-weight:600;text-decoration:none;transition:transform .15s}
+  .btn:hover{transform:translateY(-2px)}
+  .btn-f{background:var(--flame);color:#fff}
+  .btn-o{border:2px solid rgba(255,255,255,.55);color:#fff}
+  .btn-b{background:var(--blue);color:#fff}
+  /* Signature: SEC certification seal */
+  .seal{width:min(320px,76vw);aspect-ratio:1;margin:0 auto;border-radius:50%;border:6px solid var(--flame);display:grid;place-items:center;text-align:center;position:relative;background:radial-gradient(circle,var(--blue-d),var(--blue));box-shadow:0 0 0 10px rgba(242,107,29,.18)}
+  .seal::before{content:"";position:absolute;inset:14px;border-radius:50%;border:2px dashed rgba(255,255,255,.4)}
+  .seal b{display:block;font-family:"Saira Condensed",sans-serif;font-weight:800;font-size:5.4rem;line-height:.9;color:var(--flame)}
+  .seal span{display:block;font-family:"Saira Condensed",sans-serif;text-transform:uppercase;font-size:1.25rem;letter-spacing:.08em;line-height:1.2;padding:0 26px}
+
+  section{padding:84px 0}
+  h2{font-family:"Saira Condensed",sans-serif;font-weight:800;text-transform:uppercase;font-size:clamp(2.2rem,4.8vw,3.6rem);line-height:.98;color:var(--blue)}
+  .lines{display:grid;grid-template-columns:1fr 1fr;gap:56px;margin-top:40px;align-items:start}
+  /* Pipe run: services hang off a water (blue) and gas (orange) line */
+  .pipe{list-style:none;position:relative;padding-left:56px}
+  .pipe::before{content:"";position:absolute;left:14px;top:8px;bottom:8px;width:12px;border-radius:6px;background:linear-gradient(90deg,var(--blue) 0 50%,var(--flame) 50% 100%)}
+  .pipe li{position:relative;padding:14px 0 14px 8px;font-weight:600;font-size:1.12rem;border-bottom:1px solid var(--steel)}
+  .pipe li::before{content:"";position:absolute;left:-46px;top:50%;width:32px;height:32px;margin-top:-16px;border-radius:50%;background:#fff;border:6px solid var(--blue)}
+  .pipe li:nth-child(even)::before{border-color:var(--flame)}
+  .pipe li::after{content:"";position:absolute;left:-18px;top:50%;width:18px;height:6px;margin-top:-3px;background:var(--steel)}
+  .pipe small{display:block;color:var(--muted);font-weight:400;font-size:.92rem}
+  .fam{background:var(--steel);border-radius:6px;padding:32px;border-left:8px solid var(--flame)}
+  .fam p{font-size:1.1rem;color:#243A52}
+  .fam .big{font-family:"Saira Condensed",sans-serif;font-weight:800;font-size:3.6rem;line-height:1;color:var(--blue);margin-bottom:8px}
+
+  .visit{background:var(--steel)}
+  .visit .grid{display:grid;grid-template-columns:1fr 1fr;gap:52px}
+  table{width:100%;border-collapse:collapse;margin-top:20px}
+  td{padding:11px 0;border-bottom:1px solid #CBD6E2}
+  td:last-child{text-align:right;font-variant-numeric:tabular-nums}
+  tr.today td{color:var(--flame);font-weight:700}
+  .addr{background:var(--blue-d);color:#fff;border-radius:6px;padding:32px}
+  .addr .sc{font-weight:800;font-size:2rem;line-height:1.05;margin:8px 0}
+  .rate{display:flex;align-items:baseline;gap:12px;margin-top:14px}.rate b{font:800 3rem/1 "Saira Condensed";color:var(--flame-l)}
+
+  footer{background:var(--ink);color:#8FA2B6;padding:26px 0 90px;font-size:.9rem}
+  footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+  .mockup-pill{position:fixed;left:16px;bottom:16px;z-index:50;background:var(--flame);color:#fff;font:600 .74rem/1 "Public Sans",sans-serif;padding:9px 14px;border-radius:999px}
+  a:focus-visible{outline:3px solid var(--flame);outline-offset:3px}
+
+  @media (max-width:900px){
+    .hero .grid,.lines,.visit .grid{grid-template-columns:1fr}
+    section{padding:62px 0}
+  }
+  @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.btn{transition:none}}
+</style>
+</head>
+<body>
+<header class="hero" id="inicio">
+  <div class="wrap">
+    <div class="bar"><span class="brand">Gasfi<span>SEC</span></span><a class="tel" href="tel:+56967963062">+56 9 6796 3062</a></div>
+    <div class="grid">
+      <div>
+        <h1>Gasfitería y gas con <em>técnicos certificados.</em></h1>
+        <p class="lead">Empresa familiar con más de 10 años de experiencia en instalaciones sanitarias y de gas. Calefones, cocinas, red de agua y gas, y más.</p>
+        <div class="btns">
+          <a class="btn btn-f" href="https://wa.me/56967963062?text=Hola%2C%20necesito%20un%20servicio%20de%20gasfiter%C3%ADa%20o%20gas">Pedir presupuesto por WhatsApp</a>
+          <a class="btn btn-o" href="https://revueltijoartistic.wixsite.com/gasfisec">Reservar en línea</a>
+        </div>
+      </div>
+      <div class="seal" role="img" aria-label="Técnicos certificados por la SEC"><div><b>SEC</b><span>Técnicos<br>certificados</span></div></div>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section id="servicios">
+    <div class="wrap">
+      <h2>Nuestros servicios</h2>
+      <div class="lines">
+        <ul class="pipe">
+          <li>Instalación de calefones</li>
+          <li>Cocinas y encimeras</li>
+          <li>Red de agua y gas</li>
+          <li>Limpieza de cañerías</li>
+          <li>Soldaduras en estaño y plata</li>
+        </ul>
+        <div class="fam">
+          <div class="big">+10 años</div>
+          <p>Somos una empresa familiar en el rubro de las instalaciones sanitarias y de gas. Nuestro personal es altamente calificado y está certificado por la SEC, la Superintendencia de Electricidad y Combustibles, para asesorarte bien en tus proyectos.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="visit" id="visitanos">
+    <div class="wrap grid">
+      <div>
+        <h2>Horario de servicio</h2>
+        <table id="hours">
+          <tr data-d="1"><td>Lunes</td><td>9:00 – 18:00</td></tr>
+          <tr data-d="2"><td>Martes</td><td>9:00 – 18:00</td></tr>
+          <tr data-d="3"><td>Miércoles</td><td>9:00 – 18:00</td></tr>
+          <tr data-d="4"><td>Jueves</td><td>9:00 – 18:00</td></tr>
+          <tr data-d="5"><td>Viernes</td><td>9:00 – 18:00</td></tr>
+          <tr data-d="6"><td>Sábado</td><td>10:00 – 14:00</td></tr>
+          <tr data-d="0"><td>Domingo</td><td>Cerrado</td></tr>
+        </table>
+      </div>
+      <div class="addr">
+        <span style="font-size:.78rem;letter-spacing:.2em;text-transform:uppercase;color:var(--flame-l)">Contacto</span>
+        <p class="sc">Recoleta, Santiago</p>
+        <div class="rate"><b>4,8</b><span>en Google, con 118 reseñas</span></div>
+        <div class="btns" style="margin-top:20px">
+          <a class="btn btn-f" href="https://wa.me/56967963062">WhatsApp</a>
+          <a class="btn btn-o" href="tel:+56967963062">Llamar</a>
+        </div>
+        <p style="margin-top:18px;font-size:.92rem;color:#CFDDF0"><a href="mailto:gasfisec@gmail.com">gasfisec@gmail.com</a> · <a href="https://www.facebook.com/gasfisec">Facebook</a></p>
+      </div>
+    </div>
+  </section>
+</main>
+<footer><div class="wrap"><span>GasfiSEC · Gasfitería y gas · Recoleta, Santiago</span><span>+56 9 6796 3062</span></div></footer>
+<div class="mockup-pill" aria-hidden="true">Propuesta de sitio web · mockup</div>
+<script>
+  const r=document.querySelector('#hours tr[data-d="'+new Date().getDay()+'"]');if(r)r.classList.add('today');
+</script>
+</body>
+</html>
