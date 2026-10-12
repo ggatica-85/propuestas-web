@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Elite Barber Shop · Barbería en Antofagasta</title>
+<meta name="description" content="Elite Barber Shop en José Miguel Carrera 1727, Antofagasta: cortes, ritual de barba y limpieza facial profunda. Reserva tu hora en línea.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Manrope:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{--black:#0A0907;--coal:#15120E;--gold:#C9A24B;--gold-2:#E6C677;--bone:#EFE7D6;--muted:#9A917D}
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{font:300 1.04rem/1.65 "Manrope",system-ui,sans-serif;color:var(--bone);background:var(--black)}
+  a{color:inherit}
+  .wrap{max-width:1160px;margin:0 auto;padding:0 22px}
+  .cz{font-family:"Cinzel",serif;letter-spacing:.06em}
+  .rule{height:1px;background:linear-gradient(90deg,transparent,var(--gold),transparent);border:0}
+
+  header.top .wrap{display:flex;justify-content:space-between;align-items:center;height:78px}
+  .brand{display:flex;align-items:center;gap:12px;text-decoration:none}
+  .brand img{width:46px;height:46px;border-radius:50%;border:1px solid var(--gold)}
+  .brand span{font-family:"Cinzel",serif;font-weight:600;letter-spacing:.18em;font-size:.95rem}
+  nav a{margin-left:26px;text-decoration:none;font-size:.82rem;letter-spacing:.16em;text-transform:uppercase;color:var(--muted)}
+  nav a:hover{color:var(--gold-2)}
+
+  .hero{padding:34px 0 90px}
+  .hero .grid{display:grid;grid-template-columns:1fr 1.15fr;gap:56px;align-items:center}
+  .eyebrow{font-size:.74rem;letter-spacing:.34em;text-transform:uppercase;color:var(--gold)}
+  .hero h1{font-family:"Cinzel",serif;font-weight:600;font-size:clamp(2.6rem,6vw,5rem);line-height:1.02;margin:20px 0 22px;color:var(--bone)}
+  .hero h1 em{font-style:normal;color:var(--gold-2)}
+  .hero p.lead{max-width:40ch;color:#CFC6B2;font-size:1.1rem}
+  .btns{display:flex;gap:12px;flex-wrap:wrap;margin-top:32px}
+  .btn{display:inline-block;padding:16px 28px;text-decoration:none;letter-spacing:.16em;text-transform:uppercase;font-size:.78rem;font-weight:600;transition:background .2s,color .2s,transform .2s}
+  .btn:hover{transform:translateY(-2px)}
+  .btn-gold{background:var(--gold);color:var(--black)}
+  .btn-gold:hover{background:var(--gold-2)}
+  .btn-line{border:1px solid var(--gold);color:var(--gold-2)}
+  .btn-line:hover{background:rgba(201,162,75,.12)}
+
+  /* Signature: three framed portraits, gold hairline frames offset like a barber's mirror */
+  .tri{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+  .tri figure{position:relative}
+  .tri figure::after{content:"";position:absolute;inset:-7px 7px 7px -7px;border:1px solid var(--gold);z-index:0;opacity:.7}
+  .tri img{position:relative;z-index:1;width:100%;aspect-ratio:3/4.4;object-fit:cover;object-position:50% 25%;display:block;filter:saturate(.92) contrast(1.04)}
+  .tri figure:nth-child(2){margin-top:34px}
+
+  section{padding:96px 0}
+  h2{font-family:"Cinzel",serif;font-weight:600;font-size:clamp(1.9rem,4vw,3rem);line-height:1.08}
+  .carta .head{display:flex;justify-content:space-between;align-items:end;gap:20px;flex-wrap:wrap;margin-bottom:46px}
+  .carta .head p{max-width:34ch;color:var(--muted)}
+  .menu{display:grid;grid-template-columns:1fr 1fr;gap:0 64px}
+  .menu h3{font-family:"Cinzel",serif;font-weight:400;font-size:.95rem;letter-spacing:.28em;text-transform:uppercase;color:var(--gold);margin:34px 0 10px}
+  .menu h3:first-child{margin-top:0}
+  .it{display:flex;align-items:baseline;gap:10px;padding:9px 0}
+  .it b{font-weight:500;color:var(--bone)}
+  .it small{color:var(--muted);font-size:.8rem;white-space:nowrap}
+  .it i{flex:1;border-bottom:1px dotted #5C5441;transform:translateY(-4px);min-width:16px}
+  .it span{font-family:"Cinzel",serif;color:var(--gold-2);font-weight:600}
+  .pack{grid-column:1/-1;border:1px solid var(--gold);padding:30px 34px;margin-bottom:30px;background:linear-gradient(135deg,rgba(201,162,75,.12),transparent 60%);display:grid;grid-template-columns:1fr auto;gap:10px 30px;align-items:center}
+  .pack .cz{font-size:1.5rem;color:var(--gold-2)}
+  .pack p{color:#CFC6B2;grid-column:1}
+  .pack .pr{font-family:"Cinzel",serif;font-size:2.2rem;color:var(--gold-2);grid-row:1/3;grid-column:2}
+  .note{margin-top:30px;color:var(--muted);font-size:.86rem}
+
+  .quad{background:var(--coal)}
+  .quad .row{display:grid;grid-template-columns:1.1fr .9fr;gap:60px;align-items:center}
+  .quad img{width:100%;max-height:560px;object-fit:cover;object-position:50% 20%}
+  .rate{display:flex;align-items:baseline;gap:14px;margin:24px 0}
+  .rate b{font-family:"Cinzel",serif;font-size:4.4rem;line-height:1;color:var(--gold-2);font-weight:600}
+
+  .visit .grid{display:grid;grid-template-columns:1fr 1fr;gap:60px}
+  table{width:100%;border-collapse:collapse;margin-top:24px}
+  td{padding:12px 0;border-bottom:1px solid #2B261C}
+  td:last-child{text-align:right;font-variant-numeric:tabular-nums}
+  tr.today td{color:var(--gold-2);font-weight:500}
+  .where .cz{font-size:1.5rem;margin:14px 0 6px}
+
+  footer{border-top:1px solid #2B261C;color:var(--muted);padding:30px 0 96px;font-size:.88rem}
+  footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+  .mockup-pill{position:fixed;left:16px;bottom:16px;z-index:50;background:var(--gold);color:var(--black);font:600 .74rem/1 "Manrope",sans-serif;letter-spacing:.06em;padding:9px 14px;border-radius:999px}
+  a:focus-visible{outline:2px solid var(--gold-2);outline-offset:4px}
+
+  @media (max-width:900px){
+    nav{display:none}
+    .hero .grid,.quad .row,.visit .grid{grid-template-columns:1fr;gap:36px}
+    .menu{grid-template-columns:1fr}
+    .pack{grid-template-columns:1fr}.pack .pr{grid-row:auto;grid-column:1}
+    .tri figure:nth-child(2){margin-top:20px}
+    section{padding:70px 0}
+  }
+  @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.btn{transition:none}}
+</style>
+</head>
+<body>
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#inicio"><img src="assets/logo.webp" alt="Logo Elite Barber Shop"><span>ELITE BARBER SHOP</span></a>
+    <nav><a href="#carta">Carta</a><a href="#visitanos">Horario</a><a href="https://elitebarbershop24.setmore.com/">Reservar</a></nav>
+  </div>
+</header>
+<main id="inicio">
+  <section class="hero">
+    <div class="wrap grid">
+      <div>
+        <p class="eyebrow">Barbería · Antofagasta</p>
+        <h1>Corte de caballero.<br><em>Ritual de barba.</em></h1>
+        <p class="lead">Cortes a tijera o navaja, ritual de barba con toalla caliente y limpieza facial profunda, con productos de primera línea. Reserva tu hora en línea.</p>
+        <div class="btns">
+          <a class="btn btn-gold" href="https://elitebarbershop24.setmore.com/">Reservar hora</a>
+          <a class="btn btn-line" href="https://wa.me/56996987587?text=Hola%2C%20quiero%20reservar%20una%20hora%20en%20Elite%20Barber%20Shop">WhatsApp</a>
+        </div>
+      </div>
+      <div class="tri" aria-label="Trabajos de Elite Barber Shop">
+        <figure><img src="assets/foto1.webp" alt="Corte degradado de perfil" loading="eager"></figure>
+        <figure><img src="assets/foto2.webp" alt="Corte con raya lateral y degradado"></figure>
+        <figure><img src="assets/foto3.webp" alt="Corte degradado con diseño"></figure>
+      </div>
+    </div>
+  </section>
+  <hr class="rule">
+
+  <section class="carta" id="carta">
+    <div class="wrap">
+      <div class="head"><div><p class="eyebrow">La carta</p><h2>Servicios y valores</h2></div><p>Valores publicados en su agenda en línea; algunos varían según densidad y largo del cabello.</p></div>
+      <div class="menu">
+        <div class="pack">
+          <div><span class="cz">Pack Premium Deluxe</span></div>
+          <div class="pr">$50.000</div>
+          <p>1 h 20 min · Corte, ritual de barba, limpieza facial profunda, depilación de orejas y/o nariz y masaje.</p>
+        </div>
+        <div>
+          <h3>Corte y barba</h3>
+          <div class="it"><b>Corte de cabello</b><small>30 min</small><i></i><span>$18.000</span></div>
+          <div class="it"><b>Corte pura tijera / navaja</b><small>45 min</small><i></i><span>$20.000</span></div>
+          <div class="it"><b>Corte y barba exprés</b><small>1 h</small><i></i><span>$30.000</span></div>
+          <div class="it"><b>Corte y ritual de barba</b><small>1 h</small><i></i><span>$35.000</span></div>
+          <div class="it"><b>Corte y rasurado de barba</b><small>45 min</small><i></i><span>$25.000</span></div>
+          <div class="it"><b>Corte + planchado</b><small>1 h 20</small><i></i><span>$25.000</span></div>
+        </div>
+        <div>
+          <h3>Rostro y cuidado</h3>
+          <div class="it"><b>Limpieza facial profunda</b><small>40 min</small><i></i><span>$20.000</span></div>
+          <div class="it"><b>Corte y limpieza facial</b><small>1 h</small><i></i><span>$35.000</span></div>
+          <div class="it"><b>Barba y limpieza facial</b><small>1 h</small><i></i><span>$35.000</span></div>
+          <div class="it"><b>Masaje capilar</b><small>45 min</small><i></i><span>$30.000</span></div>
+          <h3>Color y tratamientos</h3>
+          <div class="it"><b>Botox capilar (desde)</b><small>1 h 30</small><i></i><span>$40.000</span></div>
+          <div class="it"><b>Platinado</b><small>3 h 30</small><i></i><span>$100.000</span></div>
+        </div>
+      </div>
+      <p class="note">También: corte de dama y niña, alisados, tinturas y visos. Consulta el detalle al reservar.</p>
+    </div>
+  </section>
+
+  <section class="quad">
+    <div class="wrap row">
+      <img src="assets/foto4.webp" alt="Corte de cabello rizado visto de espalda, en el local">
+      <div>
+        <p class="eyebrow">En Google</p>
+        <div class="rate"><b>5,0</b><span>162 reseñas</span></div>
+        <h2>Una barbería donde se reserva y se llega a la hora.</h2>
+        <p style="margin-top:18px;color:#CFC6B2">Elige tu servicio, el horario que te acomoda y confirma en línea. Sin vueltas.</p>
+        <div class="btns"><a class="btn btn-gold" href="https://elitebarbershop24.setmore.com/">Reservar hora</a></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="visit" id="visitanos">
+    <div class="wrap grid">
+      <div>
+        <p class="eyebrow">Horario</p>
+        <h2>Lunes a sábado</h2>
+        <table id="hours">
+          <tr data-d="1"><td>Lunes</td><td>10:00 – 20:00</td></tr>
+          <tr data-d="2"><td>Martes</td><td>10:00 – 20:00</td></tr>
+          <tr data-d="3"><td>Miércoles</td><td>10:00 – 20:00</td></tr>
+          <tr data-d="4"><td>Jueves</td><td>10:00 – 20:00</td></tr>
+          <tr data-d="5"><td>Viernes</td><td>10:00 – 20:00</td></tr>
+          <tr data-d="6"><td>Sábado</td><td>10:00 – 20:00</td></tr>
+          <tr data-d="0"><td>Domingo</td><td>Cerrado</td></tr>
+        </table>
+      </div>
+      <div class="where">
+        <p class="eyebrow">Dónde estamos</p>
+        <p class="cz">Av. José Miguel Carrera 1727</p>
+        <p style="color:var(--muted)">Antofagasta</p>
+        <div class="btns">
+          <a class="btn btn-gold" href="https://elitebarbershop24.setmore.com/">Reservar hora</a>
+          <a class="btn btn-line" href="tel:+56996987587">9 9698 7587</a>
+        </div>
+        <p class="note">Instagram <a href="https://www.instagram.com/elite.barbershop24">@elite.barbershop24</a> · <a href="mailto:barbershopelite005@gmail.com">barbershopelite005@gmail.com</a></p>
+      </div>
+    </div>
+  </section>
+</main>
+<footer><div class="wrap"><span>Elite Barber Shop · Av. José Miguel Carrera 1727, Antofagasta</span><span>+56 9 9698 7587</span></div></footer>
+<div class="mockup-pill" aria-hidden="true">Propuesta de sitio web · mockup</div>
+<script>
+  const r=document.querySelector('#hours tr[data-d="'+new Date().getDay()+'"]');if(r)r.classList.add('today');
+</script>
+</body>
+</html>
