@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Natural Feet · Centro podológico y consulta médica en Maipú</title>
+<meta name="description" content="Natural Feet, centro podológico y consulta médica en Caribú 1205, Maipú. Atención personalizada, cómoda y puntual. Agenda tu hora en línea.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{--forest:#1E3B2E;--sage:#A9BFA0;--sage-l:#DCE7D6;--sand:#F4EBDB;--clay:#C77D58;--ink:#16241C;--muted:#5E6F63}
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{font:400 1.05rem/1.65 "Instrument Sans",system-ui,sans-serif;color:var(--ink);background:var(--sand)}
+  a{color:inherit}
+  .wrap{max-width:1100px;margin:0 auto;padding:0 22px}
+  .is{font-family:"Instrument Serif",Georgia,serif;font-weight:400}
+
+  header.top .wrap{display:flex;justify-content:space-between;align-items:center;height:72px}
+  .brand{font-family:"Instrument Serif",serif;font-size:1.7rem;text-decoration:none;color:var(--forest)}
+  .brand i{color:var(--clay)}
+  .top a.res{background:var(--forest);color:var(--sand);padding:10px 20px;border-radius:999px;text-decoration:none;font-weight:600;font-size:.9rem}
+
+  .hero{padding:48px 0 30px}
+  .hero h1{font-family:"Instrument Serif",serif;font-weight:400;font-size:clamp(3rem,8vw,6.6rem);line-height:.95;color:var(--forest);max-width:13ch}
+  .hero h1 em{color:var(--clay)}
+  .hero p.lead{max-width:44ch;font-size:1.16rem;margin:24px 0 30px;color:#34483C}
+  .btns{display:flex;gap:12px;flex-wrap:wrap}
+  .btn{display:inline-block;padding:15px 26px;border-radius:999px;text-decoration:none;font-weight:600;transition:transform .15s}
+  .btn:hover{transform:translateY(-2px)}
+  .btn-f{background:var(--forest);color:var(--sand)}
+  .btn-o{border:1.5px solid var(--forest);color:var(--forest)}
+
+  /* Signature: a trail of footprints walks across the page */
+  .trail{height:120px;margin-top:30px;position:relative}
+  .trail svg{position:absolute;inset:0;width:100%;height:100%}
+  .fp{fill:var(--sage);opacity:0;animation:step .5s ease forwards}
+  @keyframes step{from{opacity:0;transform:translateY(8px)}to{opacity:.95;transform:none}}
+
+  section{padding:84px 0}
+  h2{font-family:"Instrument Serif",serif;font-weight:400;font-size:clamp(2.2rem,5vw,3.6rem);line-height:1.02;color:var(--forest);max-width:16ch}
+  .about{background:var(--sage-l)}
+  .about .grid{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:start}
+  .about p{font-size:1.1rem;color:#2D4034}
+  .vals{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-top:44px}
+  .val{background:var(--sand);border-radius:22px;padding:24px}
+  .val svg{width:32px;height:32px;color:var(--clay);margin-bottom:12px}
+  .val h3{font-family:"Instrument Serif",serif;font-weight:400;font-size:1.6rem;color:var(--forest);margin-bottom:6px}
+  .val p{font-size:.96rem;color:var(--muted)}
+
+  .proof .grid{display:grid;grid-template-columns:auto 1fr;gap:44px;align-items:center}
+  .proof .big{font-family:"Instrument Serif",serif;font-size:clamp(5rem,14vw,9rem);line-height:.9;color:var(--clay)}
+  .proof ul{list-style:none;display:flex;flex-wrap:wrap;gap:10px;margin-top:16px}
+  .proof li{background:var(--sage-l);padding:8px 16px;border-radius:999px;font-size:.95rem}
+
+  .visit{background:var(--forest);color:var(--sand)}
+  .visit h2{color:var(--sand)}
+  .visit .grid{display:grid;grid-template-columns:1fr 1fr;gap:56px}
+  table{width:100%;border-collapse:collapse;margin-top:22px}
+  td{padding:11px 0;border-bottom:1px solid rgba(244,235,219,.2)}
+  td:last-child{text-align:right;font-variant-numeric:tabular-nums}
+  tr.today td{color:var(--sage);font-weight:600}
+  .addr .is{font-size:2rem;line-height:1.1;margin:10px 0 6px}
+  .visit .btn-s{background:var(--sage);color:var(--forest)}
+  .visit .btn-l{border:1.5px solid var(--sand);color:var(--sand)}
+
+  footer{background:var(--ink);color:#9DB1A3;padding:26px 0 90px;font-size:.9rem}
+  footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+  .mockup-pill{position:fixed;left:16px;bottom:16px;z-index:50;background:var(--clay);color:#fff;font:600 .74rem/1 "Instrument Sans",sans-serif;padding:9px 14px;border-radius:999px}
+  a:focus-visible{outline:3px solid var(--clay);outline-offset:3px}
+
+  @media (max-width:900px){
+    .about .grid,.proof .grid,.visit .grid{grid-template-columns:1fr;gap:30px}
+    .vals{grid-template-columns:1fr 1fr}
+    section{padding:62px 0}
+  }
+  @media (max-width:520px){.vals{grid-template-columns:1fr}}
+  @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.fp{animation:none;opacity:.95}.btn{transition:none}}
+</style>
+</head>
+<body>
+<header class="top"><div class="wrap"><a class="brand" href="#inicio">Natural <i>Feet</i></a><a class="res" href="https://agendamiento.reservo.cl/makereserva/plus/agenda/naturalfeet/">Agendar hora</a></div></header>
+<main id="inicio">
+  <section class="hero">
+    <div class="wrap">
+      <h1>Cuidamos tus pies, <em>paso a paso.</em></h1>
+      <p class="lead">Centro podológico y consulta médica en Maipú, con atención personalizada e integral, en un lugar cómodo y acogedor y con la puntualidad de siempre.</p>
+      <div class="btns">
+        <a class="btn btn-f" href="https://agendamiento.reservo.cl/makereserva/plus/agenda/naturalfeet/">Agendar mi hora</a>
+        <a class="btn btn-o" href="https://wa.me/56935536861?text=Hola%2C%20quiero%20agendar%20una%20hora%20en%20Natural%20Feet">WhatsApp</a>
+      </div>
+      <div class="trail" aria-hidden="true"><svg id="trail" viewBox="0 0 1000 120" preserveAspectRatio="xMinYMid slice"></svg></div>
+    </div>
+  </section>
+
+  <section class="about" id="nosotros">
+    <div class="wrap">
+      <div class="grid">
+        <h2>Una atención pensada en ti y en tu familia.</h2>
+        <p>Nos destacamos por una atención personalizada e integral, gracias a profesionales acreditados y actualizados, especialistas en cada uno de los servicios. Nuestra prioridad es cuidar tu salud y la de tu familia.</p>
+      </div>
+      <div class="vals">
+        <div class="val"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 21s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 11c0 5.6-7 10-7 10Z"/></svg><h3>Empatía</h3><p>Siempre te escucharemos y apoyaremos tus decisiones.</p></div>
+        <div class="val"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M4 18v-5a8 8 0 0 1 16 0v5M3 18h18"/></svg><h3>Comodidad</h3><p>Te atenderemos en un lugar cómodo y acogedor, con la puntualidad de siempre.</p></div>
+        <div class="val"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="m5 12 4.5 4.5L19 7"/></svg><h3>Atención de calidad</h3><p>Centrada en las necesidades de cada persona.</p></div>
+        <div class="val"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="9" cy="8" r="3"/><circle cx="17" cy="9" r="2.4"/><path d="M3 20c0-3.5 2.7-6 6-6s6 2.5 6 6M15 14.2c3 0 6 1.8 6 5.8"/></svg><h3>Cercanía</h3><p>Confianza para que te atiendas sin preocupaciones.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="proof">
+    <div class="wrap grid">
+      <div class="big">4,9</div>
+      <div>
+        <h2 style="max-width:22ch">Lo que dicen quienes ya se atendieron.</h2>
+        <p style="margin-top:12px;color:var(--muted)">Promedio de 51 comentarios en su agenda en línea.</p>
+        <ul><li>Atención amable y delicada</li><li>Lugar limpio y sanitizado</li><li>Puntualidad</li><li>Fácil agendar hora</li><li>Valores accesibles</li></ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="visit" id="visitanos">
+    <div class="wrap grid">
+      <div>
+        <h2>Horario</h2>
+        <table id="hours">
+          <tr data-d="1"><td>Lunes</td><td>10:00 – 19:00</td></tr>
+          <tr data-d="2"><td>Martes</td><td>10:00 – 19:00</td></tr>
+          <tr data-d="3"><td>Miércoles</td><td>10:00 – 19:00</td></tr>
+          <tr data-d="4"><td>Jueves</td><td>10:00 – 19:00</td></tr>
+          <tr data-d="5"><td>Viernes</td><td>10:00 – 19:00</td></tr>
+          <tr data-d="6"><td>Sábado</td><td>10:00 – 19:00</td></tr>
+          <tr data-d="0"><td>Domingo</td><td>Cerrado</td></tr>
+        </table>
+      </div>
+      <div class="addr">
+        <span style="font-size:.78rem;letter-spacing:.2em;text-transform:uppercase;color:var(--sage)">Dónde estamos</span>
+        <p class="is">Caribú 1205, Maipú</p>
+        <p style="color:#C5D3C8">Región Metropolitana</p>
+        <div class="btns" style="margin-top:22px">
+          <a class="btn btn-s" href="https://agendamiento.reservo.cl/makereserva/plus/agenda/naturalfeet/">Agendar hora</a>
+          <a class="btn btn-l" href="tel:+56935536861">9 3553 6861</a>
+        </div>
+        <p style="margin-top:18px;font-size:.92rem;color:#C5D3C8"><a href="mailto:centropodo.naturalfeet@gmail.com">centropodo.naturalfeet@gmail.com</a></p>
+      </div>
+    </div>
+  </section>
+</main>
+<footer><div class="wrap"><span>Natural Feet · Centro podológico y consulta médica · Caribú 1205, Maipú</span><span>+56 9 3553 6861</span></div></footer>
+<div class="mockup-pill" aria-hidden="true">Propuesta de sitio web · mockup</div>
+<script>
+  // Footprint trail: alternating left/right prints along a gentle wave.
+  const svg=document.getElementById('trail');let h='';
+  for(let i=0;i<14;i++){const x=40+i*68,y=60+Math.sin(i*.8)*26+(i%2?16:-16),rot=(i%2?8:-8)+Math.cos(i*.8)*12;
+    h+=`<g transform="translate(${x} ${y}) rotate(${rot})"><ellipse class="fp" style="animation-delay:${i*0.16}s" cx="0" cy="8" rx="9" ry="13"/><ellipse class="fp" style="animation-delay:${i*0.16}s" cx="-4" cy="-9" rx="3" ry="4"/><ellipse class="fp" style="animation-delay:${i*0.16}s" cx="3" cy="-12" rx="3" ry="4"/><ellipse class="fp" style="animation-delay:${i*0.16}s" cx="10" cy="-8" rx="2.6" ry="3.6"/></g>`;}
+  svg.innerHTML=h;
+  const r=document.querySelector('#hours tr[data-d="'+new Date().getDay()+'"]');if(r)r.classList.add('today');
+</script>
+</body>
+</html>
