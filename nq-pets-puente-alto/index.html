@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex,nofollow">
 <title>Clínica Veterinaria N&amp;Q Pets · Puente Alto</title>
-<meta name="description" content="Clínica Veterinaria N&Q Pets en Arturo Prat 87, Puente Alto: consultas, esterilización, cirugía y exámenes a precios accesibles. Atención por orden de llegada.">
+<meta name="description" content="Clínica Veterinaria N&Q Pets en Arturo Prat 87, Puente Alto: vacunación, esterilización, cirugía, exámenes, peluquería y atención a domicilio a precios accesibles.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Atkinson+Hyperlegible:wght@400;700&display=swap" rel="stylesheet">
@@ -81,6 +81,15 @@
   .addr{background:var(--mint);border-radius:16px;padding:30px}
   .addr .disp{font-weight:700;font-size:1.6rem;line-height:1.15;color:var(--navy);margin:8px 0 14px}
 
+
+  .prices{background:var(--mint)}
+  .prices h2{font-weight:800;font-size:clamp(1.9rem,4vw,2.9rem);line-height:1.05;color:var(--navy);max-width:20ch}
+  .prices .note{margin-top:12px;color:#1F3550;max-width:60ch}
+  .pt{background:#fff;border-radius:14px;overflow:hidden;margin-top:28px;max-width:720px}
+  .pt th{background:var(--navy);color:#fff;text-align:left;padding:12px 16px;font-weight:700}
+  .pt th:not(:first-child),.pt td:not(:first-child){text-align:right}
+  .pt td{padding:12px 16px}
+
   footer{background:var(--ink);color:#AFC0D3;padding:30px 0 90px;font-size:.9rem}
   footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
 
@@ -114,7 +123,7 @@
     <div class="wrap grid">
       <div>
         <h1>Tu veterinaria de <span class="u">Arturo Prat</span>, sin hora previa.</h1>
-        <p class="lead">Consultas, esterilización, cirugía y exámenes en Puente Alto, a precios accesibles. Atendemos por orden de llegada: revisa si estamos abiertos y ven.</p>
+        <p class="lead">Vacunas, esterilización, cirugía, exámenes y peluquería en Puente Alto, a una cuadra de la plaza y a precios accesibles. Revisa si estamos abiertos y ven.</p>
         <div class="btns">
           <a class="btn btn-navy" href="tel:+56232077428">Llamar a la clínica</a>
           <a class="btn btn-line" href="https://maps.google.com/?cid=11905622080538741399">Cómo llegar</a>
@@ -125,30 +134,46 @@
         <div class="num" id="t-time">--:--</div>
         <span class="status" id="t-status"><i></i><span>Revisando horario…</span></span>
         <hr>
-        <p id="t-note">Lunes a viernes 10:00 – 19:00 · Sábado 11:00 – 18:00 · Domingo cerrado</p>
+        <p id="t-note">Lunes a viernes 10:00 – 19:00 · Sábado 11:00 – 18:00 · Domingos y festivos 11:00 – 16:00</p>
       </div>
     </div>
   </section>
 
   <section class="services" id="servicios">
     <div class="wrap">
-      <h2>Lo que hacemos por tu mascota.</h2>
+      <h2>Todo lo que tu mascota necesita, en un solo lugar.</h2>
       <div class="cards">
         <div class="card">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 3v6a6 6 0 0 0 12 0V3"/><circle cx="18" cy="17" r="3"/><path d="M12 15v2a4 4 0 0 0 4 4"/></svg>
-          <h3>Consultas y controles</h3><p>Revisión general y controles de seguimiento para tu mascota.</p>
+          <h3>Consulta</h3><p>Revisión de tu mascota, calendario de vacunas y receta de medicamentos.</p>
+        </div>
+        <div class="card">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M18 2l4 4M14 6l4 4M3 21l9-9M12 12l4-4 2 2-4 4z"/></svg>
+          <h3>Vacunación</h3><p>Vacuna óctuple, triple felina y antirrábica.</p>
         </div>
         <div class="card">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 21s-7-4.5-7-11a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 6.5-7 11-7 11Z"/></svg>
-          <h3>Esterilización</h3><p>Uno de los servicios por los que más nos recomiendan.</p>
+          <h3>Esterilización</h3><p>Esterilización de perros y gatos.</p>
         </div>
         <div class="card">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 20 20 4M14 4h6v6"/><path d="M4 14v6h6"/></svg>
-          <h3>Cirugía</h3><p>Operaciones en una clínica completa y limpia.</p>
+          <h3>Cirugías</h3><p>Tumores, heridas, hernias, amputaciones, cesáreas y más.</p>
         </div>
         <div class="card">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M9 3h6M10 3v6l-5 9a2 2 0 0 0 1.8 3h10.4a2 2 0 0 0 1.8-3l-5-9V3"/></svg>
-          <h3>Exámenes</h3><p>Exámenes para un diagnóstico más preciso.</p>
+          <h3>Toma de muestras</h3><p>Exámenes de sangre, orina, piel y pelo, y biopsias.</p>
+        </div>
+        <div class="card">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 3l6 6 6-6M6 21l6-6 6 6M3 12h18"/></svg>
+          <h3>Peluquería y baños</h3><p>Baño, corte y corte de uñas; baño sanitario para afecciones de la piel.</p>
+        </div>
+        <div class="card">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 3c4 0 7 3 7 6 0 4-3 6-7 6s-7-2-7-6c0-3 3-6 7-6zM9 10h6"/></svg>
+          <h3>Destartraje</h3><p>Aseo e higiene bucal.</p>
+        </div>
+        <div class="card">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M3 11l9-8 9 8v10H3zM9 21v-6h6v6"/></svg>
+          <h3>A domicilio</h3><p>Atención en tu casa, previa reserva de hora.</p>
         </div>
       </div>
     </div>
@@ -164,10 +189,31 @@
       </div>
       <div class="facts" aria-label="Datos útiles">
         <span>4,4 ★ · 518 reseñas en Google</span>
+        <span>Hospital 10:00 a 19:00</span>
+        <span>Alimentos medicados y accesorios</span>
         <span>Precios accesibles</span>
         <span>Pago con tarjeta</span>
         <span>Estacionamiento</span>
       </div>
+    </div>
+  </section>
+
+  <section class="prices" id="precios">
+    <div class="wrap">
+      <h2>Precios de peluquería.</h2>
+      <p class="note">Valores mínimos según peso; pueden subir según el estado del pelo (motas, enredos, etc.).</p>
+      <table class="pt">
+        <thead><tr><th>Peso</th><th>Peluquería</th><th>Baño sanitario</th></tr></thead>
+        <tbody>
+          <tr><td>Hasta 3 kg</td><td>$12.000</td><td>$10.000</td></tr>
+          <tr><td>3,1 a 6 kg</td><td>$15.000</td><td>$12.000</td></tr>
+          <tr><td>6,1 a 10 kg</td><td>$18.000</td><td>$15.000</td></tr>
+          <tr><td>10,1 a 15 kg</td><td>$20.000</td><td>$18.000</td></tr>
+          <tr><td>15,1 a 20 kg</td><td>$22.000</td><td>$20.000</td></tr>
+          <tr><td>20,1 a 25 kg</td><td>$25.000</td><td>$22.000</td></tr>
+          <tr><td>Más de 25 kg</td><td>$1.000 por kg</td><td>$25.000</td></tr>
+        </tbody>
+      </table>
     </div>
   </section>
 
@@ -182,13 +228,14 @@
           <tr data-d="4"><td>Jueves</td><td>10:00 – 19:00</td></tr>
           <tr data-d="5"><td>Viernes</td><td>10:00 – 19:00</td></tr>
           <tr data-d="6"><td>Sábado</td><td>11:00 – 18:00</td></tr>
-          <tr data-d="0"><td>Domingo</td><td>Cerrado</td></tr>
+          <tr data-d="0"><td>Domingo y festivos</td><td>11:00 – 16:00</td></tr>
         </table>
       </div>
       <div class="addr">
         <div style="font-size:.8rem;letter-spacing:.16em;text-transform:uppercase;color:var(--teal);font-weight:700">Dirección</div>
         <div class="disp">Arturo Prat 87,<br>Puente Alto</div>
-        <p>Región Metropolitana</p>
+        <p>Esquina Santo Domingo, a una cuadra de la plaza de Puente Alto.</p>
+        <p style="margin-top:8px">Celular: 9018 2265 · <a href="mailto:nyqpets@hotmail.com">nyqpets@hotmail.com</a></p>
         <div class="btns" style="margin-top:20px">
           <a class="btn btn-navy" href="https://maps.google.com/?cid=11905622080538741399">Abrir en Google Maps</a>
           <a class="btn btn-line" href="tel:+56232077428">(2) 3207 7428</a>
@@ -201,13 +248,13 @@
 <footer>
   <div class="wrap">
     <span>Clínica Veterinaria N&amp;Q Pets · Arturo Prat 87, Puente Alto</span>
-    <span>Teléfono (2) 3207 7428</span>
+    <span>Tel. (2) 3207 7428 · nyqpets@hotmail.com</span>
   </div>
 </footer>
 <div class="mockup-pill" aria-hidden="true">Propuesta de sitio web · mockup</div>
 <script>
   // Opening hours [open, close] in minutes, by weekday (0 = Sunday).
-  const H = {0:null,1:[600,1140],2:[600,1140],3:[600,1140],4:[600,1140],5:[600,1140],6:[660,1080]};
+  const H = {0:[660,960],1:[600,1140],2:[600,1140],3:[600,1140],4:[600,1140],5:[600,1140],6:[660,1080]};
   const fmt = m => String(Math.floor(m/60)).padStart(2,'0') + ':' + String(m%60).padStart(2,'0');
   const now = new Date(new Date().toLocaleString('en-US',{timeZone:'America/Santiago'}));
   const d = now.getDay(), m = now.getHours()*60 + now.getMinutes();
