@@ -34,7 +34,7 @@
   .top a.call{font-weight:700;text-decoration:none;background:var(--ticket);color:var(--navy);padding:9px 14px;border-radius:8px;font-size:.95rem}
 
   .hero{background:var(--mint);padding:64px 0 80px;position:relative;overflow:hidden}
-  .hero .grid{display:grid;grid-template-columns:1.2fr .8fr;gap:48px;align-items:center}
+  .hero .grid{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center}
   .hero h1{font-weight:800;font-size:clamp(2.4rem,6vw,4.6rem);line-height:1;color:var(--navy)}
   .hero h1 .u{background:linear-gradient(transparent 62%,var(--ticket) 62%);padding:0 .08em}
   .hero p.lead{font-size:1.18rem;margin:20px 0 28px;max-width:40ch;color:#1F3550}
@@ -45,16 +45,18 @@
   .btn-line{border:2px solid var(--navy);color:var(--navy)}
 
   /* Signature: the waiting-room ticket that tells you if they're open right now */
-  .ticket{background:#fff;border-radius:16px;box-shadow:0 18px 40px rgba(19,41,75,.18);position:relative;padding:28px 26px 24px;transform:rotate(2deg)}
-  .ticket::before,.ticket::after{content:"";position:absolute;top:58%;width:26px;height:26px;border-radius:50%;background:var(--mint)}
-  .ticket::before{left:-13px}.ticket::after{right:-13px}
+  .hero-art{position:relative;padding-bottom:70px}
+  .hero-art .pet{display:block;height:auto;width:92%;margin-left:auto;aspect-ratio:4/3.4;object-fit:cover;object-position:60% 30%;border-radius:28px 28px 120px 28px;box-shadow:0 18px 40px rgba(19,41,75,.18)}
+  .hero-art .ticket{position:absolute;left:0;bottom:0;width:min(300px,70%)}
+  .ticket{background:#fff;border-radius:16px;box-shadow:0 18px 40px rgba(19,41,75,.18);position:relative;padding:22px 22px 20px;transform:rotate(-2deg)}
+  
   .ticket .lbl{font-size:.78rem;letter-spacing:.16em;text-transform:uppercase;color:var(--muted)}
-  .ticket .num{font-family:"Bricolage Grotesque",sans-serif;font-weight:800;font-size:4.2rem;line-height:1;color:var(--navy);margin:6px 0 10px}
+  .ticket .num{font-family:"Bricolage Grotesque",sans-serif;font-weight:800;font-size:3.2rem;line-height:1;color:var(--navy);margin:6px 0 10px}
   .status{display:inline-flex;align-items:center;gap:8px;font-weight:700;padding:6px 12px;border-radius:999px;background:#E9F7F1;color:var(--teal)}
   .status.closed{background:#FDECEC;color:#A52A2A}
   .status i{width:10px;height:10px;border-radius:50%;background:currentColor;display:block}
-  .ticket hr{border:0;border-top:2px dashed #D5DEE7;margin:20px -26px 16px}
-  .ticket p{font-size:.98rem;color:#24384F}
+  .ticket hr{border:0;border-top:2px dashed #D5DEE7;margin:16px -22px 12px}
+  .ticket p{font-size:.88rem;color:#24384F}
 
   section{padding:84px 0}
   .services h2,.how h2,.visit h2{font-weight:800;font-size:clamp(1.9rem,4vw,2.9rem);line-height:1.05;color:var(--navy);max-width:20ch}
@@ -85,7 +87,9 @@
   .prices{background:var(--mint)}
   .prices h2{font-weight:800;font-size:clamp(1.9rem,4vw,2.9rem);line-height:1.05;color:var(--navy);max-width:20ch}
   .prices .note{margin-top:12px;color:#1F3550;max-width:60ch}
-  .pt{background:#fff;border-radius:14px;overflow:hidden;margin-top:28px;max-width:720px}
+  .pgrid{display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:center;margin-top:28px}
+  .pups{width:100%;height:auto;mix-blend-mode:multiply;border-radius:20px}
+  .pt{background:#fff;border-radius:14px;overflow:hidden}
   .pt th{background:var(--navy);color:#fff;text-align:left;padding:12px 16px;font-weight:700}
   .pt th:not(:first-child),.pt td:not(:first-child){text-align:right}
   .pt td{padding:12px 16px}
@@ -99,8 +103,9 @@
   @media (max-width:900px){
     .hero .grid,.visit .grid{grid-template-columns:1fr}
     .cards{grid-template-columns:1fr 1fr}
+    .pgrid{grid-template-columns:1fr}
     .steps{grid-template-columns:1fr}
-    .ticket{transform:none;max-width:420px}
+    .hero-art{padding-bottom:0}.hero-art .pet{width:100%}.hero-art .ticket{position:relative;margin:-60px 0 0 12px;width:min(300px,82%)}
   }
   @media (max-width:520px){
     .cards{grid-template-columns:1fr}
@@ -129,12 +134,15 @@
           <a class="btn btn-line" href="https://maps.google.com/?cid=11905622080538741399">Cómo llegar</a>
         </div>
       </div>
-      <div class="ticket" aria-live="polite">
-        <div class="lbl">Clínica Veterinaria N&amp;Q Pets</div>
-        <div class="num" id="t-time">--:--</div>
-        <span class="status" id="t-status"><i></i><span>Revisando horario…</span></span>
-        <hr>
-        <p id="t-note">Lunes a viernes 10:00 – 19:00 · Sábado 11:00 – 18:00 · Domingos y festivos 11:00 – 16:00</p>
+      <div class="hero-art">
+        <img class="pet" src="assets/bulldog.jpg" alt="Bulldog sonriendo" width="1100" height="618">
+<div class="ticket" aria-live="polite">
+          <div class="lbl">Clínica Veterinaria N&amp;Q Pets</div>
+          <div class="num" id="t-time">--:--</div>
+          <span class="status" id="t-status"><i></i><span>Revisando horario…</span></span>
+          <hr>
+          <p id="t-note">Lunes a viernes 10:00 – 19:00 · Sábado 11:00 – 18:00 · Domingos y festivos 11:00 – 16:00</p>
+        </div>
       </div>
     </div>
   </section>
@@ -202,6 +210,7 @@
     <div class="wrap">
       <h2>Precios de peluquería.</h2>
       <p class="note">Valores mínimos según peso; pueden subir según el estado del pelo (motas, enredos, etc.).</p>
+      <div class="pgrid">
       <table class="pt">
         <thead><tr><th>Peso</th><th>Peluquería</th><th>Baño sanitario</th></tr></thead>
         <tbody>
@@ -214,6 +223,8 @@
           <tr><td>Más de 25 kg</td><td>$1.000 por kg</td><td>$25.000</td></tr>
         </tbody>
       </table>
+      <img class="pups" src="assets/cachorros.jpg" alt="Cachorros de distintas razas" width="1024" height="768" loading="lazy">
+      </div>
     </div>
   </section>
 
