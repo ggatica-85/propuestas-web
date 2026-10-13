@@ -36,9 +36,10 @@
   .street small{display:block;font:700 .82rem/1 "Archivo",sans-serif;letter-spacing:.3em;text-transform:uppercase;opacity:.85;margin-bottom:6px}
   .street .black{font-size:clamp(2.2rem,7vw,5rem);line-height:.95;display:block}
   .street .no{font:700 1rem/1 "Archivo",sans-serif;letter-spacing:.12em;display:block;margin-top:10px;opacity:.9}
-  .post{position:absolute;right:12%;bottom:0;width:14px;height:120px;background:#9AA8B8;border-radius:4px 4px 0 0}
-
-  .hero h1{font-family:"Archivo Black",sans-serif;font-weight:400;font-size:clamp(1.8rem,4.4vw,3.2rem);line-height:1.05;margin:48px 0 16px;max-width:20ch;color:var(--sign-2)}
+  
+  .hero-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:32px;align-items:end}
+  .scene{width:100%;height:auto;max-width:460px;justify-self:end;margin-top:-90px}
+  .hero h1{font-family:"Archivo Black",sans-serif;font-weight:400;font-size:clamp(1.8rem,4.4vw,3.2rem);line-height:1.05;margin:40px 0 16px;max-width:20ch;color:var(--sign-2)}
   .hero p.lead{max-width:46ch;font-size:1.15rem;color:#24364F}
   .btns{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}
   .btn{display:inline-flex;align-items:center;gap:10px;padding:15px 22px;border-radius:999px;font-weight:700;text-decoration:none;transition:transform .15s}
@@ -56,8 +57,9 @@
   .t1{background:var(--sign);color:var(--white)}
   .t2{background:var(--sun);color:var(--ink)}
   .t3{background:var(--sky);color:var(--ink)}
-  .tile .k{font-size:.8rem;letter-spacing:.16em;text-transform:uppercase;font-weight:700;opacity:.8}
+  .tile .k{display:flex;align-items:center;gap:10px;font-size:.8rem;letter-spacing:.16em;text-transform:uppercase;font-weight:700;opacity:.8}
 
+  .paw{width:26px;height:26px}
   .rep{background:var(--sign-2);color:var(--white)}
   .rep h2{color:var(--white)}
   .big{display:flex;align-items:baseline;gap:18px;flex-wrap:wrap;margin:26px 0 30px}
@@ -66,6 +68,13 @@
   .chips{display:flex;flex-wrap:wrap;gap:10px}
   .chips span{border:1.5px solid rgba(255,255,255,.35);padding:8px 14px;border-radius:999px;font-size:.95rem}
 
+  .cta{background:var(--sun);padding:0}
+  .cta-in{display:flex;align-items:center;gap:28px;flex-wrap:wrap;padding-top:34px;padding-bottom:0}
+  .cta h2{color:var(--sign-2);font-size:clamp(1.5rem,3.2vw,2.2rem)}
+  .cta p{margin-top:6px}
+  .cta .btn{background:var(--sign-2);color:#fff;margin-bottom:34px}
+  .cta-in>div{flex:1;min-width:220px;padding-bottom:34px}
+  .peek{width:150px;height:auto;display:block;margin-bottom:-3px}
   .visit .grid{display:grid;grid-template-columns:1fr 1fr;gap:48px}
   table{width:100%;border-collapse:collapse;margin-top:22px}
   td{padding:11px 0;border-bottom:1px solid #DEE6F0;vertical-align:top}
@@ -81,7 +90,8 @@
 
   @media (max-width:880px){
     .three,.visit .grid{grid-template-columns:1fr}
-    .post{display:none}
+    .hero-grid{grid-template-columns:1fr}
+    .scene{margin-top:8px;justify-self:center;max-width:380px}
     section{padding:68px 0}
     .street{padding:14px 20px 12px}
   }
@@ -101,6 +111,8 @@
         <span class="black">Concha y Toro</span>
         <span class="no">0607 · Puente Alto</span>
       </div>
+      <div class="hero-grid">
+      <div>
       <h1>La veterinaria de la avenida, con tiempo para explicarte.</h1>
       <p class="lead">Consultas a un valor accesible, doctores que examinan con calma y resuelven tus dudas, y los remedios ahí mismo para que no tengas que salir a buscarlos.</p>
       <div class="btns">
@@ -110,17 +122,54 @@
         </a>
         <a class="btn btn-out" href="tel:+56986284955">Llamar 9 8628 4955</a>
       </div>
+      </div>
+      <svg class="scene" viewBox="0 0 440 400" role="img" aria-label="Ilustración de un perro y un gato sentados junto a un letrero de calle">
+        <g stroke="#123A6B" stroke-width="5" stroke-linejoin="round" stroke-linecap="round">
+          <ellipse cx="220" cy="372" rx="200" ry="16" fill="#CFDDF0" stroke="none"/>
+          <!-- street sign on its post -->
+          <rect x="356" y="70" width="14" height="300" rx="4" fill="#9AA8B8"/>
+          <rect x="300" y="40" width="126" height="56" rx="8" fill="#1A4C8B" stroke="#fff" stroke-width="5"/>
+          <text x="363" y="63" text-anchor="middle" font-family="Archivo,sans-serif" font-weight="700" font-size="9" letter-spacing="2.5" fill="#fff" stroke="none">AVENIDA</text>
+          <text x="363" y="83" text-anchor="middle" font-family="'Archivo Black',sans-serif" font-size="15" fill="#fff" stroke="none">Concha y Toro</text>
+          <!-- cat -->
+          <path d="M268 352 C330 352 336 292 306 280" fill="none" stroke-width="16"/>
+          <path d="M268 352 C330 352 336 292 306 280" fill="none" stroke="#fff" stroke-width="7"/>
+          <ellipse cx="236" cy="300" rx="52" ry="62" fill="#fff"/>
+          <ellipse cx="236" cy="205" rx="54" ry="45" fill="#fff"/>
+          <path d="M192 188 L188 138 L226 166Z" fill="#fff"/><path d="M280 188 L284 138 L246 166Z" fill="#fff"/>
+          <path d="M197 168 L196 150 L212 162Z M275 168 L276 150 L260 162Z" fill="#F4A3AE" stroke="none"/>
+          <path d="M214 172 v14 M236 168 v16 M258 172 v14" stroke-width="4" fill="none" opacity=".55"/>
+          <ellipse cx="218" cy="208" rx="5" ry="8" fill="#0D1B2E" stroke="none"/><ellipse cx="254" cy="208" rx="5" ry="8" fill="#0D1B2E" stroke="none"/>
+          <path d="M230 222 h12 l-6 7z" fill="#F07C8A" stroke-width="3"/>
+          <path d="M236 229 q-6 8 -14 4 M236 229 q6 8 14 4" fill="none" stroke-width="3"/>
+          <path d="M196 224 l-26 -5 M196 232 l-26 4 M276 224 l26 -5 M276 232 l26 4" stroke-width="3" fill="none"/>
+          <ellipse cx="216" cy="362" rx="16" ry="9" fill="#fff"/><ellipse cx="256" cy="362" rx="16" ry="9" fill="#fff"/>
+          <!-- dog -->
+          <ellipse cx="116" cy="302" rx="66" ry="70" fill="#F4B740"/>
+          <ellipse cx="116" cy="312" rx="32" ry="48" fill="#FFF3D6" stroke="none"/>
+          <path d="M66 152 C34 164 30 232 64 236 C80 214 80 172 72 150Z" fill="#C98A1E"/>
+          <path d="M166 152 C198 164 202 232 168 236 C152 214 152 172 160 150Z" fill="#C98A1E"/>
+          <ellipse cx="116" cy="178" rx="62" ry="56" fill="#F4B740"/>
+          <ellipse cx="116" cy="202" rx="32" ry="24" fill="#FFF3D6"/>
+          <ellipse cx="116" cy="190" rx="12" ry="8.5" fill="#123A6B"/>
+          <path d="M116 199 v10 M116 209 q-10 9 -20 2 M116 209 q10 9 20 2" fill="none" stroke-width="4"/>
+          <path d="M108 214 q8 22 16 0z" fill="#F07C8A" stroke-width="3"/>
+          <circle cx="92" cy="166" r="6.5" fill="#0D1B2E" stroke="none"/><circle cx="140" cy="166" r="6.5" fill="#0D1B2E" stroke="none"/>
+          <ellipse cx="92" cy="146" rx="9" ry="4" fill="#C98A1E" stroke-width="3" transform="rotate(-12 92 146)"/><ellipse cx="140" cy="146" rx="9" ry="4" fill="#C98A1E" stroke-width="3" transform="rotate(12 140 146)"/>
+          <ellipse cx="94" cy="364" rx="19" ry="10" fill="#FFF3D6"/><ellipse cx="138" cy="364" rx="19" ry="10" fill="#FFF3D6"/>
+        </g>
+      </svg>
+      </div>
     </div>
-    <div class="post" aria-hidden="true"></div>
   </section>
 
   <section id="servicios">
     <div class="wrap">
       <h2>Una visita, todo resuelto.</h2>
       <div class="three">
-        <div class="tile t1"><span class="k">Consulta</span><div><h3>Examen con calma</h3><p>El doctor revisa a tu mascota, explica lo que tiene y aclara tus dudas antes de tratar.</p></div></div>
-        <div class="tile t2"><span class="k">Tratamiento</span><div><h3>Del diagnóstico al alta</h3><p>Desde una gastroenteritis hasta problemas urinarios, con un tratamiento claro para cada caso.</p></div></div>
-        <div class="tile t3"><span class="k">Farmacia</span><div><h3>Remedios en el mismo lugar</h3><p>Sales con los medicamentos indicados, sin pasar a otra farmacia.</p></div></div>
+        <div class="tile t1"><span class="k"><svg class="paw" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><ellipse cx="5.5" cy="10" rx="2.2" ry="3"/><ellipse cx="10" cy="5.5" rx="2.2" ry="3"/><ellipse cx="14.5" cy="5.5" rx="2.2" ry="3"/><ellipse cx="19" cy="10" rx="2.2" ry="3"/><path d="M12 11c-3.4 0-6 3.2-6 5.6 0 1.8 1.4 2.6 3 2.6 1 0 1.9-.5 3-.5s2 .5 3 .5c1.6 0 3-.8 3-2.6C18 14.2 15.4 11 12 11Z"/></svg>Consulta</span><div><h3>Examen con calma</h3><p>El doctor revisa a tu mascota, explica lo que tiene y aclara tus dudas antes de tratar.</p></div></div>
+        <div class="tile t2"><span class="k"><svg class="paw" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><ellipse cx="5.5" cy="10" rx="2.2" ry="3"/><ellipse cx="10" cy="5.5" rx="2.2" ry="3"/><ellipse cx="14.5" cy="5.5" rx="2.2" ry="3"/><ellipse cx="19" cy="10" rx="2.2" ry="3"/><path d="M12 11c-3.4 0-6 3.2-6 5.6 0 1.8 1.4 2.6 3 2.6 1 0 1.9-.5 3-.5s2 .5 3 .5c1.6 0 3-.8 3-2.6C18 14.2 15.4 11 12 11Z"/></svg>Tratamiento</span><div><h3>Del diagnóstico al alta</h3><p>Desde una gastroenteritis hasta problemas urinarios, con un tratamiento claro para cada caso.</p></div></div>
+        <div class="tile t3"><span class="k"><svg class="paw" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><ellipse cx="5.5" cy="10" rx="2.2" ry="3"/><ellipse cx="10" cy="5.5" rx="2.2" ry="3"/><ellipse cx="14.5" cy="5.5" rx="2.2" ry="3"/><ellipse cx="19" cy="10" rx="2.2" ry="3"/><path d="M12 11c-3.4 0-6 3.2-6 5.6 0 1.8 1.4 2.6 3 2.6 1 0 1.9-.5 3-.5s2 .5 3 .5c1.6 0 3-.8 3-2.6C18 14.2 15.4 11 12 11Z"/></svg>Farmacia</span><div><h3>Remedios en el mismo lugar</h3><p>Sales con los medicamentos indicados, sin pasar a otra farmacia.</p></div></div>
       </div>
     </div>
   </section>
@@ -132,6 +181,17 @@
       <div class="chips" aria-label="Lo que más destacan">
         <span>Valor accesible</span><span>Trato respetuoso</span><span>Box limpios</span><span>Doctores con vocación</span><span>Explican cada paso</span>
       </div>
+    </div>
+  </section>
+
+  <section class="cta">
+    <div class="wrap cta-in">
+      <svg class="peek" viewBox="0 0 160 110" aria-hidden="true"><g stroke="#123A6B" stroke-width="5" stroke-linejoin="round" stroke-linecap="round"><ellipse cx="80" cy="82" rx="58" ry="46" fill="#fff"/><path d="M36 62 L30 14 L70 42Z M124 62 L130 14 L90 42Z" fill="#fff"/><path d="M40 50 L38 28 L54 40Z M120 50 L122 28 L106 40Z" fill="#F4A3AE" stroke="none"/><ellipse cx="60" cy="72" rx="5" ry="8" fill="#0D1B2E" stroke="none"/><ellipse cx="100" cy="72" rx="5" ry="8" fill="#0D1B2E" stroke="none"/><path d="M74 88 h12 l-6 7z" fill="#F07C8A" stroke-width="3"/><path d="M80 95 q-6 8 -14 4 M80 95 q6 8 14 4" fill="none" stroke-width="3"/></g></svg>
+      <div>
+        <h2>¿Tu mascota necesita atención?</h2>
+        <p>Escríbenos por WhatsApp y cuéntanos qué le pasa.</p>
+      </div>
+      <a class="btn btn-sun" href="https://wa.me/56986284955?text=Hola%2C%20quisiera%20consultar%20por%20una%20atenci%C3%B3n%20para%20mi%20mascota">Escribir por WhatsApp</a>
     </div>
   </section>
 
