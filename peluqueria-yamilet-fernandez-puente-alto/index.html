@@ -4,172 +4,232 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex,nofollow">
-<title>Peluquería Yamilet Fernández · Puente Alto</title>
-<meta name="description" content="Peluquería Yamilet Fernández en Calle Creta Norte 3457, Puente Alto. Cortes y tratamientos con productos de calidad. Abierto de lunes a sábado hasta tarde.">
+<title>Salón Yamilet Fernandez · Peluquería en Puente Alto</title>
+<meta name="description" content="Salón Yamilet Fernandez en Puente Alto: cortes, colorimetría, barbería, depilación y productos Kérastase. Abierto hasta las 22:00. Pide tu hora por WhatsApp.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Italiana&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Jost:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
-  :root{
-    --plum:#3B1830;
-    --plum-2:#5A2749;
-    --powder:#F2D9DD;
-    --rose:#D98C9B;
-    --night:#160A12;
-    --mist:#FBF4F5;
-    --muted:#7A5C6C;
-  }
+  :root{--black:#0E0C0B;--coal:#191513;--gold:#C9A24B;--gold-2:#E6CF93;--cream:#F6EFE4;--ink:#1C1714;--muted:#6E6258;--line:rgba(201,162,75,.35)}
   *{box-sizing:border-box;margin:0;padding:0}
   html{scroll-behavior:smooth}
-  body{font:300 1.08rem/1.65 "Jost",system-ui,sans-serif;color:var(--night);background:var(--mist)}
+  body{font:400 1.05rem/1.65 "Jost",system-ui,sans-serif;color:var(--ink);background:var(--cream)}
   a{color:inherit}
-  .wrap{max-width:1160px;margin:0 auto;padding:0 20px}
-  .it{font-family:"Italiana",serif;font-weight:400}
+  .wrap{max-width:1120px;margin:0 auto;padding:0 22px}
+  .serif{font-family:"Cormorant Garamond",Georgia,serif;font-weight:500;letter-spacing:-.01em}
+  .eyebrow{font-size:.78rem;letter-spacing:.28em;text-transform:uppercase;color:var(--gold);font-weight:500}
 
-  header.top{position:absolute;inset:0 0 auto;z-index:4;color:var(--powder)}
-  header.top .wrap{display:flex;justify-content:space-between;align-items:center;height:78px}
-  .brand{font-family:"Italiana",serif;font-size:1.4rem;letter-spacing:.06em;text-decoration:none}
-  header.top a.ph{font-weight:500;letter-spacing:.08em;text-decoration:none;font-size:.92rem}
+  header.nav{background:var(--black);color:var(--cream)}
+  header.nav .wrap{display:flex;justify-content:space-between;align-items:center;height:70px;gap:14px}
+  .brand{font-family:"Cormorant Garamond",serif;font-size:1.45rem;font-weight:600;text-decoration:none;line-height:1}
+  .brand small{display:block;font:500 .62rem/1 "Jost",sans-serif;letter-spacing:.32em;text-transform:uppercase;color:var(--gold);margin-bottom:5px}
+  .nav a.cta{font-weight:500;font-size:.92rem;text-decoration:none;border:1px solid var(--gold);color:var(--gold-2);padding:10px 18px;border-radius:2px;letter-spacing:.06em}
 
-  /* Signature: the headline is cut on a diagonal, like a clean scissor stroke */
-  .hero{background:var(--plum);color:var(--powder);min-height:94vh;display:flex;align-items:center;position:relative;overflow:hidden}
-  .cut{position:relative;display:inline-block;font-family:"Italiana",serif;font-size:clamp(5rem,24vw,17rem);line-height:.9;letter-spacing:-.01em;text-transform:uppercase;white-space:nowrap}
-  .cut span{display:block}
-  .cut .a{clip-path:polygon(0 0,100% 0,100% 44%,0 62%)}
-  .after{font-family:"Italiana",serif;font-size:clamp(1.8rem,5vw,3.4rem);color:var(--rose);margin-top:6px}
-  .cut .b{position:absolute;inset:0;clip-path:polygon(0 62%,100% 44%,100% 100%,0 100%);transform:translate(3%,5%);color:var(--rose);transition:transform 1.2s cubic-bezier(.2,.8,.2,1)}
-  .hero.ready .cut .b{transform:translate(1.4%,2.4%)}
-  .blade{position:absolute;left:-5%;right:-5%;top:53%;height:1px;background:linear-gradient(90deg,transparent,var(--powder),transparent);transform:rotate(-4.6deg);opacity:.6}
-  .hero .copy{margin-top:42px;display:grid;grid-template-columns:1fr auto;gap:30px;align-items:end}
-  .hero .copy p{max-width:42ch;font-size:1.15rem;color:#E8C9D0}
-  .btn{display:inline-block;padding:16px 28px;text-decoration:none;font-weight:500;letter-spacing:.12em;text-transform:uppercase;font-size:.86rem;transition:background .2s,color .2s}
-  .btn-powder{background:var(--powder);color:var(--plum)}
-  .btn-powder:hover{background:#fff}
-  .btn-line{border:1px solid var(--plum);color:var(--plum)}
-  .btn-line:hover{background:var(--plum);color:var(--powder)}
+  .hero{background:var(--black);color:var(--cream);position:relative;overflow:hidden;padding:56px 0 130px;clip-path:polygon(0 0,100% 0,100% 90%,0 100%)}
+  .hero .grid{display:grid;grid-template-columns:1.05fr .95fr;gap:40px;align-items:center}
+  .hero h1{font-family:"Cormorant Garamond",serif;font-weight:500;font-size:clamp(2.6rem,6.4vw,5.2rem);line-height:.98;margin:18px 0 22px}
+  .hero h1 em{color:var(--gold-2);font-style:italic}
+  .hero p.lead{max-width:44ch;color:#D9CFC1;font-size:1.12rem}
+  .btns{display:flex;gap:12px;flex-wrap:wrap;margin-top:30px}
+  .btn{display:inline-flex;align-items:center;gap:10px;padding:15px 26px;font-weight:500;letter-spacing:.05em;text-decoration:none;border-radius:2px;transition:transform .15s}
+  .btn:hover{transform:translateY(-2px)}
+  .btn-gold{background:var(--gold);color:var(--black)}
+  .btn-line{border:1px solid var(--gold);color:var(--gold-2)}
+  .btn svg{width:19px;height:19px}
+  .open{margin-top:26px;display:inline-flex;align-items:center;gap:10px;font-size:.95rem;color:#D9CFC1}
+  .open i{width:9px;height:9px;border-radius:50%;background:#7FD6A0;display:block}
+  .open.closed i{background:#E08A7A}
+  .art{width:100%;max-width:440px;justify-self:end;height:auto}
 
-  section{padding:100px 0}
-  h2{font-family:"Italiana",serif;font-weight:400;font-size:clamp(2.2rem,5vw,3.8rem);line-height:1.02;color:var(--plum)}
-  .eyebrow{font-weight:500;letter-spacing:.24em;text-transform:uppercase;font-size:.78rem;color:var(--rose)}
+  section{padding:92px 0}
+  h2.serif{font-size:clamp(2rem,4.4vw,3.2rem);line-height:1.02;max-width:18ch;margin-top:12px}
+  .list{margin-top:44px;border-top:1px solid #DCCFBB}
+  .item{display:grid;grid-template-columns:70px 1fr;gap:18px;padding:26px 0;border-bottom:1px solid #DCCFBB;align-items:start}
+  .item .n{font-family:"Cormorant Garamond",serif;font-size:2.1rem;color:var(--gold);line-height:1}
+  .item h3{font-family:"Cormorant Garamond",serif;font-weight:600;font-size:1.7rem;line-height:1.1}
+  .item p{color:var(--muted);margin-top:4px;max-width:58ch}
+  .svc{display:grid;grid-template-columns:1fr 1fr;gap:56px;border-top:0}
+  .svc>div{border-top:1px solid #DCCFBB}
 
-  .menu .grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:64px;align-items:start}
-  .menu ul{list-style:none;border-top:1px solid #E3CBD1}
-  .menu li{display:flex;justify-content:space-between;gap:18px;padding:22px 0;border-bottom:1px solid #E3CBD1}
-  .menu li b{font-family:"Italiana",serif;font-weight:400;font-size:1.7rem;color:var(--plum)}
-  .menu li span{color:var(--muted);max-width:30ch;text-align:right}
+  .brandband{background:var(--coal);color:var(--cream);clip-path:polygon(0 8%,100% 0,100% 100%,0 100%);padding:130px 0 90px;margin-top:-30px}
+  .brandband .row{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center}
+  .brandband h2{color:var(--cream)}
+  .brandband p{color:#D2C7B8;margin-top:16px;max-width:46ch}
+  .stat{border:1px solid var(--line);padding:34px;text-align:center}
+  .stat b{font-family:"Cormorant Garamond",serif;font-weight:500;font-size:clamp(4rem,10vw,6.4rem);line-height:.9;color:var(--gold-2);display:block}
+  .stat span.t{display:block;color:#D2C7B8;margin-top:8px}
+  .chips{display:flex;flex-wrap:wrap;gap:10px;margin-top:20px;justify-content:center}
+  .chips span{border:1px solid var(--line);padding:6px 14px;font-size:.88rem;color:var(--gold-2)}
 
-  .ritual{background:var(--powder)}
-  .ritual .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:40px;margin-top:46px}
-  .ritual h3{font-family:"Italiana",serif;font-weight:400;font-size:1.9rem;color:var(--plum);margin-bottom:8px}
-  .ritual p{color:#5D3F50}
-  .ritual .rating{margin-top:56px;display:flex;align-items:baseline;gap:16px;flex-wrap:wrap}
-  .ritual .rating b{font-family:"Italiana",serif;font-weight:400;font-size:5rem;line-height:1;color:var(--plum)}
-
-  .visit{background:var(--night);color:#E6D3D9}
-  .visit h2{color:var(--powder)}
   .visit .grid{display:grid;grid-template-columns:1fr 1fr;gap:56px}
-  table{width:100%;border-collapse:collapse;margin-top:26px}
-  td{padding:12px 0;border-bottom:1px solid rgba(242,217,221,.18);vertical-align:top}
+  table{width:100%;border-collapse:collapse;margin-top:24px}
+  td{padding:12px 0;border-bottom:1px solid #DCCFBB;vertical-align:top}
   td:last-child{text-align:right;font-variant-numeric:tabular-nums}
-  tr.today td{color:var(--rose);font-weight:500}
-  .visit .addr{font-family:"Italiana",serif;font-size:2rem;line-height:1.15;color:var(--powder);margin:16px 0 26px}
-  .visit .btn-line{border-color:var(--powder);color:var(--powder)}
-  .visit .btn-line:hover{background:var(--powder);color:var(--plum)}
+  tr.today td{color:#8A6A1F;font-weight:600}
+  .card{background:var(--black);color:var(--cream);padding:38px;border-radius:2px}
+  .card .serif{font-size:1.9rem;line-height:1.1;margin:10px 0 12px}
+  .card p{color:#D2C7B8}
+  .card .lines{margin-top:18px;display:grid;gap:6px;font-size:.98rem}
+  .card .lines a{color:var(--gold-2)}
 
-  footer{background:var(--night);color:#8F7380;border-top:1px solid rgba(242,217,221,.12);padding:28px 0 90px;font-size:.88rem}
+  footer{background:var(--black);color:#A89C8D;padding:30px 0 96px;font-size:.9rem}
   footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
-  .mockup-pill{position:fixed;left:16px;bottom:16px;z-index:50;background:var(--powder);color:var(--plum);font:500 .76rem/1 "Jost",sans-serif;letter-spacing:.06em;padding:9px 14px;border-radius:999px;box-shadow:0 4px 18px rgba(0,0,0,.25)}
-  a:focus-visible{outline:2px solid var(--rose);outline-offset:4px}
+  .mockup-pill{position:fixed;left:16px;bottom:16px;z-index:50;background:var(--gold);color:var(--black);font:600 .74rem/1 "Jost",sans-serif;letter-spacing:.04em;padding:9px 14px;border-radius:999px}
+  a:focus-visible{outline:3px solid var(--gold);outline-offset:3px}
 
   @media (max-width:880px){
-    .menu .grid,.visit .grid,.ritual .grid{grid-template-columns:1fr;gap:28px}
-    .hero .copy{grid-template-columns:1fr}
-    .menu li{flex-direction:column}.menu li span{text-align:left}
-    section{padding:72px 0}
+    .hero{padding:40px 0 100px}
+    .hero .grid,.visit .grid,.brandband .row{grid-template-columns:1fr}
+    .art{justify-self:center;max-width:340px}
+    .svc{grid-template-columns:1fr;gap:0}
+    .svc>div:last-child{border-top:0}
+    section{padding:68px 0}
+    .brandband{padding:110px 0 70px}
   }
-  @media (prefers-reduced-motion:reduce){
-    html{scroll-behavior:auto}
-    .cut .b{transition:none;transform:translate(1.4%,2.4%)}
-  }
+  @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.btn{transition:none}}
 </style>
 </head>
 <body>
-<header class="top">
+<header class="nav">
   <div class="wrap">
-    <a class="brand" href="#inicio">Yamilet Fernández</a>
-    <a class="ph" href="tel:+56225361206">(2) 2536 1206</a>
+    <a class="brand" href="#inicio"><small>Salón de belleza</small>Yamilet Fernandez</a>
+    <a class="cta" href="https://wa.me/56984873955">Pedir hora</a>
   </div>
 </header>
+
 <main id="inicio">
-  <section class="hero" id="hero">
-    <div class="wrap" style="width:100%">
-      <p class="eyebrow" style="color:var(--rose);margin-bottom:26px">Peluquería · Puente Alto</p>
-      <div class="cut" aria-label="Corte perfecto">
-        <span class="a" aria-hidden="true">Corte</span>
-        <span class="b" aria-hidden="true">Corte</span>
-        <div class="blade" aria-hidden="true"></div>
-      </div>
-      <p class="after" aria-hidden="true">perfecto, a tu medida.</p>
-      <div class="copy">
-        <p>Cortes y tratamientos con productos de calidad, que te mostramos antes de aplicar. Y un café mientras esperas.</p>
-        <a class="btn btn-powder" href="tel:+56225361206">Pedir hora</a>
-      </div>
-    </div>
-  </section>
-
-  <section class="menu" id="servicios">
+  <section class="hero">
     <div class="wrap grid">
       <div>
-        <p class="eyebrow">Servicios</p>
-        <h2>Lo que hacemos en el sillón.</h2>
+        <span class="eyebrow">Peluquería · Puente Alto</span>
+        <h1>Tu cabello, en manos de <em>quien sabe</em>.</h1>
+        <p class="lead">Cortes, colorimetría, barbería y depilación con productos Kérastase. Atendemos de lunes a viernes hasta las 22:00.</p>
+        <div class="btns">
+          <a class="btn btn-gold" href="https://wa.me/56984873955?text=Hola%2C%20quisiera%20pedir%20una%20hora">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm5.3 14.2c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.4-.7-2.8-1.1-4.6-4-4.8-4.2-.1-.2-1.1-1.5-1.1-2.9s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.9 2.1c.1.2.1.4 0 .5l-.4.6-.4.4c-.1.1-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.4 2.4 1.5.3.2.5.1.6 0l.9-1c.2-.3.4-.2.6-.1l2 1c.3.1.5.2.5.3.1.2.1.8-.1 1.4Z"/></svg>
+            Pedir hora por WhatsApp
+          </a>
+          <a class="btn btn-line" href="tel:+56225361206">Llamar (2) 2536 1206</a>
+        </div>
+        <div class="open" id="open"><i></i><span>Revisando horario…</span></div>
       </div>
-      <ul>
-        <li><b>Corte</b><span>Mujer y hombre, rápido y a tu gusto.</span></li>
-        <li><b>Otros servicios</b><span>Pregúntanos por teléfono por el servicio que buscas.</span></li>
-        <li><b>Tratamientos</b><span>Cuidado del pelo con productos que te mostramos antes de aplicarlos.</span></li>
-      </ul>
+
+      <svg class="art" viewBox="0 0 440 560" role="img" aria-label="Ilustración de un espejo con mechones de cabello, tijeras y peineta">
+        <defs>
+          <linearGradient id="g" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#E6CF93"/><stop offset="1" stop-color="#A9812F"/></linearGradient>
+          <clipPath id="m"><ellipse cx="200" cy="270" rx="140" ry="200"/></clipPath>
+        </defs>
+        <ellipse cx="200" cy="270" rx="152" ry="212" fill="none" stroke="#C9A24B" stroke-width="6"/>
+        <ellipse cx="200" cy="270" rx="140" ry="200" fill="#191513" stroke="#C9A24B" stroke-opacity=".5" stroke-width="1.5"/>
+        <g clip-path="url(#m)" fill="none" stroke-linecap="round">
+          <g transform="translate(-35 -10) scale(1.05)"><path d="M95 20 C121 120 69 210 110 300 S84 440 105 520" stroke="url(#g)" stroke-width="1.4" opacity="0.45"/><path d="M109 20 C141 120 77 210 128 300 S96 440 119 520" stroke="url(#g)" stroke-width="2.3" opacity="0.56"/><path d="M123 20 C161 120 85 210 145 300 S107 440 133 520" stroke="url(#g)" stroke-width="3.2" opacity="0.67"/><path d="M137 20 C181 120 93 210 163 300 S119 440 147 520" stroke="url(#g)" stroke-width="1.4" opacity="0.78"/><path d="M151 20 C177 120 125 210 166 300 S140 440 161 520" stroke="url(#g)" stroke-width="2.3" opacity="0.89"/><path d="M165 20 C197 120 133 210 184 300 S152 440 175 520" stroke="url(#g)" stroke-width="3.2" opacity="0.45"/><path d="M179 20 C217 120 141 210 201 300 S163 440 189 520" stroke="url(#g)" stroke-width="1.4" opacity="0.56"/><path d="M193 20 C237 120 149 210 219 300 S175 440 203 520" stroke="url(#g)" stroke-width="2.3" opacity="0.67"/><path d="M207 20 C233 120 181 210 222 300 S196 440 217 520" stroke="url(#g)" stroke-width="3.2" opacity="0.78"/><path d="M221 20 C253 120 189 210 240 300 S208 440 231 520" stroke="url(#g)" stroke-width="1.4" opacity="0.89"/><path d="M235 20 C273 120 197 210 257 300 S219 440 245 520" stroke="url(#g)" stroke-width="2.3" opacity="0.45"/><path d="M249 20 C293 120 205 210 275 300 S231 440 259 520" stroke="url(#g)" stroke-width="3.2" opacity="0.56"/><path d="M263 20 C289 120 237 210 278 300 S252 440 273 520" stroke="url(#g)" stroke-width="1.4" opacity="0.67"/><path d="M277 20 C309 120 245 210 296 300 S264 440 287 520" stroke="url(#g)" stroke-width="2.3" opacity="0.78"/><path d="M291 20 C329 120 253 210 313 300 S275 440 301 520" stroke="url(#g)" stroke-width="3.2" opacity="0.89"/><path d="M305 20 C349 120 261 210 331 300 S287 440 315 520" stroke="url(#g)" stroke-width="1.4" opacity="0.45"/></g>
+          <path d="M120 120 C150 80 190 70 240 80" stroke="#fff" stroke-opacity=".18" stroke-width="10"/>
+        </g>
+        <path d="M200 482 v40 M150 528 h100" stroke="#C9A24B" stroke-width="6" stroke-linecap="round" fill="none"/>
+        <!-- scissors -->
+        <g transform="translate(350 410) rotate(28)" fill="none" stroke="#E6CF93" stroke-width="5" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="-20" cy="52" r="17" fill="#0E0C0B"/><circle cx="20" cy="52" r="17" fill="#0E0C0B"/>
+          <path d="M-17 36 L12 -110 L18 -108 L-6 38" fill="#C9A24B" stroke="#0E0C0B" stroke-width="2"/>
+          <path d="M17 36 L-12 -110 L-18 -108 L6 38" fill="#E6CF93" stroke="#0E0C0B" stroke-width="2"/>
+          <circle cx="0" cy="-40" r="4.5" fill="#0E0C0B" stroke="#C9A24B" stroke-width="2.5"/>
+        </g>
+        <!-- comb -->
+        <g transform="translate(60 440) rotate(-18)">
+          <rect x="0" y="0" width="150" height="26" rx="8" fill="#C9A24B"/>
+          <g stroke="#C9A24B" stroke-width="4" stroke-linecap="round"><path d="M12 26v28M26 26v28M40 26v28M54 26v28M68 26v28M82 26v28M96 26v28M110 26v28M124 26v28M138 26v28"/></g>
+        </g>
+      </svg>
     </div>
   </section>
 
-  <section class="ritual">
+  <section id="servicios">
     <div class="wrap">
-      <p class="eyebrow">La experiencia</p>
-      <h2>Lo que nuestras clientas destacan.</h2>
-      <div class="grid">
-        <div><h3>Productos a la vista</h3><p>Te mostramos qué aplicamos en tu pelo, siempre productos de buena calidad.</p></div>
-        <div><h3>Un café mientras esperas</h3><p>Café o agua mientras llega tu turno.</p></div>
-        <div><h3>Trato profesional</h3><p>Atención rápida, profesional y respetuosa.</p></div>
+      <span class="eyebrow">Servicios</span>
+      <h2 class="serif">Un salón para cuidar tu imagen completa.</h2>
+      <div class="list svc">
+        <div>
+          <div class="item"><span class="n">01</span><div><h3>Cortes</h3><p>Corte de cabello a tu medida, con atención profesional y respetuosa.</p></div></div>
+          <div class="item"><span class="n">02</span><div><h3>Colorimetría</h3><p>Color y tratamientos para un cabello con brillo y salud.</p></div></div>
+          <div class="item"><span class="n">03</span><div><h3>Barbería</h3><p>Cortes para ellos, en el mismo salón.</p></div></div>
+        </div>
+        <div>
+          <div class="item"><span class="n">04</span><div><h3>Depilación</h3><p>Servicio de depilación en el mismo salón.</p></div></div>
+          <div class="item"><span class="n">05</span><div><h3>Productos capilares</h3><p>Venta de productos para el cuidado del cabello en casa, incluida la línea Kérastase.</p></div></div>
+          <div class="item"><span class="n">06</span><div><h3>Mientras esperas</h3><p>Café y agua para que la espera sea más grata.</p></div></div>
+        </div>
       </div>
-      <div class="rating"><b>4,6</b><span>en Google, con 414 reseñas.</span></div>
     </div>
   </section>
 
-  <section class="visit" id="visitanos">
+  <section class="brandband">
+    <div class="wrap row">
+      <div>
+        <span class="eyebrow">Kérastase</span>
+        <h2 class="serif">Productos de calidad, y te mostramos cuáles aplicamos.</h2>
+        <p>Trabajamos con la línea Kérastase y te explicamos lo que usamos en tu cabello, para que sigas cuidándolo en casa.</p>
+      </div>
+      <div class="stat">
+        <b>4,6</b>
+        <span class="t">de calificación en Google · 414 reseñas</span>
+        <div class="chips"><span>Atención profesional</span><span>Rápida</span><span>Respetuosa</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="visit" id="horario">
     <div class="wrap grid">
       <div>
-        <p class="eyebrow">Visítanos</p>
-        <h2>Abierto hasta las diez de la noche.</h2>
-        <p class="addr">Calle Creta Norte 3457,<br>Puente Alto</p>
-        <a class="btn btn-powder" href="tel:+56225361206">Llamar (2) 2536 1206</a>
-        <a class="btn btn-line" style="margin-left:8px;margin-top:10px" href="https://maps.google.com/?cid=13263746673468857849">Cómo llegar</a>
+        <span class="eyebrow">Horario</span>
+        <h2 class="serif">Abiertos hasta tarde.</h2>
+        <table id="hours">
+          <tr data-d="1"><td>Lunes</td><td>10:30 – 14:00 · 15:00 – 22:00</td></tr>
+          <tr data-d="2"><td>Martes</td><td>10:30 – 14:00 · 15:00 – 22:00</td></tr>
+          <tr data-d="3"><td>Miércoles</td><td>10:30 – 14:00 · 15:00 – 22:00</td></tr>
+          <tr data-d="4"><td>Jueves</td><td>10:30 – 14:00 · 15:00 – 22:00</td></tr>
+          <tr data-d="5"><td>Viernes</td><td>10:30 – 14:00 · 15:00 – 22:00</td></tr>
+          <tr data-d="6"><td>Sábado</td><td>10:00 – 14:00 · 15:00 – 20:00</td></tr>
+          <tr data-d="0"><td>Domingo</td><td>Cerrado</td></tr>
+        </table>
       </div>
-      <table id="hours">
-        <tr data-d="1"><td>Lunes</td><td>10:30 – 14:00 · 15:00 – 22:00</td></tr>
-        <tr data-d="2"><td>Martes</td><td>10:30 – 14:00 · 15:00 – 22:00</td></tr>
-        <tr data-d="3"><td>Miércoles</td><td>10:30 – 14:00 · 15:00 – 22:00</td></tr>
-        <tr data-d="4"><td>Jueves</td><td>10:30 – 14:00 · 15:00 – 22:00</td></tr>
-        <tr data-d="5"><td>Viernes</td><td>10:30 – 14:00 · 15:00 – 22:00</td></tr>
-        <tr data-d="6"><td>Sábado</td><td>10:00 – 14:00 · 15:00 – 20:00</td></tr>
-        <tr data-d="0"><td>Domingo</td><td>Cerrado</td></tr>
-      </table>
+      <div class="card">
+        <span class="eyebrow">Dónde estamos</span>
+        <p class="serif">Creta Norte 3457,<br>Puente Alto</p>
+        <p>Pide tu hora por WhatsApp o llámanos.</p>
+        <div class="btns" style="margin-top:22px">
+          <a class="btn btn-gold" href="https://wa.me/56984873955">WhatsApp</a>
+          <a class="btn btn-line" href="https://maps.google.com/?cid=13263746673468857849">Cómo llegar</a>
+        </div>
+        <div class="lines">
+          <span>WhatsApp: <a href="https://wa.me/56984873955">+56 9 8487 3955</a></span>
+          <span>Teléfono: <a href="tel:+56225361206">(2) 2536 1206</a></span>
+          <span>Instagram: <a href="https://www.instagram.com/salonyamiletfernandez/">@salonyamiletfernandez</a></span>
+        </div>
+      </div>
     </div>
   </section>
 </main>
-<footer><div class="wrap"><span>Peluquería Yamilet Fernández · Calle Creta Norte 3457, Puente Alto</span><span>(2) 2536 1206</span></div></footer>
+
+<footer>
+  <div class="wrap"><span>Salón Yamilet Fernandez · Creta Norte 3457, Puente Alto</span><span>(2) 2536 1206 · @salonyamiletfernandez</span></div>
+</footer>
 <div class="mockup-pill" aria-hidden="true">Propuesta de sitio web · mockup</div>
 <script>
-  requestAnimationFrame(() => document.getElementById('hero').classList.add('ready'));
-  const r = document.querySelector('#hours tr[data-d="' + new Date().getDay() + '"]'); if (r) r.classList.add('today');
+  // [open, close] pairs in minutes by weekday (0 = Sunday), Santiago time.
+  const H={0:[],1:[[630,840],[900,1320]],2:[[630,840],[900,1320]],3:[[630,840],[900,1320]],4:[[630,840],[900,1320]],5:[[630,840],[900,1320]],6:[[600,840],[900,1200]]};
+  const f=m=>String(Math.floor(m/60)).padStart(2,'0')+':'+String(m%60).padStart(2,'0');
+  const now=new Date(new Date().toLocaleString('en-US',{timeZone:'America/Santiago'}));
+  const d=now.getDay(),m=now.getHours()*60+now.getMinutes();
+  const box=document.getElementById('open'),t=box.querySelector('span');
+  const cur=H[d].find(r=>m>=r[0]&&m<r[1]);
+  if(cur){t.textContent='Abierto ahora · hasta las '+f(cur[1]);}
+  else{
+    box.classList.add('closed');
+    const nx=H[d].find(r=>m<r[0]);
+    if(nx){t.textContent='Cerrado · abre hoy a las '+f(nx[0]);}
+    else{let n=d,k=0;do{n=(n+1)%7;k++;}while(!H[n].length&&k<7);
+      t.textContent='Cerrado · abre '+(k===1?'mañana':['el domingo','el lunes','el martes','el miércoles','el jueves','el viernes','el sábado'][n])+' a las '+f(H[n][0][0]);}
+  }
+  const r=document.querySelector('#hours tr[data-d="'+d+'"]');if(r)r.classList.add('today');
 </script>
 </body>
 </html>
