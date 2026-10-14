@@ -1,0 +1,221 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Bassi Proyectos y Construcción · Constructora en Maipú desde 1998</title>
+<meta name="description" content="BPC, Bassi Proyectos y Construcción S.A., Maipú: más de 50 mil metros cuadrados construidos en colegios, centros médicos, edificios residenciales y corporativos, casas y remodelaciones. Diseño, construcción y reparaciones.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Source+Sans+3:wght@400;600;700&family=Source+Code+Pro:wght@500&display=swap" rel="stylesheet">
+<style>
+  :root{--green:#0F3A20;--green-2:#165230;--brick:#E8735A;--concrete:#DCD9D1;--paper:#EFEDE7;--ink:#151816;--mute:#5B615C;--line:rgba(255,255,255,.16)}
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{font:400 1.04rem/1.65 "Source Sans 3",system-ui,sans-serif;color:var(--ink);background:var(--paper)}
+  img{display:block;max-width:100%;height:auto}
+  a{color:inherit}
+  :focus-visible{outline:3px solid var(--brick);outline-offset:3px}
+  .wrap{max-width:1180px;margin:0 auto;padding:0 22px}
+  .anton{font-family:Anton,Impact,sans-serif;font-weight:400;text-transform:uppercase;letter-spacing:.01em;line-height:.95}
+  .mono{font-family:"Source Code Pro",ui-monospace,monospace;font-size:.76rem;letter-spacing:.08em;text-transform:uppercase}
+  .btn{display:inline-flex;align-items:center;gap:8px;text-decoration:none;font-weight:700;padding:14px 22px;border:2px solid currentColor;transition:background .15s,color .15s}
+  .btn-brick{background:var(--brick);border-color:var(--brick);color:var(--ink)}
+  .btn-brick:hover{background:#fff;border-color:#fff}
+  .btn-out{color:#fff}
+  .btn-out:hover{background:#fff;color:var(--green)}
+
+  header{background:var(--green);color:#fff;border-bottom:1px solid var(--line)}
+  header .wrap{display:flex;align-items:center;justify-content:space-between;height:76px;gap:16px}
+  header img{height:40px;width:auto}
+  header nav{display:flex;gap:28px;font-weight:600;font-size:.94rem}
+  header nav a{text-decoration:none;opacity:.85}
+  header nav a:hover{opacity:1;color:var(--brick)}
+
+  /* hero as a drawing sheet */
+  .sheet{background:var(--green);color:#fff;padding:34px 0 60px;position:relative}
+  .frame{position:relative;border:1.5px solid rgba(255,255,255,.5);padding:56px 48px 48px;
+    background-image:linear-gradient(var(--line) 1px,transparent 1px),linear-gradient(90deg,var(--line) 1px,transparent 1px);
+    background-size:40px 40px;background-position:-1px -1px}
+  .frame::before{content:"";position:absolute;inset:8px;border:1px solid rgba(255,255,255,.25);pointer-events:none}
+  .frame .tick{position:absolute;font-family:"Source Code Pro",monospace;font-size:.7rem;color:rgba(255,255,255,.6)}
+  .hero-grid{display:grid;grid-template-columns:1.25fr .75fr;gap:40px;align-items:end;position:relative}
+  .hero h1{font-size:clamp(3.2rem,8.2vw,7.4rem)}
+  .hero h1 span{color:var(--brick)}
+  .hero p.lead{max-width:34em;font-size:1.14rem;color:#D3DDD6;margin:24px 0 30px}
+  .ctas{display:flex;flex-wrap:wrap;gap:12px}
+  .plan{width:100%;max-width:360px;justify-self:end}
+  .titleblock{margin-top:42px;display:grid;grid-template-columns:2fr 1fr 1fr 1.2fr;border:1.5px solid rgba(255,255,255,.6);background:var(--green)}
+  .titleblock div{padding:12px 16px;border-left:1.5px solid rgba(255,255,255,.35)}
+  .titleblock div:first-child{border-left:0}
+  .titleblock .mono{display:block;color:rgba(255,255,255,.6);margin-bottom:4px}
+  .titleblock b{font-size:1.06rem}
+  .titleblock .big{font-family:Anton,sans-serif;font-weight:400;font-size:1.9rem;color:var(--brick);line-height:1}
+
+  section{padding:96px 0}
+  .eyebrow{color:var(--brick);margin-bottom:12px;display:block}
+  .h2{font-size:clamp(2.4rem,5vw,4rem);color:var(--green)}
+
+  /* what they build */
+  .types{display:grid;grid-template-columns:repeat(5,1fr);border-top:2px solid var(--green);border-left:2px solid var(--green);margin-top:44px}
+  .type{border-right:2px solid var(--green);border-bottom:2px solid var(--green);padding:26px 20px 22px;background:#fff;min-height:200px;display:flex;flex-direction:column;justify-content:space-between}
+  .type svg{width:54px;height:54px;stroke:var(--green);fill:none;stroke-width:2}
+  .type h3{font-family:Anton,sans-serif;font-weight:400;text-transform:uppercase;font-size:1.35rem;line-height:1.05;color:var(--green)}
+
+  /* services */
+  .services{background:var(--concrete)}
+  .svc{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:40px}
+  .svc article{background:var(--paper);padding:30px;border-top:6px solid var(--brick)}
+  .svc h3{font-size:2rem;color:var(--green);margin-bottom:10px}
+  .svc p{color:var(--mute)}
+
+  /* history: a real sequence */
+  .history .grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:56px}
+  .line{list-style:none;position:relative;padding-left:34px}
+  .line::before{content:"";position:absolute;left:8px;top:8px;bottom:8px;width:2px;background:var(--green)}
+  .line li{position:relative;padding-bottom:34px}
+  .line li::before{content:"";position:absolute;left:-32px;top:8px;width:16px;height:16px;background:var(--brick);border:3px solid var(--paper);box-shadow:0 0 0 2px var(--green)}
+  .line .yr{font-family:Anton,sans-serif;font-size:2.2rem;color:var(--green);line-height:1}
+  .line p{color:var(--mute);max-width:36em;margin-top:6px}
+  .quote{background:var(--green);color:#fff;padding:34px;align-self:start}
+  .quote p.anton{font-size:2.4rem;color:var(--brick)}
+  .quote p{color:#D3DDD6}
+
+  /* contact */
+  .contact{background:var(--ink);color:#fff}
+  .contact .grid{display:grid;grid-template-columns:1.1fr .9fr;gap:56px;align-items:start}
+  .contact .h2{color:#fff}
+  .contact .h2 span{color:var(--brick)}
+  .contact p{color:#C3C8C4;margin:18px 0 28px;max-width:30em}
+  .cards{display:grid;gap:2px;background:#333}
+  .cards a,.cards div{display:block;background:var(--ink);padding:18px 22px;text-decoration:none}
+  .cards a:hover{background:#1F2420}
+  .cards .mono{display:block;color:var(--brick);margin-bottom:2px}
+  .cards b{font-size:1.15rem}
+  footer{background:var(--green);color:#BFD0C4;font-size:.88rem}
+  footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;padding-top:24px;padding-bottom:70px}
+  .mockup-pill{position:fixed;left:16px;bottom:16px;z-index:50;background:var(--brick);color:var(--ink);font:700 .74rem/1 "Source Sans 3",sans-serif;padding:9px 14px;border-radius:999px;box-shadow:0 6px 18px rgba(0,0,0,.25)}
+
+  @media (max-width:980px){.types{grid-template-columns:repeat(2,1fr)}.type:last-child{grid-column:span 2}}
+  @media (max-width:860px){
+    header nav{display:none}
+    .hero-grid,.svc,.history .grid,.contact .grid{grid-template-columns:1fr}
+    .plan{justify-self:start;max-width:260px}
+    .frame{padding:40px 22px 24px}
+    .titleblock{grid-template-columns:1fr 1fr}
+    .titleblock div:nth-child(3){border-left:0}
+    .titleblock div:nth-child(n+3){border-top:1.5px solid rgba(255,255,255,.35)}
+    section{padding:70px 0}
+  }
+  .show-m{display:none}@media (max-width:600px){.hide-m{display:none}.show-m{display:inline}.plan{display:none}}
+  @media (prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <a href="#"><img src="assets/logo.png" alt="BPC Bassi Proyectos y Construcción" width="686" height="140"></a>
+    <nav aria-label="Secciones"><a href="#obras">Obras</a><a href="#servicios">Servicios</a><a href="#historia">Historia</a><a href="#contacto">Contacto</a></nav>
+    <a class="btn btn-brick" href="tel:+56227437391" style="padding:10px 16px;font-size:.9rem;white-space:nowrap"><span class="hide-m">+56 2 2743 7391</span><span class="show-m">Llamar</span></a>
+  </div>
+</header>
+
+<main>
+<section class="sheet hero" style="padding-top:34px">
+  <div class="wrap">
+    <div class="frame">
+      <span class="tick" style="top:14px;left:20px">A</span><span class="tick" style="top:14px;right:20px">B</span>
+      <div class="hero-grid">
+        <div>
+          <span class="mono eyebrow">Bassi Proyectos y Construcción S.A. · Maipú</span>
+          <h1 class="anton">Colegios, centros médicos <span>y edificios</span> desde 1998</h1>
+          <p class="lead">Más de 50 mil metros cuadrados construidos en colegios, centros médicos, edificios residenciales y corporativos, además de casas y remodelaciones.</p>
+          <div class="ctas">
+            <a class="btn btn-brick" href="mailto:bpc2676@hotmail.com?subject=Cotizaci%C3%B3n%20de%20proyecto">Cotizar un proyecto</a>
+            <a class="btn btn-out" href="tel:+56227437391">Llamar a la oficina</a>
+          </div>
+        </div>
+        <svg class="plan" viewBox="0 0 300 300" aria-hidden="true" fill="none" stroke="#fff" stroke-width="2">
+          <rect x="20" y="20" width="260" height="260" stroke-opacity=".9"/>
+          <path d="M20 130h110M130 20v170M130 190h150M200 190v90M20 210h60v70" stroke-opacity=".9"/>
+          <path d="M60 130a30 30 0 0 1 30-30" stroke="#E8735A"/><path d="M130 160a26 26 0 0 0 26 26" stroke="#E8735A"/>
+          <path d="M20 296h260M20 290v12M280 290v12" stroke-opacity=".6" stroke-width="1"/>
+          <text x="150" y="294" fill="#fff" fill-opacity=".7" stroke="none" font-family="Source Code Pro,monospace" font-size="10" text-anchor="middle">PLANTA TIPO</text>
+          <path d="M150 60h60v40h-60z" stroke-dasharray="4 4" stroke-opacity=".6"/>
+        </svg>
+      </div>
+      <div class="titleblock">
+        <div><span class="mono">Empresa</span><b>BPC · Sociedad Anónima desde 2009</b></div>
+        <div><span class="mono">Construido</span><span class="big">+50.000 m²</span></div>
+        <div><span class="mono">Inicio</span><span class="big">1992</span></div>
+        <div><span class="mono">Oficina</span><b>Pedro Velásquez 360, Maipú</b></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="obras">
+  <div class="wrap">
+    <span class="mono eyebrow">Qué construimos</span>
+    <h2 class="h2 anton">Obras de todos los tamaños</h2>
+    <div class="types">
+      <div class="type"><svg viewBox="0 0 54 54" aria-hidden="true"><path d="M6 48V22l21-14 21 14v26M6 48h42M20 48V34h14v14M14 26h4M36 26h4"/></svg><h3>Colegios</h3></div>
+      <div class="type"><svg viewBox="0 0 54 54" aria-hidden="true"><path d="M8 48V12h38v36M4 48h46M27 18v14M20 25h14M22 48v-8h10v8"/></svg><h3>Centros médicos</h3></div>
+      <div class="type"><svg viewBox="0 0 54 54" aria-hidden="true"><path d="M12 48V6h30v42M6 48h42M18 12h6M30 12h6M18 20h6M30 20h6M18 28h6M30 28h6M24 48v-10h6v10"/></svg><h3>Edificios residenciales</h3></div>
+      <div class="type"><svg viewBox="0 0 54 54" aria-hidden="true"><path d="M8 48V16h16v32M24 48V6h22v42M4 48h46M30 12h10M30 20h10M30 28h10M12 22h8M12 30h8"/></svg><h3>Edificios corporativos</h3></div>
+      <div class="type"><svg viewBox="0 0 54 54" aria-hidden="true"><path d="M8 48V26L27 10l19 16v22M4 48h46M22 48V34h10v14M38 8v8"/></svg><h3>Casas y remodelaciones</h3></div>
+    </div>
+  </div>
+</section>
+
+<section class="services" id="servicios">
+  <div class="wrap">
+    <span class="mono eyebrow">Servicios</span>
+    <h2 class="h2 anton">Del diseño a la entrega</h2>
+    <div class="svc">
+      <article><h3 class="anton">Diseño</h3><p>Proyectos personalizados para su casa, su negocio o su institución.</p></article>
+      <article><h3 class="anton">Construcción</h3><p>Obra nueva con profesionales de experiencia en distintos ramos de la construcción.</p></article>
+      <article><h3 class="anton">Reparaciones</h3><p>Trabajos de reparación y remodelación, el oficio con el que la empresa partió.</p></article>
+    </div>
+  </div>
+</section>
+
+<section class="history" id="historia">
+  <div class="wrap grid">
+    <div>
+      <span class="mono eyebrow">Historia</span>
+      <h2 class="h2 anton">Tres hermanos, una constructora</h2>
+      <div class="quote" style="margin-top:30px"><p class="anton">Desde 1998</p><p>Construyendo futuro.</p></div>
+    </div>
+    <ol class="line">
+      <li><p class="yr">1992</p><p>Carlos Bassi Maturana y sus hermanos Alejandro y Ricardo, todos con experiencia en construcción, comienzan como contratistas: montajes publicitarios para ferias y locales comerciales de Santiago, y reparaciones en entidades bancarias.</p></li>
+      <li><p class="yr">1997 – 1998</p><p>El equipo construye el Edificio Sede del Colegio de Profesores de Chile A.G. y nace Bassi Proyectos y Construcción Limitada, para proyectos habitacionales y centros de salud.</p></li>
+      <li><p class="yr">2009</p><p>La empresa pasa a ser sociedad anónima: Bassi Proyectos y Construcción S.A.</p></li>
+    </ol>
+  </div>
+</section>
+
+<section class="contact" id="contacto">
+  <div class="wrap grid">
+    <div>
+      <span class="mono eyebrow">Contacto</span>
+      <h2 class="h2 anton">Cuéntenos <span>su proyecto</span></h2>
+      <p>Escríbanos con el tipo de obra, la comuna y los metros aproximados, y lo contactamos para conversar.</p>
+      <a class="btn btn-brick" href="mailto:bpc2676@hotmail.com?subject=Cotizaci%C3%B3n%20de%20proyecto">Escribir un correo</a>
+    </div>
+    <div class="cards">
+      <a href="tel:+56227437391"><span class="mono">Teléfono</span><b>+56 2 2743 7391</b></a>
+      <a href="mailto:bpc2676@hotmail.com"><span class="mono">Correo</span><b>bpc2676@hotmail.com</b></a>
+      <a href="https://maps.google.com/?cid=14187901061264410268"><span class="mono">Oficina</span><b>Pedro Velásquez 360, Maipú</b></a>
+      <a href="https://www.facebook.com/ContactoBPC"><span class="mono">Facebook</span><b>ContactoBPC</b></a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer><div class="wrap"><span>Bassi Proyectos y Construcción S.A. · Maipú</span><span>+56 2 2743 7391 · bpc2676@hotmail.com</span></div></footer>
+<div class="mockup-pill" aria-hidden="true">Propuesta de sitio web · mockup</div>
+</body>
+</html>
