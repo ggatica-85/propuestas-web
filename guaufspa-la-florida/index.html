@@ -1,0 +1,352 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Guaufspa · Estética canina sin caniles en La Florida</title>
+<meta name="description" content="Guaufspa, estética canina en El Hualle Sur 9118, La Florida. Atención personalizada y libre de caniles: cortes, baños con agua ozonificada, deslanado y especial cachorros. Reserva tu hora.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Mulish:wght@400;600;800&display=swap" rel="stylesheet">
+<style>
+  :root{--slate:#16191F;--slate-2:#232831;--gold:#D9A82E;--gold-l:#F1D48A;--blue:#3E63B8;--cloud:#F5F6F8;--ink:#1D2129;--mute:#5E6573}
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{font:400 1.03rem/1.65 Mulish,system-ui,sans-serif;color:var(--ink);background:var(--cloud)}
+  img{display:block;max-width:100%;height:auto}
+  a{color:inherit}
+  .wrap{max-width:1160px;margin:0 auto;padding:0 22px}
+  .serif{font-family:"DM Serif Display",serif;font-weight:400}
+  :focus-visible{outline:3px solid var(--gold);outline-offset:3px}
+
+  /* header */
+  .top{background:var(--slate);color:#fff}
+  .top .wrap{display:flex;align-items:center;justify-content:space-between;height:70px}
+  .logo{font-family:"DM Serif Display",serif;font-size:1.6rem;text-decoration:none;letter-spacing:.01em}
+  .logo span{color:var(--gold)}
+  .top nav{display:flex;gap:26px;font-size:.9rem;font-weight:600}
+  .top nav a{text-decoration:none;opacity:.85}
+  .top nav a:hover{opacity:1;color:var(--gold-l)}
+  .btn{display:inline-flex;align-items:center;gap:8px;text-decoration:none;font-weight:800;font-size:.95rem;border-radius:999px;padding:14px 24px;transition:transform .15s}
+  .btn:hover{transform:translateY(-2px)}
+  .btn-gold{background:var(--gold);color:var(--slate)}
+  .btn-line{border:2px solid rgba(255,255,255,.4);color:#fff}
+  .top .btn{padding:10px 18px;font-size:.85rem}
+
+  /* hero */
+  .hero{background:var(--slate);color:#fff;overflow:hidden}
+  .hero .wrap{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center;padding-top:40px;padding-bottom:80px}
+  .kicker{font-size:.78rem;font-weight:800;letter-spacing:.22em;text-transform:uppercase;color:var(--gold)}
+  .hero h1{font-family:"DM Serif Display",serif;font-weight:400;font-size:clamp(2.7rem,5.6vw,4.7rem);line-height:1.02;margin:16px 0 22px}
+  .hero h1 em{color:var(--gold-l)}
+  .hero p.lead{font-size:1.12rem;color:#C9CED8;max-width:30em}
+  .hero .ctas{display:flex;flex-wrap:wrap;gap:12px;margin:30px 0 26px}
+  .rating{display:flex;align-items:center;gap:12px;font-size:.92rem;color:#C9CED8}
+  .stars{color:var(--gold);letter-spacing:2px;font-size:1.05rem}
+  .rating b{color:#fff}
+  .sign{position:relative}
+  .sign img{width:100%;aspect-ratio:7/5;object-fit:cover;border-radius:6px}
+  .sign .tag{position:absolute;left:-22px;bottom:28px;background:var(--gold);color:var(--slate);font-weight:800;padding:14px 18px;border-radius:4px;font-size:.9rem;line-height:1.3;box-shadow:0 12px 30px rgba(0,0,0,.35)}
+  .sign .tag strong{display:block;font-family:"DM Serif Display",serif;font-weight:400;font-size:1.5rem}
+
+  /* promise strip */
+  .promise{background:var(--gold);color:var(--slate)}
+  .promise .wrap{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;padding-top:26px;padding-bottom:26px}
+  .promise div{font-weight:600;font-size:.98rem;line-height:1.4}
+  .promise b{display:block;font-family:"DM Serif Display",serif;font-weight:400;font-size:1.35rem}
+
+  section{padding:96px 0}
+  .h2{font-family:"DM Serif Display",serif;font-weight:400;font-size:clamp(2rem,4vw,3rem);line-height:1.08}
+  .sub{color:var(--mute);max-width:36em;margin-top:12px}
+
+  /* menu by coat */
+  .coats{display:flex;flex-wrap:wrap;gap:10px;margin:40px 0 28px}
+  .coats button{font:700 .92rem Mulish,sans-serif;border:2px solid var(--slate);background:transparent;color:var(--slate);border-radius:999px;padding:10px 18px;cursor:pointer}
+  .coats button[aria-selected="true"]{background:var(--slate);color:var(--gold-l)}
+  .panel{display:none;background:#fff;border-radius:10px;padding:34px;box-shadow:0 1px 0 rgba(0,0,0,.06),0 18px 40px rgba(22,25,31,.07)}
+  .panel.on{display:grid;grid-template-columns:1.1fr .9fr;gap:40px}
+  .panel h3{font-family:"DM Serif Display",serif;font-weight:400;font-size:1.8rem;line-height:1.1}
+  .panel .for{color:var(--mute);font-size:.92rem;margin:6px 0 16px}
+  .panel ul{list-style:none;display:grid;gap:8px}
+  .panel li{padding-left:22px;position:relative;font-size:.97rem}
+  .panel li::before{content:"";position:absolute;left:2px;top:.6em;width:9px;height:9px;border-radius:50%;background:var(--gold)}
+  .scale{background:var(--slate);color:#fff;border-radius:8px;padding:24px}
+  .scale .lab{font-size:.75rem;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);font-weight:800;margin-bottom:12px}
+  .scale table{width:100%;border-collapse:collapse}
+  .scale td{padding:11px 0;border-bottom:1px solid rgba(255,255,255,.12);font-size:.98rem}
+  .scale td:last-child{text-align:right;font-family:"DM Serif Display",serif;font-size:1.35rem;color:var(--gold-l)}
+  .scale tr:last-child td{border-bottom:0}
+  .scale .note{font-size:.8rem;color:#AEB4BF;margin-top:12px}
+  .extra{margin-top:18px;font-size:.92rem;color:var(--mute)}
+
+  /* place */
+  .place{background:#fff}
+  .place .grid{display:grid;grid-template-columns:1.25fr 1fr;gap:20px}
+  .place figure{position:relative;border-radius:8px;overflow:hidden}
+  .place figure img{width:100%;height:100%;object-fit:cover}
+  .place .stack{display:grid;gap:20px}
+  .place figcaption{position:absolute;left:14px;bottom:14px;background:rgba(22,25,31,.82);color:#fff;font-size:.82rem;font-weight:600;padding:6px 12px;border-radius:999px}
+  .why{display:grid;grid-template-columns:repeat(3,1fr);gap:28px;margin-top:56px}
+  .why h3{font-family:"DM Serif Display",serif;font-weight:400;font-size:1.4rem;margin-bottom:6px}
+  .why p{color:var(--mute);font-size:.97rem}
+
+  /* contact */
+  .contact{background:var(--blue);color:#fff}
+  .contact .wrap{display:grid;grid-template-columns:1fr 1fr;gap:56px}
+  .contact .h2 em{color:var(--gold-l)}
+  .contact p{color:#DCE4F5}
+  .hours{width:100%;border-collapse:collapse;margin-top:6px}
+  .hours td{padding:10px 0;border-bottom:1px solid rgba(255,255,255,.18)}
+  .hours td:last-child{text-align:right;font-weight:700}
+  .hours .off td:last-child{opacity:.6;font-weight:400}
+  .info{display:grid;gap:14px;margin:28px 0}
+  .info a{text-decoration:none;border-bottom:1px solid rgba(255,255,255,.35)}
+  .info span{display:block;font-size:.74rem;letter-spacing:.2em;text-transform:uppercase;color:var(--gold-l);font-weight:800}
+  footer{background:var(--slate);color:#AEB4BF;font-size:.88rem}
+  footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;padding-top:26px;padding-bottom:70px}
+  .mockup-pill{position:fixed;left:16px;bottom:16px;z-index:50;background:var(--gold);color:var(--slate);font:800 .74rem/1 Mulish,sans-serif;padding:9px 14px;border-radius:999px;box-shadow:0 6px 18px rgba(0,0,0,.25)}
+
+  @media (max-width:900px){
+    .top nav{display:none}
+    .hero .wrap,.panel.on,.place .grid,.contact .wrap{grid-template-columns:1fr}
+    .hero .wrap{gap:36px;padding-bottom:60px}
+    .sign .tag{position:static;margin-top:-6px;border-radius:0 0 6px 6px;box-shadow:none}
+    .promise .wrap,.why{grid-template-columns:1fr}
+    section{padding:70px 0}
+    .panel{padding:24px}
+  }
+  @media (prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap">
+    <a class="logo" href="#">Guauf<span>spa</span></a>
+    <nav aria-label="Secciones"><a href="#servicios">Servicios y valores</a><a href="#local">El local</a><a href="#contacto">Horario y contacto</a></nav>
+    <a class="btn btn-gold" href="https://conectasitios.cl/pagina_sucursal/guaufspa/MTY=">Reservar hora</a>
+  </div>
+</header>
+
+<main>
+<section class="hero" style="padding:0">
+  <div class="wrap">
+    <div>
+      <p class="kicker">Estética canina · La Florida</p>
+      <h1>Peluquería canina <em>sin caniles</em>, a su ritmo.</h1>
+      <p class="lead">Atención personalizada en El Hualle Sur, con baños según el tipo de piel, agua ozonificada y un servicio especial para cachorros que llegan por primera vez.</p>
+      <div class="ctas">
+        <a class="btn btn-gold" href="https://conectasitios.cl/pagina_sucursal/guaufspa/MTY=">Reservar hora</a>
+        <a class="btn btn-line" href="https://wa.me/56971756069">Escribir por WhatsApp</a>
+      </div>
+      <div class="rating"><span class="stars" aria-hidden="true">★★★★★</span><span><b>4,7 en Google</b> · 65 reseñas</span></div>
+    </div>
+    <div class="sign">
+      <img src="assets/letrero.jpg" alt="Letrero dorado de Guaufspa, estética canina, sobre la fachada" width="1400" height="1000">
+      <p class="tag"><strong>Libre de caniles</strong>Su perro no espera encerrado.</p>
+    </div>
+  </div>
+</section>
+
+<div class="promise">
+  <div class="wrap">
+    <div><b>Por tipo de pelaje</b>Rizado, doble capa, pelo raso o Pomerania: cada manto tiene su servicio.</div>
+    <div><b>Agua ozonificada</b>Para pieles sensibles, con alergias o dermatitis.</div>
+    <div><b>Valores a la vista</b>Precio desde, según el peso de su perro.</div>
+  </div>
+</div>
+
+<section id="servicios">
+  <div class="wrap">
+    <p class="kicker" style="color:var(--blue)">Servicios y valores</p>
+    <h2 class="h2">Elija el pelaje de su perro</h2>
+    <p class="sub">El valor final depende del estado del manto; si hay nudos o pelo compactado, se recomienda un corte funcional para cuidar la piel.</p>
+
+    <div class="coats" role="tablist" aria-label="Tipo de pelaje">
+      <button role="tab" aria-selected="true" aria-controls="p1" id="t1">Rizado o mixto</button>
+      <button role="tab" aria-selected="false" aria-controls="p2" id="t2">Doble capa</button>
+      <button role="tab" aria-selected="false" aria-controls="p3" id="t3">Pelo raso</button>
+      <button role="tab" aria-selected="false" aria-controls="p4" id="t4">Pomerania</button>
+      <button role="tab" aria-selected="false" aria-controls="p5" id="t5">Cachorros</button>
+    </div>
+
+    <div class="panel on" id="p1" role="tabpanel" aria-labelledby="t1">
+      <div>
+        <h3>Deluxe</h3>
+        <p class="for">Poodle, Shih Tzu, Yorkshire, Maltés, Schnauzer, mestizos. El clásico más solicitado.</p>
+        <ul>
+          <li>Corte mixto, máquina y tijera, con largos de hasta 13 mm</li>
+          <li>Baño dermocosmético según el tipo de piel</li>
+          <li>Secado y peinado profesional</li>
+          <li>Corte de uñas y revisión externa de oídos</li>
+          <li>Perfilado de rostro, hidratación de nariz y perfume hipoalergénico</li>
+        </ul>
+        <p class="extra">¿Busca el corte tipo osito? El <b>Premium avanzado · Full Spa</b> suma baño terapéutico con agua ozonificada y mascarilla, desde $45.990 hasta 5 kg.</p>
+      </div>
+      <div class="scale">
+        <p class="lab">Deluxe · desde</p>
+        <table>
+          <tr><td>Hasta 5 kg</td><td>$33.990</td></tr>
+          <tr><td>Hasta 8 kg</td><td>$36.990</td></tr>
+          <tr><td>Hasta 12 kg</td><td>$40.990</td></tr>
+          <tr><td>Hasta 20 kg</td><td>$60.990</td></tr>
+        </table>
+        <p class="note">Especial Yorkshire mini: $29.990 hasta 4 kg.</p>
+      </div>
+    </div>
+
+    <div class="panel" id="p2" role="tabpanel" aria-labelledby="t2">
+      <div>
+        <h3>Skimmed</h3>
+        <p class="for">Pelajes nórdicos y densos que necesitan deslanado. Para Chow Chow, Samoyedo o Malamute está el Skimmed Pro.</p>
+        <ul>
+          <li>Baño profundo con dermocosmética</li>
+          <li>Cepillado profesional en seco y en húmedo</li>
+          <li>Deslanado con herramientas especializadas</li>
+          <li>Secado controlado con expulsor de aire</li>
+          <li>Limpieza de oídos, corte de uñas, perfume e hidratante de nariz</li>
+        </ul>
+        <p class="extra">Duración: 1,5 a 2,5 horas según tamaño y pelaje.</p>
+      </div>
+      <div class="scale">
+        <p class="lab">Skimmed · desde</p>
+        <table>
+          <tr><td>Hasta 15 kg</td><td>$43.990</td></tr>
+          <tr><td>Hasta 20 kg</td><td>$53.990</td></tr>
+          <tr><td>Hasta 30 kg</td><td>$65.990</td></tr>
+          <tr><td>Hasta 40 kg</td><td>$75.990</td></tr>
+        </table>
+        <p class="note">Valores base para mantenciones cada 2 meses como máximo.</p>
+      </div>
+    </div>
+
+    <div class="panel" id="p3" role="tabpanel" aria-labelledby="t3">
+      <div>
+        <h3>Bath shine</h3>
+        <p class="for">Pug, Bulldog, Chihuahua, Boxer y mestizos de pelo corto.</p>
+        <ul>
+          <li>Baño con shampoo hipoalergénico o dermatológico</li>
+          <li>Cepillado con guante de goma para sacar el pelo muerto</li>
+          <li>Limpieza profunda de arrugas y pliegues con antiséptico</li>
+          <li>Agua ozonificada, recomendada para piel con alergias</li>
+          <li>Secado con aire tibio, sin calor directo</li>
+        </ul>
+        <p class="extra">Duración: 45 minutos a 2 horas según tamaño.</p>
+      </div>
+      <div class="scale">
+        <p class="lab">Bath shine · desde</p>
+        <table>
+          <tr><td>Hasta 3 kg</td><td>$22.990</td></tr>
+          <tr><td>Hasta 7 kg</td><td>$24.990</td></tr>
+          <tr><td>Hasta 12 kg</td><td>$26.990</td></tr>
+          <tr><td>Desde 15 kg</td><td>$33.990</td></tr>
+        </table>
+      </div>
+    </div>
+
+    <div class="panel" id="p4" role="tabpanel" aria-labelledby="t4">
+      <div>
+        <h3>Especial Pomerania</h3>
+        <p class="for">Para mantener el volumen, la textura y la salud de su pelaje doble.</p>
+        <ul>
+          <li>Shampoo específico para doble pelaje y piel sensible</li>
+          <li>Deslanado profesional del subpelo muerto</li>
+          <li>Cepillado y secado a expulsor con control de calor</li>
+          <li>Baño con agua ozonificada</li>
+          <li>Corte higiénico opcional, oídos, uñas y perfume</li>
+        </ul>
+        <p class="extra">Duración: 1 a 1,5 horas.</p>
+      </div>
+      <div class="scale">
+        <p class="lab">Pomerania · desde</p>
+        <table><tr><td>Según estado del pelaje</td><td>$36.990</td></tr></table>
+      </div>
+    </div>
+
+    <div class="panel" id="p5" role="tabpanel" aria-labelledby="t5">
+      <div>
+        <h3>Baby spa · primera visita</h3>
+        <p class="for">Para cachorros de hasta 6 meses con su esquema de vacunas completo.</p>
+        <ul>
+          <li>Bienvenida y adaptación con juegos breves</li>
+          <li>Baño tibio con shampoo hipoalergénico para cachorros</li>
+          <li>Secado suave, solo si lo tolera bien</li>
+          <li>Oídos y uñas, si el cachorro lo permite</li>
+          <li>Informe de comportamiento para las próximas visitas</li>
+        </ul>
+        <p class="extra">No incluye corte de pelo en el cuerpo. Todo se hace al ritmo del cachorro: 30 a 60 minutos.</p>
+      </div>
+      <div class="scale">
+        <p class="lab">Cachorros · desde</p>
+        <table>
+          <tr><td>Baby spa (hasta 5 kg)</td><td>$26.990</td></tr>
+          <tr><td>Baby spa en seco</td><td>$15.990</td></tr>
+          <tr><td>Paticure, corte y limado de uñas</td><td>$7.000</td></tr>
+        </table>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="place" id="local">
+  <div class="wrap">
+    <p class="kicker" style="color:var(--blue)">El local</p>
+    <h2 class="h2" style="margin-bottom:36px">La casa azul de El Hualle Sur</h2>
+    <div class="grid">
+      <figure><img src="assets/fachada.jpg" alt="Fachada azul de Guaufspa con su letrero" loading="lazy" width="1400" height="1000"><figcaption>El Hualle Sur 9118, La Florida</figcaption></figure>
+      <div class="stack">
+        <figure><img src="assets/interior.jpg" alt="Vitrinas con productos dermocosméticos dentro del local" loading="lazy" width="1400" height="1000"><figcaption>Productos según cada piel</figcaption></figure>
+        <figure style="background:var(--slate);color:#fff;padding:28px;display:flex;flex-direction:column;justify-content:center">
+          <p class="serif" style="font-size:1.6rem;line-height:1.2">“Priorizamos la experiencia de peluquería.”</p>
+          <p style="color:#AEB4BF;margin-top:10px;font-size:.92rem">Con estacionamiento para dejar y retirar a su perro.</p>
+        </figure>
+      </div>
+    </div>
+    <div class="why">
+      <div><h3>Sin caniles</h3><p>Su perro no pasa la espera encerrado en una jaula: la atención es personalizada.</p></div>
+      <div><h3>Piel primero</h3><p>Baños dermocosméticos o dermatológicos y agua ozonificada cuando la piel lo necesita.</p></div>
+      <div><h3>Valores claros</h3><p>Precio desde según el peso, y se le avisa antes si el manto requiere otro corte.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="contact" id="contacto">
+  <div class="wrap">
+    <div>
+      <p class="kicker" style="color:var(--gold-l)">Horario y contacto</p>
+      <h2 class="h2">Reserve la hora de <em>su perro</em></h2>
+      <div class="info">
+        <div><span>WhatsApp y teléfono</span><a href="https://wa.me/56971756069">+56 9 7175 6069</a></div>
+        <div><span>Correo</span><a href="mailto:guaufspa@gmail.com">guaufspa@gmail.com</a></div>
+        <div><span>Dirección</span><a href="https://maps.google.com/?cid=1091131419112332712">El Hualle Sur 9118, La Florida</a></div>
+        <div><span>Instagram</span><a href="https://www.instagram.com/guaufspa">@guaufspa</a></div>
+      </div>
+      <a class="btn btn-gold" href="https://conectasitios.cl/pagina_sucursal/guaufspa/MTY=">Reservar hora en línea</a>
+    </div>
+    <div>
+      <table class="hours" aria-label="Horario de atención">
+        <tr class="off"><td>Lunes</td><td>Cerrado</td></tr>
+        <tr><td>Martes</td><td>09:00 – 18:30</td></tr>
+        <tr><td>Miércoles</td><td>09:00 – 18:30</td></tr>
+        <tr><td>Jueves</td><td>09:00 – 18:30</td></tr>
+        <tr><td>Viernes</td><td>09:00 – 18:30</td></tr>
+        <tr><td>Sábado</td><td>08:30 – 17:30</td></tr>
+        <tr class="off"><td>Domingo</td><td>Cerrado</td></tr>
+      </table>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer><div class="wrap"><span>Guaufspa · Estética canina · La Florida</span><span>El Hualle Sur 9118 · +56 9 7175 6069</span></div></footer>
+<div class="mockup-pill" aria-hidden="true">Propuesta de sitio web · mockup</div>
+
+<script>
+  const tabs=[...document.querySelectorAll('[role=tab]')];
+  tabs.forEach(t=>t.addEventListener('click',()=>{
+    tabs.forEach(x=>{x.setAttribute('aria-selected',x===t);document.getElementById(x.getAttribute('aria-controls')).classList.toggle('on',x===t)});
+  }));
+</script>
+</body>
+</html>
