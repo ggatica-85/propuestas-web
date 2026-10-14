@@ -1,0 +1,228 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Jardín Infantil y Sala Cuna Remolino · Maipú</title>
+<meta name="description" content="Jardín Infantil y Sala Cuna Remolino, Av. Tres Poniente 250, Maipú. Sala cuna menor y mayor, medio menor y medio mayor. Talleres, salas climatizadas, cámaras para los padres y patios de juego. Rol JUNJI. Agenda tu visita.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Grandstander:wght@600;800&family=Mulish:wght@400;600;800&display=swap" rel="stylesheet">
+<style>
+  :root{--teal:#8CC5C0;--teal-d:#2F7F7A;--mag:#D9358B;--yel:#F2C230;--blue:#2E8BC9;--green:#6DAF4F;--ink:#1F3340;--mute:#4F6470;--white:#fff;--mist:#EEF7F6}
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{font:400 1.05rem/1.65 Mulish,system-ui,sans-serif;color:var(--ink);background:var(--white)}
+  img{display:block;max-width:100%;height:auto}
+  a{color:inherit}
+  :focus-visible{outline:3px solid var(--mag);outline-offset:3px}
+  .wrap{max-width:1150px;margin:0 auto;padding:0 22px}
+  .g{font-family:Grandstander,system-ui,sans-serif;font-weight:800;line-height:1.02}
+  .btn{display:inline-flex;align-items:center;gap:10px;font-weight:800;text-decoration:none;padding:14px 24px;border-radius:999px;transition:transform .15s}
+  .btn:hover{transform:translateY(-2px)}
+  .btn-mag{background:var(--mag);color:#fff}
+  .btn-white{background:#fff;color:var(--ink)}
+
+  header{background:var(--teal)}
+  header .wrap{display:flex;justify-content:space-between;align-items:center;height:76px;gap:14px}
+  .brand{text-decoration:none;font-family:Grandstander,sans-serif;font-weight:800;font-size:1.5rem;color:var(--ink)}
+  .brand small{display:block;font-family:Mulish,sans-serif;font-weight:800;font-size:.7rem;letter-spacing:.16em;text-transform:uppercase;color:var(--teal-d)}
+  header nav{display:flex;gap:24px;font-weight:800;font-size:.92rem}
+  header nav a{text-decoration:none}
+  header nav a:hover{color:var(--mag)}
+
+  .hero{background:var(--teal);padding:30px 0 0;overflow:hidden}
+  .hero .grid{display:grid;grid-template-columns:1.1fr .9fr;gap:30px;align-items:center}
+  .hero h1{font-size:clamp(2.8rem,6.2vw,5.2rem);color:var(--ink)}
+  .hero h1 .c1{color:var(--mag)}.hero h1 .c2{color:#fff}
+  .hero p.lead{font-size:1.15rem;max-width:30em;margin:20px 0 28px;color:#203B47}
+  .ctas{display:flex;flex-wrap:wrap;gap:12px;margin-bottom:60px}
+  .wheel{position:relative;justify-self:center;width:min(420px,80vw);aspect-ratio:1/1.5}
+  .wheel svg.blades{position:relative;z-index:1;width:100%;height:auto;animation:spin 14s linear infinite;transform-origin:50% 50%}
+  .wheel .stick{position:absolute;left:50%;top:48%;width:14px;margin-left:-7px;bottom:0;background:#F7F7F7;border-radius:7px 7px 0 0;z-index:0;box-shadow:inset -3px 0 0 rgba(0,0,0,.08)}
+  @keyframes spin{to{transform:rotate(360deg)}}
+
+  .levels{background:var(--ink);color:#fff}
+  .levels .wrap{display:grid;grid-template-columns:repeat(4,1fr)}
+  .levels div{padding:26px 22px;border-left:1px solid rgba(255,255,255,.14)}
+  .levels div:first-child{border-left:0}
+  .levels small{display:block;font-weight:800;font-size:.72rem;letter-spacing:.16em;text-transform:uppercase;opacity:.75}
+  .levels b{font-family:Grandstander,sans-serif;font-size:1.5rem;line-height:1.15;display:block}
+  .levels div:nth-child(1) b{color:var(--yel)}.levels div:nth-child(2) b{color:#F59BC9}.levels div:nth-child(3) b{color:#8FD0F6}.levels div:nth-child(4) b{color:#A9DB8D}
+
+  section{padding:92px 0}
+  .h2{font-size:clamp(2.2rem,4.6vw,3.4rem)}
+  .sub{color:var(--mute);max-width:36em;margin-top:12px}
+
+  .project .grid{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center}
+  .project blockquote{font-size:1.18rem;line-height:1.6;border-left:6px solid var(--yel);padding-left:22px;margin-top:22px;color:#2A4553}
+  .project img{border-radius:28px;width:100%;aspect-ratio:3/2;object-fit:cover}
+
+  .talleres{background:var(--mist)}
+  .chips{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}
+  .chips span{font-family:Grandstander,sans-serif;font-weight:600;font-size:1.25rem;padding:10px 22px;border-radius:999px;color:#fff}
+  .chips span:nth-child(5n+1){background:var(--mag)}.chips span:nth-child(5n+2){background:var(--blue)}.chips span:nth-child(5n+3){background:var(--green)}.chips span:nth-child(5n+4){background:var(--yel);color:var(--ink)}.chips span:nth-child(5n){background:var(--teal-d)}
+
+  .spaces{display:grid;grid-template-columns:repeat(6,1fr);grid-auto-rows:150px;gap:14px;margin-top:40px}
+  .spaces figure{position:relative;border-radius:22px;overflow:hidden}
+  .spaces img{width:100%;height:100%;object-fit:cover}
+  .spaces figcaption{position:absolute;left:12px;bottom:12px;background:#fff;color:var(--ink);font-weight:800;font-size:.82rem;padding:6px 12px;border-radius:999px}
+  .s1{grid-column:span 3;grid-row:span 2}.s2{grid-column:span 3;grid-row:span 2}
+  .s3,.s4,.s5{grid-column:span 2;grid-row:span 2}
+  .feats{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:40px}
+  .feat{border-radius:22px;padding:24px;background:var(--mist)}
+  .feat b{font-family:Grandstander,sans-serif;font-size:1.25rem;display:block;margin-bottom:4px}
+  .feat p{color:var(--mute);font-size:.96rem}
+  .feat:nth-child(1){border-top:8px solid var(--mag)}.feat:nth-child(2){border-top:8px solid var(--blue)}.feat:nth-child(3){border-top:8px solid var(--green)}.feat:nth-child(4){border-top:8px solid var(--yel)}.feat:nth-child(5){border-top:8px solid var(--teal-d)}.feat:nth-child(6){border-top:8px solid var(--mag)}
+
+  .trust{background:var(--yel)}
+  .trust .wrap{display:flex;justify-content:space-around;flex-wrap:wrap;gap:20px;padding-top:30px;padding-bottom:30px;text-align:center}
+  .trust b{display:block;font-family:Grandstander,sans-serif;font-size:1.6rem}
+
+  .visit{background:var(--teal)}
+  .visit .grid{display:grid;grid-template-columns:1.05fr .95fr;gap:50px;align-items:center}
+  .visit p{color:#203B47;margin:14px 0 26px;max-width:30em}
+  .box{background:#fff;border-radius:28px;padding:30px}
+  .box div{padding:12px 0;border-bottom:2px dashed var(--mist)}
+  .box div:last-child{border:0}
+  .box small{display:block;font-weight:800;font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:var(--teal-d)}
+  .box a{text-decoration:none;font-weight:600}
+  footer{background:var(--ink);color:#B7C6CE;font-size:.88rem}
+  footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;padding-top:24px;padding-bottom:70px}
+  .mockup-pill{position:fixed;left:16px;bottom:16px;z-index:50;background:var(--mag);color:#fff;font:800 .74rem/1 Mulish,sans-serif;padding:9px 14px;border-radius:999px;box-shadow:0 6px 18px rgba(0,0,0,.2)}
+
+  @media (max-width:900px){
+    header nav{display:none}
+    .hero .grid,.project .grid,.visit .grid{grid-template-columns:1fr}
+    .wheel{width:min(220px,55vw);order:-1;aspect-ratio:1/1.25}
+    .ctas{margin-bottom:40px}
+    .levels .wrap{grid-template-columns:1fr 1fr}
+    .levels div:nth-child(3){border-left:0}
+    .levels div:nth-child(n+3){border-top:1px solid rgba(255,255,255,.14)}
+    .feats{grid-template-columns:1fr 1fr}
+    .spaces{grid-template-columns:1fr 1fr;grid-auto-rows:140px}
+    .s1,.s2,.s3,.s4,.s5{grid-column:span 1;grid-row:span 1}
+    .s1{grid-column:span 2;grid-row:span 2}
+    section{padding:70px 0}
+  }
+  @media (max-width:520px){.feats{grid-template-columns:1fr}}
+  @media (prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}.wheel svg.blades{animation:none}}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <a class="brand" href="#">Remolino<small>Jardín infantil y sala cuna</small></a>
+    <nav aria-label="Secciones"><a href="#proyecto">Proyecto educativo</a><a href="#espacios">Espacios</a><a href="#visita">Contacto</a></nav>
+    <a class="btn btn-mag" href="https://wa.me/56932429192" style="padding:10px 18px;font-size:.9rem">WhatsApp</a>
+  </div>
+</header>
+
+<main>
+<section class="hero" style="padding-bottom:0">
+  <div class="wrap grid">
+    <div>
+      <h1 class="g">Aprender jugando, <span class="c1">explorando</span> <span class="c2">y creando</span></h1>
+      <p class="lead">Sala cuna y jardín infantil en Maipú, con salas amplias y luminosas, patios de juego, talleres y cámaras de monitoreo para las familias.</p>
+      <div class="ctas">
+        <a class="btn btn-mag" href="https://wa.me/56932429192">Agendar una visita</a>
+        <a class="btn btn-white" href="#espacios">Ver el jardín</a>
+      </div>
+    </div>
+    <div class="wheel" aria-hidden="true">
+      <svg class="blades" viewBox="0 0 200 200">
+        <path d="M100 100 L100 10 A45 45 0 0 1 145 55 Z" fill="#D9358B"/>
+        <path d="M100 100 L190 100 A45 45 0 0 1 145 145 Z" fill="#2E8BC9"/>
+        <path d="M100 100 L100 190 A45 45 0 0 1 55 145 Z" fill="#6DAF4F"/>
+        <path d="M100 100 L10 100 A45 45 0 0 1 55 55 Z" fill="#F2C230"/>
+        <path d="M100 100 L145 55 L100 55 Z" fill="#B42A73"/>
+        <path d="M100 100 L145 145 L145 100 Z" fill="#2471A6"/>
+        <path d="M100 100 L55 145 L100 145 Z" fill="#558C3D"/>
+        <path d="M100 100 L55 55 L55 100 Z" fill="#CFA21E"/>
+        <circle cx="100" cy="100" r="9" fill="#fff"/><circle cx="100" cy="100" r="4" fill="#C9C9C9"/>
+      </svg>
+      <span class="stick"></span>
+    </div>
+  </div>
+</section>
+
+<div class="levels" aria-label="Niveles">
+  <div class="wrap">
+    <div><small>Nivel</small><b>Sala cuna menor</b></div>
+    <div><small>Nivel</small><b>Sala cuna mayor</b></div>
+    <div><small>Nivel</small><b>Medio menor</b></div>
+    <div><small>Nivel</small><b>Medio mayor</b></div>
+  </div>
+</div>
+
+<section class="project" id="proyecto">
+  <div class="wrap grid">
+    <div>
+      <h2 class="h2 g">Nuestro proyecto educativo</h2>
+      <blockquote>Desarrollar en forma integral las potencialidades de nuestros niños y niñas, formando personas con sólidos valores, a través del respeto y cuidado del medio ambiente, el autocuidado y la alimentación saludable, por medio del juego, la curiosidad, la exploración y el conocimiento del entorno.</blockquote>
+      <p class="sub">Trabajamos junto a las familias para favorecer el aprendizaje, la autonomía, la creatividad y la iniciativa personal de cada niño y niña.</p>
+    </div>
+    <img src="assets/bienvenidos.jpg" alt="Sala con mural de bienvenida, juguetes y sillas pequeñas" width="1600" height="1039">
+  </div>
+</section>
+
+<section class="talleres">
+  <div class="wrap">
+    <h2 class="h2 g">Talleres</h2>
+    <p class="sub">Además de la rutina de cada nivel, los niños participan en talleres.</p>
+    <div class="chips"><span>Música</span><span>Casa hogar</span><span>Cocina</span><span>Jardín</span><span>Reciclaje</span></div>
+  </div>
+</section>
+
+<section id="espacios">
+  <div class="wrap">
+    <h2 class="h2 g">Así es el jardín</h2>
+    <p class="sub">Salas climatizadas con baño incluido, buena ventilación y luz natural, y cuatro espacios de juego.</p>
+    <div class="spaces">
+      <figure class="s1"><img src="assets/patio.jpg" alt="Patio con pasto sintético, resbalines y casitas de juego" loading="lazy" width="1600" height="1039"><figcaption>Patio al aire libre</figcaption></figure>
+      <figure class="s2"><img src="assets/fachada.jpg" alt="Fachada del jardín Remolino en Avenida Tres Poniente" loading="lazy" width="1600" height="1039"><figcaption>Av. Tres Poniente 250</figcaption></figure>
+      <figure class="s3"><img src="assets/sala-actividades.jpg" alt="Sala con mesas de colores y estantes con libros" loading="lazy" width="1600" height="1039"><figcaption>Sala de actividades</figcaption></figure>
+      <figure class="s4"><img src="assets/sala-cuna.jpg" alt="Sala cuna con cunas de madera y decoración colgante" loading="lazy" width="1600" height="1039"><figcaption>Sala cuna</figcaption></figure>
+      <figure class="s5"><img src="assets/juegos.jpg" alt="Zona de juego techada con mural de selva y juguetes" loading="lazy" width="1600" height="1039"><figcaption>Juego techado</figcaption></figure>
+    </div>
+    <div class="feats">
+      <div class="feat"><b>Cámaras para los padres</b><p>Monitoreo para que las familias puedan ver a sus hijos.</p></div>
+      <div class="feat"><b>Cuatro áreas de juego</b><p>Dos al aire libre, una semitechada y una techada.</p></div>
+      <div class="feat"><b>Jardín interior</b><p>Un espacio propio para el taller de jardín.</p></div>
+      <div class="feat"><b>Rincones de trabajo</b><p>Material de motricidad fina y gruesa, ciencias, matemáticas y lenguaje.</p></div>
+      <div class="feat"><b>Biblioteca en cada sala</b><p>Libros al alcance de los niños en todos los niveles.</p></div>
+      <div class="feat"><b>Salas climatizadas</b><p>Amplias, luminosas, ventiladas y con baño incluido.</p></div>
+    </div>
+  </div>
+</section>
+
+<div class="trust">
+  <div class="wrap">
+    <div><b>Rol JUNJI indefinido</b>Registrado ante JUNJI</div>
+    <div><b>Convenio con empresas</b>Consulte si su empresa participa</div>
+  </div>
+</div>
+
+<section class="visit" id="visita">
+  <div class="wrap grid">
+    <div>
+      <h2 class="h2 g">Ven a conocer el jardín</h2>
+      <p>Escríbenos por WhatsApp para coordinar una visita y conversar sobre los cupos para tu hijo o hija.</p>
+      <a class="btn btn-mag" href="https://wa.me/56932429192">Escribir por WhatsApp</a>
+    </div>
+    <div class="box">
+      <div><small>WhatsApp y teléfono</small><a href="https://wa.me/56932429192">+56 9 3242 9192</a></div>
+      <div><small>Teléfono</small><a href="tel:+56962180293">+56 9 6218 0293</a></div>
+      <div><small>Correo</small><a href="mailto:salacunaremolino@gmail.com">salacunaremolino@gmail.com</a></div>
+      <div><small>Dirección</small><a href="https://maps.google.com/?cid=796792019803215931">Av. Tres Poniente 250 – 256, Maipú</a></div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer><div class="wrap"><span>Jardín Infantil y Sala Cuna Remolino · Maipú</span><span>+56 9 3242 9192</span></div></footer>
+<div class="mockup-pill" aria-hidden="true">Propuesta de sitio web · mockup</div>
+</body>
+</html>
