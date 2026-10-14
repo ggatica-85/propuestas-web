@@ -1,0 +1,213 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Centro PMU · Atención psicológica en Santiago centro</title>
+<meta name="description" content="Centro de Atención Psicológica PMU, Dr. Sótero del Río 326, Santiago. Psicoterapia para niños, adolescentes y adultos, presencial y online, con enfoque en el vínculo y el trauma. Programa anual de atención a arancel accesible.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,400&family=Rethink+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+  :root{--navy:#1C3F66;--navy-d:#132D4A;--blush:#F4B6CF;--blush-l:#FCE9F1;--blue:#A9CBEA;--blue-l:#E8F1FA;--ink:#142233;--mute:#55627A;--white:#fff}
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{font:400 1.05rem/1.7 "Rethink Sans",system-ui,sans-serif;color:var(--ink);background:var(--white)}
+  img{display:block;max-width:100%;height:auto}
+  a{color:inherit}
+  :focus-visible{outline:3px solid var(--navy);outline-offset:3px}
+  .wrap{max-width:1140px;margin:0 auto;padding:0 22px}
+  .f{font-family:Fraunces,Georgia,serif;font-weight:400;line-height:1.08;letter-spacing:-.01em}
+  .btn{display:inline-flex;align-items:center;gap:10px;font-weight:700;text-decoration:none;padding:14px 24px;border-radius:999px;transition:transform .15s}
+  .btn:hover{transform:translateY(-2px)}
+  .btn-navy{background:var(--navy);color:#fff}
+  .btn-line{box-shadow:inset 0 0 0 2px var(--navy);color:var(--navy)}
+
+  header{position:absolute;inset:0 0 auto 0;z-index:5}
+  header .wrap{display:flex;justify-content:space-between;align-items:center;height:80px;gap:16px}
+  .brand{font-weight:700;text-decoration:none;color:var(--navy);font-size:1.05rem}
+  .brand span{display:block;font-weight:500;font-size:.78rem;color:var(--mute)}
+  header nav{display:flex;gap:26px;font-weight:500;font-size:.95rem;color:var(--navy)}
+  header nav a{text-decoration:none}
+  header nav a:hover{text-decoration:underline;text-underline-offset:4px}
+
+  /* signature: the two halves of the logo */
+  .hero{display:grid;grid-template-columns:1fr 1fr;min-height:min(74vh,640px)}
+  .half{display:flex;flex-direction:column;justify-content:flex-end;padding:120px 6vw 70px}
+  .half.feel{background:var(--blush-l);align-items:flex-end;text-align:right}
+  .half.think{background:var(--blue-l)}
+  .half .tag{font-size:.78rem;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--mute);margin-bottom:14px}
+  .hero h1,.hero .h1b{font-size:clamp(2.6rem,5.4vw,4.8rem);color:var(--navy)}
+  .hero em{font-style:italic}
+  .half p.lead{max-width:24em;color:var(--mute);font-size:1.12rem;margin-top:20px}
+  .ctas{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
+  .sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+  .plug{position:relative;height:0}
+  .plug span{position:absolute;left:50%;top:-34px;transform:translateX(-50%);width:68px;height:68px;border-radius:50%;background:#fff;box-shadow:0 10px 30px rgba(28,63,102,.18);display:grid;place-items:center}
+  .plug svg{width:34px;height:34px}
+
+  section{padding:96px 0}
+  .h2{font-size:clamp(2.1rem,4.2vw,3.2rem);color:var(--navy)}
+  .eyebrow{font-size:.78rem;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:#B4527E;display:block;margin-bottom:10px}
+
+  .approach .grid{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}
+  .approach p{color:var(--mute);margin-top:16px;max-width:32em}
+  .ages{display:flex;gap:12px;flex-wrap:wrap;margin-top:26px}
+  .ages span{background:var(--blue-l);color:var(--navy);font-weight:700;padding:9px 18px;border-radius:999px}
+  .ages span:nth-child(2){background:var(--blush-l)}
+  .approach img{border-radius:24px;width:100%;aspect-ratio:5/4;object-fit:cover}
+  .pillars{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:56px}
+  .pillar{border-top:2px solid var(--navy);padding-top:16px}
+  .pillar h3{font-family:Fraunces,serif;font-weight:600;font-size:1.4rem;color:var(--navy)}
+  .pillar p{color:var(--mute);font-size:.98rem;margin-top:4px}
+
+  .team{background:var(--navy);color:#fff}
+  .team .h2{color:#fff}
+  .team .eyebrow{color:var(--blush)}
+  .people{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;margin-top:44px}
+  .person{background:var(--navy-d);border-radius:22px;overflow:hidden}
+  .person img{width:100%;aspect-ratio:4/5;object-fit:cover;object-position:center 20%}
+  .person div{padding:20px}
+  .person h3{font-family:Fraunces,serif;font-weight:600;font-size:1.3rem}
+  .person .role{color:var(--blush);font-size:.85rem;font-weight:700;margin:2px 0 10px}
+  .person p{font-size:.92rem;color:#C9D6E8;line-height:1.55}
+
+  .program .box{display:grid;grid-template-columns:1.1fr .9fr;gap:40px;background:var(--blush-l);border-radius:28px;padding:50px}
+  .program p{color:var(--mute);margin-top:14px}
+  .program ul{list-style:none;display:grid;gap:12px;align-self:center}
+  .program li{background:#fff;border-radius:16px;padding:16px 20px;font-weight:500}
+
+  .contact .grid{display:grid;grid-template-columns:1fr 1fr;gap:56px}
+  .hours div{display:flex;justify-content:space-between;padding:12px 0;border-bottom:1px solid #DDE5F0}
+  .hours div:last-child{border:0}
+  .info{display:grid;gap:16px;margin:24px 0 30px}
+  .info small{display:block;font-size:.74rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--mute)}
+  .info a{text-decoration:none;border-bottom:1px solid var(--blue);font-weight:500}
+  .modes{display:flex;gap:10px;margin-top:22px}
+  .modes span{flex:1;text-align:center;padding:16px;border-radius:16px;font-weight:700;color:var(--navy)}
+  .modes span:first-child{background:var(--blush-l)}.modes span:last-child{background:var(--blue-l)}
+  footer{background:var(--navy-d);color:#A9BCD6;font-size:.88rem}
+  footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;padding-top:24px;padding-bottom:70px}
+  .mockup-pill{position:fixed;left:16px;bottom:16px;z-index:50;background:var(--navy);color:#fff;font:700 .74rem/1 "Rethink Sans",sans-serif;padding:9px 14px;border-radius:999px;box-shadow:0 6px 18px rgba(0,0,0,.2)}
+
+  @media (max-width:980px){.people{grid-template-columns:1fr 1fr}}
+  @media (max-width:860px){
+    header nav{display:none}
+    .hero{grid-template-columns:1fr;min-height:0}
+    .half{padding:110px 22px 60px}
+    .half.feel{align-items:flex-start;text-align:left}
+    .half.think{padding-top:60px}
+    .approach .grid,.program .box,.contact .grid{grid-template-columns:1fr}
+    .pillars{grid-template-columns:1fr}
+    .program .box{padding:30px 24px}
+    section{padding:70px 0}
+  }
+  @media (max-width:520px){.people{grid-template-columns:1fr}}
+  @media (prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <a class="brand" href="#">Centro PMU<span>Atención psicológica</span></a>
+    <nav aria-label="Secciones"><a href="#enfoque">Enfoque</a><a href="#equipo">Equipo</a><a href="#programa">Programa anual</a><a href="#contacto">Contacto</a></nav>
+  </div>
+</header>
+
+<main>
+<section class="hero" style="padding:0">
+  <div class="half feel">
+    <p class="tag">Lo que sientes</p>
+    <h1 class="f">Un espacio seguro para <em>comprender</em><span class="sr"> y transformar tu historia</span></h1>
+  </div>
+  <div class="half think">
+    <p class="tag">Lo que piensas</p>
+    <p class="f h1b">y transformar <em>tu historia</em></p>
+    <p class="lead">Atención psicológica para niños, adolescentes y adultos en Santiago centro, presencial y online.</p>
+    <div class="ctas">
+      <a class="btn btn-navy" href="https://wa.me/56920873642">Agendar por WhatsApp</a>
+      <a class="btn btn-line" href="#equipo">Conocer al equipo</a>
+    </div>
+  </div>
+</section>
+<div class="plug" aria-hidden="true"><span><svg viewBox="0 0 34 34" fill="none" stroke="#1C3F66" stroke-width="2.4" stroke-linecap="round"><path d="M6 17h8M20 17h8"/><rect x="12" y="11" width="5" height="12" rx="2" fill="#F4B6CF" stroke="#1C3F66"/><rect x="17" y="11" width="5" height="12" rx="2" fill="#A9CBEA" stroke="#1C3F66"/></svg></span></div>
+
+<section class="approach" id="enfoque">
+  <div class="wrap">
+    <div class="grid">
+      <div>
+        <span class="eyebrow">Nuestro enfoque</span>
+        <h2 class="h2 f">Clínico, centrado en el vínculo y el trauma</h2>
+        <p>Acompañamos procesos terapéuticos de manera profesional, ética y confidencial, con respeto por la historia personal de cada paciente, para que pueda comprender, elaborar y transformar sus experiencias.</p>
+        <div class="ages"><span>Niños y niñas</span><span>Adolescentes</span><span>Adultos</span></div>
+      </div>
+      <img src="assets/consulta.jpg" alt="Entrada y sala de atención del Centro PMU" width="1289" height="1024">
+    </div>
+    <div class="pillars">
+      <div class="pillar"><h3>Profesional y ético</h3><p>Un equipo de psicólogos clínicos con formación especializada.</p></div>
+      <div class="pillar"><h3>Confidencial</h3><p>Lo que se conversa en terapia queda en la consulta.</p></div>
+      <div class="pillar"><h3>Presencial y online</h3><p>Nos adaptamos a las necesidades de cada paciente.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="team" id="equipo">
+  <div class="wrap">
+    <span class="eyebrow">Equipo permanente</span>
+    <h2 class="h2 f">Quiénes te van a atender</h2>
+    <div class="people">
+      <article class="person"><img src="assets/paulina-medina.jpg" alt="Paulina Medina, psicóloga clínica" loading="lazy" width="394" height="636"><div><h3>Paulina Medina</h3><p class="role">Psicóloga clínica</p><p>Más de 10 años de experiencia con adultos, niños y adolescentes. Formación en trauma complejo, apego y TEA. Elabora informes y peritajes para tribunales.</p></div></article>
+      <article class="person"><img src="assets/belen-pacheco.jpg" alt="Belén Pacheco, psicóloga clínica" loading="lazy" width="394" height="636"><div><h3>Belén Pacheco</h3><p class="role">Psicóloga clínica</p><p>Atiende adolescentes y adultos, especialmente trastornos del ánimo. Experiencia en tribunales de familia, TEA y trabajo con colegios.</p></div></article>
+      <article class="person"><img src="assets/gustavo-moyano.jpg" alt="Gustavo Moyano, psicólogo clínico" loading="lazy" width="394" height="636"><div><h3>Gustavo Moyano</h3><p class="role">Psicólogo clínico</p><p>Atiende niños, niñas y adolescentes. Certificado en WISC-V y ADOS-2; trabaja autolesiones, depresión adolescente y habilidades parentales.</p></div></article>
+      <article class="person"><img src="assets/carlos-medina.jpg" alt="Carlos Medina, gestión administrativa" loading="lazy" width="394" height="636"><div><h3>Carlos Medina</h3><p class="role">Gestión administrativa</p><p>Recibe a los pacientes y coordina la agenda y los pagos. Ingeniero en Recursos Humanos con más de 30 años de experiencia.</p></div></article>
+    </div>
+  </div>
+</section>
+
+<section class="program" id="programa">
+  <div class="wrap">
+    <div class="box">
+      <div>
+        <span class="eyebrow">Programa anual de atención</span>
+        <h2 class="h2 f">Atención psicológica a un arancel accesible</h2>
+        <p>Profesionales en formación clínica atienden bajo la supervisión directa del centro, con un trabajo ético, responsable y alineado con nuestros estándares.</p>
+      </div>
+      <ul>
+        <li>Atención principalmente presencial</li>
+        <li>Modalidad híbrida según cada caso</li>
+        <li>Supervisión directa del equipo clínico</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="contact" id="contacto">
+  <div class="wrap grid">
+    <div>
+      <span class="eyebrow">Contacto</span>
+      <h2 class="h2 f">Agenda tu primera hora</h2>
+      <div class="info">
+        <div><small>WhatsApp y teléfono</small><a href="https://wa.me/56920873642">+56 9 2087 3642</a></div>
+        <div><small>Correo</small><a href="mailto:a.psicologicaparticular@gmail.com">a.psicologicaparticular@gmail.com</a></div>
+        <div><small>Dirección</small><a href="https://maps.google.com/?cid=6016967808164717759">Dr. Sótero del Río 326, Santiago</a></div>
+      </div>
+      <a class="btn btn-navy" href="https://wa.me/56920873642">Escribir por WhatsApp</a>
+    </div>
+    <div>
+      <div class="hours" aria-label="Horario de atención">
+        <div><span>Lunes a jueves</span><b>11:00 – 19:00</b></div>
+        <div><span>Viernes</span><b>10:00 – 17:00</b></div>
+        <div><span>Sábado</span><b>09:00 – 14:00</b></div>
+      </div>
+      <div class="modes"><span>Presencial</span><span>Online</span></div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer><div class="wrap"><span>PMU · Centro de Atención Psicológica · Paulina Medina Ulloa EIRL</span><span>Santiago, Chile</span></div></footer>
+<div class="mockup-pill" aria-hidden="true">Propuesta de sitio web · mockup</div>
+</body>
+</html>
