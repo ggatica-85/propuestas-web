@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>El Club de Julieta · Veterinaria y peluquería canina en La Florida</title>
+<meta name="description" content="El Club de Julieta, en Camino de Las Araucarias 6507, La Florida: consulta veterinaria, vacunas, exámenes, ecografías, domicilio veterinario y peluquería canina. Reserva por WhatsApp.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;700;800&family=Plus+Jakarta+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+  :root{--plum:#3B2462;--plum-2:#55388A;--lav:#D9CCF3;--lav-l:#F3EEFC;--coral:#F2674A;--sun:#F7C548;--ink:#231A33;--mute:#655C75;--white:#fff}
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{font:400 1.02rem/1.65 "Plus Jakarta Sans",system-ui,sans-serif;color:var(--ink);background:var(--white)}
+  img{display:block;max-width:100%;height:auto}
+  a{color:inherit}
+  :focus-visible{outline:3px solid var(--coral);outline-offset:3px}
+  .wrap{max-width:1150px;margin:0 auto;padding:0 22px}
+  .round{font-family:"Baloo 2",system-ui,sans-serif;font-weight:800;line-height:1.02}
+  .btn{display:inline-flex;align-items:center;gap:8px;text-decoration:none;font-weight:700;border-radius:16px;padding:14px 22px;transition:transform .15s}
+  .btn:hover{transform:translateY(-2px) rotate(-1deg)}
+  .btn-coral{background:var(--coral);color:#fff;box-shadow:0 4px 0 #C44B32}
+  .btn-plum{background:var(--plum);color:#fff;box-shadow:0 4px 0 #24143F}
+  .btn-ghost{background:#fff;color:var(--plum);box-shadow:inset 0 0 0 2px var(--plum)}
+
+  header{background:var(--lav-l)}
+  header .wrap{display:flex;align-items:center;justify-content:space-between;height:78px;gap:16px}
+  header .logo img{height:60px;width:auto;background:#fff;border-radius:14px;padding:4px 8px}
+  header nav{display:flex;gap:24px;font-weight:700;font-size:.92rem;color:var(--plum)}
+  header nav a{text-decoration:none}
+  header nav a:hover{color:var(--coral)}
+
+  .hero{background:var(--lav-l);padding:30px 0 90px;position:relative;overflow:hidden}
+  .hero .wrap{display:grid;grid-template-columns:1.05fr .95fr;gap:50px;align-items:center}
+  .chip{display:inline-block;background:var(--sun);color:var(--ink);font-weight:700;font-size:.82rem;padding:6px 14px;border-radius:999px}
+  .hero h1{font-size:clamp(2.8rem,6vw,5rem);color:var(--plum);margin:16px 0 18px}
+  .hero h1 span{color:var(--coral)}
+  .hero p.lead{font-size:1.12rem;color:var(--mute);max-width:31em}
+  .hero .ctas{display:flex;flex-wrap:wrap;gap:12px;margin:28px 0 24px}
+  .score{display:flex;gap:10px;align-items:center;font-size:.92rem;color:var(--mute)}
+  .score b{color:var(--plum)}
+  .score .st{color:#E0A419;letter-spacing:2px}
+  .photo{position:relative}
+  .photo img{border-radius:36px 36px 36px 8px;aspect-ratio:1/1;object-fit:cover;width:100%;border:8px solid #fff;box-shadow:0 24px 50px rgba(59,36,98,.18)}
+  .bubble{position:absolute;right:-8px;top:-14px;background:var(--coral);color:#fff;border-radius:22px 22px 4px 22px;padding:12px 16px;font-weight:700;font-size:.9rem;transform:rotate(3deg)}
+  .paws{position:absolute;inset:auto 0 18px auto;width:220px;opacity:.5}
+
+  section{padding:92px 0}
+  .h2{font-size:clamp(2.1rem,4.2vw,3.2rem);color:var(--plum)}
+  .sub{color:var(--mute);max-width:38em;margin-top:10px}
+
+  /* two worlds */
+  .worlds{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-top:40px}
+  .world{border-radius:28px;padding:34px}
+  .world.vet{background:var(--plum);color:#fff}
+  .world.pelu{background:var(--sun)}
+  .world h3{font-size:2rem}
+  .world p.who{opacity:.85;margin:4px 0 20px}
+  .world ul{list-style:none;display:grid;gap:10px}
+  .world li{display:flex;justify-content:space-between;gap:14px;padding-bottom:10px;border-bottom:2px dotted rgba(255,255,255,.3)}
+  .world.pelu li{border-color:rgba(35,26,51,.25)}
+  .world li b{white-space:nowrap;font-family:"Baloo 2",sans-serif;font-size:1.15rem}
+  .world .small{font-size:.86rem;opacity:.85;margin-top:16px}
+
+  /* vaccine booklet */
+  .booklet{background:var(--lav)}
+  .cards{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-top:38px}
+  .card{background:#fff;border-radius:16px;padding:22px 20px 20px;position:relative;box-shadow:0 2px 0 rgba(59,36,98,.12)}
+  .card::before{content:"";position:absolute;left:0;right:0;top:0;height:10px;border-radius:16px 16px 0 0;background:repeating-linear-gradient(90deg,var(--coral) 0 14px,transparent 14px 22px)}
+  .card .sp{font-size:.72rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--mute);margin-top:6px}
+  .card h3{font-family:"Baloo 2",sans-serif;font-size:1.32rem;line-height:1.1;color:var(--plum);margin:6px 0 8px}
+  .card p{font-size:.9rem;color:var(--mute)}
+  .stamp{display:inline-block;margin-top:14px;border:2.5px solid var(--coral);color:var(--coral);font-family:"Baloo 2",sans-serif;font-weight:800;font-size:1.2rem;padding:2px 12px;border-radius:10px;transform:rotate(-4deg)}
+  .note{margin-top:22px;font-size:.92rem;color:var(--plum)}
+
+  /* exams */
+  .exams .grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:48px;align-items:center}
+  .exams img{border-radius:28px;width:100%;aspect-ratio:7/5;object-fit:cover}
+  .rows{display:grid;gap:14px;margin-top:26px}
+  .row{display:grid;grid-template-columns:1fr auto;gap:14px;align-items:start;background:var(--lav-l);border-radius:18px;padding:18px 20px}
+  .row h3{font-family:"Baloo 2",sans-serif;font-size:1.2rem;color:var(--plum)}
+  .row p{font-size:.9rem;color:var(--mute)}
+  .row b{font-family:"Baloo 2",sans-serif;font-size:1.25rem;color:var(--coral);white-space:nowrap}
+
+  /* visit */
+  .visit{background:var(--plum);color:#fff}
+  .visit .grid{display:grid;grid-template-columns:1fr 1fr;gap:50px}
+  .visit .h2{color:#fff}
+  .visit .h2 span{color:var(--sun)}
+  .visit dl{display:grid;gap:16px;margin:26px 0 30px}
+  .visit dt{font-size:.74rem;letter-spacing:.18em;text-transform:uppercase;color:var(--sun);font-weight:700}
+  .visit dd a{text-decoration:none;border-bottom:1px solid rgba(255,255,255,.4)}
+  .hours{background:rgba(255,255,255,.08);border-radius:24px;padding:26px}
+  .hours div{display:flex;justify-content:space-between;padding:10px 0;border-bottom:1px dashed rgba(255,255,255,.2)}
+  .hours div:last-child{border:0}
+  .hours .off{opacity:.6}
+  footer{background:#24143F;color:#C9BEDF;font-size:.88rem}
+  footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;padding-top:24px;padding-bottom:70px}
+  .mockup-pill{position:fixed;left:16px;bottom:16px;z-index:50;background:var(--sun);color:var(--ink);font:700 .74rem/1 "Plus Jakarta Sans",sans-serif;padding:9px 14px;border-radius:999px;box-shadow:0 6px 18px rgba(0,0,0,.2)}
+
+  @media (max-width:960px){.cards{grid-template-columns:1fr 1fr}}
+  @media (max-width:860px){
+    header nav{display:none}
+    .hero .wrap,.worlds,.exams .grid,.visit .grid{grid-template-columns:1fr}
+    .hero{padding-bottom:70px}
+    section{padding:70px 0}
+    .world{padding:26px}
+    .bubble{right:6px}
+  }
+  @media (max-width:520px){.cards{grid-template-columns:1fr}}
+  @media (prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <a class="logo" href="#"><img src="assets/logo.png" alt="El Club de Julieta" width="400" height="286"></a>
+    <nav aria-label="Secciones"><a href="#servicios">Servicios</a><a href="#vacunas">Vacunas</a><a href="#examenes">Exámenes</a><a href="#visitanos">Visítanos</a></nav>
+    <a class="btn btn-coral" href="https://wa.me/56953833606" style="padding:10px 16px;font-size:.88rem">Reservar</a>
+  </div>
+</header>
+
+<main>
+<section class="hero">
+  <div class="wrap">
+    <div>
+      <span class="chip">Veterinaria + peluquería · La Florida</span>
+      <h1 class="round">Consulta, vacunas y peluquería <span>para tu regalón</span></h1>
+      <p class="lead">En El Club de Julieta atendemos perros y gatos: consulta veterinaria, vacunas, exámenes y ecografías, y peluquería canina por tipo de pelaje. También vamos a domicilio.</p>
+      <div class="ctas">
+        <a class="btn btn-coral" href="https://wa.me/56953833606">Reservar por WhatsApp</a>
+        <a class="btn btn-ghost" href="https://conectasitios.cl/g/ElClubDeJulieta">Ver horas disponibles</a>
+      </div>
+      <p class="score"><span class="st" aria-hidden="true">★★★★★</span><span><b>5,0 en Google</b> · 32 reseñas</span></p>
+    </div>
+    <div class="photo">
+      <img src="assets/goldens.jpg" alt="Dos golden retriever con estetoscopio en la consulta" width="700" height="500">
+      <span class="bubble">Perros y gatos 🐾</span>
+    </div>
+  </div>
+</section>
+
+<section id="servicios">
+  <div class="wrap">
+    <h2 class="h2 round">Dos servicios, un mismo club</h2>
+    <p class="sub">Valores desde; el precio final depende del peso de tu mascota y, en peluquería, del estado del pelaje.</p>
+    <div class="worlds">
+      <div class="world vet">
+        <h3 class="round">Veterinaria</h3>
+        <p class="who">Examen completo: ojos, oídos, dientes, piel, corazón, pulmones y abdomen.</p>
+        <ul>
+          <li><span>Consulta veterinaria</span><b>$15.000</b></li>
+          <li><span>Domicilio veterinario</span><b>$30.000</b></li>
+          <li><span>Curación o retiro de puntos</span><b>$30.000</b></li>
+          <li><span>Desparasitación externa</span><b>desde $15.000</b></li>
+          <li><span>Antiparasitario interno</span><b>según peso</b></li>
+        </ul>
+        <p class="small">El domicilio no incluye medicamentos inyectables ni tratamientos.</p>
+      </div>
+      <div class="world pelu">
+        <h3 class="round">Peluquería canina</h3>
+        <p class="who">Baño desmugrante e hidratante, corte por raza, oídos, uñas y perfume.</p>
+        <ul>
+          <li><span>Mi primera peluquería (cachorros hasta 5 meses)</span><b>desde $30.000</b></li>
+          <li><span>Talla pequeña, hasta 10 kg</span><b>desde $30.000</b></li>
+          <li><span>Talla mediana, 10 a 25 kg</span><b>desde $40.000</b></li>
+          <li><span>Doble capa, con deslanado</span><b>desde $30.000</b></li>
+          <li><span>Peluquería dermatológica</span><b>desde $40.000</b></li>
+        </ul>
+        <p class="small">Si el pelaje viene con nudos o motas, se evalúa en la recepción si se puede recuperar el manto.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="booklet" id="vacunas">
+  <div class="wrap">
+    <h2 class="h2 round">Carnet de vacunas</h2>
+    <p class="sub" style="color:var(--plum)">Cada vacuna incluye la consulta: antes de vacunar, revisamos que tu mascota esté sana.</p>
+    <div class="cards">
+      <article class="card"><p class="sp">Perros</p><h3>Óctuple</h3><p>Parvovirus, distemper, hepatitis, influenza, leptospirosis y coronavirus. Para cachorros y refuerzo anual.</p><span class="stamp">$30.000</span></article>
+      <article class="card"><p class="sp">Perros y gatos</p><h3>Antirrábica</h3><p>Obligatoria cada año. Se entrega el certificado que exige la ley chilena.</p><span class="stamp">$30.000</span></article>
+      <article class="card"><p class="sp">Perros</p><h3>KC · tos de las perreras</h3><p>Vacuna intranasal contra parainfluenza y bordetella.</p><span class="stamp">$33.000</span></article>
+      <article class="card"><p class="sp">Gatos mayores de 1 año</p><h3>Triple felina + antirrábica</h3><p>Ambas en una sola punción, para no estresar a tu gato.</p><span class="stamp">$30.000</span></article>
+    </div>
+  </div>
+</section>
+
+<section class="exams" id="examenes">
+  <div class="wrap grid">
+    <img src="assets/local.jpg" alt="Fachada lila de El Club de Julieta con su letrero" loading="lazy" width="700" height="500">
+    <div>
+      <h2 class="h2 round">Exámenes y ecografías</h2>
+      <p class="sub">Para la toma de muestras de sangre, tu mascota debe venir con 6 a 8 horas de ayuno.</p>
+      <div class="rows">
+        <div class="row"><div><h3>Examen prequirúrgico</h3><p>Función hepática y renal, infecciones e hidratación antes de una anestesia.</p></div><b>$55.000</b></div>
+        <div class="row"><div><h3>Ecografía</h3><p>Con el Dr. Carlos Ibañes, médico veterinario dedicado a imágenes. Confirma tu hora por WhatsApp.</p></div><b>$65.000</b></div>
+        <div class="row"><div><h3>Laboratorio</h3><p>Perfiles bioquímico, renal, cardíaco y hormonal, hematología, citología y biopsia, entre otros.</p></div><b>a consultar</b></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="visit" id="visitanos">
+  <div class="wrap grid">
+    <div>
+      <h2 class="h2 round">Visítanos en <span>La Florida</span></h2>
+      <dl>
+        <div><dt>WhatsApp y teléfono</dt><dd><a href="https://wa.me/56953833606">+56 9 5383 3606</a></dd></div>
+        <div><dt>Dirección</dt><dd><a href="https://maps.google.com/?cid=6668834518131387523">Camino de Las Araucarias 6507, casa NN-24, La Florida</a></dd></div>
+        <div><dt>Correo</dt><dd><a href="mailto:elclubdejulieta@gmail.com">elclubdejulieta@gmail.com</a></dd></div>
+        <div><dt>Instagram</dt><dd><a href="https://www.instagram.com/elclubdejulieta">@elclubdejulieta</a></dd></div>
+      </dl>
+      <a class="btn btn-coral" href="https://wa.me/56953833606">Reservar por WhatsApp</a>
+    </div>
+    <div class="hours" aria-label="Horario">
+      <div><span>Lunes a viernes</span><b>09:00 – 20:00</b></div>
+      <div><span>Sábado</span><b>10:00 – 18:30</b></div>
+      <div class="off"><span>Domingo</span><span>Cerrado</span></div>
+      <p style="margin-top:18px;font-size:.9rem;color:#C9BEDF">También encuentras medicamentos y accesorios para tu mascota.</p>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer><div class="wrap"><span>El Club de Julieta · Veterinaria y peluquería canina</span><span>La Florida · +56 9 5383 3606</span></div></footer>
+<div class="mockup-pill" aria-hidden="true">Propuesta de sitio web · mockup</div>
+</body>
+</html>
