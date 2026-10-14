@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Construcciones Maast · Construcción, remodelación y excavación en Maipú</title>
+<meta name="description" content="Construcciones Maast, Maipú: construcción, remodelaciones y excavación para cimientos. Estudiamos el terreno antes de construir. Disponibles las 24 horas, trabajamos en todo Chile. Llame al 9 6347 2429.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Teko:wght@500;600;700&family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+  :root{--asphalt:#1E2125;--asphalt-2:#2A2E33;--vis:#F2C230;--clay:#B5652B;--concrete:#E4E1DA;--ink:#17191C;--mute:#5F636A}
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{font:400 1.03rem/1.65 Rubik,system-ui,sans-serif;color:var(--ink);background:var(--concrete)}
+  a{color:inherit}
+  :focus-visible{outline:3px solid var(--vis);outline-offset:3px}
+  .wrap{max-width:1160px;margin:0 auto;padding:0 22px}
+  .teko{font-family:Teko,Impact,sans-serif;font-weight:600;text-transform:uppercase;line-height:.9;letter-spacing:.01em}
+  .btn{display:inline-flex;align-items:center;gap:10px;text-decoration:none;font-weight:700;padding:14px 22px;transition:transform .15s}
+  .btn:hover{transform:translateY(-2px)}
+  .btn-vis{background:var(--vis);color:var(--ink)}
+  .btn-dark{background:var(--asphalt);color:#fff}
+  .btn-out{box-shadow:inset 0 0 0 2px #fff;color:#fff}
+
+  .tape{height:12px;background:repeating-linear-gradient(-45deg,var(--vis) 0 18px,var(--ink) 18px 36px)}
+  header{background:var(--asphalt);color:#fff}
+  header .wrap{display:flex;align-items:center;justify-content:space-between;height:72px;gap:16px}
+  .brand{font-family:Teko,sans-serif;font-weight:700;font-size:2rem;text-transform:uppercase;text-decoration:none;line-height:1;padding-top:6px}
+  .brand span{color:var(--vis)}
+  header nav{display:flex;gap:26px;font-weight:500;font-size:.92rem}
+  header nav a{text-decoration:none;opacity:.85}
+  header nav a:hover{opacity:1;color:var(--vis)}
+
+  .hero{background:var(--asphalt);color:#fff;padding:60px 0 0;overflow:hidden}
+  .hero .top{display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:end;padding-bottom:50px}
+  .hero h1{font-size:clamp(3.6rem,9vw,8rem)}
+  .hero h1 span{color:var(--vis)}
+  .hero p.lead{color:#C8CCD2;font-size:1.12rem;max-width:30em;margin-bottom:26px}
+  .ctas{display:flex;flex-wrap:wrap;gap:12px}
+  .badge{display:inline-flex;align-items:center;gap:10px;background:var(--vis);color:var(--ink);font-weight:700;font-size:.85rem;padding:7px 14px;margin-bottom:18px}
+  .badge i{width:9px;height:9px;border-radius:50%;background:var(--ink);display:inline-block}
+
+  /* signature: the ground under the hero */
+  .strata{position:relative}
+  .layer{display:flex;justify-content:space-between;align-items:center;gap:20px;padding:0 max(22px,calc((100vw - 1160px)/2 + 22px));color:#fff;font-size:.9rem;position:relative}
+  .layer b{font-family:Teko,sans-serif;font-weight:600;font-size:1.6rem;text-transform:uppercase;letter-spacing:.03em;line-height:1;padding-top:4px}
+  .layer span{opacity:.85;text-align:right}
+  .l1{height:64px;background:#8C6A4A;background-image:radial-gradient(rgba(0,0,0,.18) 1px,transparent 1.5px);background-size:7px 7px}
+  .l2{height:74px;background:#6E5038;background-image:radial-gradient(rgba(255,255,255,.18) 2px,transparent 2.5px);background-size:16px 13px}
+  .l3{height:86px;background:#5A5550;background-image:radial-gradient(circle at 30% 40%,#7B746C 0 7px,transparent 8px),radial-gradient(circle at 70% 70%,#47433F 0 10px,transparent 11px);background-size:58px 44px}
+  .l4{height:70px;background:#3E4A52;background-image:repeating-linear-gradient(0deg,rgba(255,255,255,.08) 0 2px,transparent 2px 9px)}
+  .l5{height:78px;background:#C9A86E;color:var(--ink);background-image:radial-gradient(rgba(0,0,0,.14) 1px,transparent 1.4px);background-size:5px 5px}
+  .layer::before{content:"";position:absolute;left:0;right:0;top:-6px;height:12px;background:inherit;clip-path:polygon(0 50%,5% 20%,12% 60%,20% 30%,28% 70%,37% 35%,45% 65%,55% 25%,63% 60%,72% 30%,80% 65%,88% 35%,95% 60%,100% 40%,100% 100%,0 100%)}
+  .l1::before{display:none}
+  .probe{position:absolute;top:0;bottom:0;right:28%;width:10px;background:var(--vis);z-index:2;box-shadow:0 0 0 3px var(--ink)}
+  .probe::after{content:"";position:absolute;bottom:-14px;left:-6px;border:11px solid transparent;border-top:16px solid var(--vis)}
+
+  section{padding:92px 0}
+  .eyebrow{display:inline-block;font-weight:700;font-size:.78rem;letter-spacing:.18em;text-transform:uppercase;color:var(--clay);margin-bottom:10px}
+  .h2{font-size:clamp(2.6rem,5.4vw,4.4rem)}
+
+  .study .grid{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:start}
+  .study p{color:var(--mute);margin-top:16px;max-width:32em}
+  .soil{display:flex;flex-wrap:wrap;gap:10px;margin-top:26px}
+  .soil span{background:#fff;border-left:5px solid var(--clay);padding:8px 14px;font-weight:500}
+  .mats{background:var(--asphalt);color:#fff;padding:30px}
+  .mats h3{font-size:2rem;color:var(--vis)}
+  .mats ul{list-style:none;margin-top:14px;display:grid;gap:10px}
+  .mats li{border-bottom:1px solid rgba(255,255,255,.14);padding-bottom:10px}
+
+  .services{background:#fff}
+  .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:40px}
+  .card{background:var(--concrete);padding:30px;position:relative}
+  .card .num{position:absolute;top:18px;right:20px;font-family:Teko,sans-serif;font-size:1rem;color:var(--mute)}
+  .card h3{font-size:2.4rem;margin-bottom:10px}
+  .card p{color:var(--mute)}
+  .card svg{width:48px;height:48px;stroke:var(--ink);stroke-width:2;fill:none;margin-bottom:18px}
+
+  .facts{background:var(--vis)}
+  .facts .wrap{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;padding-top:36px;padding-bottom:36px}
+  .facts b{display:block;font-family:Teko,sans-serif;font-weight:600;font-size:2.6rem;line-height:1;text-transform:uppercase}
+
+  .contact{background:var(--asphalt);color:#fff}
+  .contact .grid{display:grid;grid-template-columns:1.1fr .9fr;gap:56px;align-items:start}
+  .contact .h2 span{color:var(--vis)}
+  .contact p{color:#C8CCD2;margin:16px 0 28px;max-width:30em}
+  .list{display:grid;gap:2px;background:#3A3F45}
+  .list a,.list div{display:block;background:var(--asphalt-2);padding:18px 22px;text-decoration:none}
+  .list a:hover{background:#353A40}
+  .list small{display:block;color:var(--vis);font-weight:700;font-size:.72rem;letter-spacing:.16em;text-transform:uppercase}
+  .list b{font-size:1.15rem}
+  footer{background:var(--ink);color:#9CA1A8;font-size:.88rem}
+  footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;padding-top:24px;padding-bottom:70px}
+  .mockup-pill{position:fixed;left:16px;bottom:16px;z-index:50;background:var(--vis);color:var(--ink);font:700 .74rem/1 Rubik,sans-serif;padding:9px 14px;border-radius:999px;box-shadow:0 6px 18px rgba(0,0,0,.3)}
+
+  @media (max-width:860px){
+    header nav{display:none}
+    .hero .top,.study .grid,.cards,.contact .grid,.facts .wrap{grid-template-columns:1fr}
+    section{padding:70px 0}
+    .layer span{display:none}
+    .probe{right:40px}
+  }
+  @media (prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+
+<div class="tape" aria-hidden="true"></div>
+<header>
+  <div class="wrap">
+    <a class="brand" href="#">Construcciones <span>Maast</span></a>
+    <nav aria-label="Secciones"><a href="#terreno">El terreno</a><a href="#servicios">Servicios</a><a href="#contacto">Contacto</a></nav>
+    <a class="btn btn-vis" href="tel:+56963472429" style="padding:9px 16px;font-size:.9rem">Llamar</a>
+  </div>
+</header>
+
+<main>
+<section class="hero" style="padding-bottom:0">
+  <div class="wrap top">
+    <div>
+      <span class="badge"><i aria-hidden="true"></i>Disponibles las 24 horas</span>
+      <h1 class="teko">Antes de construir, <span>leemos el terreno</span></h1>
+    </div>
+    <div>
+      <p class="lead">Construcción, remodelaciones y excavación para cimientos en Maipú y todo Chile. Estudiamos el suelo de su obra para elegir los materiales y el método correctos.</p>
+      <div class="ctas">
+        <a class="btn btn-vis" href="tel:+56963472429">Llamar al 9 6347 2429</a>
+        <a class="btn btn-out" href="mailto:construccionesmaast@gmail.com?subject=Presupuesto%20de%20obra">Pedir presupuesto</a>
+      </div>
+    </div>
+  </div>
+  <div class="strata" aria-label="Tipos de terreno con los que trabajamos">
+    <div class="probe" aria-hidden="true"></div>
+    <div class="layer l1"><b>Fino</b></div>
+    <div class="layer l2"><b>Grueso</b></div>
+    <div class="layer l3"><b>Pedregoso</b></div>
+    <div class="layer l4"><b>Húmedo</b></div>
+    <div class="layer l5"><b>Arenoso o mixto</b></div>
+  </div>
+</section>
+
+<section class="study" id="terreno">
+  <div class="wrap grid">
+    <div>
+      <span class="eyebrow">El terreno primero</span>
+      <h2 class="h2 teko">Cada suelo pide su propia obra</h2>
+      <p>No importa si el terreno es fino o grueso, pedregoso, húmedo, arenoso o mixto: antes de empezar hacemos un estudio de sus condiciones para definir qué materiales son los más adecuados para levantar la construcción.</p>
+      <div class="soil"><span>Fino</span><span>Grueso</span><span>Pedregoso</span><span>Húmedo</span><span>Arenoso</span><span>Mixto</span></div>
+    </div>
+    <div class="mats">
+      <h3 class="teko">Mano de obra y materiales</h3>
+      <ul>
+        <li>Equipo de obra para edificar distintos tipos de construcción</li>
+        <li>Cemento, varillas, tabiques y otros materiales</li>
+        <li>Mano de obra y vehículos de alta resistencia para excavar</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="services" id="servicios">
+  <div class="wrap">
+    <span class="eyebrow">Servicios</span>
+    <h2 class="h2 teko">Lo que hacemos</h2>
+    <div class="cards">
+      <article class="card"><svg viewBox="0 0 48 48" aria-hidden="true"><path d="M6 42h36M10 42V22h28v20M16 22V12h16v10M20 42v-9h8v9"/></svg><h3 class="teko">Construcción</h3><p>Obras nuevas y rehabilitación o restauración de construcciones existentes, para casas, comercios y empresas.</p></article>
+      <article class="card"><svg viewBox="0 0 48 48" aria-hidden="true"><path d="M8 40l14-14M22 26l6 6M28 32l12-12-6-6-12 12M30 10l8 8"/></svg><h3 class="teko">Remodelación</h3><p>Ampliaciones, extensiones y remodelaciones de su propiedad.</p></article>
+      <article class="card"><svg viewBox="0 0 48 48" aria-hidden="true"><path d="M4 40h40M8 40c0-8 6-12 12-12h4M20 28l6-14 14 4-4 10M30 16l-4 10"/></svg><h3 class="teko">Excavación</h3><p>Preparamos el terreno para cimientos y bases, siguiendo el plano para dejar listas las instalaciones de agua y electricidad.</p></article>
+    </div>
+  </div>
+</section>
+
+<div class="facts">
+  <div class="wrap">
+    <div><b>24 horas</b>Disponibilidad para atender su obra.</div>
+    <div><b>Todo Chile</b>Área de trabajo, con base en Maipú.</div>
+    <div><b>Particulares y empresas</b>Contratistas y dueños de casa.</div>
+  </div>
+</div>
+
+<section class="contact" id="contacto">
+  <div class="wrap grid">
+    <div>
+      <span class="eyebrow" style="color:var(--vis)">Contacto</span>
+      <h2 class="h2 teko">Cuéntenos <span>su obra</span></h2>
+      <p>Llámenos o escríbanos con la dirección, el tipo de trabajo y el tamaño aproximado, y armamos juntos un proyecto a su medida.</p>
+      <a class="btn btn-vis" href="tel:+56963472429">Llamar al 9 6347 2429</a>
+    </div>
+    <div class="list">
+      <a href="tel:+56963472429"><small>Teléfono</small><b>+56 9 6347 2429</b></a>
+      <a href="mailto:construccionesmaast@gmail.com"><small>Correo</small><b>construccionesmaast@gmail.com</b></a>
+      <a href="https://maps.google.com/?cid=5016416896156205528"><small>Dirección</small><b>Quinta Vergara 941, Maipú</b></a>
+      <div><small>Horario</small><b>Disponibles las 24 horas</b></div>
+    </div>
+  </div>
+</section>
+</main>
+
+<div class="tape" aria-hidden="true"></div>
+<footer><div class="wrap"><span>Construcciones Maast · Maipú</span><span>+56 9 6347 2429</span></div></footer>
+<div class="mockup-pill" aria-hidden="true">Propuesta de sitio web · mockup</div>
+</body>
+</html>
