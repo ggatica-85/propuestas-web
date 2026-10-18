@@ -1,44 +1,53 @@
 <!doctype html>
 <html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="robots" content="noindex,nofollow">
-<title>Gatty Perry Pet Spa · Peluquería para mascotas en Maipú</title>
-<meta name="description" content="Pet spa y peluquería para mascotas en Maipú. Agenda por WhatsApp o Instagram.">
+<title>Gatty Perry Pet Spa · Peluquería para perros y gatos en Maipú</title>
+<meta name="description" content="Pet spa en Maipú, especialistas en felinos, estética canina y bienestar animal. Atención con reserva.">
 <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600&family=Nunito:wght@400;600;800&display=swap" rel="stylesheet">
 <style>
-:root{--sun:#ffcf4a;--sky:#3aa6d8;--pink:#ff8fa8;--ink:#1d2b3a;--cloud:#fffaf0}
+:root{--pink:#e60d7e;--blue:#1870aa;--sun:#f9b90a;--ink:#1d2a36;--cloud:#fff8fb;--soft:#fde7f1}
 *{box-sizing:border-box;margin:0}html{scroll-behavior:smooth}
 body{background:var(--cloud);color:var(--ink);font:17px/1.65 Nunito,sans-serif}
-.wrap{max-width:980px;margin:0 auto;padding:0 22px}
+.wrap{max-width:1020px;margin:0 auto;padding:0 22px}
 h1,h2,h3{font-family:Fredoka,sans-serif;font-weight:600;line-height:1.05}
-header .wrap{display:flex;justify-content:space-between;align-items:center;height:68px}
-header b{font:600 22px Fredoka}
-.btn{display:inline-block;background:var(--ink);color:#fff;padding:14px 28px;border-radius:40px;font-weight:800;text-decoration:none}
-.btn:hover,.btn:focus-visible{background:var(--pink);color:var(--ink)}
-.hero{background:var(--sky);color:#fff;border-radius:0 0 60px 60px;padding:60px 0 110px;position:relative;overflow:hidden}
-.hero h1{font-size:clamp(44px,8vw,92px);max-width:11ch}.hero p{font-size:20px;max-width:42ch;margin:20px 0 28px}
-.hero .btn{background:var(--sun);color:var(--ink)}.hero .btn:hover{background:#fff}
-.bub{position:absolute;border-radius:50%;background:rgba(255,255,255,.28)}
-.b1{width:260px;height:260px;right:-40px;top:30px}.b2{width:120px;height:120px;right:230px;bottom:20px}.b3{width:60px;height:60px;right:120px;top:260px}
-section{padding:66px 0}h2{font-size:clamp(32px,5vw,50px);margin-bottom:22px}
-.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:18px}
-.cards div{border-radius:28px;padding:30px;font-weight:600}.cards div:nth-child(1){background:var(--sun)}.cards div:nth-child(2){background:var(--pink)}.cards div:nth-child(3){background:#bfe7f6}
-.cards h3{font-size:26px;margin-bottom:6px}
+header .wrap{display:flex;justify-content:space-between;align-items:center;height:70px}
+header b{font:600 24px Fredoka;color:var(--pink)}header span{font-weight:600;color:var(--blue)}
+.btn{display:inline-block;background:var(--pink);color:#fff;padding:14px 28px;border-radius:40px;font-weight:800;text-decoration:none}
+.btn:hover,.btn:focus-visible{background:var(--blue)}
+.hero .wrap{display:grid;grid-template-columns:1fr 1.1fr;gap:36px;align-items:center;padding-top:30px;padding-bottom:70px}
+.hero h1{font-size:clamp(42px,6.5vw,80px)}.hero h1 span{color:var(--pink)}
+.hero p{margin:18px 0 26px;font-size:19px;max-width:40ch}
+.stars{margin-top:16px;font-weight:800;color:var(--ink)}.stars b{color:var(--sun);letter-spacing:2px}
+.ph{position:relative}.ph img{width:100%;border-radius:36px;aspect-ratio:7/5;object-fit:cover;box-shadow:14px 14px 0 var(--sun)}
+section{padding:66px 0}h2{font-size:clamp(32px,5vw,50px);margin-bottom:22px;color:var(--blue)}
+.soft{background:var(--soft)}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:18px}
+.cards>div{background:#fff;border-radius:28px;padding:28px;box-shadow:0 8px 24px rgba(230,13,126,.08)}
+.cards h3{font-size:25px;margin-bottom:8px;color:var(--pink)}
+.cards img{width:100%;border-radius:20px;aspect-ratio:7/5;object-fit:cover;margin-bottom:16px}
+.tiers{margin-top:24px;background:#fff;border-radius:28px;padding:10px 28px}
+.t{display:grid;grid-template-columns:1fr auto;gap:12px;padding:14px 0;border-bottom:1px solid #f3d1e1}.t:last-child{border:0}
+.t b{font:600 20px Fredoka}.t span{color:var(--blue);font-weight:800}
+.hours dl{display:grid;grid-template-columns:auto 1fr;gap:6px 22px}.hours dt{font-weight:800;color:var(--blue)}
 .contact{background:var(--ink);color:#fff;border-radius:44px;padding:48px;display:grid;grid-template-columns:1fr 1fr;gap:30px}
-.contact a{display:block;color:var(--sun);font-size:21px;font-weight:800;margin:4px 0}
+.contact h2{color:#fff}.contact a{display:block;color:var(--sun);font-size:21px;font-weight:800;margin:4px 0}
 footer{padding:30px 0 90px;font-size:14px;opacity:.7;text-align:center}
 .mock{position:fixed;left:14px;bottom:14px;background:#111;color:#fff;font:600 12px/1 Nunito;padding:9px 14px;border-radius:30px;z-index:9}
-@media(max-width:760px){.contact{grid-template-columns:1fr;padding:30px}.b1,.b2,.b3{opacity:.5}}
-@media(prefers-reduced-motion:no-preference){.bub{animation:f 6s ease-in-out infinite alternate}.b2{animation-delay:-2s}.b3{animation-delay:-4s}@keyframes f{to{transform:translateY(-18px)}}}
+@media(max-width:780px){.hero .wrap,.contact{grid-template-columns:1fr}.contact{padding:30px}}
 </style></head><body>
-<div class="hero"><header><div class="wrap"><b>Gatty Perry Pet Spa</b><span>Maipú</span></div></header>
-<div class="bub b1"></div><div class="bub b2"></div><div class="bub b3"></div>
-<div class="wrap" style="padding-top:36px"><h1>Baño, corte y mucho cariño.</h1><p>Peluquería y spa para mascotas en Maipú. Agenda por WhatsApp o escríbenos por Instagram.</p>
-<a class="btn" href="https://wa.me/56972190729?text=Hola%20Gatty%20Perry%2C%20quisiera%20agendar%20una%20hora%20para%20mi%20mascota">Agenda por WhatsApp</a></div></div>
-<section><div class="wrap"><h2>Cómo agendar</h2><div class="cards">
-<div><h3>1. Escríbenos</h3>Cuéntanos qué mascota tienes y qué necesita.</div>
-<div><h3>2. Revisa valores</h3>Te informamos los servicios y precios por mensaje.</div>
-<div><h3>3. Elige tu hora</h3>Coordinamos el día y la hora que te acomode.</div></div></div></section>
-<section style="padding-top:0"><div class="wrap"><div class="contact"><div><h2 style="margin:0 0 10px">Visítanos</h2><p>Las Aralias 18670, Maipú.</p></div>
+<header><div class="wrap"><b>Gatty Perry Pet Spa</b><span>Maipú</span></div></header>
+<div class="hero"><div class="wrap"><div><h1>Especialistas en <span>felinos</span> y estética canina.</h1>
+<p>Atención personalizada, manejo respetuoso y ambiente tranquilo para el bienestar de tu mascota. Atención exclusiva con reserva.</p>
+<a class="btn" href="https://wa.me/56972190729?text=Hola%20Gatty%20Perry%2C%20quisiera%20reservar%20una%20hora%20para%20mi%20mascota">Reserva por WhatsApp</a>
+<p class="stars"><b>★★★★★</b> 41 opiniones</p></div>
+<div class="ph"><img src="assets/ZdwoQ.png" alt="Corgi en la mesa de peluquería de Gatty Perry"></div></div></div>
+<section class="soft"><div class="wrap"><h2>Servicios</h2><div class="cards">
+<div><img src="assets/Gfq4l.png" alt="Perro en la ducha del spa" loading="lazy"><h3>Spa de perros</h3><p>Peluquería completa: cepillado, baño higiénico y cosmético, corte y arreglo. El valor varía según peso y raza.</p></div>
+<div><img src="assets/nMwSX.png" alt="Gata con pajarita rosa" loading="lazy"><h3>Spa de gatos</h3><p>Atención especializada en felinos, con manejo respetuoso.</p></div>
+<div><h3>Otros servicios para perros</h3><p>Consulta por WhatsApp los servicios adicionales y sus valores.</p></div></div>
+<div class="tiers"><div class="t"><b>Hasta 5 kg</b><span>Precio variable</span></div><div class="t"><b>De 6 a 12 kg</b><span>Precio variable</span></div><div class="t"><b>De 13 a 19 kg</b><span>Desde $33.000</span></div><div class="t"><b>De 20 a 26 kg</b><span>Desde $45.000</span></div><div class="t"><b>De 28 a 42 kg</b><span>Desde $60.000</span></div></div></div></section>
+<section class="hours"><div class="wrap"><h2>Horario</h2><dl><dt>Martes a viernes</dt><dd>10:00 a 14:00 y 14:30 a 16:30</dd><dt>Con reserva</dt><dd>Escríbenos para coordinar tu hora</dd></dl></div></section>
+<section style="padding-top:0"><div class="wrap"><div class="contact"><div><h2>Visítanos</h2><p>Las Aralias 18670, Maipú.</p></div>
 <div><a href="https://wa.me/56972190729">+56 9 7219 0729</a><a href="mailto:gattyperry.spa@gmail.com">gattyperry.spa@gmail.com</a><a href="https://www.instagram.com/gatty_perry.spa">Instagram @gatty_perry.spa</a></div></div></div></section>
 <footer>Gatty Perry Pet Spa</footer>
 <div class="mock">Propuesta de rediseño · mockup</div></body></html>
