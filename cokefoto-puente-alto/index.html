@@ -3,45 +3,52 @@
 <meta name="robots" content="noindex,nofollow">
 <title>CokeFoto · Fotografía en Puente Alto</title>
 <meta name="description" content="Fotografía de matrimonios, cumpleaños, embarazos, books, deportes y publicidad en Puente Alto. Cotiza tu sesión.">
-<link href="https://fonts.googleapis.com/css2?family=Syne:wght@600;800&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;1,9..144,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
 <style>
-:root{--bk:#0e0d0c;--ink:#f1ece4;--amb:#f2a33a;--mut:#8d867c}
+:root{--cream:#fffbf4;--brown:#514033;--sea:#2b5672;--sand:#7d6f63;--line:#e2d8c8}
 *{box-sizing:border-box;margin:0}html{scroll-behavior:smooth}
-body{background:var(--bk);color:var(--ink);font:17px/1.6 'DM Sans',sans-serif}
-.wrap{max-width:1100px;margin:0 auto;padding:0 22px}
-h1,h2{font-family:Syne,sans-serif;font-weight:800;line-height:1;letter-spacing:-.02em}
-header{display:flex;justify-content:space-between;align-items:center;padding:22px 0;font-family:Syne,sans-serif;font-weight:800}
-header a{font:500 14px 'DM Sans';color:var(--ink);text-decoration:none;border-bottom:1px solid var(--amb);padding-bottom:2px}
-.hero{padding:30px 0 90px;position:relative}
-.frame{position:relative;border:0;padding:60px 0 60px 0}
-.frame::before,.frame::after{content:"";position:absolute;width:44px;height:44px;border:3px solid var(--amb)}
-.frame::before{top:0;left:0;border-right:0;border-bottom:0}.frame::after{bottom:0;right:0;border-left:0;border-top:0}
-.frame h1{font-size:clamp(46px,10vw,132px);padding:0 28px}.frame h1 span{color:var(--amb)}
-.frame p{padding:0 28px;max-width:46ch;margin-top:22px;color:#cfc8bd;font-size:19px}
-.rec{position:absolute;top:18px;right:18px;font:700 12px 'DM Sans';letter-spacing:.18em;color:var(--amb)}
-.rec::before{content:"";display:inline-block;width:9px;height:9px;border-radius:50%;background:#e53b2f;margin-right:8px}
-.btn{display:inline-block;margin:30px 28px 0;background:var(--amb);color:#111;padding:15px 28px;font-weight:700;text-decoration:none}
-.btn:hover,.btn:focus-visible{background:var(--ink)}
-section{padding:70px 0;border-top:1px solid #2a2724}
-h2{font-size:clamp(30px,5vw,54px);margin-bottom:34px}
-.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:2px;background:#2a2724}
-.grid div{background:var(--bk);aspect-ratio:4/3;padding:20px;display:flex;align-items:flex-end;font:700 22px Syne;transition:.2s}
-.grid div:hover{background:var(--amb);color:#111}
-.cols{display:grid;grid-template-columns:1fr 1fr;gap:50px}
-.also span{display:inline-block;border:1px solid #3a3631;padding:6px 14px;margin:0 8px 8px 0;border-radius:30px;font-size:15px}
-.ct a{display:block;color:var(--ink);font-size:20px;margin:4px 0}
-footer{padding:30px 0 90px;color:var(--mut);font-size:14px}
-.mock{position:fixed;left:14px;bottom:14px;background:var(--ink);color:#111;font:700 12px/1 'DM Sans';padding:9px 14px;border-radius:30px;z-index:9}
-@media(max-width:760px){.cols{grid-template-columns:1fr}}
-@media(prefers-reduced-motion:no-preference){.rec{animation:b 1.6s steps(2) infinite}@keyframes b{50%{opacity:.35}}}
+body{background:var(--cream);color:var(--brown);font:300 18px/1.7 Jost,sans-serif}
+.wrap{max-width:1120px;margin:0 auto;padding:0 22px}
+h1,h2,h3{font-family:Fraunces,serif;font-weight:400;line-height:1.05}
+header{border-bottom:1px solid var(--line)}
+header .wrap{display:flex;justify-content:space-between;align-items:center;height:64px}
+header b{font:400 22px Fraunces;letter-spacing:.02em}
+header a{color:var(--sea);text-decoration:none;font-weight:500;font-size:15px;border-bottom:1px solid var(--sea)}
+.hero{display:grid;grid-template-columns:.9fr 1.1fr;gap:0;border-bottom:1px solid var(--line)}
+.hero .ph{background:url(assets/hero.jpg) center/cover;min-height:560px}
+.hero .t{padding:70px 0 70px 56px;display:flex;flex-direction:column;justify-content:center}
+.hero h1{font-size:clamp(44px,6.5vw,88px)}.hero h1 i{color:var(--sea)}
+.hero p{margin:22px 0 30px;max-width:42ch;font-size:20px}
+.btn{align-self:flex-start;background:var(--sea);color:#fff;padding:15px 30px;text-decoration:none;font-weight:500;letter-spacing:.04em}
+.btn:hover,.btn:focus-visible{background:var(--brown)}
+section{padding:76px 0}h2{font-size:clamp(32px,4.5vw,54px);margin-bottom:30px}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.grid figure{position:relative;aspect-ratio:1;overflow:hidden;background:var(--line)}
+.grid img{width:100%;height:100%;object-fit:cover;transition:transform .5s}
+.grid figure:hover img{transform:scale(1.04)}
+.grid figcaption{position:absolute;left:0;bottom:0;right:0;padding:40px 16px 14px;background:linear-gradient(transparent,rgba(40,28,20,.72));color:#fff;font:italic 400 24px Fraunces}
+.also{margin-top:26px}.also span{display:inline-block;border:1px solid var(--sand);padding:5px 16px;margin:0 8px 8px 0;border-radius:30px;font-size:15px}
+.band{background:var(--sea);color:#fff}
+.cols{display:grid;grid-template-columns:1fr 1fr;gap:50px;align-items:center}
+.ct a{display:block;color:#fff;font-size:21px;margin:4px 0}
+footer{padding:28px 0 90px;font-size:14px;opacity:.7}
+.mock{position:fixed;left:14px;bottom:14px;background:var(--brown);color:#fff;font:400 12px/1 Jost;padding:9px 14px;border-radius:30px;z-index:9}
+@media(max-width:780px){.hero,.cols{grid-template-columns:1fr}.hero .ph{min-height:380px}.hero .t{padding:40px 0}.grid{grid-template-columns:1fr 1fr}}
 </style></head><body>
-<div class="wrap"><header>COKEFOTO<a href="#cotiza">Cotiza tu sesión</a></header>
-<div class="hero"><div class="frame"><div class="rec">REC</div><h1>Creando <span>recuerdos.</span></h1>
+<header><div class="wrap"><b>CokeFoto</b><a href="#cotiza">Cotiza tu sesión</a></div></header>
+<div class="hero"><div class="ph" role="img" aria-label="Fotografía de un crucero frente a la costa"></div>
+<div class="t wrap" style="margin:0"><h1>Creando <i>recuerdos.</i></h1>
 <p>Fotografía de estudio, eventos, deportes, productos, video y drones en Puente Alto. Capturamos momentos especiales con pasión y creatividad.</p>
 <a class="btn" href="https://wa.me/56964563169?text=Hola%20CokeFoto%2C%20quisiera%20cotizar%20una%20sesi%C3%B3n">Cotiza por WhatsApp</a></div></div>
-<section id="servicios"><h2>Qué fotografiamos</h2><div class="grid"><div>Matrimonios</div><div>Cumpleaños</div><div>Embarazos</div><div>Book modelos</div><div>Deportiva</div><div>Publicitaria</div></div>
-<div class="also" style="margin-top:28px"><span>Estudio</span><span>Eventos</span><span>Productos</span><span>Video</span><span>Drones</span></div></section>
-<section id="cotiza"><div class="cols"><div><h2>Presupuestos a tu medida</h2><p>Cuéntanos qué necesitas y preparamos un presupuesto en base a tus necesidades. También puedes reservar online.</p></div>
-<div class="ct"><a href="https://wa.me/56964563169">WhatsApp +56 9 6456 3169</a><a href="mailto:cokefoto.jl@gmail.com">cokefoto.jl@gmail.com</a><a href="https://www.instagram.com/coke.foto">Instagram @coke.foto</a><p style="color:var(--mut);margin-top:10px">Parque Cordillera 02752, Puente Alto</p></div></div></section>
-<footer>CokeFoto · “La fotografía es la forma más bonita de convertir un instante en algo eterno.”</footer></div>
+<section id="servicios"><div class="wrap"><h2>Qué fotografiamos</h2><div class="grid">
+<figure><img src="assets/eventos.jpg" alt="Anillos de matrimonio" loading="lazy"><figcaption>Matrimonios y eventos</figcaption></figure>
+<figure><img src="assets/embarazo.jpg" alt="Sesión de embarazo" loading="lazy"><figcaption>Embarazos</figcaption></figure>
+<figure><img src="assets/estudio.jpg" alt="Retrato de estudio" loading="lazy"><figcaption>Estudio y book</figcaption></figure>
+<figure><img src="assets/cumple.jpg" alt="Sesión de cumpleaños" loading="lazy"><figcaption>Cumpleaños</figcaption></figure>
+<figure><img src="assets/deportiva.jpg" alt="Fotografía deportiva" loading="lazy"><figcaption>Deportiva</figcaption></figure>
+<figure><img src="assets/paisajes.jpg" alt="Paisaje" loading="lazy"><figcaption>Paisajes</figcaption></figure></div>
+<div class="also"><span>Publicitaria</span><span>Productos</span><span>Video</span><span>Drones</span></div></div></section>
+<section class="band" id="cotiza"><div class="wrap cols"><div><h2>Presupuestos a tu medida</h2><p>Cuéntanos qué necesitas y preparamos un presupuesto en base a tus necesidades. También puedes reservar online.</p></div>
+<div class="ct"><a href="https://wa.me/56964563169">WhatsApp +56 9 6456 3169</a><a href="mailto:cokefoto.jl@gmail.com">cokefoto.jl@gmail.com</a><a href="https://www.instagram.com/coke.foto">Instagram @coke.foto</a><p style="opacity:.75;margin-top:10px">Parque Cordillera 02752, Puente Alto</p></div></div></section>
+<div class="wrap"><footer>CokeFoto · “La fotografía es la forma más bonita de convertir un instante en algo eterno.”</footer></div>
 <div class="mock">Propuesta de rediseño · mockup</div></body></html>
