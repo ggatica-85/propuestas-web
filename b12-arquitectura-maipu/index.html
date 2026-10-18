@@ -2,49 +2,56 @@
 <html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="robots" content="noindex,nofollow">
 <title>B12 Arquitectura · Arquitectura, BIM y clases</title>
-<meta name="description" content="Arquitectura, coordinación BIM y clases particulares de Revit. Jóvenes arquitectos en Maipú, Santiago.">
-<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Archivo:wght@400;600;800&display=swap" rel="stylesheet">
+<meta name="description" content="Arquitectura, coordinación BIM, asesoría para migrar a Revit y clases particulares. Jóvenes arquitectos en Maipú, Santiago.">
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;600;800&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
 <style>
-:root{--bp:#0b3a8f;--paper:#f4f7fc;--ink:#0a1b3d;--grid:#c9d6ee;--hi:#ffd23f}
+:root{--peri:#7a89b8;--deep:#2e4453;--coral:#f4606f;--mist:#e3e7f1;--ink:#1f2e39}
 *{box-sizing:border-box;margin:0}html{scroll-behavior:smooth}
-body{background:var(--paper) linear-gradient(var(--grid) 1px,transparent 1px) 0 0/40px 40px,linear-gradient(90deg,var(--grid) 1px,transparent 1px) 0 0/40px 40px;background-color:var(--paper);color:var(--ink);font:17px/1.6 Archivo,sans-serif}
-.wrap{max-width:1060px;margin:0 auto;padding:0 22px}
+body{background:#fff;color:var(--ink);font:17px/1.65 Archivo,sans-serif}
+.wrap{max-width:1080px;margin:0 auto;padding:0 22px}
 .mono{font-family:'IBM Plex Mono',monospace}
-h1,h2{font-weight:800;line-height:.98;letter-spacing:-.03em}
-header{display:flex;justify-content:space-between;align-items:center;padding:20px 0;font-family:'IBM Plex Mono';font-size:14px}
-header a{color:var(--ink);margin-left:18px}
-.hero{padding:50px 0 80px}
-.hero h1{font-size:clamp(46px,9vw,118px)}.hero h1 span{background:var(--hi);padding:0 .1em}
-.hero p{max-width:50ch;margin-top:26px;font-size:20px}
-.dim{display:flex;align-items:center;gap:10px;margin-top:40px;font:500 12px 'IBM Plex Mono';color:var(--bp)}
-.dim i{flex:1;height:1px;background:var(--bp);position:relative}
-.dim i::before,.dim i::after{content:"";position:absolute;top:-5px;width:1px;height:11px;background:var(--bp)}.dim i::before{left:0}.dim i::after{right:0}
-.btn{display:inline-block;margin-top:28px;background:var(--bp);color:#fff;padding:14px 24px;text-decoration:none;font:500 15px 'IBM Plex Mono'}
-.btn:hover,.btn:focus-visible{background:var(--ink)}
-section{background:var(--paper);border-top:2px solid var(--bp);padding:64px 0}
-h2{font-size:clamp(30px,5vw,52px);margin-bottom:30px}
-.sheet{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));border:2px solid var(--bp)}
-.sheet>div{padding:28px;border-right:2px solid var(--bp);border-bottom:2px solid var(--bp);margin:0 -2px -2px 0;background:#fff}
-.sheet .tag{font:500 12px 'IBM Plex Mono';color:var(--bp);margin-bottom:10px}
-.sheet h3{font-size:24px;margin-bottom:8px}
-.cl{margin-top:20px;font-size:16px}.cl li{margin:0 0 6px 18px}
-.contact{display:grid;grid-template-columns:1fr 1fr;gap:40px}.contact a{display:block;color:var(--bp);font:500 17px 'IBM Plex Mono';margin:6px 0}
-footer{background:var(--paper);padding:26px 0 90px;font:12px 'IBM Plex Mono';color:var(--bp)}
-.mock{position:fixed;left:14px;bottom:14px;background:var(--hi);color:#111;font:500 12px/1 'IBM Plex Mono';padding:9px 14px;z-index:9}
-@media(max-width:760px){.contact{grid-template-columns:1fr}header a:not(:last-child){display:none}}
+h1,h2,h3{font-weight:800;line-height:1;letter-spacing:-.025em}
+header{background:#fff}header .wrap{display:flex;justify-content:space-between;align-items:center;padding-top:12px;padding-bottom:12px}
+header img{height:64px}
+nav.bar{background:var(--coral)}nav.bar .wrap{display:flex;gap:28px;height:46px;align-items:center;font:500 13px 'IBM Plex Mono';text-transform:uppercase;letter-spacing:.06em}
+nav.bar a{color:#fff;text-decoration:none}nav.bar a:hover{text-decoration:underline}
+.hero{background:var(--peri);color:#fff}
+.hero .wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:30px;align-items:center;padding-top:64px;padding-bottom:64px}
+.hero h1{font-size:clamp(44px,7.5vw,92px)}.hero h1 span{color:var(--deep)}
+.hero p{margin:22px 0 28px;font-size:19px;max-width:46ch}
+.hero .pl{aspect-ratio:1;background:url(assets/hero.jpg) center/cover;border:6px solid #fff;box-shadow:14px 14px 0 var(--deep)}
+.btn{display:inline-block;background:var(--deep);color:#fff;padding:14px 26px;text-decoration:none;font:500 15px 'IBM Plex Mono'}
+.btn:hover,.btn:focus-visible{background:var(--coral)}
+section{padding:70px 0}h2{font-size:clamp(32px,5vw,54px);margin-bottom:28px;color:var(--deep)}
+.sheet{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:0;border:2px solid var(--deep)}
+.sheet>div{padding:28px;border-right:2px solid var(--deep);border-bottom:2px solid var(--deep);margin:0 -2px -2px 0;background:var(--mist)}
+.tag{font:500 12px 'IBM Plex Mono';color:var(--coral);margin-bottom:10px;letter-spacing:.08em}
+.sheet h3{font-size:25px;margin-bottom:8px;color:var(--deep)}
+.rv{display:grid;grid-template-columns:1fr 1fr;gap:44px;align-items:center}
+.rv img{width:100%;border:2px solid var(--deep)}
+.rv ul{margin:16px 0 0 18px}.rv li{margin-bottom:6px}
+.band{background:var(--mist)}
+.contact{background:var(--deep);color:#fff}.contact h2{color:#fff}
+.contact .wrap{display:grid;grid-template-columns:1fr 1fr;gap:40px}
+.contact a{display:block;color:#ffc2c8;font:500 17px 'IBM Plex Mono';margin:6px 0}
+footer{padding:26px 0 90px;font:12px 'IBM Plex Mono';color:var(--deep)}
+.mock{position:fixed;left:14px;bottom:14px;background:var(--coral);color:#fff;font:500 12px/1 'IBM Plex Mono';padding:9px 14px;z-index:9}
+@media(max-width:780px){.hero .wrap,.rv,.contact .wrap{grid-template-columns:1fr}.hero .pl{box-shadow:8px 8px 0 var(--deep)}nav.bar .wrap{gap:16px;overflow:auto}}
 </style></head><body>
-<div class="wrap"><header><b>B12 ARQUITECTURA</b><nav><a href="#servicios">servicios</a><a href="#clases">clases</a><a href="#contacto">contacto</a></nav></header>
-<div class="hero"><h1>Arquitectura, <span>BIM</span> y clases.</h1>
+<header><div class="wrap"><img src="assets/logo.png" alt="B12 Arquitectura"><span class="mono" style="font-size:12px;color:var(--deep)">Arquitectura · BIM · Clases particulares</span></div></header>
+<nav class="bar"><div class="wrap"><a href="#servicios">Servicios</a><a href="#revit">Asesoría Revit</a><a href="#clases">Clases</a><a href="#contacto">Contacto</a></div></nav>
+<div class="hero"><div class="wrap"><div><h1>Arquitectura, <span>BIM</span> y clases.</h1>
 <p>Jóvenes arquitectos con habilidades técnicas y tecnológicas en arquitectura, diseño y construcción. Proyectos bajo la Ley General de Urbanismo y Construcciones.</p>
-<div class="dim"><span>escala 1:1</span><i></i><span>Maipú · Santiago</span></div>
-<a class="btn" href="https://wa.me/56986205372?text=Hola%20B12%2C%20quisiera%20consultar%20por%20un%20proyecto">Cuéntanos tu proyecto →</a></div></div>
+<a class="btn" href="https://wa.me/56986205372?text=Hola%20B12%2C%20quisiera%20consultar%20por%20un%20proyecto">Cuéntanos tu proyecto →</a></div>
+<div class="pl" role="img" aria-label="Modelo 3D isométrico de una planta de vivienda"></div></div></div>
 <section id="servicios"><div class="wrap"><h2>Servicios</h2><div class="sheet">
 <div><div class="tag">LÁMINA A</div><h3>Arquitectura</h3><p>Desarrollo de proyectos en base a la Ley General de Urbanismo y Construcciones, para un hábitat adecuado.</p></div>
 <div><div class="tag">LÁMINA B</div><h3>Coordinación BIM</h3><p>Coordinación, estándar y asesoría en el desarrollo de modelos BIM, guiados por el estándar de Plan BIM y Corfo.</p></div>
-<div><div class="tag">LÁMINA C</div><h3>Clases y talleres</h3><p>Clases particulares para nivelar conocimientos y talleres, incluyendo talleres especiales para oficinas y Revit Workshop.</p></div></div></div></section>
-<section id="clases"><div class="wrap"><h2>Clases particulares</h2><p style="max-width:60ch">Indicadas para quienes quieren nivelar sus conocimientos o aprenden mejor de forma focalizada. Puedes agendar sesiones según tu nivel de desarrollo de proyectos.</p>
-<ul class="cl"><li>Clases particulares</li><li>Taller LGUC / OGUC</li><li>Revit Workshop</li><li>Talleres especiales para oficinas</li></ul></div></section>
-<section id="contacto"><div class="wrap contact"><div><h2>Hablemos</h2><p>Escríbenos con tus dudas o consultas; aportamos al desarrollo de tu proyecto.</p></div>
+<div><div class="tag">LÁMINA C</div><h3>Clases y talleres</h3><p>Clases particulares para nivelar conocimientos y talleres, incluyendo Revit Workshop y talleres LGUC / OGUC.</p></div></div></div></section>
+<section class="band" id="revit"><div class="wrap rv"><div><h2>¿Tu oficina necesita migrar a Revit?</h2><p>Asesoría técnica bajo el estándar BIM Corfo, a bajo costo de inversión y adaptada a las necesidades de cada equipo.</p><ul><li>2 veces por semana, durante 3 meses</li><li>Sin interferir en la rutina de trabajo</li></ul></div>
+<img src="assets/a.jpg" alt="Ilustración isométrica de un edificio BIM" loading="lazy"></div></section>
+<section id="clases"><div class="wrap"><h2>Clases particulares</h2><p style="max-width:60ch">Indicadas para quienes quieren nivelar sus conocimientos o aprenden mejor de forma focalizada. Puedes agendar sesiones según tu nivel de desarrollo de proyectos. También hay talleres especiales para oficinas.</p></div></section>
+<section class="contact" id="contacto"><div class="wrap"><div><h2>Hablemos</h2><p>Escríbenos con tus dudas o consultas; aportamos al desarrollo de tu proyecto.</p></div>
 <div><a href="https://wa.me/56986205372">+56 9 8620 5372</a><a href="mailto:bim12arquitectos@gmail.com">bim12arquitectos@gmail.com</a><a href="https://www.instagram.com/b12arquitectos">@b12arquitectos</a></div></div></section>
-<footer><div class="wrap">B12 ARQUITECTURA · MAIPÚ · SANTIAGO</div></footer>
+<div class="wrap"><footer>B12 ARQUITECTURA · MAIPÚ · SANTIAGO</footer></div>
 <div class="mock">Propuesta de rediseño · mockup</div></body></html>
