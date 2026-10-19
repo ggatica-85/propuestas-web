@@ -18,7 +18,7 @@ header a{color:var(--ink);text-decoration:none;font:600 13px 'Nunito Sans';lette
 .hero .wrap{display:grid;grid-template-columns:1fr 1fr;gap:50px;align-items:center;padding-top:20px;padding-bottom:80px}
 .hero h1{font-size:clamp(46px,7vw,88px)}.hero h1 i{color:var(--rose)}
 .hero p{margin:20px 0 30px;max-width:40ch;font-size:19px}
-.hero img{width:100%;aspect-ratio:4/5;object-fit:cover;object-position:top;border-radius:200px 200px 24px 24px}
+.hero .im{overflow:hidden;aspect-ratio:4/5;border-radius:200px 200px 24px 24px}.hero .im img{width:100%;height:100%;object-fit:cover;object-position:top;transform:scale(1.12);transform-origin:top center}
 section{padding:70px 0}h2{font-size:clamp(36px,5vw,58px);margin-bottom:24px;color:var(--rosed)}
 .soft{background:var(--sagel)}
 .menu{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px}
@@ -37,7 +37,7 @@ footer{padding:26px 0 90px;font-size:14px;opacity:.6;text-align:center}
 <div class="hero"><div class="wrap"><div><h1>Un rato para <i>soltar</i> el estrés.</h1>
 <p>Masajes, piedras calientes y cuidado facial en Maipú. Un espacio pensado para que tu mente y tu cuerpo descansen.</p>
 <a class="btn" href="https://wa.me/56940958996?text=Hola%2C%20quisiera%20reservar%20un%20masaje">Reserva por WhatsApp</a></div>
-<img src="assets/hero.jpg" alt="Masaje con piedras calientes y limpieza facial"></div></div>
+<div class="im"><img src="assets/hero.jpg" alt="Masaje con piedras calientes y limpieza facial"></div></div></div>
 <section class="soft" id="servicios"><div class="wrap"><h2>Servicios</h2><div class="menu">
 <div><h3>Relajación</h3><p>Masaje para aliviar el estrés y soltar la tensión del día.</p></div>
 <div><h3>Piedras calientes</h3><p>Mejora las funciones orgánicas, elimina el estrés y armoniza mente, cuerpo y espíritu.</p></div>
