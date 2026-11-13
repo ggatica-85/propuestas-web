@@ -6,12 +6,12 @@
 <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
 <style>
 :root{--blue:#02267f;--sun:#fbe01c;--cream:#fffbe6;--ink:#0f1c47;--line:#e8e2b8}
-*{box-sizing:border-box;margin:0}html{scroll-behavior:smooth}
+*{box-sizing:border-box;margin:0}html{scroll-behavior:smooth;scroll-padding-top:100px}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
 body{background:#fff;color:var(--ink);font:400 17.5px/1.7 Nunito,sans-serif}
 .wrap{max-width:1040px;margin:0 auto;padding:0 22px}
 h1,h2,h3{font-family:Fredoka,sans-serif;line-height:1.1}
-header{background:var(--blue);color:#fff}header .wrap{display:flex;justify-content:space-between;align-items:center;height:84px;gap:12px}
+header{position:sticky;top:0;z-index:20;background:var(--blue);color:#fff}header .wrap{display:flex;justify-content:space-between;align-items:center;height:84px;gap:12px}
 .brand{display:flex;align-items:center;gap:12px;font:700 26px Fredoka}.brand img{height:62px;width:62px;border-radius:50%;background:#fff;object-fit:contain}
 header a.b{background:var(--sun);color:var(--blue);text-decoration:none;padding:11px 24px;border-radius:30px;font-weight:700;font-size:15px}
 header a.b:hover{background:#fff}
@@ -32,20 +32,26 @@ section{padding:76px 0}h2{font-size:clamp(28px,4.2vw,44px);color:var(--blue);mar
 .contact{background:var(--blue);color:#fff;text-align:center}.contact h2{color:#fff}
 .contact a.l{display:inline-block;margin:6px 12px;font:600 clamp(24px,4vw,38px) Fredoka;color:var(--sun);text-decoration:none}.contact a.l:hover{color:#fff}
 footer{padding:22px 0 90px;text-align:center;font-size:13px;color:#667}
-.mock{position:fixed;left:14px;bottom:14px;background:#fff;color:#111;border:2px solid #111;font:700 12px/1 Nunito;padding:8px 14px;border-radius:30px;z-index:9}
+.mock{z-index:30;position:fixed;left:14px;bottom:14px;background:#fff;color:#111;border:2px solid #111;font:700 12px/1 Nunito;padding:8px 14px;border-radius:30px;z-index:9}
 @media(max-width:860px){.hero .wrap,.g3,.sedes .g2{grid-template-columns:1fr}.lv{grid-template-columns:1fr 1fr}.hero .wrap{padding:48px 22px}.hero img{max-width:220px}}
-</style></head><body>
-<header><div class="wrap"><div class="brand"><img src="assets/Logo-Cuadrado-Sin-Bajada.png" alt="Papelucho">Sala Cuna y Jardín</div><a class="b" href="#sedes">Matrículas</a></div></header>
+nav{display:flex;gap:20px;font:600 16px Fredoka}nav a{color:#fff;text-decoration:none}nav a:hover{color:var(--sun)}.tl{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:26px}.tl>div{background:var(--cream);border:2px solid var(--line);border-radius:20px;padding:22px}.tl b{display:block;font:600 34px Fredoka;color:var(--blue)}.tl span{font-size:15.5px}.two{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:22px}.two>div{border-radius:22px;padding:30px;background:var(--blue);color:#fff}.two>div+div{background:var(--sun);color:var(--blue)}.two b{font:600 24px Fredoka;display:block;margin-bottom:6px}.q{background:var(--cream);border-radius:24px;padding:34px;margin-top:26px;font-size:18px;font-weight:600;color:var(--blue)}.q cite{display:block;margin-top:10px;font:600 14px Nunito;font-style:normal;color:#4a5680}@media(max-width:860px){nav{display:none}.tl,.two{grid-template-columns:1fr 1fr}}@media(max-width:520px){.tl,.two{grid-template-columns:1fr}}</style></head><body>
+<header><div class="wrap"><div class="brand"><img src="assets/Logo-Cuadrado-Sin-Bajada.png" alt="Papelucho">Sala Cuna y Jardín</div><nav><a href="#historia">Nuestro jardín</a><a href="#ofrecemos">Qué ofrecemos</a><a href="#niveles">Niveles</a><a href="#sedes">Sedes</a></nav><a class="b" href="#sedes">Matrículas</a></div></header>
 <div class="hero"><div class="wrap"><div><small>Antofagasta · Desde 1995</small><h1>¡Educar para ser feliz!</h1><p>Aprendizajes significativos e integradores a través de experiencias lúdicas, en un ambiente de afecto, confianza, atención y cuidado.</p><a class="btn" href="#sedes">Matricula a tu hijo o hija</a></div><img src="assets/Logo-Cuadrado-Sin-Bajada.png" alt="Logo Papelucho"></div></div>
-<section><div class="wrap"><h2>Qué ofrecemos</h2><div class="g3">
+<section id="historia"><div class="wrap"><h2>Por qué escoger Papelucho</h2><p style="max-width:68ch">Una institución particular pagada que imparte educación parvularia de calidad a niños y niñas desde los 6 meses hasta los 3 años 11 meses, en un ambiente lúdico, significativo, integrador, cálido, familiar y participativo, con una base sólida de valores universales, bajo su lema “Educar para ser Feliz”.</p>
+<div class="tl"><div><b>1988</b><span>Dos educadoras de párvulos fundan la Sala Cuna y Escuela de Párvulos, para dar educación integral a lactantes y párvulos y apoyar a madres trabajadoras.</span></div><div><b>1995</b><span>Se inaugura la sede de Las Colonias.</span></div><div><b>2009</b><span>Se expande a dos establecimientos, con la sede Blümell, y una matrícula cercana a 125 párvulos.</span></div><div><b>MINEDUC</b><span>Reconocida como Colaboradora de la Función Educacional del Estado y empadronada por la JUNJI.</span></div></div>
+<div class="two"><div><b>Misión</b>Brindar educación temprana de alta calidad, basada en la idoneidad de los profesionales y en las Bases Curriculares de la Educación Parvularia, con una labor pedagógica en constante innovación.</div><div><b>Visión</b>Ser la sala cuna y escuela de párvulos de Antofagasta que desarrolle aprendizajes significativos e integradores a través de experiencias lúdicas, en un ambiente afectivo que incorpore a la familia.</div></div></div></section>
+<section id="ofrecemos" style="padding-top:0"><div class="wrap"><h2>Qué ofrecemos</h2><div class="g3">
 <div><b>Educación integral</b>En un ambiente de afecto, confianza, atención y cuidado.</div>
 <div><b>Convenio con REST 911</b>Atención médica de urgencia al interior del establecimiento.</div>
 <div><b>Alimentación saludable</b>Definida por nutricionistas y elaborada con insumos frescos en sus instalaciones.</div>
 <div><b>Personal idóneo</b>Con años de experiencia para guiar a los niños y niñas.</div>
 <div><b>Participación de los padres</b>Integración de las familias en el programa educativo.</div>
-<div><b>Programa recreativo</b>En los meses de verano, para párvulos de 2 a 4 años.</div></div></div></section>
-<section style="padding-top:0"><div class="wrap"><h2>Nuestros niveles</h2><div class="lv"><div><b>Lactante menor</b>Desde 84 días a 12 meses.</div><div><b>Lactante mayor</b>De 12 a 24 meses.</div><div><b>Medio menor</b>Entre 2 años y 2 años 11 meses.</div><div><b>Medio mayor</b>Entre 3 años y 3 años 11 meses.</div></div><p style="margin-top:20px;max-width:62ch;color:#44507a">El trabajo pedagógico sigue las bases curriculares de la Educación Parvularia y los Mapas de Progreso del MINEDUC, con juego de rincones, visitas pedagógicas en la comunidad e iniciación al inglés.</p></div></section>
-<section class="sedes" id="sedes"><div class="wrap"><h2>Dos sedes en Antofagasta</h2><div class="g2"><div><b>Las Colonias</b><p>Nuestra primera sede, inaugurada en 1995. Las Colonias 557.</p><p><a href="https://wa.me/56961315996">+56 9 6131 5996</a></p></div><div><b>Blümell</b><p>Nuestro segundo establecimiento. José Blümell 049.</p><p><a href="https://wa.me/56959700701">+56 9 5970 0701</a></p></div></div></div></section>
+<div><b>Infraestructura segura</b>Segura y atractiva, construida especialmente para los niños y niñas.</div></div>
+<p style="margin-top:20px;max-width:66ch;color:#44507a">Programa recreativo en los meses de verano para párvulos de 2 a 4 años. Juego de rincones, visitas pedagógicas en la comunidad e iniciación al inglés en los niveles medios, según las bases curriculares y los Mapas de Progreso del MINEDUC.</p></div></section>
+<section id="niveles" style="padding-top:0"><div class="wrap"><h2>Nuestros niveles</h2><div class="lv"><div><b>Lactante menor</b>De 84 días a 12 meses. Una educadora y dos asistentes de párvulos velan por su desarrollo integral.</div><div><b>Lactante mayor</b>De 12 a 24 meses. Ganan seguridad y autonomía, y se muestran más sociables.</div><div><b>Medio menor</b>Entre 2 años y 2 años 11 meses. Dos grupos, en ambas jornadas, con énfasis en comunicación y formación personal y social.</div><div><b>Medio mayor</b>Entre 3 años y 3 años 11 meses, en jornadas de mañana y tarde, con una educadora y una asistente.</div></div>
+<div class="two"><div><b>Sala cuna</b>Funciona durante todo el año, con una semana de vacaciones en septiembre.</div><div><b>Escuela de párvulos</b>Calendario escolar de 40 semanas, de marzo a diciembre, con vacaciones una semana en julio y una en septiembre.</div></div>
+<div class="q">“La tranquilidad que sentimos desde el primer día nos dio confianza; el recibimiento fue como estar en familia. Todo el equipo está lleno de amor y vocación.”<cite>Testimonio de una familia del jardín</cite></div></div></section>
+<section class="sedes" id="sedes"><div class="wrap"><h2>Dos sedes en Antofagasta</h2><div class="g2"><div><b>Las Colonias</b><p>Nuestra primera sede, inaugurada en 1995. Las Colonias 557.</p><p><a href="https://wa.me/56961315996">+56 9 6131 5996</a></p></div><div><b>Blümell</b><p>Nuestro segundo establecimiento. José Blümell, Antofagasta.</p><p><a href="https://wa.me/56959700701">+56 9 5970 0701</a></p></div></div></div></section>
 <section class="contact"><div class="wrap"><h2>Visítanos</h2><a class="l" href="mailto:administracion@jardinpapelucho.cl">administracion@jardinpapelucho.cl</a></div></section>
 <footer>SALA CUNA Y JARDÍN INFANTIL PAPELUCHO · ANTOFAGASTA</footer>
 <div class="mock">Propuesta de rediseño · mockup</div></body></html>
