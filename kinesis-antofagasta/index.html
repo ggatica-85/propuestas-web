@@ -6,7 +6,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@500;600;700;800&family=Nunito+Sans:wght@400;600;700&display=swap" rel="stylesheet">
 <style>
 :root{--black:#0a0d12;--cyan:#2fb5e8;--steel:#1b222d;--ink:#e9eef4;--mute:#9aa7b6;--line:#26303d}
-*{box-sizing:border-box;margin:0}html{scroll-behavior:smooth}
+*{box-sizing:border-box;margin:0}html{scroll-behavior:smooth;scroll-padding-top:100px}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
 body{background:var(--black);color:var(--ink);font:400 17px/1.75 'Nunito Sans',sans-serif}
 .wrap{max-width:1020px;margin:0 auto;padding:0 22px}
@@ -28,16 +28,18 @@ section{padding:74px 0;border-top:1px solid var(--line)}h2{font-size:clamp(28px,
 .contact{text-align:center}.contact a.l{display:block;font:800 clamp(32px,5.6vw,60px) 'Exo 2';color:var(--cyan);text-decoration:none;margin:8px 0}.contact a.l:hover{color:#fff}
 .contact p{color:var(--mute)}
 footer{padding:22px 0 90px;text-align:center;font-size:13px;color:#667385}
-.mock{position:fixed;left:14px;bottom:14px;background:#fff;color:#111;border:2px solid #111;font:700 12px/1 'Nunito Sans';padding:8px 14px;border-radius:30px;z-index:9}
+.mock{z-index:30;position:fixed;left:14px;bottom:14px;background:#fff;color:#111;border:2px solid #111;font:700 12px/1 'Nunito Sans';padding:8px 14px;border-radius:30px;z-index:9}
 @media(max-width:820px){.g3{grid-template-columns:1fr}.hero .wrap{padding:52px 22px 56px}}
-</style></head><body>
-<header><div class="wrap"><img src="assets/cropped-Logo-Kinesis-1.png" alt="Kinesis"><a class="b" href="https://wa.me/56971031764?text=Hola%2C%20quisiera%20agendar%20una%20sesi%C3%B3n">Agendar</a></div></header>
+nav{display:flex;gap:22px;font-size:15px;font-weight:600}nav a{color:var(--mute);text-decoration:none}nav a:hover{color:var(--cyan)}.sp{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center}.sp p{color:#c4cfdc;margin-bottom:12px}.badge{background:var(--steel);border:1px solid var(--line);border-left:4px solid var(--cyan);padding:26px;font:700 22px "Exo 2";line-height:1.25}.badge span{display:block;font:400 15px "Nunito Sans";color:var(--mute);margin-top:8px}@media(max-width:820px){nav{display:none}.sp{grid-template-columns:1fr}}</style></head><body>
+<header><div class="wrap"><img src="assets/cropped-Logo-Kinesis-1.png" alt="Kinesis"><nav><a href="#servicios">Servicios</a><a href="#bfr">BFR</a><a href="#reintegro">Reintegro deportivo</a><a href="#reembolsos">Reembolsos</a></nav><a class="b" href="https://wa.me/56971031764?text=Hola%2C%20quisiera%20agendar%20una%20sesi%C3%B3n">Agendar</a></div></header>
 <div class="hero"><div class="wrap"><small>Antofagasta · Rehabilitación músculo-esquelética</small><h1>Soluciona tu dolor. <span>Recupera tu función.</span></h1><p>Centro especializado en rehabilitación kinesiológica avanzada, con sesiones dirigidas por el kinesiólogo de principio a fin.</p><a class="btn" href="https://wa.me/56971031764?text=Hola%2C%20quisiera%20agendar%20una%20sesi%C3%B3n">Agendar por WhatsApp</a></div></div>
-<section><div class="wrap"><h2>Nuestros servicios</h2><div class="g3">
-<div><h3>Kinesiología músculo-esquelética</h3><p>En todas tus sesiones estarás acompañado por el kinesiólogo, con una rehabilitación dirigida.</p></div>
-<div><h3>EPI</h3><p>Electrólisis percutánea intratisular: técnica de fisioterapia mínimamente invasiva para activar la regeneración del tejido blando dañado.</p></div>
-<div><h3>Wonder VIGOR</h3><p>Radiofrecuencia y neuroestimulación muscular, no invasiva, para tonificar y mejorar la firmeza de la piel.</p></div></div></div></section>
-<section class="rf"><div class="wrap"><h2>Reembolsos</h2><p>Puedes reembolsar el costo de tu tratamiento en tu Isapre, según tu plan de salud, y el monto no cubierto con tu seguro complementario.</p><p>Si necesitas ayuda con el trámite, cuéntanos.</p></div></section>
+<section id="servicios"><div class="wrap"><h2>Nuestros servicios</h2><div class="g3">
+<div><h3>Kinesiología músculo-esquelética</h3><p>Sesiones acompañadas por el kinesiólogo, con rehabilitación personalizada. Tratan distintas lesiones con diversas técnicas para aliviar el dolor y devolverte a tu vida diaria o deportiva, incluso después de una cirugía traumatológica.</p></div>
+<div><h3>EPI</h3><p>Electrólisis percutánea intratisular (con ecografía): técnica de fisioterapia mínimamente invasiva que aplica una corriente galvánica sobre el tejido degenerado, y activa su regeneración (tendón, ligamento, músculo). Indicada en dolor crónico.</p></div>
+<div><h3>Wonder VIGOR</h3><p>Radiofrecuencia y neuroestimulación muscular para ayudar a reducir la grasa localizada, tonificar los músculos y mejorar la firmeza de la piel. Tecnología corporal no invasiva.</p></div></div></div></section>
+<section id="bfr" class="rf"><div class="wrap sp"><div><h2>BFR: entrenamiento con restricción de flujo sanguíneo</h2><p>La debilidad muscular es muy frecuente en las condiciones músculo-esqueléticas. El BFR ayuda a desarrollar músculo y fuerza con poca o ninguna resistencia.</p><p>Se coloca un torniquete alrededor de la extremidad durante el ejercicio, lo que genera un ambiente hipóxico local y una fatiga muscular más rápida, con adaptaciones fisiológicas beneficiosas.</p></div><div class="badge">Rehabilitación dirigida<span>Todas tus sesiones, acompañado por el kinesiólogo.</span></div></div></section>
+<section id="reintegro"><div class="wrap sp"><div class="badge">Del alta médica a tu deporte<span>Transición entre la rehabilitación y el regreso a tu práctica.</span></div><div><h2>Reintegro deportivo</h2><p style="color:#c4cfdc;margin-bottom:12px">Programa enfocado en desarrollar las cualidades físicas y habilidades necesarias para retomar tu deporte o actividad física preferida.</p><p style="color:#c4cfdc">Una buena preparación física disminuye significativamente el riesgo de lesión o re-lesión.</p></div></div></section>
+<section id="reembolsos" class="rf"><div class="wrap"><h2>Reembolsos</h2><p>Reembolsa el costo de tu tratamiento en tu Isapre; el monto depende de tu plan de salud. Lo no cubierto, puedes reembolsarlo con tu seguro complementario, según el tipo de seguro que tengas.</p><p>¿No sabes qué servicio tomar? Escríbeles: te orientan para tomar la mejor decisión.</p></div></section>
 <section class="contact" id="contacto"><div class="wrap"><h2>Agenda tu sesión</h2><a class="l" href="https://wa.me/56971031764">+56 9 7103 1764</a><p>14 de Febrero 2174, of. 10, Antofagasta<br><a style="color:#fff" href="mailto:kinesmd@gmail.com">kinesmd@gmail.com</a></p></div></section>
 <footer>KINESIS · ANTOFAGASTA</footer>
 <div class="mock">Propuesta de rediseño · mockup</div></body></html>
