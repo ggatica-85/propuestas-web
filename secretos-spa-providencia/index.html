@@ -6,12 +6,12 @@
 <link href="https://fonts.googleapis.com/css2?family=Bellefair&family=Manrope:wght@400;500;700&display=swap" rel="stylesheet">
 <style>
 :root{--slate:#575f7c;--deep:#3d4360;--mist:#e4e8f1;--blush:#f4ece9;--ink:#262a3d}
-*{box-sizing:border-box;margin:0}html{scroll-behavior:smooth}
+*{box-sizing:border-box;margin:0}html{scroll-behavior:smooth;scroll-padding-top:100px}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
 body{background:var(--blush);color:var(--ink);font:400 17px/1.8 Manrope,sans-serif}
 .wrap{max-width:980px;margin:0 auto;padding:0 22px}
 h1,h2,h3{font-family:Bellefair,serif;font-weight:400;line-height:1.08}
-header{background:var(--slate)}header .wrap{display:flex;justify-content:space-between;align-items:center;height:96px;gap:12px}
+header{position:sticky;top:0;z-index:20;background:var(--slate)}header .wrap{display:flex;justify-content:space-between;align-items:center;height:96px;gap:12px}
 header img{height:84px}
 header a.b{border:1px solid #fff;color:#fff;text-decoration:none;padding:11px 26px;font-weight:500;font-size:14px;letter-spacing:.12em;text-transform:uppercase}
 header a.b:hover{background:#fff;color:var(--slate)}
@@ -31,17 +31,17 @@ section{padding:80px 0}h2{font-size:clamp(30px,4.6vw,50px);color:var(--deep);mar
 .contact a.l{display:block;font:400 clamp(34px,6vw,62px) Bellefair;color:#fff;text-decoration:none;margin:10px 0}.contact a.l:hover{color:#d6dbea}
 .contact p{color:#d6dbea}
 footer{padding:22px 0 90px;text-align:center;font-size:12px;letter-spacing:.2em;color:#7b7f92}
-.mock{position:fixed;left:14px;bottom:14px;background:#fff;color:#111;border:2px solid #111;font:700 12px/1 Manrope;padding:8px 14px;border-radius:30px;z-index:9}
+.mock{z-index:30;position:fixed;left:14px;bottom:14px;background:#fff;color:#111;border:2px solid #111;font:700 12px/1 Manrope;padding:8px 14px;border-radius:30px;z-index:9}
 @media(max-width:800px){.svc,.hrs{grid-template-columns:1fr}.hrs div{border-right:0;border-bottom:1px solid #c9cfe0}.hero .wrap{padding:56px 22px 64px}}
-</style></head><body>
-<header><div class="wrap"><img src="assets/isologo-3-e1737832045831-1024x806.png" alt="Secretos SPA"><a class="b" href="https://wa.me/56936399615?text=Hola%2C%20quisiera%20agendar%20una%20evaluaci%C3%B3n">Agenda tu evaluación</a></div></header>
+nav{display:flex;gap:20px;font-size:13px;letter-spacing:.12em;text-transform:uppercase}nav a{color:#e3e7f2;text-decoration:none}nav a:hover{color:#fff;text-decoration:underline}.cols{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:26px}.cols>div{background:#fff;border:1px solid #e3d9d4;padding:34px 30px}.cols h3{font-size:27px;color:var(--deep);margin-bottom:8px}.cols p{font-size:16px;color:#585d73;margin-bottom:8px}.cols ul{list-style:none;padding:0;margin-top:8px;columns:2;column-gap:20px}.cols li{font-size:15px;padding:3px 0 3px 18px;position:relative;color:#3a3f56;break-inside:avoid}.cols li:before{content:"✦";position:absolute;left:0;color:var(--slate);font-size:10px;top:8px}.disc{margin-top:20px;font-size:14px;color:#7b7f92}@media(max-width:800px){nav{display:none}.cols{grid-template-columns:1fr}.cols ul{columns:1}}</style></head><body>
+<header><div class="wrap"><img src="assets/isologo-3-e1737832045831-1024x806.png" alt="Secretos SPA"><nav><a href="#nosotros">Nosotros</a><a href="#servicios">Tratamientos</a><a href="#peso">Control de peso</a><a href="#contacto">Horarios</a></nav><a class="b" href="https://wa.me/56936399615?text=Hola%2C%20quisiera%20agendar%20una%20evaluaci%C3%B3n">Agenda tu evaluación</a></div></header>
 <div class="hero"><div class="wrap"><small>Providencia · Santiago</small><h1>Resaltamos y transformamos tu belleza natural.</h1><p>Maderoterapia, metaloterapia y técnicas manuales, junto a medicina estética y control de peso, con atención cálida y humanizada.</p><a class="btn" href="https://wa.me/56936399615?text=Hola%2C%20quisiera%20agendar%20una%20evaluaci%C3%B3n%20gratuita">Evaluación gratuita</a></div></div>
-<section><div class="wrap"><h2>Nuestros tratamientos</h2><div class="svc">
-<div><h3>Control de peso</h3><p>Acompañamiento para el cuidado del peso, con consulta de nutrición.</p></div>
-<div><h3>Tratamientos corporales</h3><p>Técnicas no invasivas, basadas en maderoterapia, metaloterapia y manuales.</p></div>
-<div><h3>Medicina estética corporal</h3><p>Tratamientos con la Dra. Yelitza Rodríguez.</p></div>
-<div><h3>Medicina estética facial</h3><p>Tratamientos faciales para resaltar tu belleza natural.</p></div></div></div></section>
-<section class="about"><div class="wrap"><h2>Nuestra historia</h2><p>Secretos SPA nació como un emprendimiento personal en 2020. Desde el inicio trabajan con maderoterapia, metaloterapia y técnicas manuales.</p><p>En 2024 sumaron nuevos tratamientos con la Dra. Yelitza Rodríguez y abrieron una consulta de nutrición, manteniendo la calidez y cercanía de siempre.</p>
+<section id="servicios"><div class="wrap"><h2>Nuestros tratamientos</h2><div class="cols">
+<div><h3>Estética facial</h3><p>Medicina estética facial con evaluación previa y especialistas.</p><ul><li>Toxina botulínica</li><li>Radiesse y Sculptra</li><li>Aumento y perfilado de labios</li><li>Hidratación de labios</li><li>Rinomodelación</li><li>Borrado de ojeras</li><li>Proyección de pómulos y de mentón</li><li>Perfilado mandibular</li><li>Sonrisa gingival</li><li>Bruxismo</li><li>Pink Glow</li><li>Filorga NCTF</li><li>Enzimas recombinantes</li><li>Plasma rico en plaquetas</li><li>Mesoterapia</li></ul></div>
+<div><h3>Estética corporal</h3><p>Tratamientos para el contorno y la calidad de la piel.</p><ul><li>Lipo sin cirugía: mesoterapia con fosfatidilcolina y L-carnitina, en dos fases, más sesiones de cortesía no invasivas</li><li>Reducción enzimática de celulitis, fibrosis y flacidez</li><li>Sculptra</li><li>Lanluma</li></ul></div>
+<div><h3>Tratamientos corporales no invasivos</h3><p>La base de Secretos SPA desde 2020: maderoterapia, metaloterapia y técnicas manuales, con atención cálida y humanizada.</p></div>
+<div id="peso"><h3>Control de peso y nutrición</h3><p>Consulta médica de control de peso: una evaluación integral de tu salud para identificar factores médicos que influyen en el peso y definir el abordaje adecuado.</p><p>Consulta nutricional personalizada con planes de alimentación adaptados, educación y seguimiento. El <b>Plan Nutricional Secretos</b> incluye una consulta, dos controles y tres análisis corporales InBody.</p></div></div><p class="disc">Los tratamientos de medicina estética se indican tras una evaluación con la profesional; la evaluación inicial es gratuita.</p></div></section>
+<section class="about" id="nosotros"><div class="wrap"><h2>Nuestra historia</h2><p>Secretos SPA nació como un emprendimiento personal en 2020, en pleno confinamiento. Desde el inicio se enfocó en maderoterapia, metaloterapia y técnicas manuales. Gracias a las redes sociales llegó a un público más amplio, que busca tratamientos efectivos y confiables para su bienestar y su estética.</p><p>En 2024 sumó nuevos tratamientos con la Dra. Yelitza Rodríguez y abrió una consulta de nutrición, para acompañar de forma más integral a sus clientas. Su mayor valor, dicen, son las personas que atienden.</p>
 <div class="hrs"><div><b>Lunes a jueves</b>10:00 a 13:00 y 15:00 a 20:00</div><div><b>Viernes</b>10:00 a 14:00</div><div><b>Sábado</b>10:00 a 14:00</div></div></div></section>
 <section class="contact" id="contacto"><div class="wrap"><h2>Agenda tu evaluación</h2><a class="l" href="https://wa.me/56936399615">+56 9 3639 9615</a><p>General Holley 2381, Providencia · Tel. +56 9 3096 1180<br><a style="color:#fff" href="mailto:contacto@secretos-spa.com">contacto@secretos-spa.com</a></p></div></section>
 <footer>SECRETOS SPA · PROVIDENCIA</footer>
