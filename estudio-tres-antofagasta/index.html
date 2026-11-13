@@ -6,7 +6,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500;600;700&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
 :root{--black:#0b0b0b;--amber:#ffbb22;--ink:#f4f1ea;--g:#1a1a1a;--line:#2d2d2d;--mute:#a4a09a}
-*{box-sizing:border-box;margin:0}html{scroll-behavior:smooth}
+*{box-sizing:border-box;margin:0}html{scroll-behavior:smooth;scroll-padding-top:100px}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
 body{background:var(--black);color:var(--ink);font:400 17px/1.7 Barlow,sans-serif}
 .wrap{max-width:1060px;margin:0 auto;padding:0 22px}
@@ -30,22 +30,23 @@ section{padding:76px 0;border-top:1px solid var(--line)}h2{font-size:clamp(28px,
 .contact{background:var(--amber);color:#111;text-align:center}.contact h2{color:#111}
 .contact a.l{display:block;font:700 clamp(32px,6vw,62px) 'Chakra Petch';color:#111;text-decoration:none;margin:8px 0}.contact a.l:hover{color:#fff}
 footer{padding:22px 0 90px;text-align:center;font:600 12px 'Chakra Petch';letter-spacing:.2em;color:var(--mute)}
-.mock{position:fixed;left:14px;bottom:14px;background:#fff;color:#111;border:2px solid #111;font:700 12px/1 Barlow;padding:8px 14px;border-radius:30px;z-index:9}
+.mock{z-index:30;position:fixed;left:14px;bottom:14px;background:#fff;color:#111;border:2px solid #111;font:700 12px/1 Barlow;padding:8px 14px;border-radius:30px;z-index:9}
 @media(max-width:860px){.hero .wrap,.ph{grid-template-columns:1fr}.svc{grid-template-columns:1fr 1fr}.hero .wrap{padding:30px 22px 50px}}
 @media(max-width:520px){.svc{grid-template-columns:1fr}}
-</style></head><body>
-<header><div class="wrap"><img src="assets/IMAGOTIPO-FONDO-NEGRO.jpg" alt="Estudio Tres"><a class="b" href="#contacto">Cotizar evento</a></div></header>
+nav{display:flex;gap:20px;font:600 14px "Chakra Petch";letter-spacing:.1em;text-transform:uppercase}nav a{color:#cfcac0;text-decoration:none}nav a:hover{color:var(--amber)}.ab{display:grid;grid-template-columns:1fr 1fr;gap:30px;margin-top:24px}.ab>div{background:var(--g);padding:30px 28px;border-top:4px solid var(--amber)}.ab h3{font-size:20px;margin-bottom:8px;color:var(--amber)}.ab p{color:#c4c0b8;font-size:16px}.tg{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin-top:26px}.tg>div{border:1px solid var(--line);padding:26px;background:var(--g)}.tg h3{font-size:22px;margin-bottom:8px}.tg p{color:var(--mute);font-size:16px}.tg ul{list-style:none;padding:0;margin-top:8px}.tg li{padding:3px 0 3px 22px;position:relative;font-size:15px;color:#cfcac0}.tg li:before{content:"";position:absolute;left:0;top:12px;width:10px;height:3px;background:var(--amber)}.seg{display:flex;gap:10px;margin-top:18px;flex-wrap:wrap}.seg span{border:2px solid var(--amber);color:var(--amber);padding:6px 20px;font:700 14px "Chakra Petch";letter-spacing:.12em;text-transform:uppercase}@media(max-width:860px){nav{display:none}.ab,.tg{grid-template-columns:1fr}}</style></head><body>
+<header><div class="wrap"><img src="assets/IMAGOTIPO-FONDO-NEGRO.jpg" alt="Estudio Tres"><nav><a href="#nosotros">Nosotros</a><a href="#servicios">Servicios</a><a href="#sonido">Sonido</a><a href="#contacto">Contacto</a></nav><a class="b" href="#contacto">Cotizar evento</a></div></header>
 <div class="hero"><div class="wrap"><div><small>Antofagasta · Eventos y producción</small><h1>Tu evento, con <span>sonido, luz</span> e imagen profesional.</h1><p>Soluciones audiovisuales de alta calidad para eventos particulares y de empresas, personalizadas según lo que necesitas.</p><a class="btn" href="https://wa.me/56995416779?text=Hola%2C%20quisiera%20cotizar%20un%20evento">Cotizar por WhatsApp</a></div><img src="assets/Mavispa-Producciones-Antofagasta-1.jpg" alt="Consola de sonido y música en un evento"></div></div>
-<section><div class="wrap"><h2>Servicios</h2><div class="svc">
-<div><h3>Sonido e iluminación</h3><p>Equipamiento profesional para un servicio de calidad.</p></div>
-<div><h3>Ambientación</h3><p>Transformación de espacios, a partir de las ideas de cada cliente.</p></div>
-<div><h3>Streaming</h3><p>Equipamiento y realizadores audiovisuales para transmitir tu evento.</p></div>
-<div><h3>Stands corporativos</h3><p>Diseño, proyección y montaje de estructuras de todo tipo.</p></div>
-<div><h3>Fotografía</h3><p>Servicios fotográficos para registrar cada momento.</p></div>
-<div><h3>Carpas estructurales</h3><p>Para eventos de distinto tamaño.</p></div>
-<div><h3>Catering</h3><p>Servicio de catering para tu evento.</p></div>
-<div><h3>Complementarios</h3><p>Servicios adicionales para completar la producción.</p></div></div>
-<div class="ph"><figure><img src="assets/Streaming-en-Antofagasta-Mavispa-Producciones.jpg" alt="Transmisión en vivo de un evento" loading="lazy"><figcaption>Streaming</figcaption></figure><figure><img src="assets/Stand-Corporativo.jpg" alt="Stand corporativo armado en un evento" loading="lazy"><figcaption>Stands corporativos</figcaption></figure></div></div></section>
+<section id="nosotros"><div class="wrap"><h2>Quiénes somos</h2><p style="max-width:64ch;color:#c4c0b8">Soluciones audiovisuales de alta calidad para eventos particulares y de empresas, personalizadas para cada necesidad. Cada evento es único y merece una atención especial para ser inolvidable.</p><div class="seg"><span>Particulares</span><span>Empresas</span></div><div class="ab"><div><h3>Visión</h3><p>Entregar soluciones audiovisuales a sus clientes, a través de una adecuada administración de los recursos disponibles.</p></div><div><h3>Misión</h3><p>Ser líder del mercado audiovisual de la Segunda Región, aplicando la mejor tecnología disponible para satisfacer las necesidades de los distintos segmentos, con precios competitivos y un servicio de calidad superior.</p></div></div></div></section>
+<section id="servicios"><div class="wrap"><h2>Servicios</h2><div class="tg">
+<div id="sonido"><h3>Sonido e iluminación</h3><p>Equipamiento profesional para un servicio de calidad ajustado a tus requerimientos.</p><ul><li>Amplificación profesional de alta definición</li><li>Técnicos de sonido profesionales</li><li>Iluminación de última generación</li><li>Proyección multimedia (data)</li><li>Pantallas LED de 3×2 y 4×3 metros</li></ul></div>
+<div><h3>Ambientación y transformación de espacios</h3><p>Amplia experiencia para aclarar las ideas del cliente y lograr ambientes soñados o corporativos, con luces, mobiliario y recursos de piso y aéreos, donde se necesite.</p></div>
+<div><h3>Streaming</h3><p>Equipamiento y los mejores realizadores audiovisuales a cargo del registro de eventos sociales, corporativos, promocionales y de inducción.</p></div>
+<div><h3>Stands corporativos</h3><p>Personal calificado en el diseño, proyección y montaje de estructuras de todo tipo.</p></div>
+<div><h3>Fotografía</h3><p>Una gama de servicios fotográficos para que tus fotos brillen con estilo, creatividad y profesionalismo.</p></div>
+<div><h3>Carpas estructurales</h3><p>Carpas para eventos de distinto tamaño.</p></div>
+<div><h3>Catering</h3><p>De la mano de un equipo profesional, con exquisitos platos y presentaciones, para eventos íntimos y alimentación colectiva. Con gran infraestructura y resolución sanitaria.</p></div>
+<div><h3>Complementarios</h3><p>Un abanico de servicios que se adapta a las distintas necesidades de cada cliente.</p></div></div>
+<div class="ph" style="margin-top:28px"><figure><img src="assets/Streaming-en-Antofagasta-Mavispa-Producciones.jpg" alt="Transmisión en vivo de un evento" loading="lazy"><figcaption>Streaming</figcaption></figure><figure><img src="assets/Stand-Corporativo.jpg" alt="Stand corporativo armado en un evento" loading="lazy"><figcaption>Stands corporativos</figcaption></figure></div></div></section>
 <section class="contact" id="contacto"><div class="wrap"><h2>Cuéntanos de tu evento</h2><a class="l" href="https://wa.me/56995416779">+56 9 9541 6779</a><p>Av. Balmaceda 2575, Antofagasta<br><a style="color:#111;font-weight:600" href="mailto:contacto@estudiotres.cl">contacto@estudiotres.cl</a></p></div></section>
 <footer>ESTUDIO TRES · ANTOFAGASTA</footer>
 <div class="mock">Propuesta de rediseño · mockup</div></body></html>
